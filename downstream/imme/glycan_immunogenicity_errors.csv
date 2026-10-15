@@ -1,0 +1,692 @@
+glycan_id,glycan,species,immunogenicity,inferred_origin,link,train,valid,test,wurcs,error_reason
+77,GalNAc(a1-4)ManNAcA(b1-6)GalNAc,['Azospirillum_brasilense'],1.0,,,1,0,0,ERROR,unknown
+33,ManOP(a1-2)Man(a1-3)[Man(a1-3)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+78,QuiNAlaAc(b1-4)GalNAcA(a1-4)GalOAc(a1-2)QuiNAlaAc,['Pseudoalteromonas_haloplanktis'],1.0,,,1,0,0,ERROR,unknown
+46,FucNAc(a1-3)QuiNAcNBut(b1-4)FucNAc,['Plesiomonas_shigelloides'],1.0,,,1,0,0,ERROR,unknown
+167,[Sug(b1-3)GalOAc(a1-2)]Man(a1-4)Rha(a1-3)Gal(a1-3)Man,['Pectobacterium_atrosepticum'],1.0,,,1,0,0,ERROR,unknown
+225,QuiNAc(b1-3)6dTalOAc(a1-3)FucNAc(b1-4)QuiNAc,['Pseudomonas_fluorescens'],1.0,,,1,0,0,ERROR,unknown
+66,[Col(a1-2)]Gal(b1-3)[Col(a1-4)]GlcNAc(b1-4)GalA(a1-3)QuiNAc,['Vibrio_cholerae'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+124,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+208,Fuc(a1-2)Gal(b1-3)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+325,[Col(a1-2)]GalOAcA(b1-3)[Col(a1-4)]GlcNAc(a1-4)GalA(a1-3)QuiNAc,['Vibrio_cholerae'],1.0,,,1,0,0,ERROR,unknown
+272,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+297,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)Glc,,1.0,Bacteria,,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+337,[Ribf(b1-4)GlcOAcA(a1-2)]Rha(a1-3)Rha(b1-4)Rha(a1-3)GlcNAc(b1-3)Rha,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+298,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Man(a1-3)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Homo_sapiens', 'MurineLeukemia_Virus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+299,NeuNAc(a2-3)Gal(b1-4)GlcNAcOS(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+318,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)[Gal(b1-4)GlcNAc(b1-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+420,Fuc(a1-3)[Gal(b1-4)]GlcNAcOS(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+427,Glc(b1-3)ManOAc(b1-4)Glc,['Burkholderia_cepacia'],1.0,,,1,0,0,ERROR,unknown
+424,GalAGroN(a1-4)NeuNAc(a2-3)GalGroN(b1-3)GlcNAc(b1-3)GalAGroN,['Shewanella_algae'],1.0,,,1,0,0,ERROR,unknown
+463,GalOS(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+432,[Par(a1-3)]Man(a1-4)RhaOAc(a1-3)[Glc(a1-4)]Gal(a1-2)Man,"['Salmonella_paratyphi', 'Salmonella_sp']",1.0,,,1,0,0,ERROR,unknown
+340,NeuNAc(a2-8)NeuNGc(a2-3)Gal,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+371,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+491,Gal(a1-3)GalfOAc(b1-3)Gal,['Klebsiella_pneumoniae'],1.0,,,1,0,0,ERROR,unknown
+373,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Bos_taurus', 'Gallus_gallus', 'Homo_sapiens']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+485,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+606,QuiNAc(b1-3)RhaOAc(a1-3)FucNAc(a1-2)QuiNAc,['Plesiomonas_shigelloides'],1.0,,,1,0,0,ERROR,unknown
+512,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+560,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Cricetinae_gen_sp', 'Homo_sapiens', 'Sus_scrofa']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+668,Fuc(a1-4)][GalOS(b1-3)]GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)][Fuc(a1-2)Gal(b1-3)GlcNAc(b1-3)]GalNAc,['Homo_sapiens'],0.0,,,0,1,0,ERROR,unknown
+531,NeuNAc(a2-6)GalNAc(b1-4)GlcNAc(b1-2)Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+698,AltNAcA(a1-3)FucNAc(b1-4)AltNAcA,['Plesiomonas_shigelloides'],1.0,,,1,0,0,ERROR,unknown
+601,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+649,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-4)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+922,NeuNAcOGc(a2-3)Gal(b1-3)GlcNAc,,1.0,Bacteria,,1,0,0,ERROR,unknown
+1021,GalOS(b1-4)GlcNAc(b1-3)Gal(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+1008,GalOS(b1-4)GlcNAc(b1-2)Man(a1-3)[GalOS(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,unknown
+798,NeuNAc(a2-8)NeuNAc(a2-8)NeuNAc(a2-3)Gal,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1029,Fuc(a1-2)[Gal(a1-3)]Gal(b1-3)[GlcNAcOS(b1-6)]GalNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,unknown
+741,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAcOS,,1.0,Eukarya,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1133,Glc(a1-6)Glc(a1-6)Glc(b1-4)Glc(b1-3)[GalN(a1-4)]GlcNAcA(a1-4)[GlcN(b1-7)]Kdo(a2-5)[Kdo(a1-4)]Kdo,,1.0,Bacteria,,1,0,0,ERROR,unknown
+961,NeuNAc(a2-6)[NeuNGc(a2-3)]Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1174,NeuNAcOGc(a2-3)Gal(b1-4)GlcNAc,,1.0,Aves,,1,0,0,ERROR,unknown
+1204,Gal(b1-4)GlcNAcOS(b1-6)[Gal(b1-3)]GalNAc,"['Gallus_gallus', 'Homo_sapiens']",0.0,,O,1,0,0,ERROR,unknown
+1012,[Galf(a1-2)Rha(a1-2)]Rha(a1-2)[Glc(a1-5)]Ribf(b1-4)GalA(a1-3)GlcNAc(b1-3)Rha,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1035,Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1047,Gal(b1-3)GalNAc(b1-4)[NeuNAc(a2-8)NeuNAc(a2-3)]Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1254,RhaOMe(a1-3)[Fucf(a1-4)]Rha(a1-3)Rha(a1-2)RhaOMe,['Xanthomonas_campestris'],1.0,,,1,0,0,ERROR,unknown
+1347,Gal(a1-2)Gal(a1-2)[Glc(b1-3)]Glc(a1-3)Glc(b1-3)[GlcN(b1-7)LDManHep(a1-7)]LDManHep(a1-3)LDManHepOPPEtn(a1-5)[Kdo(a2-4)]Kdo,['Shigella_flexneri'],1.0,,,1,0,0,ERROR,unknown
+1336,[Galf(b1-4)Rha(a1-3)]DDManHep(b1-3)LDManHepOAc(b1-4)Rha(a1-3)GlcNAc(b1-4)DDManHep,['Plesiomonas_shigelloides'],1.0,,,1,0,0,ERROR,unknown
+1163,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)GalNAc(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1371,GlcNAc(b1-2)[Glc(b1-6)Kdo(a1-4)]Glc(a1-3)GalNAla(a1-3)LDManHepOCm(a1-3)LDManHepOP(a1-5)[Kdo(a2-4)]Kdo,,1.0,Bacteria,,1,0,0,ERROR,unknown
+1407,Fuc(a1-2)Gal(b1-4)[Fuc(a1-3)]GlcNAcOS(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+1241,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-4)[GalOS(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1438,QuiNAc(b1-4)[QuiNAc(a1-2)]QuiNAc(b1-4)QuiNAc,['Vibrio_anguillarum'],1.0,,,1,0,0,ERROR,unknown
+1487,[6dTalOAc(a1-3)]Man(a1-2)Man(a1-3)GalNAc(b1-4)Man,['Pseudomonas_fluorescens'],1.0,,,1,0,0,ERROR,unknown
+1353,Fuc(a1-2)[GalNAc(a1-3)]Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1388,NeuNGc(a2-3)Gal(b1-3)GalNAc,"['Bos_taurus', 'Oryctolagus_cuniculus', 'Sus_scrofa']",1.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1409,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Homo_sapiens', 'Mus_musculus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1504,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1656,PseNAcNAc(b2-4)Gal(b1-4)Glc(b1-4)PseNAcNAc,['Cellulophaga_fucicola'],1.0,,,1,0,0,ERROR,unknown
+1574,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1724,Glc(a1-2)Glc(a1-2)[GlcNAc(a1-3)]Gal(a1-3)Glc(a1-3)[GlcNAc(a1-7)LDManHep(a1-7)]LDManHepOP(a1-3)LDManHepOP(a1-5)[Kdo(a2-4)Kdo(a2-4)]Kdo,['Escherichia_coli'],1.0,,,1,0,0,ERROR,unknown
+1742,Glc(a1-6)GlcNBut(a1-4)GalNAc(a1-3)GalNAc(b1-2)Glc,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+1579,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[GlcNAc(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1624,Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1642,Gal(b1-3)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1764,ManOP(a1-2)Man(a1-6)[Man(a1-3)]Man(a1-6)[ManOP(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+1705,NeuNAc(a2-6)Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,free,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1861,Fuc(a1-2)Gal(b1-4)GlcNAcOS(b1-6)[Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+1850,Rha(a1-3)RhaOAc(a1-2)[Glc(b1-3)]Rha(a1-3)Rha,['Azospirillum_lipoferum'],1.0,,,1,0,0,ERROR,unknown
+1734,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[Fuc(a1-3)[GalNAc(b1-4)]GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1798,NeuNAc(a2-6)Gal(b1-3)GlcNAc(b1-3)[NeuNAc(a2-6)]Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1810,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1849,Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-3)Gal(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1990,GalOS(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[GalOS(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,unknown
+2027,[AbeOAc(a1-3)]Man(a1-4)Rha(a1-3)[Glc(a1-6)]Gal(a1-2)Man,"['Salmonella_bredeney', 'Salmonella_sp']",1.0,,,1,0,0,ERROR,unknown
+1915,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)GalOS(b1-3)GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+1928,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2077,Rha(a1-2)Rha(a1-2)Rha(a1-2)Glc(a1-3)GlcNAcOAc,,1.0,Bacteria,,1,0,0,ERROR,unknown
+2101,[Sug(a1-2)]Rha(a1-3)Rha(a1-2)Rha(a1-3)Rha,['Burkholderia_brasiliensis'],1.0,,,1,0,0,ERROR,unknown
+2026,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Desmodus_rotundus', 'Homo_sapiens', 'Mus_musculus', 'Rattus_norvegicus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2029,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-4)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2107,GalNAc(a1-4)Gal(a1-6)Gal(a1-3)Gal(a1-3)DDManHep(a1-5)KdoN,['Shewanella_oneidensis'],1.0,,,1,0,0,ERROR,unknown
+2121,RhaOMe(a1-3)[GlcNAc(b1-4)]ManNBut(a1-4)RhaOMe,['Azospirillum_brasilense'],1.0,,,1,0,0,ERROR,unknown
+2057,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2085,NeuNAc(a2-6)GalNAc(b1-4)GlcNAc(b1-2)Man(a1-3)[Fuc(a1-3)[GalNAc(b1-4)]GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2285,LDManHep(a1-2)LDManHep(a1-3)[Gal(b1-4)[Gal(a1-6)]LDManHep(a1-6)Glc(b1-4)][Glc(a1-6)]LDManHep(a1-5)Kdo,['Pasteurella_multocida'],1.0,,,1,0,0,ERROR,unknown
+2099,Fuc(a1-2)Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2289,GalOS(b1-4)GlcNAc(b1-2)[GalOS(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,unknown
+2368,6dTal(a1-2)Rha(a1-5)Sug(a2-3)6dTal,['Rhizobium_leguminosarum'],1.0,,,1,0,0,ERROR,unknown
+2245,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2544,RhaNAc(a1-2)RhaNAc(a1-2)RhaNAc(a1-3)RhaNAcOAc(a1-3)RhaNAc,['Citrobacter_gillenii'],1.0,,,1,0,0,ERROR,unknown
+2582,RhaOAc(a1-2)Rha(a1-3)RhaOAc(a1-3)[Glc(a1-4)]GlcNAc(b1-2)RhaOAc,['Shigella_flexneri'],1.0,,,1,0,0,ERROR,unknown
+2395,Gal(b1-6)Glc(a1-6)GlcNAc(a1-4)GalA(a1-3)GlcNAc(b1-2)Gal,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2459,NeuNAc(a2-8)NeuNAc(a2-3)Gal(b1-3)GalNAc(b1-4)[NeuNAc(a2-8)NeuNAc(a2-3)]Gal(b1-4)Glc,['Campylobacter_jejuni'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2639,PseNAcNFo(a2-4)[GlcA(a1-4)GalNAc(b1-4)GalNAcOAcA(a1-3)]QuiNAc(b1-4)PseNAcNFo,['Pseudoalteromonas_distincta'],1.0,,,1,0,0,ERROR,unknown
+2525,NeuNAc(a2-3)Gal(b1-3)GalNAc(b1-3)Gal,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2563,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,"['Equus_caballus', 'Homo_sapiens']",0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2615,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Bos_taurus', 'Equus_caballus', 'Gallus_gallus', 'Homo_sapiens', 'Mus_musculus', 'Rattus_norvegicus', 'Sus_scrofa']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2656,GalNAcOS(b1-4)GlcNAc(b1-2)Man(a1-3)[GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Homo_sapiens', 'Ovis_aries', 'Sus_scrofa']",0.0,,N,1,0,0,ERROR,unknown
+2644,Glc(b1-2)FucNAc(b1-6)Glc(a1-4)GalNAc(a1-3)GlcNAc(b1-2)Glc,['Salmonella_sp'],1.0,,,1,0,0,ERROR,unknown
+2628,Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2638,NeuNAc(a2-3)FucNAm(a1-3)GlcNAcOAc(b1-7)NeuNAc,['Citrobacter_braakii'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2704,GlcNAcNButA(b1-4)FucOAcNAm(a1-3)QuiNAc(a1-4)GlcNAcNButA,['Plesiomonas_shigelloides'],1.0,,,1,0,0,ERROR,unknown
+2722,Rha(a1-2)Rha(a1-3)RhaOAc(a1-3)[Glc(a1-2)Glc(a1-4)]GlcNAc(b1-2)Rha,['Shigella_flexneri'],1.0,,,1,0,0,ERROR,unknown
+2738,[Glc(a1-4)Glc(a1-3)]Rha(a1-3)ManNAcOAc(b1-4)Rha,['Aeromonas_salmonicida'],1.0,,,1,0,0,ERROR,unknown
+2759,6dTalOAc(a1-2)[Araf(a1-6)]GlcNAc(b1-3)6dTalOAc,['Stenotrophomonas_maltophilia'],1.0,,,1,0,0,ERROR,unknown
+2770,GlcASer(b1-3)GalNAc(b1-4)Glc(b1-3)Gal(a1-4)GalNAc(b1-4)GlcASer,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+2794,GlcOSA(b1-3)Gal(b1-3)[NeuNAc(a2-6)]Gal(b1-4)Xyl,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+2820,GalOS(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+2662,NeuNAc(a2-3)Gal(b1-3)[Fuc(a1-4)]GlcNAc,['Homo_sapiens'],0.0,,free,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2857,Glc(a1-4)Gal(b1-4)[Gal(b1-7)]LDManHep(a1-5)KdoOP,['Pseudoalteromonas_issachenkonii '],1.0,,,1,0,0,ERROR,unknown
+2907,GalOS(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+2737,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)]Man(a1-6)[Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2780,Fuc(a1-2)[GalNAc(a1-3)]Gal(b1-3)GlcNAc(b1-3)[NeuNAc(a2-6)]Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2802,NeuNAc(a2-3)Man(b1-4)Glc,['Homo_sapiens'],0.0,,free,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+2996,Gal(b1-4)[Fuc(a1-3)]GlcNAcOS,,1.0,Eukarya,,1,0,0,ERROR,unknown
+3033,GalNAmA(a1-3)QuiNAc(b1-3)Fuc(a1-3)GalNAmA,['Vibrio_vulnificus'],1.0,,,1,0,0,ERROR,unknown
+2890,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Bos_taurus', 'Homo_sapiens', 'MurineLeukemia_Virus', 'Mus_musculus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3051,RhaNAc(a1-3)Fuc(a1-4)Glc(b1-3)[Glc(b1-4)]GalNAc(a1-2)RhaNAc,['Salmonella_sp'],1.0,,,1,0,0,ERROR,unknown
+3053,GlcNAcOS(b1-6)[NeuNAc(a2-6)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+2917,NeuNAc(a2-3)Gal(b1-3)GalNAc(b1-3)Gal(a1-4)Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3129,FucNAc(a1-2)QuiNAc(b1-3)FucNAc(a1-3)QuiNAc(a1-3)FucNAc,['Pseudomonas_cichorii'],1.0,,,1,0,0,ERROR,unknown
+2927,GlcNAc(b1-3)Gal(b1-3)[NeuNAc(a2-6)]GalNAc,"['Bos_taurus', 'Homo_sapiens']",0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3039,Gal(b1-3)GalNAc(b1-4)[NeuNAc(a2-8)NeuNAc(a2-8)NeuNAc(a2-3)]Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3237,NeuNGcA(a2-6)Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,unknown
+3240,Glc(b1-3)GalNAc(a1-3)GalNAc(b1-3)Rha(a1-3)[QuiNAc(b1-3)Rha(a1-2)][LDManHep(a1-7)]LDManHep(a1-3)[LDManHep(a1-6)Glc(b1-4)]LDManHep(a1-5)Kdo(a2-4)Kdo(b1-8)AraN,['Burkholderia_multivorans'],1.0,,,1,0,0,ERROR,unknown
+3124,Fuc(a1-3)Man(a1-3)QuiNAc(b1-4)Kdo(a1-6)Gal(a1-6)[GalA(a1-4)]Man(a1-5)Kdo(a1-4)[GalA(a1-4)]Kdo(a1-5)GalA,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3285,Fuc(a1-3)[GalOS(b1-4)]GlcNAc(b1-6)[Fuc(a1-2)Gal(b1-3)GlcNAc(b1-3)]GalNAc,['Homo_sapiens'],0.0,,,0,1,0,ERROR,unknown
+3148,GalNAc(b1-4)[NeuNGc(a2-3)]Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3288,QuiNAc(b1-2)Rha(a1-4)GalAN(a1-6)[GlcAN(b1-3)Glc(b1-4)]Gal(a1-5)[Kdo(a1-4)]Kdo,,1.0,Bacteria,,1,0,0,ERROR,unknown
+3320,RhaOAc(a1-3)GlcNAc(b1-4)RhaOAc,"['Aeromonas_hydrophila', 'Aeromonas_sobria']",1.0,,,1,0,0,ERROR,unknown
+3215,GalNAc(b1-4)[NeuNGc(a2-3)]Gal,,1.0,Animalia,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3233,NeuNGc(a2-8)NeuNGc(a2-3)Gal,,1.0,Chordata,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3283,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-3)GalNAc,"['Bufotes_viridis', 'Homo_sapiens', 'Mus_musculus', 'Rana_palustris', 'Rhinella_arenarum']",0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3370,[Asc(a1-3)]DDManHep(a1-4)FucNAc(a1-3)QuiNAc(b1-2)DDManHep,['Vibrio_cholerae'],1.0,,,1,0,0,ERROR,unknown
+3308,NeuNAc(a2-3)Gal(b1-4)Glc,"['Escherichia_coli', 'Helicobacter_pylori', 'Homo_sapiens']",0.0,,free,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3453,GlcNAc(b1-2)[Rha(a1-6)Glc(b1-4)]Glc(a1-3)GalNAla(a1-3)LDManHepOCm(a1-3)LDManHepOP(a1-5)[Kdo(a2-4)]Kdo,['Pseudomonas_syringae'],1.0,,,1,0,0,ERROR,unknown
+3292,Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3471,Glc(b1-2)FucOAcNBut(b1-6)GlcNAc(a1-4)[Glc(b1-3)]GalNAc(a1-3)GlcNAc(b1-2)Glc,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+3479,GalOS(b1-4)GlcNAc(b1-2)[GalOS(b1-4)GlcNAc(b1-4)]Man(a1-3)[GalOS(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,unknown
+3574,ManNAcAAla(b1-4)GlcNAcA(b1-4)ManNAcAAla,['Pseudoalteromonas_sp'],1.0,,,1,0,0,ERROR,unknown
+3603,GalOS(b1-4)GlcNAc(b1-2)[GalOS(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,unknown
+3388,Fuc(a1-2)Gal(b1-3)[Fuc(a1-4)]GlcNAc(b1-3)[Gal(b1-4)GlcNAc(b1-6)]Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3711,RhaOAc(b1-4)Rha(a1-3)[GlcNAc(b1-2)]Fuc(a1-3)RhaOAc,['Pseudomonas_fluorescens'],1.0,,,1,0,0,ERROR,unknown
+3541,GlcNAc(b1-3)[NeuNAc(a2-6)]Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3723,Glc(a1-2)Gal(b1-4)Glc(b1-4)Glc(b1-3)[GalN(a1-4)]GlcNAcA(a1-4)[GlcN(b1-7)]Kdo(a2-5)[Kdo(a1-4)]Kdo,,1.0,Bacteria,,1,0,0,ERROR,unknown
+3734,GalfOAc(b1-3)Man(b1-3)GalfOAc,['Burkholderia_cepacia'],1.0,,,1,0,0,ERROR,unknown
+3712,GalAAlaLys(a1-3)GalNAc(b1-4)GlcA(b1-3)GalNAc(b1-2)GalAAlaLys,,1.0,Bacteria,,1,0,0,ERROR,unknown
+3515,NeuNAc(a2-8)NeuNAc(a2-3)Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3750,[Galf(b1-3)]Rha(a1-2)RhaOAc(a1-2)Ribf(b1-4)Gal(a1-3)GlcNAc(a1-2)Rha,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+3618,GalNAc(a1-3)[NeuNAc(a2-6)]GalNAc,"['Bos_taurus', 'Homo_sapiens']",0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3860,[Rha(a1-4)GalA(a1-2)]RhaOAc(a1-4)Glc(a1-2)Rha(a1-3)[Glc(a1-4)]GlcNAc(b1-3)RhaOAc,['Cronobacter_sakazakii'],1.0,,,1,0,0,ERROR,unknown
+3878,GlcAOLac(b1-4)GlcA(b1-4)GalNAcA(a1-3)QuiNAc(b1-2)GlcAOLac,['Halomonas_pantelleriensis'],1.0,,,1,0,0,ERROR,unknown
+3928,Kdo(b2-3)6dTalOAc(a1-3)GlcNAc(a1-7)Kdo,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+3922,ManOP(a1-2)Man(a1-3)[Man(a1-3)[Man(a1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+3931,GlcNAcOAcA(b1-4)FucOAcNAm(a1-3)Sug(a1-4)GlcNAcOAcA,['Flavobacterium_columnare'],1.0,,,1,0,0,ERROR,unknown
+3763,NeuNAc(a2-3)Gal(b1-4)GlcNAcOS(b1-6)[Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3852,NeuNGc(a2-3)Gal(b1-3)GlcNAc,,1.0,none,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3842,[Rha(a1-3)][Gal(b1-4)]ManNAc(b1-4)GlcA(b1-3)GalNAc(b1-6)ManNAc,['Aeromonas_caviae'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+3986,NeuNAcOAc(a2-8)NeuNAc(a2-3)Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,unknown
+3990,ManNAcA(b1-4)GulNAcOAcA(a1-3)QuiNAcNBut(b1-4)ManNAcA,,1.0,Bacteria,,1,0,0,ERROR,unknown
+4029,Galf(a1-3)RhaOAc(a1-4)GlcNAc(a1-2)Rha(a1-3)GlcNAc(b1-2)Galf,['Pragia_fontium'],1.0,,,1,0,0,ERROR,unknown
+4070,RhaNAc(a1-2)RhaNAc(a1-2)RhaNAc(a1-3)RhaNAc(a1-2)RhaNAc(a1-3)RhaNAc,,1.0,Bacteria,,1,0,0,ERROR,unknown
+3943,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+4135,[QuiNAspAc(b1-6)]Gal(b1-6)GlcNAc(b1-6)Gal(b1-3)GlcNAc(b1-3)Gal,['Providencia_stuartii'],1.0,,,1,0,0,ERROR,unknown
+4176,Rha(a1-3)FucNThrAc(a1-3)[ManNAcA(b1-4)]GalNAc(a1-3)Rha,['Pseudoalteromonas_agarivorans'],1.0,,,1,0,0,ERROR,unknown
+4032,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Bos_taurus', 'Homo_sapiens']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+4237,GalNAcOS(b1-4)GlcNAc(b1-2)Man(a1-3)[GalNAcOS(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Homo_sapiens', 'Mus_musculus', 'Ovis_aries', 'Sus_scrofa']",0.0,,,1,0,0,ERROR,unknown
+4038,NeuNAc(a2-6)Gal(b1-4)GlcNAcOS(b1-3)Gal(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+4145,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-3)Gal,,1.0,Bacteria,,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+4184,[QuiNAc(b1-6)]GalNAc(a1-6)Glc(a1-4)GlcA(b1-3)GalNAc(b1-4)GalNAc,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+4460,FucNAcOAc(b1-3)GlcNAcOPyr(a1-4)Gal(a1-4)Gal(b1-3)GlcNAc(b1-2)FucNAcOAc,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+4235,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+4288,Xyl(b1-4)Xyl(b1-4)[GlcA(a1-2)]Xyl(b1-4)[GlcA(a1-2)]Xyl(b1-4)Xyl(b1-4)[Ara(a1-3)]Xyl(b1-4)Xyl,,1.0,Angiosperms,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+4539,[Xluf(b2-2)]Rha(a1-3)[Xluf(b2-2)]Rha(b1-3)Rha,"['Escherichia_coli', 'Yersinia_enterocolitica']",1.0,,,1,0,0,ERROR,unknown
+4552,Rha(a1-2)Rha(a1-3)RhaOAc(a1-3)[Glc(a1-6)]GlcNAc(b1-2)Rha,"['Escherichia_coli', 'Shigella_flexneri']",1.0,,,1,0,0,ERROR,unknown
+4454,NeuNAc(a2-3)Gal(b1-3)[Fuc(a1-4)]GlcNAc(b1-3)[Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-6)]Gal(b1-4)Glc,['Homo_sapiens'],0.0,,free,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+4444,Fuc(a1-2)[GalNAc(a1-3)]Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+4473,NeuNAc(a2-3)Gal(b1-3)GlcNAc,,1.0,Animalia,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+4726,GlcNAcNAlaFo(b1-4)GlcNAcNAmA(b1-4)GlcNAcNAlaFo,['Vibrio_ordalii'],1.0,,,1,0,0,ERROR,unknown
+4671,[Glc(b1-3)]GalNAcASer(a1-4)ManNAcA(b1-4)GulNAcA(a1-3)QuiNAcNBut(b1-4)GalNAcASer,['Pseudomonas_sp'],1.0,,,1,0,0,ERROR,unknown
+4840,GlcA(b1-3)[Col(a1-2)Gal(b1-3)GlcAN(b1-6)]GlcNAc(b1-4)GlcA,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+4601,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+4924,GalOS(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+4905,QuiNFo(b1-3)Gal(a1-3)GlcA(b1-3)GalNAc(b1-4)QuiNFo,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+5069,[RhaOLac(a1-3)]Man(b1-4)GalNAc(a1-4)GalA(a1-3)GlcNAc(a1-2)Man,['Vibrio_fluvialis'],1.0,,,1,0,0,ERROR,unknown
+5070,GlcNAc(b1-4)GalOAcNAmA(a1-3)Sug(a1-4)GlcNAc,['Pseudoalteromonas_rubra'],1.0,,,1,0,0,ERROR,unknown
+4994,Rha(a1-2)Fuc(a1-2)Gal(a1-2)Fuc(a1-3)GlcA,['Vibrio_fluvialis'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+4908,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-4)[GalOS(b1-4)GlcNAc(b1-2)]Man(a1-3)[GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5263,Rha(a1-3)GlcNAc(b1-7)[Glc(a1-2)LDManHep(a1-6)][LDManHep(a1-2)]DDManHep(a1-5)KdoN,['Shewanella_algae'],1.0,,,1,0,0,ERROR,unknown
+5083,Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5145,NeuNAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5331,[GlcA(a1-4)]GlcNAcOAc(a1-3)RhaOAc(b1-4)GlcNAc(b1-6)GlcNAcOAc,['Vibrio_cholerae'],1.0,,,1,0,0,ERROR,unknown
+5368,GalAGroN(a1-4)Gal(a1-3)GalA(a1-3)GlcNAc(b1-4)GalAGroN,['Edwardsiella_tarda'],1.0,,,1,0,0,ERROR,unknown
+5250,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5427,QuiNBut(b1-2)Rha(a1-4)GalNAcA(a1-3)QuiNAcNBut(a1-2)QuiNBut,['Pseudomonas_fluorescens'],1.0,,,1,0,0,ERROR,unknown
+5303,NeuNAc(a2-3)Gal(b1-4)GlcNAcOS(b1-3)GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5308,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Man(a1-3)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Bos_taurus', 'Homo_sapiens', 'MurineLeukemia_Virus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5528,[GalAAlaLys(a1-4)]GalNAc(b1-4)GlcA(b1-3)GlcNAc(b1-6)GalNAc,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+5543,GlcNAcA(b1-3)GlcNAcA(b1-3)QuiNAcNAm(a1-4)GlcNAcA,['Pseudaminobacter_defluvii'],1.0,,,1,0,0,ERROR,unknown
+5425,NeuNAc(a2-3)Gal(b1-3)GalNAc(b1-4)Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5487,NeuNAc(a2-6)GalNAc(b1-4)GlcNAc(b1-2)Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5697,[Parf(a1-3)LDManHep(b1-4)]Gal(a1-3)GlcNAc(b1-3)Gal,['Yersinia_pseudotuberculosis'],1.0,,,1,0,0,ERROR,unknown
+5570,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5605,[GalA(a1-4)]Gal(a1-3)Galf(b1-3)Gal,['Klebsiella_pneumoniae'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5711,[RhaOMe(a1-4)]Glc(a1-3)Rha(a1-3)Rha(a1-3)Glc(b1-3)Glc,['Acidithiobacillus_ferrooxidans'],1.0,,,1,0,0,ERROR,unknown
+5656,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5693,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5690,NeuNAc(a2-8)NeuNAc(a2-3)Gal(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,free,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5700,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5716,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)][GlcNAc(b1-4)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5727,Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5733,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5866,GalOS(b1-3)[Fuc(a1-4)]GlcNAc,,1.0,Animalia,,1,0,0,ERROR,unknown
+5880,[FucNBut(b1-3)GalNAc(a1-3)GalNAc(b1-3)]Gal(a1-6)Gal(b1-3)GalNAc(b1-4)Gal,['Acinetobacter_baumannii'],1.0,,,1,0,0,ERROR,unknown
+5796,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[Fuc(a1-2)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5848,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)][GlcNAc(b1-4)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Homo_sapiens', 'MurineLeukemia_Virus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5864,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5869,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5943,LDManHep(a1-4)[Gal(a1-7)]Kdo(a1-2)Glc(a1-3)Glc(a1-3)[LDManHep(a1-7)]LDManHepOP(a1-3)LDManHepOP(a1-5)[Kdo(a1-2)]Kdo,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+5975,Rha(a1-3)[XylOMe(b1-4)]Rha(a1-4)Rha(a1-2)Rha,['Stenotrophomonas_maltophilia'],1.0,,,1,0,0,ERROR,unknown
+5994,Rha(a1-2)Rha(a1-3)Rha(a1-3)GlcNAc(b1-3)Rha(a1-3)[Rha(a1-2)]LDManHep(a1-3)[Glc(b1-4)][AraN(b1-7)]LDManHep(a1-5)Kdo(a2-4)Kdo,['Ralstonia_solanacearum'],1.0,,,1,0,0,ERROR,unknown
+5997,[PseNAcNAc(b2-6)]Gal(a1-6)GlcNAc(a1-4)GalA(a1-3)QuiNAc(b1-3)Gal,['Pseudoalteromonas_atlantica'],1.0,,,1,0,0,ERROR,unknown
+5893,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-6)]Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+5900,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6097,QuiNAc(b1-4)PseNAcNAm(b2-4)Gal(b1-4)QuiNAc,['Vibrio_cholerae'],1.0,,,1,0,0,ERROR,unknown
+6118,[Fuc(a1-3)]GalNAc(a1-6)ManOAc(a1-3)Fuc(a1-3)[Glc(b1-4)]GalNAc(b1-4)GalNAc,['Salmonella_sp'],1.0,,,1,0,0,ERROR,unknown
+6053,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6061,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6157,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6185,NeuNAc(a2-3)Gal(b1-3)GalNAc,"['Bos_taurus', 'Canis_lupus', 'Equus_caballus', 'Gallus_gallus', 'Homo_sapiens', 'MurineHepatitis_Virus', 'MurineLeukemia_Virus', 'Mus_musculus', 'Oryctolagus_cuniculus', 'Rattus_norvegicus', 'Sus_scrofa']",0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6204,NeuNGc(a2-3)Gal(b1-4)GlcNAcOS,,1.0,Animalia,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6311,6dTal(a1-3)6dTalOAc(a1-2)RhaOMe(a1-2)6dTal,['Mesorhizobium_loti'],1.0,,,1,0,0,ERROR,unknown
+6228,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-3)Gal(b1-3)GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6485,[Gal(a1-3)]GlcNAcOAc(b1-4)FucNAm(a1-3)GlcNAc(a1-4)GlcNAcOAc,['Yersinia_pseudotuberculosis'],1.0,,,1,0,0,ERROR,unknown
+6250,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Bos_taurus', 'Homo_sapiens']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6542,Rha(a1-6)Glc(a1-4)[Glc(b1-6)Glc(b1-3)]GalNAc(a1-3)LDManHepOCm(a1-3)LDManHep(a1-5)Kdo,['Pseudomonas_aeruginosa'],1.0,,,1,0,0,ERROR,unknown
+6254,Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)[Fuc(a1-4)]GlcNAc(b1-3)]Gal(b1-4)Glc,['Homo_sapiens'],0.0,,free,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6506,Gal(a1-2)Gal(a1-2)[Glc(b1-3)]Glc(a1-3)Glc(a1-3)[GlcN(a1-7)LDManHep(a1-7)]LDManHepOP(a1-3)LDManHepOP(a1-5)[Kdo(a2-4)]Kdo,['Shigella_sonnei'],1.0,,,1,0,0,ERROR,unknown
+6578,Rha(a1-3)Man(b1-4)ManOAc(a1-3)Rha,['Burkholderia_cepacia'],1.0,,,1,0,0,ERROR,unknown
+6363,Fuc(a1-2)Gal(b1-3)GlcNAc(b1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Gal(b1-3)GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6481,Gal(b1-3)[NeuNAc(a2-6)]GlcNAc(b1-3)Gal(b1-4)Glc,['Homo_sapiens'],0.0,,free,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6687,GlcNAc(b1-3)Glc(a1-3)LDManHep(a1-3)Glc(b1-4)LDManHep(a1-5)Kdo(a2-4)Kdo(a1-5)LDManHep,['Burkholderia_cepacia'],1.0,,,1,0,0,ERROR,unknown
+6766,[Tyv(a1-3)]Man(a1-4)Rha(a1-3)[GlcOAc(a1-4)]Gal(a1-2)Man,"['Salmonella_sp', 'Salmonella_typhi']",1.0,,,1,0,0,ERROR,unknown
+6555,Gal(b1-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6812,[Glc(a1-3)]RhaOAc(a1-3)ManNAc(b1-4)RhaOAc,['Aeromonas_salmonicida'],1.0,,,1,0,0,ERROR,unknown
+6595,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Man(a1-3)[Man(a1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Homo_sapiens', 'MurineLeukemia_Virus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6856,Glc(a1-6)GlcNButOAc(a1-4)[Glc(a1-6)]GalNAc(a1-3)GalNAc(b1-2)Glc,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+6971,QuiNAspAc(b1-6)GlcNAc(a1-4)GalA(a1-3)GlcNAc(a1-3)QuiNAspAc,['Providencia_stuartii'],1.0,,,1,0,0,ERROR,unknown
+6810,Fuc(a1-2)[GalNAc(a1-3)]Gal(b1-3)GlcNAc(b1-3)[GalNAc(a1-3)[NeuNAc(a2-6)]Gal(b1-3)GlcNAc(b1-6)]Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7040,RhaOAc(a1-2)Rha(a1-4)GalA(b1-3)GalNAc(b1-2)RhaOAc,"['Escherichia_coli', 'Shigella_flexneri']",1.0,,,1,0,0,ERROR,unknown
+6861,NeuNAc(a2-6)Glc(a1-6)[Glc(a1-4)Gal(b1-6)Glc(b1-3)]Gal(b1-3)[Glc(a1-6)]GalNAc(b1-4)NeuNAc,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6999,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)][GlcNAc(b1-4)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Gallus_gallus', 'Homo_sapiens']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7020,Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+6994,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Bos_taurus', 'Desmodus_rotundus', 'Homo_sapiens', 'MurineLeukemia_Virus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7023,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Bos_taurus', 'Gallus_gallus', 'Homo_sapiens', 'Sus_scrofa']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7074,Rha(a1-3)[Sug(a1-2)]Rha(a1-3)Rha,['Yersinia_bercovieri'],1.0,,,1,0,0,ERROR,unknown
+7208,Kdo(b2-7)LDManHep(a1-5)KdoOP,['Alteromonas_macleodii'],1.0,,,1,0,0,ERROR,unknown
+7048,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,"['Bos_taurus', 'Equus_caballus', 'Homo_sapiens', 'Mus_musculus', 'Oryctolagus_cuniculus', 'Rattus_norvegicus', 'Sus_scrofa']",0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7217,QuiNFo(b1-3)GalNAc(a1-4)GlcOAcA(a1-3)Man(a1-2)Man(a1-3)GlcNAc(b1-2)QuiNFo,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+7236,NeuNAcOGc(a2-6)Gal(b1-4)GlcNAc,,1.0,Bacteria,,1,0,0,ERROR,unknown
+7055,NeuNAc(a2-8)NeuNAc(a2-3)Gal,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7197,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man,"['Bos_taurus', 'Oryctolagus_cuniculus']",1.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7212,NeuNAc(a2-9)NeuNAc(a2-6)Gal(b1-4)Glc,,1.0,Chordata,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7239,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7240,Man(a1-3)Man(a1-4)Glc(b1-4)[GalA(a1-3)]Man(a1-5)[GalA(a1-4)]Kdo,['Xanthomonas_campestris'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7503,GalNAcOS(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+7394,Rha(a1-3)Rha(a1-6)Man(a1-6)Man(a1-5)[GalA(a1-4)]Kdo,['Arenibacter_certesii'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7373,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7560,GalNAcA(a1-4)GalNFoA(a1-3)QuiNAc(a1-3)QuiNAc(b1-3)GalNAcA,['Vibrio_anguillarum'],1.0,,,1,0,0,ERROR,unknown
+7477,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Bos_taurus', 'Homo_sapiens']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7588,QuiNAlaAc(b1-6)Glc(a1-3)[Glc(a1-2)]GlcA(b1-3)GalNAc(a1-2)QuiNAlaAc,['Cronobacter_sakazakii'],1.0,,,1,0,0,ERROR,unknown
+7447,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7478,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNGc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7636,QuiNHse(b1-6)Gal(a1-4)GalNAc(a1-3)FucNAc(a1-3)QuiNHse,,1.0,Bacteria,,1,0,0,ERROR,unknown
+7687,GalOS(b1-4)[Fuc(a1-3)]GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+7705,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7781,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Desmodus_rotundus', 'Homo_sapiens', 'MurineLeukemia_Virus', 'Mus_musculus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7594,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[GalOS(b1-4)GlcNAc(b1-2)[GalOS(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7753,GalNAc(b1-4)[NeuNAc(a2-8)NeuNAc(a2-3)]Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7786,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[Gal(b1-4)GlcNAc(b1-2)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7785,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-2)[GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7811,QuiNThrAc(b1-3)GalNAcA(a1-4)GalNAc(a1-3)QuiNAc(a1-3)QuiNThrAc,['Vibrio_cholerae'],1.0,,,1,0,0,ERROR,unknown
+7880,GalOS(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+7818,[Glc(a1-4)]Glc(a1-4)GlcA(b1-4)[Glc(a1-2)Glc(a1-6)]GalNAc(b1-3)Gal(a1-3)GalNAc(b1-6)Glc,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7954,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)[Gal(b1-4)GlcNAc(b1-2)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Homo_sapiens', 'Mus_musculus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7941,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)GalNAc(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8009,QuiNBut(a1-4)GalOAc(b1-4)GlcNAc(b1-4)GlcA(b1-3)GlcNAc(b1-4)QuiNBut,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+7977,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7996,NeuNAc(a2-3)Gal(b1-3)[Fuc(a1-4)]GlcNAc(b1-3)[Gal(b1-4)GlcNAc(b1-6)]Gal(b1-4)Glc,['Homo_sapiens'],0.0,,free,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+7995,ManNAc(a1-4)GlcA(b1-3)Gal(b1-3)GlcNAc(b1-3)ManNAc,['Vibrio_cholerae'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8085,RhaOAc(a1-2)Rha(a1-3)Rha(a1-3)[Glc(a1-4)]GlcNAc(b1-2)RhaOAc,['Shigella_flexneri'],1.0,,,1,0,0,ERROR,unknown
+8027,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)]Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8175,QuiNAlaAc(b1-3)GlcNAm(a1-3)QuiNAc(a1-3)QuiNAlaAc,['Pseudomonas_reactans'],1.0,,,1,0,0,ERROR,unknown
+8081,GlcNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8288,GalOS(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[Fuc(a1-2)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+8329,QuiNFo(a1-4)GlcA(a1-4)Glc(b1-3)GalNAcOAc(b1-2)QuiNFo,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+8355,Glc(a1-6)GlcNBut(a1-4)[Glc(a1-6)]GalNAc(a1-3)GalNAc(b1-2)Glc,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+8088,GalNAc(b1-4)[NeuNAc(a2-3)]Gal,,1.0,Eukarya,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8170,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8406,GlcNAcOLacAla(a1-4)GlcNAc(b1-4)GlcNAcOLacAla,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+8424,[GalNAcAN(a1-2)]Rha(a1-2)Rha(a1-3)Rha(a1-2)Rha(a1-3)GlcNAc(b1-3)Rha,"['Escherichia_coli', 'Salmonella_arizonae', 'Salmonella_sp']",1.0,,,1,0,0,ERROR,unknown
+8562,GalOS(b1-4)GlcNAc(b1-2)[GalOS(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,unknown
+8403,NeuNAc(a2-3)Gal(b1-3)[GlcNAc(b1-6)]GalNAc,"['Gallus_gallus', 'Homo_sapiens', 'Mus_musculus', 'Rattus_norvegicus', 'Sus_scrofa']",0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8378,NeuNGc(a2-3)Gal(b1-4)GlcNAc,,1.0,Animalia,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8412,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[GalOS(b1-3)]GalNAc,['Homo_sapiens'],0.0,,,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8539,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8620,Fuc(a1-2)Gal(b1-3)GlcNAc(b1-3)[Gal(b1-4)GlcNAcOS(b1-6)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+8547,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8683,[AbeOAc(a1-3)]Man(a1-4)Rha(a1-3)[Glc(a1-4)]Gal(a1-2)Man,['Salmonella_sp'],1.0,,,1,0,0,ERROR,unknown
+8602,Fuc(a1-2)Gal(b1-3)[Fuc(a1-4)]GlcN(a1-4)GlcA(b1-4)GalA(a1-3)Glc(b1-6)Glc(a1-5)[Dha(a2-3)GalA(a1-3)Glc(b1-4)]Kdo(a1-4)GalA(a1-7)Kdo,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8772,GlcNAmA(b1-4)[6dTalOAcOMe(a1-3)]FucOAc(a1-3)QuiNAc(a1-4)GlcNAmA,['Rhizobium_leguminosarum'],1.0,,,1,0,0,ERROR,unknown
+8619,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc,['Helicobacter_pylori'],1.0,,,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8773,ManNAcA(b1-4)GulNAcOAcA(a1-3)QuiNAcNBut(a1-4)ManNAcA,,1.0,Bacteria,,1,0,0,ERROR,unknown
+8717,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,"['Equus_caballus', 'Homo_sapiens']",0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8729,Gal(b1-4)GlcNAc(b1-3)Gal(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+8941,Man(a1-2)RhaOMe(a1-3)Rha(a1-2)Man,['Burkholderia_multivorans'],1.0,,,1,0,0,ERROR,unknown
+8853,QuiNAc(b1-6)GlcNAc(a1-4)GlcA(b1-3)GalNAc(a1-4)QuiNAc,['Providencia_stuartii'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+9031,Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-4)[Gal(b1-4)GlcNAc(b1-6)]Man(a1-3)[Fuc(a1-2)[Gal(b1-4)]GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,0,1,0,ERROR,unknown
+9044,GalOS(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+8908,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-3)Gal(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+9057,[Galf(a1-4)]Gal(a1-3)ManNAc(b1-6)GalfOAc(b1-3)GlcNAc(b1-2)Gal,['Salmonella_sp'],1.0,,,1,0,0,ERROR,unknown
+8970,Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+9113,[Glc(a1-3)]Rha(a1-2)Rha(a1-3)Rha(a1-3)GlcNAc(b1-2)RhaOAc,['Shigella_flexneri'],1.0,,,1,0,0,ERROR,unknown
+9001,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)[Gal(b1-3)GlcNAc(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+9035,NeuNAc(a2-6)Gal(b1-4)GlcNAc,"['Helicobacter_pylori', 'Homo_sapiens']",0.0,,N,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+9159,Gal(a1-6)Gal(a1-4)[Glc(b1-3)]GalNAc(a1-3)GalNAcOAc(b1-2)Gal,['Salmonella_sp'],1.0,,,1,0,0,ERROR,unknown
+9267,GlcNAcOAc(a1-4)GalNAcA(a1-3)QuiNAc(b1-4)GlcNAcOAc,"['Acinetobacter_baumannii', 'Acinetobacter_sp']",1.0,,,1,0,0,ERROR,unknown
+9245,Glc(a1-4)GalNAcA(a1-3)[Glc(a1-4)]GalNAcA(a1-3)GlcNAc(a1-4)Glc,['Vibrio_cholerae'],1.0,,,1,0,0,ERROR,unknown
+9413,Rha(b1-3)[Xyl(b1-2)]RhaNAc(a1-3)Rha,,1.0,Fungi,,1,0,0,ERROR,unknown
+9417,[GlcNAcOMe(b1-2)]Rha(a1-3)Rha(a1-3)Rha(a1-3)Rha(a1-2)RhaOMe(a1-3)Rha,,1.0,Bacteria,,1,0,0,ERROR,unknown
+9459,GalNAcA(b1-4)GalNAcA(a1-4)GalNAcA(a1-3)QuiNAc(a1-4)GalNAcA,,1.0,Bacteria,,1,0,0,ERROR,unknown
+9147,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Homo_sapiens', 'Mus_musculus', 'Sus_scrofa']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+9356,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+9611,QuiNAc(b1-3)Rha(a1-3)FucNAc(a1-2)QuiNAc,['Pseudomonas_fluorescens'],1.0,,,1,0,0,ERROR,unknown
+9445,Fuc(a1-2)[GalNAc(a1-3)]Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+9751,PerNAc(a1-3)Fuc(a1-4)Glc(b1-3)GalNAc(a1-2)PerNAc,['Escherichia_coli'],1.0,,,1,0,0,ERROR,unknown
+9790,FucNAc(a1-2)QuiNBut(b1-2)Rha(a1-4)Gal(b1-3)FucNAc,['Massilia_alkalitolerans'],1.0,,,1,0,0,ERROR,unknown
+9503,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+9852,QuiNAc(a1-4)GalNAcOAcA(a1-3)QuiNAc(a1-3)GlcNAc(b1-3)QuiNAc,['Yersinia_kristensenii'],1.0,,,1,0,0,ERROR,unknown
+9859,GlcA(b1-4)FucOAc(a1-3)Ribf(b1-4)[Fuc(a1-2)]Gal(b1-3)GlcNAc(b1-4)GlcA,"['Citrobacter_werkmanii', 'Salmonella_arizonae', 'Salmonella_sp']",1.0,,,1,0,0,ERROR,unknown
+9680,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc,,1.0,Chordata,,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+9923,Rha(a1-2)Rha(a1-2)FucN(a1-3)QuiNAcNBut(a1-3)Rha,['Shewanella_algae'],1.0,,,1,0,0,ERROR,unknown
+9785,[NeuNAc(a2-6)]Gal(b1-6)Galf(b1-3)GalNAc(b1-3)Gal,"['Escherichia_albertii', 'Hafnia_alvei']",1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+9955,NeuNAc(a2-8)NeuNAc(a2-3)Gal(b1-3)GalNAc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+9962,NeuNGc(a2-8)NeuNGc(a2-3)Gal(b1-4)Glc,,1.0,Animalia,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10189,QuiNFo(b1-4)GalNAcA(a1-4)GalNAcA(a1-3)QuiNAc(b1-2)QuiNFo,,1.0,Bacteria,,1,0,0,ERROR,unknown
+10047,Fuc(a1-2)Gal(b1-3)[Fuc(a1-4)]GlcNAc(b1-3)[Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-6)]Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10020,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10279,Gal(a1-3)RhaOAc(a1-4)Glc(a1-4)GalAAla(a1-3)GlcNAc(b1-2)Gal,['Providencia_stuartii'],1.0,,,1,0,0,ERROR,unknown
+10092,NeuNAc(a2-3)Gal(b1-3)[NeuNAc(a2-8)NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,free,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10173,[GalA(a1-3)]GalNAc(b1-3)Gal(a1-4)Rha(a1-3)GlcNAc(b1-4)GalNAc,['Edwardsiella_tarda'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10327,GalNAcOS(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Homo_sapiens', 'Ovis_aries']",0.0,,N,1,0,0,ERROR,unknown
+10330,QuiNBut(b1-6)[Glc(a1-4)]Glc(a1-4)GlcOAcA(b1-3)GlcNAc(a1-2)QuiNBut,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+10259,NeuNAc(a2-3)Gal(b1-3)[NeuNAc(a2-6)][Fuc(a1-4)]GlcNAc,,1.0,Chordata,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10271,[Rha(a1-4)]Gal(b1-4)Glc(a1-4)GlcA(b1-3)GalNAc(b1-3)Gal,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10316,Gal(b1-3)[NeuNAc(a2-6)]GalNAc,"['Bos_taurus', 'Bufo_bufo', 'Bufo_japonicus', 'Bufotes_viridis', 'Canis_lupus', 'Gallus_gallus', 'Homo_sapiens', 'Macaca_radiata', 'Oryctolagus_cuniculus', 'Rana_dalmatina', 'Rattus_norvegicus', 'Rhinella_arenarum', 'Salvelinus_leucomaenis_pluvius', 'Sus_scrofa', 'Xenopus_tropicalis']",0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10317,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10442,GalOS(b1-3)GalNAc(b1-4)GalOS(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,unknown
+10342,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Homo_sapiens', 'Mus_musculus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10536,GlcA(b1-2)[RhaOAc(a1-3)]Man(a1-4)Gal(b1-3)GlcNAc(b1-4)GlcA,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+10583,GlcNAcA(b1-4)GlcNAcA(b1-4)GalNAcA(a1-4)GlcNAcA,['Bordetella_hinzii'],1.0,,,1,0,0,ERROR,unknown
+10470,NeuNGc(a1-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10458,NeuNAc(a2-3)Gal(b1-3)[NeuNAc(a2-6)]GalNAc,"['Bos_taurus', 'Canis_lupus', 'Collocalia_sp', 'Equus_caballus', 'Homo_sapiens', 'MurineHepatitis_Virus', 'MurineLeukemia_Virus', 'Mus_musculus', 'Oryctolagus_cuniculus', 'Rattus_norvegicus', 'Salmo_salar', 'Sus_scrofa']",0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10651,QuiNAc(b1-3)Rha(a1-3)[Gal(a1-6)]Gal(b1-3)FucNAc(a1-2)QuiNAc,['Pantoea_agglomerans'],1.0,,,1,0,0,ERROR,unknown
+10531,FucNAc(a1-4)GalA(a1-3)FucNAc(a1-3)QuiNAc(b1-3)FucNAc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10574,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)][GlcNAc(b1-4)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Gallus_gallus', 'Homo_sapiens']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10675,GalOS(b1-4)GlcNAc(b1-6)[Gal(b1-3)]GalNAc,"['Homo_sapiens', 'Rana_arvalis']",0.0,,O,1,0,0,ERROR,unknown
+10687,GalOS(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+10609,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)[Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10664,Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)[Fuc(a1-4)]GlcNAc(b1-3)]Gal(b1-4)Glc,['Homo_sapiens'],0.0,,free,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10885,[Abe(a1-3)]RhaOAc(b1-2)Man(a1-2)[GlcOAc(a1-3)]Man(a1-3)Gal(b1-4)Rha,['Salmonella_sp'],1.0,,,1,0,0,ERROR,unknown
+10746,Fuc(a1-2)[NeuNAc(a2-6)]Gal(b1-4)GlcNAc(b1-2)[Fuc(a1-2)[NeuNAc(a2-6)]Gal(b1-4)GlcNAc(b1-6)]Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)][GlcNAc(b1-4)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10953,Rha(a1-4)GalNAcA(a1-3)QuiNAc(b1-4)Rha,,1.0,Bacteria,,1,0,0,ERROR,unknown
+10786,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)]Gal(b1-4)GlcNAc,,1.0,Chordata,,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10835,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+10945,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11120,GalOAc(b1-3)GlcNAc(b1-4)GlcA(b1-3)GalNAc(b1-2)GalOAc,['Acinetobacter_calcoaceticus'],1.0,,,1,0,0,ERROR,unknown
+11128,Glc(a1-2)Glc(a1-2)[GlcNAc(a1-3)]Gal(a1-3)Glc(a1-3)[GalA(b1-7)LDManHep(a1-7)]LDManHep(a1-3)LDManHepOPPEtn(a1-5)[AraN(b1-8)]Kdo,['Providencia_rustigianii'],1.0,,,1,0,0,ERROR,unknown
+11009,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAcOS(b1-3)Gal(b1-3)GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11019,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11039,NeuNAc(a2-3)Gal(b1-3)[NeuNAc(a2-6)]GalNAc(b1-4)Gal,,1.0,Chordata,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11169,GalNAcAAla(a1-4)GalNAcA(a1-3)QuiNAc(b1-4)GalNAcAAla,['Acinetobacter_haemolyticus'],1.0,,,1,0,0,ERROR,unknown
+11197,[GlcOLac(a1-3)]Rha(a1-3)Rha(b1-4)GlcNAc(b1-2)Rha,['Pseudoalteromonas_haloplanktis'],1.0,,,1,0,0,ERROR,unknown
+11067,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-3)GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11310,AltfOAc(b1-2)AltfOAc(b1-3)Altf(b1-2)AltfOAc,['Yersinia_enterocolitica'],1.0,,,1,0,0,ERROR,unknown
+11145,Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)[Fuc(a1-4)]GlcNAc(b1-3)]Gal(b1-4)Glc,['Homo_sapiens'],0.0,,free,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11365,RhaNAc(a1-3)Fuc(a1-4)GlcOAc(b1-3)GalNAc(a1-2)RhaNAc,['Salmonella_sp'],1.0,,,1,0,0,ERROR,unknown
+11404,GalOS(b1-4)GlcNAc(b1-6)[Fuc(a1-2)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+11192,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11414,[Glc(a1-3)]Rha(a1-2)Rha(a1-3)RhaOAc(a1-3)GlcNAcOAc(b1-2)Rha,['Shigella_flexneri'],1.0,,,1,0,0,ERROR,unknown
+11269,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Homo_sapiens', 'Mus_musculus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11488,ManOP(a1-2)Man(a1-6)[Man(a1-3)]Man(a1-6)[Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+11345,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)[Gal(b1-4)GlcNAc(b1-2)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11437,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11451,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Homo_sapiens', 'Sus_scrofa']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11675,6dTalOAc(a1-3)Fuc(a1-4)Glc(b1-3)6dTalOAc,,1.0,Bacteria,,1,0,0,ERROR,unknown
+11631,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11643,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11650,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11655,NeuNAc(a2-3)Gal(b1-3)[NeuNAc(a2-6)]GalNAc(b1-4)[NeuNAc(a2-8)NeuNAc(a2-3)]Gal(b1-4)Glc,,1.0,Chordata,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11865,[6dTalOAc(a1-3)]Man(a1-3)6dTalOAc(a1-3)GalNAc(b1-4)Man,['Aeromonas_hydrophila'],1.0,,,1,0,0,ERROR,unknown
+11860,Fuc(a1-2)Gal(b1-3)GlcNAc(b1-3)[GalOS(b1-4)GlcNAc(b1-6)]GalNAc,['Homo_sapiens'],0.0,,,0,1,0,ERROR,unknown
+11750,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Homo_sapiens', 'MurineLeukemia_Virus', 'Mus_musculus', 'Sus_scrofa']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11796,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[GalNAcOS(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11805,NeuNAc(a2-6)Gal(b1-4)Glc,"['Escherichia_coli', 'Homo_sapiens']",0.0,,free,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+11963,Gal(b1-3)GalNAc(a1-3)GalNAc(b1-3)[Rha(a1-2)][LDManHep(a1-7)LDManHep(a1-7)]LDManHep(a1-3)[Glc(b1-4)]LDManHep(a1-5)Kdo(a2-4)Kdo,['Burkholderia_vietnamiensis'],1.0,,,1,0,0,ERROR,unknown
+12032,QuiNAlaAc(b1-3)GalNAcA(a1-3)QuiNAc(b1-4)QuiNAlaAc,['Aeromonas_salmonicida'],1.0,,,1,0,0,ERROR,unknown
+12056,GalOS(b1-4)GlcNAc(b1-3)GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+11902,NeuNAc(a2-8)NeuNAc(a2-3)Gal(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12095,GlcA(b1-4)[Glc(a1-3)]Fuc(a1-4)Fuc(a1-2)Glc(b1-3)GlcNAcOAc(a1-3)GlcA,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+11954,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-3)Gal,,1.0,Eukarya,,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12119,[Abe(a1-3)LDManHep(b1-4)]Gal(a1-3)GlcNAc(b1-3)Gal,['Yersinia_pseudotuberculosis'],1.0,,,1,0,0,ERROR,unknown
+12134,GalNAc(b1-3)Gal(a1-4)Gal(b1-4)Glc(b1-2)LDManHep(a1-2)[GalNAc(b1-3)Gal(a1-4)Gal(b1-4)Glc(a1-3)]LDManHep(a1-3)[Glc(b1-4)]LDManHep(a1-5)Kdo,['Haemophilus_influenzae'],1.0,,,1,0,0,ERROR,unknown
+12145,GlcOMeA(b1-4)[6dTalOMe(a1-3)]FucOMe(a1-4)GlcOMeA,['Rhizobium_etli'],1.0,,,1,0,0,ERROR,unknown
+12037,Fuc(a1-2)Gal(b1-3)GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12151,GalOS(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+12153,QuiNAc(b1-3)6dTalOAc(a1-3)Fuc(a1-6)Glc(a1-3)GlcNAc(a1-3)QuiNAc,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+12075,NeuNAc(a2-8)NeuNGc(a2-3)Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12181,Glc(a1-4)Gal(b1-4)LDManHepOP(a1-5)KdoOP,['Pseudoalteromonas_carrageenovora '],1.0,,,1,0,0,ERROR,unknown
+12061,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Bos_taurus', 'Gallus_gallus', 'Homo_sapiens', 'Mus_musculus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12276,GalOS(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+12123,NeuNGc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12319,Rha(a1-2)Rha(a1-3)RhaOAc(a1-3)GlcNAc(b1-2)Rha,['Shigella_flexneri'],1.0,,,1,0,0,ERROR,unknown
+12400,GalOS(b1-4)GlcNAc(b1-2)[GalOS(b1-4)GlcNAc(b1-4)]Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,unknown
+12479,GalOS(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,unknown
+12185,Rha(a1-2)Rha(a1-2)Rha(a1-4)GalA(a1-3)GlcNAc(a1-3)Rha,['Plesiomonas_shigelloides'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12291,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12300,NeuNAc(a2-3)Gal(b1-4)GlcNAc,"['Helicobacter_pylori', 'Homo_sapiens', 'Neisseria_meningitidis', 'Trypanosoma_cruzi']",0.0,,N,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12533,GlcNAcOS(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+12415,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)][GlcNAc(b1-4)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Gallus_gallus', 'Homo_sapiens']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12719,GalOS(b1-4)GlcNAc(b1-3)Gal(b1-3)GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+12711,GalOAcA(a1-2)Rha(a1-4)Gal(b1-3)GalNAc(b1-4)GlcNAc(a1-4)Gal,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+12513,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12667,Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,"['Bos_taurus', 'Homo_sapiens']",0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12644,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-3)Fuc,['Homo_sapiens'],1.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12754,Gal(b1-4)[NeuNAc(a2-6)]GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12756,GlcA(b1-4)[GalNAc(a1-3)]Fuc(a1-2)Man(a1-2)Fuc(a1-2)Glc(a1-3)GlcNAc(b1-4)GlcA,['Providencia_rustigianii'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12734,NeuNAc(a2-3)Gal(b1-3)[NeuNAc(a2-6)]GlcNAc,,1.0,Eukarya,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12939,GalNAcA(a1-3)QuiNAc(b1-4)GalNAcA,['Pseudoalteromonas_haloplanktis'],1.0,,,1,0,0,ERROR,unknown
+12811,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[GlcNAcOS(b1-3)]GalNAc,['Homo_sapiens'],0.0,,,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12788,[Xyl(a1-3)]GalA(a1-4)[Xyl(a1-3)]GalA(a1-4)GalA(a1-4)[Xyl(a1-3)]GalA(a1-4)GalA,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+12973,Rha(a1-3)QuiNAc(b1-7)LDManHep(a1-2)[Glc(a1-6)]Gal(a1-3)[LDManHep(a1-7)LDManHep(a1-7)]LDManHep(a1-3)[Glc(b1-4)]LDManHep(a1-5)Kdo(a2-4)Kdo(b1-8)AraN,['Burkholderia_cenocepacia'],1.0,,,1,0,0,ERROR,unknown
+12985,[QuiNAcNBut(a1-4)]IdoA(a1-4)GlcA(b1-4)GlcA(b1-3)QuiNAcNBut(b1-2)IdoA,['Pseudoalteromonas_haloplanktis'],1.0,,,1,0,0,ERROR,unknown
+12996,GalOS(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+12936,NeuNAc(a2-3)Gal(b1-4)GlcNAcOS(b1-6)[Fuc(a1-2)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13120,GlcNAcNAlaFo(b1-4)ManNAcNAmA(b1-4)GlcNAcNAlaFo,['Vibrio_anguillarum'],1.0,,,1,0,0,ERROR,unknown
+13136,[Rha(a1-3)]Rha(a1-3)Rha(a1-4)Gal(a1-3)GlcNAcOAc(b1-2)Rha,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+12905,NeuNGc(a1-3)Gal(b1-4)[Fuc(a1-3)]GlcNAcOS,,1.0,Eukarya,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13210,[QuiNAc(a1-4)]GlcASer(b1-4)GlcNAc(a1-4)ManNAcASer(b1-4)GlcNAc(b1-3)GlcASer,['Pseudoalteromonas_aliena'],1.0,,,1,0,0,ERROR,unknown
+13162,GlcA(b1-3)QuiNAcNBut(a1-4)GlcA,['Pseudoalteromonas_sp'],1.0,,,1,0,0,ERROR,unknown
+12974,[Rha(a1-4)GlcA(b1-2)Rha(a1-2)]Rha(a1-3)Rha(a1-2)Rha(a1-3)GlcNAc(b1-3)Rha,['Acinetobacter_sp'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13088,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13138,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13215,[GalA(a1-2)]Gal(a1-3)Galf(b1-3)Gal,['Klebsiella_pneumoniae'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13477,Man(b1-4)Rha(a1-3)GalOAc(a1-6)Man,"['Salmonella_anatum', 'Salmonella_sp']",1.0,,,1,0,0,ERROR,unknown
+13246,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Bos_taurus', 'Gallus_gallus', 'Homo_sapiens', 'Sus_scrofa']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13416,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13428,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Bos_taurus', 'Homo_sapiens', 'Rattus_norvegicus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13488,[Rha(a1-4)]GalA(a1-2)Rha(a1-2)Rha(a1-3)Rha(a1-3)Gal(b1-3)GalA,['Xanthomonas_campestris'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13489,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]Glc,['Homo_sapiens'],0.0,,free,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13569,[FucNFo(a1-3)]Man(b1-3)Glc(b1-3)GlcNAc(b1-2)Man,['Salmonella_sp'],1.0,,,1,0,0,ERROR,unknown
+13520,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13568,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-3)GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13545,NeuNAc(a2-6)GalNAc(b1-4)GlcNAc(b1-2)Man(a1-3)[GalNAc(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Homo_sapiens', 'Sus_scrofa']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13798,Rha(a1-3)[Tyv(a1-2)]GalOAc(a1-3)Gal(a1-3)Rha,['Cronobacter_sakazakii'],1.0,,,1,0,0,ERROR,unknown
+13671,Fuc(a1-2)[GalNAc(a1-3)]Gal(b1-4)GlcNAc(b1-3)[Gal(b1-4)GlcNAc(b1-6)]Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13695,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13824,[Tyv(a1-3)LDManHep(b1-4)]Gal(a1-3)GlcNAc(b1-3)Gal,['Yersinia_pseudotuberculosis'],1.0,,,1,0,0,ERROR,unknown
+13752,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)[Gal(b1-4)GlcNAc(b1-2)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13772,NeuNAc(a2-3)Gal(b1-3)[NeuNAc(a2-6)]GlcNAc(b1-3)Gal(b1-4)Glc,['Homo_sapiens'],0.0,,free,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13784,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-6)[GalOS(b1-4)GlcNAc(b1-2)]Man(a1-6)[GalOS(b1-4)GlcNAc(b1-2)[GalOS(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13902,[Rha(a1-3)][GalNAc(b1-4)]DDManHep(b1-3)GlcNAc(b1-7)DDManHep,['Vibrio_cholerae'],1.0,,,1,0,0,ERROR,unknown
+13817,NeuNAc(a2-8)NeuNAc(a2-3)Gal(b1-3)GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)Glc,['Campylobacter_jejuni'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+13849,[GlcA(a1-3)Fuc(a1-4)]GlcNAc(b1-3)Fuc(a1-3)GlcNAc(b1-3)GlcNAc,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14020,GlcAAlaLys(b1-6)Gal(b1-6)Glc(b1-3)GalNAc(b1-4)GlcAAlaLys,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+13853,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14110,GalOS(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Homo_sapiens', 'Sus_scrofa']",0.0,,N,1,0,0,ERROR,unknown
+13956,GalNAc(a1-3)Gal(b1-3)GlcNAc(b1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-6)]Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14108,GalNAcOS(b1-4)GlcNAc(b1-2)Man(a1-3)[GalNAcOS(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Homo_sapiens', 'Ovis_aries', 'Sus_scrofa']",0.0,,,1,0,0,ERROR,unknown
+13965,NeuNAc(a2-3)Gal(b1-3)[Fuc(a1-4)]GlcNAc(b1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-6)]Gal(b1-4)Glc,['Homo_sapiens'],0.0,,free,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14117,GlcNAcOLac(a1-3)FucNAc(a1-3)[Glc(b1-4)]GlcNAc(a1-6)GlcNAcOLac,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+14166,Rha(a1-3)Rha(a1-2)RhaOMe(a1-3)Rha,"['Sinorhizobium_fredii', 'Sinorhizobium_sp']",1.0,,,1,0,0,ERROR,unknown
+14184,Glc(a1-3)LDManHep(a1-5)KdoOP,['Alteromonas_addita'],1.0,,,1,0,0,ERROR,unknown
+14189,Rha(a1-2)[DDManHep(a1-7)LDManHep(a1-3)LDManHep(a1-7)]LDManHep(a1-3)[Glc(b1-4)]LDManHep(a1-5)Kdo(a2-4)Kdo(b1-8)AraN,['Burkholderia_pyrrocinia'],1.0,,,1,0,0,ERROR,unknown
+14240,ManNAcA(b1-2)Rha(a1-3)Rha(b1-4)GlcNAc(a1-4)ManNAcA,"['Escherichia_coli', 'Pragia_fontium']",1.0,,,1,0,0,ERROR,unknown
+14304,[FucNBut(a1-4)]Gal(a1-4)GalNAc(b1-3)Gal(a1-3)GlcNAc(b1-3)Gal,['Acinetobacter_sp'],1.0,,,1,0,0,ERROR,unknown
+14323,Glc(a1-4)Gal(b1-6)Glc(a1-2)Glc(a1-4)Glc(a1-3)[GalA(b1-7)LDManHep(a1-7)]LDManHep(a1-3)LDManHepOPPEtn(a1-5)Kdo,['Citrobacter_werkmanii'],1.0,,,1,0,0,ERROR,unknown
+14106,Fuc(a1-2)Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14337,Galf(a1-4)GalNAc(b1-4)RhaOAc(a1-3)GlcNAc(b1-2)Galf,['Salmonella_sp'],1.0,,,1,0,0,ERROR,unknown
+14352,NeuNAcOS(a2-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,,0,0,1,ERROR,unknown
+14163,Gal(a1-3)[NeuNAc(a2-6)]GalNAc,"['Homo_sapiens', 'Macaca_radiata']",0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14249,Fuc(a1-4)[Gal(b1-3)]GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,"['Homo_sapiens', 'Xenopus_tropicalis']",0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14367,Gal(a1-6)Glc(a1-4)RhaOPEtn(a1-3)GalNAc(b1-3)Gal,['Porphyromonas_gingivalis '],1.0,,,1,0,0,ERROR,unknown
+14254,NeuNAc(a2-3)Gal(b1-3)GalNAc(b1-4)[NeuNAc(a2-8)NeuNAc(a2-3)]Gal(b1-4)Glc,['Escherichia_coli'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14338,NeuNAc(a2-6)Gal(b1-3)[GlcNAc(b1-6)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14463,GalNAcOS(b1-4)GlcNAc(b1-2)Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Homo_sapiens', 'Ovis_aries']",0.0,,N,1,0,0,ERROR,unknown
+14646,GalAAlaLys(a1-4)GalNAc(a1-3)GlcNAc(a1-3)GalAAlaLys,['Providencia_rustigianii'],1.0,,,1,0,0,ERROR,unknown
+14396,Fuc(a1-2)Gal(b1-3)[Fuc(a1-4)]GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14480,Gal(b1-4)GlcNAc(b1-3)[GlcNAc(b1-6)]Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14621,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-2)[GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-2)[GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14627,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14753,Rha(a1-2)Rha(b1-3)RhaOAc(a1-3)GlcNAc(b1-2)Rha,['Ralstonia_pickettii'],1.0,,,1,0,0,ERROR,unknown
+14728,QuiNAc(a1-3)Man(a1-3)Fuc(a1-3)GalNAc(a1-2)QuiNAc,['Salmonella_sp'],1.0,,,1,0,0,ERROR,unknown
+14745,[FucNProp(a1-4)GalNAc(b1-4)]Gal(a1-3)GalNAc(b1-3)Gal,['Acinetobacter_sp'],1.0,,,1,0,0,ERROR,unknown
+14777,GalOS(b1-4)GlcNAc(b1-4)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+14810,[Abe(a1-3)]Rha(b1-2)Man(a1-2)Man(a1-3)[GlcOAc(a1-4)]Gal(b1-4)Rha,"['Salmonella_kentucky', 'Salmonella_sp']",1.0,,,1,0,0,ERROR,unknown
+14665,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)Glc,['Homo_sapiens'],0.0,,free,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14835,Gal(b1-4)[Rha(a1-3)]ManOAc(b1-3)Man(b1-4)GlcA(b1-3)GlcNAc(a1-2)Gal,"['Providencia_stuartii', 'Shigella_boydii']",1.0,,,1,0,0,ERROR,unknown
+14824,VioNAc(b1-2)[Rha(a1-3)]Man(a1-4)Gal(b1-3)GlcNAc(a1-3)VioNAc,['Escherichia_coli'],1.0,,,1,0,0,ERROR,unknown
+14699,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Homo_sapiens', 'Mus_musculus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14862,RhaNAc(a1-2)RhaNAc(a1-3)RhaNAc(a1-3)RhaNAc(a1-2)RhaNAc(a1-3)RhaNAc,,1.0,Bacteria,,1,0,0,ERROR,unknown
+14868,GalOS(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+14983,GalOS(b1-3)GlcNAc(b1-3)GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+14814,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14852,Fuc(a1-2)Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15024,GalNAcOS(b1-4)GlcNAc(b1-2)Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Homo_sapiens', 'Ovis_aries']",0.0,,N,1,0,0,ERROR,unknown
+15034,Gal(b1-4)Gal(b1-4)[Ara(a1-5)Ara(a1-3)]Gal(b1-4)[Ara(a1-3)]Gal(b1-4)Gal(b1-4)Gal,,1.0,Fungi,,1,0,0,ERROR,unknown
+14888,Fuc(a1-2)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,"['Bos_taurus', 'Homo_sapiens']",0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+14986,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15071,GalOPA(a1-7)[Fruf(b2-4)Glc(b1-4)][GalA(a1-3)]LDManHep(a1-5)KdoOP,['Psychromonas_arctica'],1.0,,,1,0,0,ERROR,unknown
+15095,QuiNAc(a1-4)GlcA(b1-3)GalASer(b1-3)GlcNAc(b1-2)QuiNAc,['Providencia_stuartii'],1.0,,,1,0,0,ERROR,unknown
+15096,Rha(a1-3)[Sug(b1-2)]Rha(b1-3)Rha(a1-2)Rha,['Yersinia_kristensenii'],1.0,,,1,0,0,ERROR,unknown
+15007,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15014,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)[Gal(b1-3)]GalNAc,"['Equus_caballus', 'Homo_sapiens', 'Mus_musculus', 'Oryctolagus_cuniculus', 'Rattus_norvegicus']",0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15191,DDGalHep(a1-2)Rha(a1-4)DDGalHep(b1-3)GlcNAc(a1-4)DDGalHep,['Chromobacterium_violaceum'],1.0,,,1,0,0,ERROR,unknown
+15207,GalOS(b1-4)GlcNAc(b1-2)[GalOS(b1-4)GlcNAc(b1-4)]Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,unknown
+15062,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-3)Gal(b1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15213,GlcNAcOAcOLac(a1-3)QuiNAc(a1-3)GlcNAc(b1-4)GlcNAcOAcOLac,['Yersinia_ruckerii'],1.0,,,1,0,0,ERROR,unknown
+15214,[RhaOAc(a1-4)GalA(a1-2)]RhaOAc(a1-4)Glc(a1-2)Rha(a1-3)GlcNAc(b1-3)RhaOAc,['Cronobacter_sakazakii'],1.0,,,1,0,0,ERROR,unknown
+15146,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-2)[GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[GalOS(b1-4)GlcNAc(b1-2)[GalOS(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15118,Fuc(a1-2)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15180,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Homo_sapiens', 'Sus_scrofa']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15266,GlcOSA(b1-3)Gal(b1-3)Gal(b1-4)Xyl,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+15326,Rha(a1-4)FucNAcA(a1-3)QuiNAc(a1-2)Rha,['Flavobacterium_psychrophilum'],1.0,,,1,0,0,ERROR,unknown
+15329,Rha(a1-3)Rha(a1-2)LDManHep(a1-3)Rha,['Burkholderia_cepacia'],1.0,,,1,0,0,ERROR,unknown
+15239,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[GalOS(b1-4)GlcNAc(b1-4)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15230,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15252,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15386,6dTalNAcOAc(b1-4)FucNAc(a1-4)FucNAc(a1-3)6dTalNAcOAc,['Plesiomonas_shigelloides'],1.0,,,1,0,0,ERROR,unknown
+15391,GlcNAcOLac(a1-3)Rha(b1-4)GlcNAc(b1-6)GlcNAcOLac,"['Providencia_alcalifaciens', 'Providencia_rustigianii']",1.0,,,1,0,0,ERROR,unknown
+15401,GlcNAc(b1-4)[Glc(b1-3)]GalNAc(a1-3)LDManHepOCm(a1-3)LDManHepOP(a1-5)[Kdo(a1-4)]Kdo,,1.0,Bacteria,,1,0,0,ERROR,unknown
+15423,[AbeOAc(a1-3)]Man(a1-4)Rha(a1-3)Gal(a1-2)Man,"['Edwardsiella_tarda', 'Salmonella_enterica']",1.0,,,1,0,0,ERROR,unknown
+15358,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15356,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Bos_taurus', 'Columbia_livia', 'Homo_sapiens']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15357,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-2)[GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[GalOS(b1-4)GlcNAc(b1-2)[GalOS(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15425,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15505,NeuNAcOGc(a2-3)Gal(b1-3)GalNAc,,1.0,Bacteria,,1,0,0,ERROR,unknown
+15416,NeuNAc(a2-8)NeuNAc(a2-8)NeuNAc(a2-3)Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15436,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15475,QuiNAc(a1-3)Rha(a1-6)GlcNAc(a1-4)GlcA(b1-3)GalNAc(a1-4)QuiNAc,['Cronobacter_muytjensii'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15462,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15595,Rha(a1-2)Gal(a1-3)Glc(b1-4)GlcOAc(a1-4)GalNAc(b1-2)Rha,['Actinobacillus_pleuropneumoniae'],1.0,,,1,0,0,ERROR,unknown
+15738,[Rha(a1-3)Fuc(a1-2)]Rha(a1-3)ManOAc(b1-4)Rha,,1.0,Bacteria,,1,0,0,ERROR,unknown
+15520,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15759,Gal(b1-4)GlcNAcOS(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,"['Gallus_gallus', 'Homo_sapiens']",0.0,,O,1,0,0,ERROR,unknown
+15563,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15785,ManOP(a1-2)Man(a1-6)[Man(a1-3)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+15792,6dTalOAc(a1-2)6dTal(a1-3)6dTalOAc,"['Aggregatibacter_actinomycetemcomitans', 'Agrobacterium_rubi', 'Haemophilus_parainfluenzae']",1.0,,,1,0,0,ERROR,unknown
+15599,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Bos_taurus', 'Homo_sapiens']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15795,GalOS(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+15675,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15679,Glc(b1-4)GalA(b1-4)Man(b1-4)Glc,['Pseudoalteromonas_sp'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15790,Gal(b1-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15791,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)[GalOS(b1-3)]GalNAc,['Homo_sapiens'],0.0,,,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15980,Galf(b1-6)Glc(a1-3)RhaOAc(a1-3)[Glc(b1-6)]GlcNAc(a1-2)Galf,['Escherichia_coli'],1.0,,,1,0,0,ERROR,unknown
+15846,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)GalNAc(b1-4)GlcNAc(b1-2)Man(a1-3)][GlcNAc(b1-4)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15898,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15950,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)[GlcNAc(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+15907,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Fuc,['Cricetulus_griseus'],1.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16067,RhaOAc(a1-2)[Glc(a1-3)]Rha(a1-3)Rha(a1-3)GlcNAc(b1-2)RhaOAc,"['Escherichia_coli', 'Shigella_flexneri']",1.0,,,1,0,0,ERROR,unknown
+15957,Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,"['Bos_taurus', 'Homo_sapiens']",0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16149,[FucNAc(a1-4)]GalNAcA(a1-3)FucNAc(a1-3)GlcNAc(b1-3)GalNAcA,"['Acinetobacter_baumannii', 'Acinetobacter_sp']",1.0,,,1,0,0,ERROR,unknown
+16155,Man(a1-2)Fuc(a1-2)GlcOAcA(b1-3)GalNAc(a1-3)Man,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+16022,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16205,Glc(a1-3)FucNAm(a1-3)QuiNAcNBut(b1-4)Glc,['Fusobacterium_necrophorum'],1.0,,,1,0,0,ERROR,unknown
+16033,NeuNAc(a2-3)GalOS(b1-4)[Fuc(a1-3)]GlcNAcOS,,1.0,Animalia,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16085,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNGc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16253,RhaOMe(a1-2)RhaOMe(b1-3)Rha(a1-2)RhaOMe(b1-3)Rha(a1-3)RhaOMe,,1.0,Bacteria,,1,0,0,ERROR,unknown
+16270,cNeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAcOS,,1.0,Eukarya,,1,0,0,ERROR,unknown
+16265,RhaOAc(b1-4)GlcNAc(b1-3)GlcA(a1-4)GlcNAc(a1-3)RhaOAc,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+16062,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Man(a1-3)[Man(a1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Homo_sapiens', 'MurineLeukemia_Virus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16340,Kdo(a2-3)6dTalOAc(a1-3)Gal(b1-7)Kdo,['Pseudoalteromonas_flavipulchra'],1.0,,,1,0,0,ERROR,unknown
+16434,ManOAc(a1-2)Rha(a1-4)Gal(b1-3)ManOAc,,1.0,Bacteria,,1,0,0,ERROR,unknown
+16441,GlcNAc(b1-3)[Gal(b1-7)]LDManHep(a1-3)[Glc(b1-4)]LDManHep(a1-5)[Kdo(a2-4)]Kdo,['Yersinia_pestis'],1.0,,,1,0,0,ERROR,unknown
+16385,Gal(b1-3)GlcNAc(b1-3)Gal(b1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16371,Fuc(a1-4)[Gal(b1-3)]GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16395,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Bos_taurus', 'Cavia_porcellus', 'Equus_caballus', 'Gallus_gallus', 'Homo_sapiens', 'Mus_musculus', 'Rattus_norvegicus', 'Sus_scrofa']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16411,Gal(b1-3)GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)Glc,"['Campylobacter_jejuni', 'Leishmania_amazonensis', 'Vibrio_cholerae']",1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16430,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAcOS(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16488,ManOAc(a1-2)Man(a1-2)[Glc(a1-3)]Man(a1-3)GlcNAc(a1-6)ManOAc,['Citrobacter_werkmanii'],1.0,,,1,0,0,ERROR,unknown
+16693,[FucNFo(a1-4)]GalA(a1-4)GalNAc(a1-4)GalNAc(a1-3)GalNAc(b1-3)GalA,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+16472,NeuNAc(a2-3)Gal(b1-3)[Fuc(a1-4)]GlcNAc(b1-3)Gal,['Homo_sapiens'],0.0,,free,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16489,NeuNAc(a2-3)Gal(b1-3)[NeuNAc(a2-6)]GalNAc(b1-3)Gal(a1-4)Gal(b1-4)Glc,,1.0,Chordata,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16582,Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16642,GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,"['Bos_taurus', 'Homo_sapiens', 'Macaca_radiata']",0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16713,Fuc(a1-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16745,GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)GlcNAc(b1-6)[GalOS(b1-4)GlcNAc(b1-2)]Man(a1-6)[GalOS(b1-4)GlcNAc(b1-2)[GalOS(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16760,Gal(b1-3)GlcNAc(b1-3)[Gal(b1-4)GlcNAc(b1-6)]Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16776,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16824,NeuNAc(a2-6)Gal(b1-3)GlcNAc(b1-3)[NeuNAc(a2-6)Gal(b1-3)GlcNAc(b1-6)]Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+16905,NeuNAc(a2-3)Gal(b1-3)[NeuNAc(a2-6)]GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)Glc,,1.0,Chordata,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17024,[GlcNAcA(b1-4)][GlcNAc(b1-6)]Gal(a1-6)Glc(b1-3)GalNAc(b1-3)Gal,"['Acinetobacter_baumannii', 'Acinetobacter_sp']",1.0,,,1,0,0,ERROR,unknown
+17053,RhaOAc(a1-2)Rha(a1-3)Rha(a1-3)GlcNAcOAc(b1-2)RhaOAc,['Shigella_flexneri'],1.0,,,1,0,0,ERROR,unknown
+16922,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[Gal(b1-4)GlcNAc(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17116,Glc(a1-4)GlcNAc(a1-4)Glc(b1-3)[Glc(a1-7)DDManHep(a1-2)LDManHep(a1-4)]LDManHep(a1-5)KdoOP,['Halomonas_pantelleriensis'],1.0,,,1,0,0,ERROR,unknown
+16989,Fuc(a1-2)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17026,Fuc(a1-2)[GalNAc(a1-3)]Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17109,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17259,Man(b1-3)ManOAc(b1-4)GlcA(b1-3)GlcNAc(a1-2)Man,"['Cellulophaga_baltica', 'Cellulophaga_fucicola']",1.0,,,1,0,0,ERROR,unknown
+17171,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Desmodus_rotundus', 'Homo_sapiens', 'Mus_musculus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17279,GalOS(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+17200,NeuNGc(a2-6)Gal(b1-4)GlcNAc,,1.0,Animalia,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17224,NeuNGc(a2-8)NeuNAc(a2-3)Gal,,1.0,Bacteria,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17231,NeuNAc(a2-3)GalOS(b1-4)[Fuc(a1-3)]GlcNAc,,1.0,Eukarya,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17245,Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17400,GlcNAc(b1-6)[Col(a1-2)Sug(b1-3)]GalNAc(a1-3)GalNAc(b1-3)GlcNAc,['Yersinia_pseudotuberculosis'],1.0,,,1,0,0,ERROR,unknown
+17446,GalOS(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+17449,[Rha(a1-4)GalNAcA(a1-2)]Rha(a1-3)Rha(a1-3)Rha(a1-3)GlcNAc(b1-3)Rha,"['Yersinia_enterocolitica', 'Yersinia_kristensenii']",1.0,,,1,0,0,ERROR,unknown
+17502,RhaOAc(b1-4)[GlcNAc(b1-3)]GlcNAc(b1-6)Gal(a1-3)RhaOAc,['Citrobacter_gillenii'],1.0,,,1,0,0,ERROR,unknown
+17390,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-3)Gal(b1-3)GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17644,NeuNGcA(a2-3)Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,unknown
+17445,NeuNAc(a2-3)Gal(b1-4)GlcNAcOS,,1.0,Animalia,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17653,[QuiNBut(b1-6)GlcNAc(a1-4)]GalNAc(b1-3)Gal(a1-3)GlcNAc(b1-3)QuiNBut,['Acinetobacter_baumannii'],1.0,,,1,0,0,ERROR,unknown
+17522,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAcOS(a2-3)]Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17555,Xyl(b1-4)Xyl(b1-4)Xyl(b1-4)[GlcA(a1-2)]Xyl(b1-4)Xyl(b1-4)Xyl(b1-4)Xyl,,1.0,Angiosperms,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17593,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Bos_taurus', 'Homo_sapiens']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17639,Fuc(a1-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17781,GlcNAcNAla(b1-4)ManNAcNAmA(b1-4)GlcNAcNAla,['Vibrio_anguillarum'],1.0,,,1,0,0,ERROR,unknown
+17790,GlcN(a1-4)GalA(a1-3)[GlcN(a1-4)GalA(a1-7)LDManHep(a1-7)][Glc(b1-2)]LDManHep(a1-3)[Gal(b1-4)]LDManHep(a1-5)[Kdo(a2-4)]Kdo,['Plesiomonas_shigelloides'],1.0,,,1,0,0,ERROR,unknown
+17815,GalA(a1-3)RhaOAc(a1-3)ManOAc(a1-4)GalA,"['Sinorhizobium_fredii', 'Sinorhizobium_sp']",1.0,,,1,0,0,ERROR,unknown
+17668,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)[Gal(b1-4)GlcNAc(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17860,RhaOAc(a1-2)Rha(a1-3)[Glc(a1-4)]Rha(a1-3)GlcNAcOAc(b1-2)RhaOAc,['Shigella_flexneri'],1.0,,,1,0,0,ERROR,unknown
+17688,NeuNAc(a2-3)Gal(b1-4)Xyl,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17992,QuiNFo(b1-2)Rib(b1-4)GlcA(b1-4)GlcA(b1-3)FucNAc(a1-2)QuiNFo,['Providencia_alcalifaciens'],1.0,,,1,0,0,ERROR,unknown
+17997,GlcOSA(b1-3)Gal(b1-4)GlcNAc,,1.0,Bacteria,,1,0,0,ERROR,unknown
+17803,Fuc(a1-4)[Gal(b1-3)]GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)[Fuc(a1-4)]GlcNAc(b1-3)]Gal(b1-4)Glc,['Homo_sapiens'],0.0,,free,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18046,GalNAcOS(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+18065,LDManHep(a1-3)6dTalOAc(a1-3)FucNAc(a1-2)LDManHep,['Yokenella_regensburgei'],1.0,,,1,0,0,ERROR,unknown
+18070,GalOAc(a1-3)FucNAm(a1-3)GlcNAc(a1-2)Gal,['Salmonella_sp'],1.0,,,1,0,0,ERROR,unknown
+18071,GalOS(b1-4)GlcNAc(b1-4)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+17989,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+17940,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18126,[GlcNAc(b1-2)]Man(b1-4)Glc(b1-3)FucNAcOAc(a1-4)[Glc(b1-6)]GalNAc(a1-3)Man,['Citrobacter_gillenii'],1.0,,,1,0,0,ERROR,unknown
+18069,NeuNAc(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18193,GalOS(b1-4)GlcNAcOS(b1-3)GalOS,,1.0,Animalia,,1,0,0,ERROR,unknown
+18081,NeuNGc(a2-3)Gal(b1-4)Glc,['Escherichia_coli'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18206,ManOAc(b1-4)Rha(a1-3)Gal(a1-3)ManOAc,['Burkholderia_gladioli'],1.0,,,1,0,0,ERROR,unknown
+18234,[FucNAc(a1-3)]ManNAcA(b1-3)QuiNAc(b1-4)ManNAcA,['Vibrio_cholerae'],1.0,,,1,0,0,ERROR,unknown
+18109,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18161,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-4)]Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Bos_taurus', 'Gallus_gallus', 'Homo_sapiens']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18162,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18247,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc,,1.0,Bacteria,,0,1,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18356,ManNAcNAmA(b1-4)ManNAcNAmA(b1-3)FucNAc(a1-4)ManNAcNAmA,,1.0,Bacteria,,1,0,0,ERROR,unknown
+18270,NeuNAc(a2-3)Gal(b1-3)GalNAc(b1-4)[NeuNAc(a2-3)]Gal(b1-4)Glc,['Leishmania_amazonensis'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18283,Col(a1-4)[Col(a1-2)Gal(b1-3)]GlcNAc(b1-4)GlcA(b1-3)GalNAc(b1-2)Col,"['Pseudoalteromonas_carrageenovora', 'Pseudoalteromonas_carrageenovora ', 'Pseudoalteromonas_tetraodonis']",1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18427,GlcNAc(a1-3)[Glc(a1-2)Gal(a1-2)]Gal(a1-4)Glc(a1-3)[GalA(b1-7)LDManHep(a1-7)]LDManHep(a1-3)LDManHepOPPEtn(a1-5)Kdo,['Citrobacter_werkmanii'],1.0,,,1,0,0,ERROR,unknown
+18470,NeuNAcOGc(a2-6)Gal(b1-4)Glc,,1.0,Bacteria,,1,0,0,ERROR,unknown
+18325,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18493,GulNAcA(a1-4)GulNAcA(a1-6)Glc(a1-4)GulNAcA,['Halomonas_magadiensis'],1.0,,,1,0,0,ERROR,unknown
+18345,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)[NeuNAc(a2-6)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18591,Glc(b1-2)FucNBut(b1-6)GlcNAc(a1-4)[Glc(b1-3)]GalNAc(a1-3)GlcNAc(b1-2)Glc,['Yersinia_aldovae'],1.0,,,1,0,0,ERROR,unknown
+18557,Fuc(a1-2)Gal(b1-4)GlcNAcOS(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+18645,GalOS(b1-4)[Fuc(a1-3)]GlcNAc,,1.0,none,,1,0,0,ERROR,unknown
+18610,GlcOAc(a1-4)GlcA(b1-4)GalNAcOAc(b1-3)Gal(a1-3)GalNAc(b1-6)GlcOAc,['Hafnia_alvei'],1.0,,,1,0,0,ERROR,unknown
+18690,ManOP(a1-2)Man(a1-6)[Man(a1-3)]Man(a1-6)[Gal(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+18682,[RhaNAcNBut(b1-3)]GlcNAc(a1-3)Rha(a1-3)GlcNAc(b1-4)GlcNAc,['Vibrio_vulnificus'],1.0,,,1,0,0,ERROR,unknown
+18891,GalOS(b1-4)[Fuc(a1-3)]GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,1,0,ERROR,unknown
+18584,NeuNGc(a2-6)Gal(b1-4)Glc,,1.0,Animalia,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18893,[Glc(a1-3)]Rha(a1-2)[Glc(a1-3)]Rha(a1-3)Rha(a1-3)GlcNAc(b1-2)RhaOAc,['Shigella_flexneri'],1.0,,,1,0,0,ERROR,unknown
+18916,GlcNAcOS(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,1,0,0,ERROR,unknown
+18623,Gal(b1-4)GlcNAc(b1-6)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,['Homo_sapiens'],0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18947,GlcNAcOS(b1-4)[GlcNAc(b1-2)]Man(a1-3)[GlcNAc(b1-2)[GlcNAc(b1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,unknown
+18763,Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,"['Bos_taurus', 'Collocalia_sp', 'Equus_caballus', 'Homo_sapiens', 'Mus_musculus', 'Oryctolagus_cuniculus', 'Rattus_norvegicus', 'Sus_scrofa']",0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18806,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+19013,GalAGroN(a1-4)NeuNAc(a2-3)GalAGroN(b1-3)QuiNAc(b1-4)GalAGroN,['Vibrio_cholerae'],1.0,,,1,0,0,ERROR,unknown
+18938,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc,['Homo_sapiens'],0.0,,N,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+19082,[SugOAc(a1-4)]GalNAc(a1-3)GalNAc(b1-3)GalNAc,['Yersinia_enterocolitica'],1.0,,,1,0,0,ERROR,unknown
+18996,Fuc(a1-2)Gal(b1-3)[NeuNAc(a2-6)]GalNAc,"['Bufo_japonicus', 'Bufotes_viridis', 'Canis_lupus', 'Homo_sapiens', 'Macaca_radiata', 'Rana_dalmatina', 'Rana_palustris', 'Rhinella_arenarum']",0.0,,O,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+19016,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-4)[NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)]Man(a1-3)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc,"['Bos_taurus', 'Homo_sapiens', 'Mus_musculus']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+18981,NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-2)[NeuNAc(a2-3)Gal(b1-4)GlcNAc(b1-6)]Man(a1-6)[NeuNAc(a2-6)GalNAc(b1-4)GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+19163,[FucNBut(a1-4)]Gal(a1-4)GulNAcA(a1-4)GlcNAcOAc(b1-3)Gal,,1.0,Bacteria,,1,0,0,ERROR,unknown
+19180,QuiNAlaAc(b1-6)[Glc(a1-4)Glc(a1-4)]Glc(b1-3)GalNAc(a1-2)QuiNAlaAc,['Cronobacter_sakazakii'],1.0,,,1,0,0,ERROR,unknown
+19115,NeuNAc(a2-3)Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)Glc,['Homo_sapiens'],0.0,,free,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+19252,NeuNAcOAc(a2-3)FucNAm(a1-3)GlcNAc(b1-4)NeuNAcOAc,"['Salmonella_sp', 'Salmonella_toucra']",1.0,,,1,0,0,ERROR,unknown
+19191,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[Fuc(a1-3)[Gal(b1-4)]GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,['Homo_sapiens'],0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+19201,GalNAc(a1-3)[GlcA(b1-4)]Fuc(a1-3)Glc(a1-4)Qui(a1-3)GlcNAc(a1-4)GalNAc,['Providencia_stuartii'],1.0,,,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+19218,Fuc(a1-2)Gal(b1-4)GlcNAc(b1-6)[NeuNAc(a2-3)Gal(b1-3)]GalNAc,"['Homo_sapiens', 'Rattus_norvegicus', 'Sus_scrofa']",0.0,,O,0,0,1,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
+19287,NeuNAc(a2-6)Gal(b1-4)GlcNAc(b1-2)Man(a1-3)[GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc,"['Homo_sapiens', 'Sus_scrofa']",0.0,,N,1,0,0,ERROR,HTTP 500: <html><body><h2>500 Internal Server Error</h2></body></html>
