@@ -2,6 +2,10 @@
 
 > 🌐 English version: [README.en.md](./README.en.md)
 
+> **命名说明**：本项目最初将模型称为 **W0**，后改名为 **PUG**，但代码中仍沿用了 W0 的称呼（如 `glycanW0_classifier.py`、`get_embeddings_W0.py` 等）。
+
+> **代码与论文命名对照**：代码沿用了编写时的命名，与论文略有不同——`big_nodes` 论文称 glycosyl residue nodes，`small_nodes` 称 substituent nodes，`big_edges` 称 inter-residue glycosidic edges，`small_edges` 称 substituent attachment edges，`stereo_type` 特征称 carbon descriptor。其余基本一致。
+
 本项目实现了一条完整的「WURCS 糖类结构 → 图神经网络掩码预训练 → 嵌入提取 → 物种分类层级」流水线。核心思路是把糖类的 WURCS 格式串解析为异构图（big/small 节点 + big/small 边），用 MLM（Masked Language Modeling）方式预训练一个异构 GAT，再用预训练模型提取 1027 维图级嵌入，最后在 8 个分类学层级（domain → species）上训练分类头。
 
 ## 目录结构
@@ -26,6 +30,8 @@ MASK/
     ├── 95轮imm/                    # 免疫球蛋白下游任务
     └── taxall/                     # 物种分类「全物种」配置
 ```
+
+> **注**：本文件夹内的 `dic.csv` 已运行过 `deldownstata.py`（已删除泄漏行）；从 GlyTouCan 下载的原始版本在 `downstream/` 文件夹内。
 
 ## 各脚本说明
 

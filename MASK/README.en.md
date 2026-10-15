@@ -2,6 +2,10 @@
 
 > 🌐 中文版：[README.md](./README.md)
 
+> **Naming note**: The model was originally called **W0** and later renamed **PUG**, but the code still uses the W0 naming (e.g., `glycanW0_classifier.py`, `get_embeddings_W0.py`).
+
+> **Code vs. paper naming**: The code retains the original naming, which differs slightly from the paper — `big_nodes` are called "glycosyl residue nodes" in the paper, `small_nodes` → "substituent nodes", `big_edges` → "inter-residue glycosidic edges", `small_edges` → "substituent attachment edges", and the `stereo_type` feature → "carbon descriptor". Other names are essentially unchanged.
+
 This project implements an end-to-end pipeline of "WURCS glycan structure → graph neural network masked pre-training → embedding extraction → taxonomic-level classification". The core idea is to parse the WURCS format string of glycans into a heterogeneous graph (big/small nodes + big/small edges), pre-train a heterogeneous GAT with MLM (Masked Language Modeling), then use the pre-trained model to extract 1027-dim graph-level embeddings, and finally train classification heads on 8 taxonomic levels (domain → species).
 
 ## Directory Structure
@@ -26,6 +30,8 @@ MASK/
     ├── 95轮imm/                    # Immunoglobulin/immune downstream task
     └── taxall/                     # Taxonomy "all-taxa" configuration
 ```
+
+> **Note**: The `dic.csv` in this folder has already been processed by `deldownstata.py` (leakage rows removed); the original version downloaded from GlyTouCan is in the `downstream/` folder.
 
 ## Script Descriptions
 
