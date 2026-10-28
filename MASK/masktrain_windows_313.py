@@ -47,6 +47,10 @@ ERROR_ANALYSIS_DIR = os.path.join(DATA_DIR, "error_analysis")
 os.makedirs(CHECKPOINT_DIR, exist_ok=True)
 os.makedirs(ERROR_ANALYSIS_DIR, exist_ok=True)
 
+# 边存在性任务的最小图规模：残基数少于此值的分子图不参与该任务（正负样本都不生成）
+# 取 4 表示至少 3 条连接（3 条连接对应 6 条有向边）
+MIN_BIG_NODES_FOR_EDGE_EXISTENCE = 4
+
 
 def compute_task_class_weights(train_subset, token_to_idx, vocab_sizes, num_samples_for_stats=None):
     """
@@ -1997,27 +2001,36 @@ class HeteroGNN(nn.Module):
             # 获取边的概率信息
             big_edge_probs = edge_prob_dict.get(big_edge_key)
             
-            # 检查条件：是否有足够的确定边作为正样本（至少2条）
+            # 图规模门槛：残基数过小的分子图不参与边存在性任务（显式常量，可调整）
+            eligible_edge_mask = torch.ones(num_edges, dtype=torch.bool, device=original_big_edge_index.device)
+            if batch_dict is not None and "big_node" in batch_dict and batch_dict["big_node"] is not None:
+                big_batch_vec = batch_dict["big_node"]
+                nodes_per_graph = torch.bincount(big_batch_vec)
+                src_graph_id = big_batch_vec[original_big_edge_index[0]]
+                eligible_edge_mask = nodes_per_graph[src_graph_id] >= MIN_BIG_NODES_FOR_EDGE_EXISTENCE
+            
+            # 检查条件：是否有足够的确定边作为正样本（至少1条）
             can_do_edge_existence = False
             if big_edge_probs is not None and big_edge_probs.size(0) > 0:
-                num_certain_edges = (big_edge_probs >= 1.0).sum().item()
-                if num_certain_edges >= 2:
+                num_certain_edges = ((big_edge_probs.squeeze(-1) >= 1.0) & eligible_edge_mask).sum().item()
+                if num_certain_edges >= 1:
                     can_do_edge_existence = True
             
             if self.training or return_mlm_logits:
                 if can_do_edge_existence:
-                    # 只选择 probability=1.0 的确定边
-                    certain_edge_mask = (big_edge_probs >= 1.0)
+                    # 只选择 probability=1.0 且属于足够大的图的确定边
+                    # 注意 big_edge_probs 形状为 (N,1)，需 squeeze 成 (N,) 避免与 eligible_edge_mask 广播成 (N,N)
+                    certain_edge_mask = (big_edge_probs.squeeze(-1) >= 1.0) & eligible_edge_mask
                     
-                    # 基于确定边随机选择约15%进行删除
-                    num_certain_edges = certain_edge_mask.sum().item()
-                    target_delete_count = int(num_certain_edges * self.mlm_probability * 0.5)
+                    # 每条确定边独立以 mlm_probability*0.5 的概率被删除（逐边伯努利，不受批次规模影响）
+                    certain_indices = certain_edge_mask.nonzero(as_tuple=True)[0]
+                    delete_ratio = self.mlm_probability * 0.5
+                    if certain_indices.size(0) > 0:
+                        selected_indices = certain_indices[torch.rand(certain_indices.size(0), device=certain_indices.device) < delete_ratio]
+                    else:
+                        selected_indices = certain_indices
                     
-                    if target_delete_count > 0:
-                        # 随机选择要删除的边
-                        certain_indices = certain_edge_mask.nonzero(as_tuple=True)[0]
-                        perm = torch.randperm(certain_indices.size(0), device=certain_indices.device)
-                        selected_indices = certain_indices[perm[:target_delete_count]]
+                    if selected_indices.size(0) > 0:
                         
                         # 创建删除掩码
                         deleted_big_edge_mask = torch.zeros(num_edges, dtype=torch.bool, device=original_big_edge_index.device)
@@ -2068,55 +2081,87 @@ class HeteroGNN(nn.Module):
                                 node_neighbors[s].add(t)
                                 node_neighbors[t].add(s)
                             
+                            # 负样本必须在同一张分子图内采样：先按图归属对 batch 内节点分组
+                            big_node_batch = batch_dict.get("big_node") if batch_dict is not None else None
+                            if big_node_batch is not None:
+                                graph_nodes = {}
+                                for n in range(num_big_nodes):
+                                    graph_nodes.setdefault(big_node_batch[n].item(), []).append(n)
+                            else:
+                                graph_nodes = None
+                            
                             # 为每条被删除的边生成负样本
                             # 负样本策略：构造不存在的假边，用于训练模型判断边是否存在
                             neg_src = []
                             neg_tgt = []
+                            seen_neg = set()  # 已生成的负边(src,tgt)，用于去重
+                            neg_cnt_per_edge = []  # 每条被删边实际生成的负边数
                             for i in range(deleted_edge_indices.size(0)):
                                 src = deleted_src_nodes[i].item()
                                 tgt = deleted_tgt_nodes[i].item()
+                                edge_has_neg = False
+                                
+                                # 该被删边所属分子图的节点集合（负样本只能在图内产生）
+                                if graph_nodes is not None:
+                                    nodes_in_graph = graph_nodes.get(big_node_batch[src].item(), [src])
+                                else:
+                                    nodes_in_graph = range(num_big_nodes)
                                 
                                 # 为src生成负样本边：(src, rand_node) 不存在于图中
                                 # 策略：70%从tgt的邻居中选择（更难的负样本），30%随机选择
                                 tgt_neighbors = list(node_neighbors.get(tgt, set()))
                                 found_neg_for_src = False
                                 if tgt_neighbors and torch.rand(()).item() < 0.7:
-                                    # 从tgt的邻居中筛选出不与src相连的节点
-                                    valid_neighbors = [n for n in tgt_neighbors if n != src and (src, n) not in existing_edges_set]
+                                    # 从tgt的邻居中筛选出不与src相连、且未生成过的节点
+                                    valid_neighbors = [n for n in tgt_neighbors if n != src and (src, n) not in existing_edges_set and (src, n) not in seen_neg]
                                     if valid_neighbors:
                                         rand_node = valid_neighbors[torch.randint(0, len(valid_neighbors), (1,)).item()]
                                         neg_src.append(src)
                                         neg_tgt.append(rand_node)
+                                        seen_neg.add((src, rand_node))
                                         found_neg_for_src = True
+                                        edge_has_neg = True
                                 
                                 if not found_neg_for_src:
-                                    # 随机选择不存在的边
-                                    candidates = [n for n in range(num_big_nodes) if n != src and n != tgt and (src, n) not in existing_edges_set]
+                                    # 随机选择不存在的边（限定在同一张图内，且未生成过）
+                                    candidates = [n for n in nodes_in_graph if n != src and n != tgt and (src, n) not in existing_edges_set and (src, n) not in seen_neg]
                                     if candidates:
                                         rand_node = candidates[torch.randint(0, len(candidates), (1,)).item()]
                                         neg_src.append(src)
                                         neg_tgt.append(rand_node)
+                                        seen_neg.add((src, rand_node))
+                                        edge_has_neg = True
                                 
                                 # 为tgt生成负样本边：(tgt, rand_node) 不存在于图中
                                 # 策略：70%从src的邻居中选择（更难的负样本），30%随机选择
                                 src_neighbors = list(node_neighbors.get(src, set()))
                                 found_neg_for_tgt = False
                                 if src_neighbors and torch.rand(()).item() < 0.7:
-                                    # 从src的邻居中筛选出不与tgt相连的节点
-                                    valid_neighbors = [n for n in src_neighbors if n != tgt and (tgt, n) not in existing_edges_set]
+                                    # 从src的邻居中筛选出不与tgt相连、且未生成过的节点
+                                    valid_neighbors = [n for n in src_neighbors if n != tgt and (tgt, n) not in existing_edges_set and (tgt, n) not in seen_neg]
                                     if valid_neighbors:
                                         rand_node = valid_neighbors[torch.randint(0, len(valid_neighbors), (1,)).item()]
                                         neg_src.append(tgt)
                                         neg_tgt.append(rand_node)
+                                        seen_neg.add((tgt, rand_node))
                                         found_neg_for_tgt = True
+                                        edge_has_neg = True
                                 
                                 if not found_neg_for_tgt:
-                                    # 随机选择不存在的边
-                                    candidates = [n for n in range(num_big_nodes) if n != src and n != tgt and (tgt, n) not in existing_edges_set]
+                                    # 随机选择不存在的边（限定在同一张图内，且未生成过）
+                                    candidates = [n for n in nodes_in_graph if n != src and n != tgt and (tgt, n) not in existing_edges_set and (tgt, n) not in seen_neg]
                                     if candidates:
                                         rand_node = candidates[torch.randint(0, len(candidates), (1,)).item()]
                                         neg_src.append(tgt)
                                         neg_tgt.append(rand_node)
+                                        seen_neg.add((tgt, rand_node))
+                                        edge_has_neg = True
+                                neg_cnt_per_edge.append(edge_has_neg)
+                            
+                            # 两端都生成不出负样本的被删边不参与损失，避免出现只有正样本的偏置
+                            drop_pos = [deleted_edge_indices[j].item() for j, ok in enumerate(neg_cnt_per_edge) if not ok]
+                            if drop_pos:
+                                deleted_big_edge_mask[drop_pos] = False
                             
                             if neg_src:
                                 negative_big_edge_index = torch.stack([

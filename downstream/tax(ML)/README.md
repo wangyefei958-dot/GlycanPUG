@@ -10,15 +10,17 @@ tax(ML)/
 │   ├── glycan_classification.csv     原始输入（无 wurcs 列）
 │   ├── 0add_wurcs_to_csv.py          API 批量转 WURCS
 │   ├── test_single_glycan.py         工具函数库
+│   ├── iupac_tree.py                 树结构认证（解析成残基树 + 同构比较）
 │   ├── 1batch_process_errors.py      修复 API 失败行
 │   ├── 2merge_fixed.py               回填修复结果
 │   └── ...中间产物...
-├── glycan_classification_merged.csv  Stage 0 最终产物（根目录的分拆.py 读这份）
-├── 分拆.py                       ← Stage 1：按 8 个分类级拆分
+├── allstata/glycan_classification_final.csv  Stage 0 最终产物（3split.py 直接读这份）
+├── 3split.py                     ← Stage 1：按 8 个分类级拆分
+├── split_log.txt                 ← Stage 1 产出的低频标签清单
 └── split_files/                  ← Stage 1 最终产出
     ├── species.csv
     ├── genus.csv
-    └── ...（共 8 个分类级 CSV + split_log.txt）
+    └── ...（共 8 个分类级 CSV）
 ```
 
 ## 依赖
@@ -43,7 +45,7 @@ tax(ML)/
 
 ```bash
 cd allstata
-python add_wurcs_to_csv.py
+python 0add_wurcs_to_csv.py
 ```
 
 - API：`https://api.glycosmos.org/glycanformatconverter/2.7.0/iupaccondensed2wurcs`
@@ -56,40 +58,38 @@ python add_wurcs_to_csv.py
 #### 0.2 修复失败行
 
 ```bash
-python batch_process_errors.py
+python 1batch_process_errors.py
 ```
 
 - 从 `test_single_glycan.py` 导入工具函数（命名规范化、修饰基替换、IUPAC↔WURCS 互转）
+- **树认证（最后一步）**：由 `iupac_tree.py` 完成，取代原先的字符频次比对。把 `modified_iupac`（期望结构）和 `verified_iupac`（API 回转结构）分别解析成残基树，用规范化签名做同构比较，逐项核对残基类型、连接端点、分支位置、立体化学（α/β）和修饰；字符计数相同但结构不同的会被判为 MISMATCH
+- **送 API 前拦截**：括号不配对等非法输入标记 `INVALID_INPUT`；糖醛酸 A 与 OAc 共存（共用 `?F` 占位符）标记 `COLLISION`，两者都不调用 API
 - 断点续传：已处理行会跳过
-- **产出**：`glycan_classification_errors_processed.csv`
+- **产出**：`glycan_classification_errors_processed.csv`（含 `status` / `modified_iupac` / `verified_iupac` 列）
 
 #### 0.3 回填修复结果
 
 ```bash
-python merge_fixed.py
+python 2merge_fixed.py
 ```
 
 - 用 `(target, species)` 作 key，把修复的 WURCS 回填到原 `ERROR` 行
-- **产出**：`allstata/glycan_classification_merged.csv`
+- **产出**：`allstata/glycan_classification_final.csv`
 - **最终表头**：`glycan, species, genus, family, order, class, phylum, kingdom, domain, wurcs`  
   （注意第一列从 `target` 改名为 `glycan`）
 
-#### 0.4 复制 merged.csv 到根目录（Stage 1 依赖）
+#### 0.4 无需复制文件
 
-```powershell
-Copy-Item "allstata\glycan_classification_merged.csv" "."
-```
-
-根目录的 `分拆.py` 用相对路径读同目录的 `glycan_classification_merged.csv`，所以 Stage 0 结束后必须把这份文件拷到根目录。
+`3split.py` 已改为绝对路径直接读取 `allstata/glycan_classification_final.csv`，与运行时的当前目录无关，Stage 0 结束后可直接执行 Stage 1。旧的 `glycan_classification_merged.csv` 是历史产物，勿再使用。
 
 ### Stage 1：按分类级拆分（根目录操作）
 
 ```bash
 cd ..
-python 分拆.py
+python 3split.py
 ```
 
-- 读同目录下的 `glycan_classification_merged.csv`
+- 读 `allstata/glycan_classification_final.csv`（绝对路径，与运行目录无关）
 - 8 个分类级独立处理：`species, genus, family, order, class, phylum, kingdom, domain`
 - 每个分类级：去空 → 去低频标签（出现次数 < 30）→ 按 WURCS 聚合
 - **产出**：
@@ -106,4 +106,4 @@ python 分拆.py
 接口来自 [glycosmos.org](https://api.glycosmos.org/glycanformatconverter/)，当前脚本已设 30s 超时、2 次重试、0.1s 间隔。如果仍失败，降低 `MAX_WORKERS` 或增加 `REQUEST_INTERVAL`。
 
 **Q: 为什么 allstata/ 里也有一份 glycan_classification_merged.csv？**  
-`allstata/merge_fixed.py` 的输出就在 `allstata/` 里。根目录的 `分拆.py` 读的是同目录那份，所以 Stage 0 做完后需要手动复制一次（Stage 0.4）。allstata/ 里的那份可以留着也可以删，不影响。
+那是历史版本 2merge 脚本的产物，现已过期。当前 2merge 输出 `glycan_classification_final.csv`，`3split.py` 直接读它，无需再复制到根目录。

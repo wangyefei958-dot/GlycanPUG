@@ -1,0 +1,43 @@
+{
+  "seed": 3,
+  "description": {
+    "scope": "test set only (10% split)",
+    "row_index": "过滤低频标签(<min_samples)后数据中的行号，与 embedding 行号一致",
+    "probabilities": "各类别的 softmax 概率，键顺序与 class_order 一致"
+  },
+  "num_test_samples": 337,
+  "num_misclassified": 2,
+  "class_order": [
+    "Free",
+    "N-Linked",
+    "O-Linked"
+  ],
+  "misclassified_samples": [
+    {
+      "row_index": 1647,
+      "glytoucan_id": "G04836KE",
+      "wurcs": "WURCS=2.0/2,3,2/[a2122h-1b_1-5_2*NCC/3=O][a1221m-1a_1-5]/1-2-2/a3-b1_a6-c1",
+      "glycan": "Fuc(a1-3)[Fuc(a1-6)]GlcNAc",
+      "true_label": "N-Linked",
+      "predicted_label": "O-Linked",
+      "probabilities": {
+        "Free": 0.009947,
+        "N-Linked": 0.199785,
+        "O-Linked": 0.790267
+      }
+    },
+    {
+      "row_index": 1274,
+      "glytoucan_id": "G69850FN",
+      "wurcs": "WURCS=2.0/1,9,8/[a2122h-1b_1-5]/1-1-1-1-1-1-1-1-1/a4-b1_b4-c1_c4-d1_d4-e1_e4-f1_f4-g1_g4-h1_h4-i1",
+      "glycan": "Glc(b1-4)Glc(b1-4)Glc(b1-4)Glc(b1-4)Glc(b1-4)Glc(b1-4)Glc(b1-4)Glc(b1-4)Glc",
+      "true_label": "N-Linked",
+      "predicted_label": "Free",
+      "probabilities": {
+        "Free": 0.972442,
+        "N-Linked": 0.027263,
+        "O-Linked": 0.000295
+      }
+    }
+  ]
+}

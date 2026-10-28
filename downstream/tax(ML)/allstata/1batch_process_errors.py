@@ -32,11 +32,11 @@ from test_single_glycan import (
     process_wurcs_remove_f,
     convert_iupac_to_wurcs,
     convert_wurcs_to_iupac,
-    compare_iupac_by_composition,
     API_IUPAC2WURCS,
     API_WURCS2IUPAC,
     REQUEST_TIMEOUT
 )
+from iupac_tree import validate_iupac, compare_iupac
 
 INPUT_CSV = os.path.join(SCRIPT_DIR, "glycan_classification_errors.csv")
 OUTPUT_CSV = os.path.join(SCRIPT_DIR, "glycan_classification_errors_processed.csv")
@@ -70,6 +70,19 @@ def process_single_glycan(glycan):
         modified_iupac = normalize_naming(modified_iupac)
         result['modified_iupac'] = modified_iupac
 
+        # 输入非法（括号不配对等）：本地拦截，不送API
+        invalid_reason = validate_iupac(modified_iupac)
+        if invalid_reason:
+            result['status'] = 'INVALID'
+            result['error_reason'] = f'INVALID_INPUT: {invalid_reason}'
+            return result
+
+        # 糖醛酸A和OAc共用?F占位符，共存时WURCS中无法区分，跳过API调用
+        if has_A and has_OAc:
+            result['status'] = 'COLLISION'
+            result['error_reason'] = 'A+OAc collision: both require ?F placeholder'
+            return result
+
         input_iupac = normalized_iupac
         input_iupac = replace_OMe_with_placeholder(input_iupac)
         if has_A:
@@ -102,13 +115,22 @@ def process_single_glycan(glycan):
         verified_iupac_normalized = normalize_naming(verified_iupac)
         result['verified_iupac'] = verified_iupac_normalized
 
-        # 使用组分比较
-        match, _, _ = compare_iupac_by_composition(modified_iupac, verified_iupac_normalized)
-        if match:
+        # verified是API错误文本（如Kdo酮糖异头态不被支持）
+        if verified_iupac_normalized.startswith('ERROR'):
+            result['status'] = 'ERROR'
+            result['error_reason'] = verified_iupac_normalized
+            return result
+
+        # 本地树同构比较：逐项核对残基、连接、修饰（替代原字符计数法）
+        cmp_status, detail = compare_iupac(modified_iupac, verified_iupac_normalized)
+        if cmp_status == 'OK':
             result['status'] = 'SUCCESS'
-        else:
+        elif cmp_status == 'DIFF':
             result['status'] = 'MISMATCH'
-            # MISMATCH保留原来的error_reason（如果有的话）
+            result['error_reason'] = f'MISMATCH: {detail}'
+        else:
+            result['status'] = 'PARSE_FAIL'
+            result['error_reason'] = f'PARSE_FAIL: {detail}'
 
     except Exception as e:
         result['error_reason'] = f"{type(e).__name__}: {str(e)}"
@@ -139,6 +161,7 @@ def load_existing_rows():
         with open(OUTPUT_CSV, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
             for row in reader:
+                row.pop('error_reason', None)  # 兼容旧列名
                 existing.append(row)
     return existing
 
@@ -166,7 +189,10 @@ def main():
     input_rows = []
     with open(INPUT_CSV, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
-        fieldnames = reader.fieldnames
+        fieldnames = ['status' if c == 'error_reason' else c for c in reader.fieldnames]
+        for col in ('modified_iupac', 'verified_iupac'):
+            if col not in fieldnames:
+                fieldnames.append(col)
         for row in reader:
             input_rows.append(row)
 
@@ -205,7 +231,7 @@ def main():
 
     # 收集结果
     processed_count = existing_count
-    stats = {'SUCCESS': 0, 'MISMATCH': 0, 'ERROR': 0}
+    stats = {}
     last_save_time = time.time()
     SAVE_INTERVAL = 2
 
@@ -218,16 +244,17 @@ def main():
             continue
 
         row = input_rows[idx].copy()
+        row.pop('error_reason', None)
+        row['modified_iupac'] = result['modified_iupac']
+        row['verified_iupac'] = result['verified_iupac']
 
         if result['status'] == 'SUCCESS':
             row['wurcs'] = result['wurcs']
-            row['error_reason'] = ''
-            stats['SUCCESS'] += 1
-        elif result['status'] == 'MISMATCH':
-            stats['MISMATCH'] += 1
+            row['status'] = 'SUCCESS'
         else:
-            # ERROR: 保持原来的值
-            stats['ERROR'] += 1
+            # 不成功：status列写原因；wurcs留空，避免2merge误合并
+            row['status'] = result['error_reason']
+        stats[result['status']] = stats.get(result['status'], 0) + 1
 
         all_rows.append(row)
         processed_count += 1
@@ -250,7 +277,7 @@ def main():
         writer.writerows(all_rows)
 
     print("-" * 60)
-    print(f"Done! SUCCESS: {stats['SUCCESS']}, MISMATCH: {stats['MISMATCH']}, ERROR: {stats['ERROR']}")
+    print("Done! " + ", ".join(f"{k}: {v}" for k, v in sorted(stats.items())))
     print(f"Result saved to: {OUTPUT_CSV}")
 
 

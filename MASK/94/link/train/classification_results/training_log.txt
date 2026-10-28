@@ -1,0 +1,1004 @@
+
+============================================================
+GlycanW0 Single-Class Classification
+Label column: glycantype
+Min samples per class: 30
+Seeds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+============================================================
+
+Loading data...
+Total labels before filtering: 8
+Valid labels (>= 30 samples): 3
+  Filtering out: Undefined type (7 samples)
+  Filtering out: P-Linked (6 samples)
+  Filtering out: N-Linked/O-Linked (2 samples)
+  Filtering out: O-Linked/C-Linked (1 samples)
+  Filtering out: C-Linked (1 samples)
+
+Dataset statistics:
+  Total samples: 3368
+  Number of classes: 3
+  Classes: ['Free', 'N-Linked', 'O-Linked']
+  Free: 88 samples
+  N-Linked: 2176 samples
+  O-Linked: 1104 samples
+
+============================================================
+Training with seed: 1
+============================================================
+Epoch    1/1000 | Train Loss: 0.4100 | Val Loss: 0.1315 | Val Macro AUC: 0.9934 | EMA5: 0.9934 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 0/68
+Epoch    2/1000 | Train Loss: 0.1707 | Val Loss: 0.1678 | Val Macro AUC: 0.9913 | EMA5: 0.9924 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 1/68
+Epoch    3/1000 | Train Loss: 0.0886 | Val Loss: 0.0338 | Val Macro AUC: 0.9997 | EMA5: 0.9948 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    4/1000 | Train Loss: 0.0732 | Val Loss: 0.0278 | Val Macro AUC: 0.9997 | EMA5: 0.9960 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    5/1000 | Train Loss: 0.0490 | Val Loss: 0.0215 | Val Macro AUC: 0.9999 | EMA5: 0.9968 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 0/68
+Epoch    6/1000 | Train Loss: 0.0413 | Val Loss: 0.0228 | Val Macro AUC: 0.9999 | EMA5: 0.9981 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 0/68
+Epoch    7/1000 | Train Loss: 0.0434 | Val Loss: 0.0194 | Val Macro AUC: 0.9999 | EMA5: 0.9998 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 0/68
+Epoch    8/1000 | Train Loss: 0.0158 | Val Loss: 0.0886 | Val Macro AUC: 0.9998 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 1/68
+Epoch    9/1000 | Train Loss: 0.0347 | Val Loss: 0.0268 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 2/68
+Epoch   10/1000 | Train Loss: 0.0065 | Val Loss: 0.0212 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 3/68
+Epoch   11/1000 | Train Loss: 0.0179 | Val Loss: 0.0246 | Val Macro AUC: 0.9995 | EMA5: 0.9998 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 4/68
+Epoch   12/1000 | Train Loss: 0.0080 | Val Loss: 0.0194 | Val Macro AUC: 1.0000 | EMA5: 0.9998 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 5/68
+Epoch   13/1000 | Train Loss: 0.0215 | Val Loss: 0.0292 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 6/68
+Epoch   14/1000 | Train Loss: 0.0194 | Val Loss: 0.0212 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 7/68
+Epoch   15/1000 | Train Loss: 0.0247 | Val Loss: 0.0186 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 8/68
+Epoch   16/1000 | Train Loss: 0.0040 | Val Loss: 0.0156 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 0/68
+Epoch   17/1000 | Train Loss: 0.0035 | Val Loss: 0.0157 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 1/68
+Epoch   18/1000 | Train Loss: 0.0044 | Val Loss: 0.0132 | Val Macro AUC: 0.9997 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 2/68
+Epoch   19/1000 | Train Loss: 0.0025 | Val Loss: 0.0133 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 3/68
+Epoch   20/1000 | Train Loss: 0.0059 | Val Loss: 0.0124 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 4/68
+Epoch   21/1000 | Train Loss: 0.0019 | Val Loss: 0.0106 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 5/68
+Epoch   22/1000 | Train Loss: 0.0036 | Val Loss: 0.0192 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 6/68
+Epoch   23/1000 | Train Loss: 0.0170 | Val Loss: 0.0193 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 7/68
+Epoch   24/1000 | Train Loss: 0.0067 | Val Loss: 0.0158 | Val Macro AUC: 0.9999 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 8/68
+Epoch   25/1000 | Train Loss: 0.0041 | Val Loss: 0.0172 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 9/68
+Epoch   26/1000 | Train Loss: 0.0420 | Val Loss: 0.0152 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 10/68
+Epoch   27/1000 | Train Loss: 0.0301 | Val Loss: 0.0155 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 11/68
+Epoch   28/1000 | Train Loss: 0.0033 | Val Loss: 0.0204 | Val Macro AUC: 0.9999 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 12/68
+Epoch   29/1000 | Train Loss: 0.0030 | Val Loss: 0.0174 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 13/68
+Epoch   30/1000 | Train Loss: 0.0027 | Val Loss: 0.0161 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 14/68
+Epoch   31/1000 | Train Loss: 0.0013 | Val Loss: 0.0153 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 15/68
+Epoch   32/1000 | Train Loss: 0.0005 | Val Loss: 0.0172 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 16/68
+Epoch   33/1000 | Train Loss: 0.0034 | Val Loss: 0.0205 | Val Macro AUC: 0.9997 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 17/68
+Epoch   34/1000 | Train Loss: 0.0004 | Val Loss: 0.0205 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 18/68
+Epoch   35/1000 | Train Loss: 0.0002 | Val Loss: 0.0188 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 19/68
+Epoch   36/1000 | Train Loss: 0.0001 | Val Loss: 0.0199 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 20/68
+Epoch   37/1000 | Train Loss: 0.0002 | Val Loss: 0.0186 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 21/68
+Epoch   38/1000 | Train Loss: 0.0000 | Val Loss: 0.0182 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 22/68
+Epoch   39/1000 | Train Loss: 0.0001 | Val Loss: 0.0199 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 23/68
+Epoch   40/1000 | Train Loss: 0.0000 | Val Loss: 0.0199 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 24/68
+Epoch   41/1000 | Train Loss: 0.0008 | Val Loss: 0.0189 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 25/68
+Epoch   42/1000 | Train Loss: 0.0121 | Val Loss: 0.0161 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 26/68
+Epoch   43/1000 | Train Loss: 0.0001 | Val Loss: 0.0153 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 27/68
+Epoch   44/1000 | Train Loss: 0.0001 | Val Loss: 0.0150 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 28/68
+Epoch   45/1000 | Train Loss: 0.0001 | Val Loss: 0.0163 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 29/68
+Epoch   46/1000 | Train Loss: 0.0001 | Val Loss: 0.0164 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 30/68
+Epoch   47/1000 | Train Loss: 0.0000 | Val Loss: 0.0159 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 31/68
+Epoch   48/1000 | Train Loss: 0.0000 | Val Loss: 0.0160 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 32/68
+Epoch   49/1000 | Train Loss: 0.0000 | Val Loss: 0.0165 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 33/68
+Epoch   50/1000 | Train Loss: 0.0000 | Val Loss: 0.0161 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 34/68
+Epoch   51/1000 | Train Loss: 0.0001 | Val Loss: 0.0160 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 35/68
+Epoch   52/1000 | Train Loss: 0.0000 | Val Loss: 0.0157 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 36/68
+Epoch   53/1000 | Train Loss: 0.0000 | Val Loss: 0.0157 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 37/68
+Epoch   54/1000 | Train Loss: 0.0000 | Val Loss: 0.0158 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 38/68
+Epoch   55/1000 | Train Loss: 0.0001 | Val Loss: 0.0162 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 39/68
+Epoch   56/1000 | Train Loss: 0.0000 | Val Loss: 0.0164 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 40/68
+Epoch   57/1000 | Train Loss: 0.0003 | Val Loss: 0.0159 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 41/68
+Epoch   58/1000 | Train Loss: 0.0000 | Val Loss: 0.0159 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 42/68
+Epoch   59/1000 | Train Loss: 0.0001 | Val Loss: 0.0156 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 43/68
+Epoch   60/1000 | Train Loss: 0.0000 | Val Loss: 0.0156 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 44/68
+Epoch   61/1000 | Train Loss: 0.0001 | Val Loss: 0.0148 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 45/68
+Epoch   62/1000 | Train Loss: 0.0000 | Val Loss: 0.0149 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 46/68
+Epoch   63/1000 | Train Loss: 0.0000 | Val Loss: 0.0153 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 47/68
+Epoch   64/1000 | Train Loss: 0.0000 | Val Loss: 0.0153 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 48/68
+Epoch   65/1000 | Train Loss: 0.0001 | Val Loss: 0.0155 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 49/68
+Epoch   66/1000 | Train Loss: 0.0000 | Val Loss: 0.0156 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 50/68
+Epoch   67/1000 | Train Loss: 0.0001 | Val Loss: 0.0155 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 51/68
+Epoch   68/1000 | Train Loss: 0.0000 | Val Loss: 0.0155 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 52/68
+Epoch   69/1000 | Train Loss: 0.0000 | Val Loss: 0.0155 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 53/68
+Epoch   70/1000 | Train Loss: 0.0000 | Val Loss: 0.0156 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 54/68
+Epoch   71/1000 | Train Loss: 0.0000 | Val Loss: 0.0156 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 55/68
+Epoch   72/1000 | Train Loss: 0.0000 | Val Loss: 0.0156 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 56/68
+Epoch   73/1000 | Train Loss: 0.0000 | Val Loss: 0.0156 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 57/68
+Epoch   74/1000 | Train Loss: 0.0000 | Val Loss: 0.0156 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 58/68
+Epoch   75/1000 | Train Loss: 0.0000 | Val Loss: 0.0156 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 59/68
+Epoch   76/1000 | Train Loss: 0.0000 | Val Loss: 0.0156 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 60/68
+Epoch   77/1000 | Train Loss: 0.0000 | Val Loss: 0.0157 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 61/68
+Epoch   78/1000 | Train Loss: 0.0000 | Val Loss: 0.0157 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 62/68
+Epoch   79/1000 | Train Loss: 0.0000 | Val Loss: 0.0158 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 63/68
+Epoch   80/1000 | Train Loss: 0.0000 | Val Loss: 0.0158 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 64/68
+Epoch   81/1000 | Train Loss: 0.0001 | Val Loss: 0.0158 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 65/68
+Epoch   82/1000 | Train Loss: 0.0000 | Val Loss: 0.0158 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 66/68
+Epoch   83/1000 | Train Loss: 0.0000 | Val Loss: 0.0158 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 67/68
+Epoch   84/1000 | Train Loss: 0.0000 | Val Loss: 0.0159 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 68/68
+Early stopping at epoch 84
+Misclassified samples: 1/337
+Error analysis JSON saved to: d:\glycanPUG\MASK\94\link\train\classification_results\seed_1\misclassified_samples.json
+  Seed 1 results:
+    Macro F1: 0.9817
+    Macro AUC: 1.0000
+    Accuracy: 0.9970
+    Best epoch: 23
+
+============================================================
+Training with seed: 2
+============================================================
+Epoch    1/1000 | Train Loss: 0.4436 | Val Loss: 0.1115 | Val Macro AUC: 0.9989 | EMA5: 0.9989 | Val Acc: 0.9822 | LR: 5.00e-04 | ES: 0/68
+Epoch    2/1000 | Train Loss: 0.1341 | Val Loss: 0.0491 | Val Macro AUC: 0.9995 | EMA5: 0.9992 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    3/1000 | Train Loss: 0.0529 | Val Loss: 0.0431 | Val Macro AUC: 0.9994 | EMA5: 0.9993 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 1/68
+Epoch    4/1000 | Train Loss: 0.0246 | Val Loss: 0.1334 | Val Macro AUC: 0.9994 | EMA5: 0.9993 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 2/68
+Epoch    5/1000 | Train Loss: 0.0204 | Val Loss: 0.0353 | Val Macro AUC: 0.9996 | EMA5: 0.9994 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 0/68
+Epoch    6/1000 | Train Loss: 0.0423 | Val Loss: 0.0342 | Val Macro AUC: 0.9997 | EMA5: 0.9995 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 0/68
+Epoch    7/1000 | Train Loss: 0.0201 | Val Loss: 0.1457 | Val Macro AUC: 0.9997 | EMA5: 0.9996 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 1/68
+Epoch    8/1000 | Train Loss: 0.0403 | Val Loss: 0.1904 | Val Macro AUC: 0.9997 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 0/68
+Epoch    9/1000 | Train Loss: 0.0078 | Val Loss: 0.3164 | Val Macro AUC: 0.9998 | EMA5: 0.9997 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 1/68
+Epoch   10/1000 | Train Loss: 0.0197 | Val Loss: 0.3666 | Val Macro AUC: 0.9996 | EMA5: 0.9997 | Val Acc: 0.9822 | LR: 5.00e-04 | ES: 2/68
+Epoch   11/1000 | Train Loss: 0.0720 | Val Loss: 0.0462 | Val Macro AUC: 0.9996 | EMA5: 0.9997 | Val Acc: 0.9822 | LR: 5.00e-04 | ES: 3/68
+Epoch   12/1000 | Train Loss: 0.0107 | Val Loss: 0.0736 | Val Macro AUC: 0.9998 | EMA5: 0.9997 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 4/68
+Epoch   13/1000 | Train Loss: 0.0084 | Val Loss: 0.1402 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 5/68
+Epoch   14/1000 | Train Loss: 0.0221 | Val Loss: 0.4447 | Val Macro AUC: 1.0000 | EMA5: 0.9997 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 6/68
+Epoch   15/1000 | Train Loss: 0.0092 | Val Loss: 0.4426 | Val Macro AUC: 0.9997 | EMA5: 0.9998 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 0/68
+Epoch   16/1000 | Train Loss: 0.0108 | Val Loss: 0.1930 | Val Macro AUC: 0.9997 | EMA5: 0.9998 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 1/68
+Epoch   17/1000 | Train Loss: 0.0009 | Val Loss: 0.3504 | Val Macro AUC: 0.9996 | EMA5: 0.9997 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 2/68
+Epoch   18/1000 | Train Loss: 0.0105 | Val Loss: 0.0437 | Val Macro AUC: 0.9999 | EMA5: 0.9998 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 3/68
+Epoch   19/1000 | Train Loss: 0.0085 | Val Loss: 0.1611 | Val Macro AUC: 1.0000 | EMA5: 0.9998 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 4/68
+Epoch   20/1000 | Train Loss: 0.0018 | Val Loss: 0.3526 | Val Macro AUC: 1.0000 | EMA5: 0.9998 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 5/68
+Epoch   21/1000 | Train Loss: 0.0367 | Val Loss: 0.1475 | Val Macro AUC: 0.9997 | EMA5: 0.9998 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 6/68
+Epoch   22/1000 | Train Loss: 0.0023 | Val Loss: 0.1798 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 0/68
+Epoch   23/1000 | Train Loss: 0.0013 | Val Loss: 0.1537 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 1/68
+Epoch   24/1000 | Train Loss: 0.0096 | Val Loss: 0.0869 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 2/68
+Epoch   25/1000 | Train Loss: 0.0123 | Val Loss: 0.0897 | Val Macro AUC: 0.9998 | EMA5: 0.9998 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 3/68
+Epoch   26/1000 | Train Loss: 0.0021 | Val Loss: 0.2555 | Val Macro AUC: 0.9997 | EMA5: 0.9998 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 4/68
+Epoch   27/1000 | Train Loss: 0.0002 | Val Loss: 0.2078 | Val Macro AUC: 0.9997 | EMA5: 0.9998 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 5/68
+Epoch   28/1000 | Train Loss: 0.0001 | Val Loss: 0.1949 | Val Macro AUC: 0.9997 | EMA5: 0.9998 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 6/68
+Epoch   29/1000 | Train Loss: 0.0002 | Val Loss: 0.1794 | Val Macro AUC: 0.9999 | EMA5: 0.9998 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 7/68
+Epoch   30/1000 | Train Loss: 0.0002 | Val Loss: 0.2245 | Val Macro AUC: 0.9999 | EMA5: 0.9998 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 8/68
+Epoch   31/1000 | Train Loss: 0.0001 | Val Loss: 0.2035 | Val Macro AUC: 0.9999 | EMA5: 0.9998 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 9/68
+Epoch   32/1000 | Train Loss: 0.0002 | Val Loss: 0.2147 | Val Macro AUC: 0.9999 | EMA5: 0.9998 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 10/68
+Epoch   33/1000 | Train Loss: 0.0000 | Val Loss: 0.2081 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 11/68
+Epoch   34/1000 | Train Loss: 0.0000 | Val Loss: 0.2039 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 12/68
+Epoch   35/1000 | Train Loss: 0.0000 | Val Loss: 0.2140 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 13/68
+Epoch   36/1000 | Train Loss: 0.0001 | Val Loss: 0.2341 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 14/68
+Epoch   37/1000 | Train Loss: 0.0000 | Val Loss: 0.2266 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 15/68
+Epoch   38/1000 | Train Loss: 0.0001 | Val Loss: 0.2372 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 16/68
+Epoch   39/1000 | Train Loss: 0.0017 | Val Loss: 0.1556 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 17/68
+Epoch   40/1000 | Train Loss: 0.0116 | Val Loss: 0.1566 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 18/68
+Epoch   41/1000 | Train Loss: 0.0008 | Val Loss: 0.1939 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 19/68
+Epoch   42/1000 | Train Loss: 0.0000 | Val Loss: 0.1534 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 20/68
+Epoch   43/1000 | Train Loss: 0.0000 | Val Loss: 0.1546 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 21/68
+Epoch   44/1000 | Train Loss: 0.0004 | Val Loss: 0.2183 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 22/68
+Epoch   45/1000 | Train Loss: 0.0001 | Val Loss: 0.1742 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 23/68
+Epoch   46/1000 | Train Loss: 0.0001 | Val Loss: 0.1880 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 24/68
+Epoch   47/1000 | Train Loss: 0.0001 | Val Loss: 0.1811 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 25/68
+Epoch   48/1000 | Train Loss: 0.0000 | Val Loss: 0.1791 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 26/68
+Epoch   49/1000 | Train Loss: 0.0000 | Val Loss: 0.1876 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 27/68
+Epoch   50/1000 | Train Loss: 0.0000 | Val Loss: 0.1910 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 28/68
+Epoch   51/1000 | Train Loss: 0.0000 | Val Loss: 0.1781 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 29/68
+Epoch   52/1000 | Train Loss: 0.0000 | Val Loss: 0.1766 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 30/68
+Epoch   53/1000 | Train Loss: 0.0000 | Val Loss: 0.1814 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 31/68
+Epoch   54/1000 | Train Loss: 0.0000 | Val Loss: 0.1873 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 32/68
+Epoch   55/1000 | Train Loss: 0.0001 | Val Loss: 0.2103 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 33/68
+Epoch   56/1000 | Train Loss: 0.0000 | Val Loss: 0.1948 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 34/68
+Epoch   57/1000 | Train Loss: 0.0000 | Val Loss: 0.1943 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 35/68
+Epoch   58/1000 | Train Loss: 0.0000 | Val Loss: 0.1932 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 36/68
+Epoch   59/1000 | Train Loss: 0.0001 | Val Loss: 0.2046 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 37/68
+Epoch   60/1000 | Train Loss: 0.0000 | Val Loss: 0.2050 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 38/68
+Epoch   61/1000 | Train Loss: 0.0003 | Val Loss: 0.2408 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 39/68
+Epoch   62/1000 | Train Loss: 0.0000 | Val Loss: 0.2357 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 40/68
+Epoch   63/1000 | Train Loss: 0.0000 | Val Loss: 0.2387 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 41/68
+Epoch   64/1000 | Train Loss: 0.0000 | Val Loss: 0.2363 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 42/68
+Epoch   65/1000 | Train Loss: 0.0000 | Val Loss: 0.2330 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 43/68
+Epoch   66/1000 | Train Loss: 0.0000 | Val Loss: 0.2300 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 44/68
+Epoch   67/1000 | Train Loss: 0.0000 | Val Loss: 0.2281 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 45/68
+Epoch   68/1000 | Train Loss: 0.0003 | Val Loss: 0.1957 | Val Macro AUC: 0.9997 | EMA5: 0.9998 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 46/68
+Epoch   69/1000 | Train Loss: 0.0001 | Val Loss: 0.2099 | Val Macro AUC: 0.9999 | EMA5: 0.9998 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 47/68
+Epoch   70/1000 | Train Loss: 0.0001 | Val Loss: 0.1903 | Val Macro AUC: 0.9999 | EMA5: 0.9998 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 48/68
+Epoch   71/1000 | Train Loss: 0.0000 | Val Loss: 0.1925 | Val Macro AUC: 0.9999 | EMA5: 0.9998 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 49/68
+Epoch   72/1000 | Train Loss: 0.0000 | Val Loss: 0.1949 | Val Macro AUC: 0.9999 | EMA5: 0.9998 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 50/68
+Epoch   73/1000 | Train Loss: 0.0000 | Val Loss: 0.1937 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 51/68
+Epoch   74/1000 | Train Loss: 0.0000 | Val Loss: 0.2004 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 52/68
+Epoch   75/1000 | Train Loss: 0.0000 | Val Loss: 0.2010 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 53/68
+Epoch   76/1000 | Train Loss: 0.0000 | Val Loss: 0.1938 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 54/68
+Epoch   77/1000 | Train Loss: 0.0000 | Val Loss: 0.1933 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 55/68
+Epoch   78/1000 | Train Loss: 0.0000 | Val Loss: 0.1945 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 56/68
+Epoch   79/1000 | Train Loss: 0.0000 | Val Loss: 0.1960 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 57/68
+Epoch   80/1000 | Train Loss: 0.0001 | Val Loss: 0.2018 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 58/68
+Epoch   81/1000 | Train Loss: 0.0000 | Val Loss: 0.2017 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 59/68
+Epoch   82/1000 | Train Loss: 0.0000 | Val Loss: 0.2017 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 60/68
+Epoch   83/1000 | Train Loss: 0.0000 | Val Loss: 0.2025 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 61/68
+Epoch   84/1000 | Train Loss: 0.0000 | Val Loss: 0.2034 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 62/68
+Epoch   85/1000 | Train Loss: 0.0001 | Val Loss: 0.1979 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 63/68
+Epoch   86/1000 | Train Loss: 0.0000 | Val Loss: 0.1981 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 64/68
+Epoch   87/1000 | Train Loss: 0.0000 | Val Loss: 0.1990 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 65/68
+Epoch   88/1000 | Train Loss: 0.0000 | Val Loss: 0.1990 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 66/68
+Epoch   89/1000 | Train Loss: 0.0000 | Val Loss: 0.1992 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 67/68
+Epoch   90/1000 | Train Loss: 0.0000 | Val Loss: 0.1990 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 68/68
+Early stopping at epoch 90
+Misclassified samples: 4/337
+Error analysis JSON saved to: d:\glycanPUG\MASK\94\link\train\classification_results\seed_2\misclassified_samples.json
+  Seed 2 results:
+    Macro F1: 0.9516
+    Macro AUC: 0.9993
+    Accuracy: 0.9881
+    Best epoch: 14
+
+============================================================
+Training with seed: 3
+============================================================
+Epoch    1/1000 | Train Loss: 0.4855 | Val Loss: 0.1538 | Val Macro AUC: 0.9976 | EMA5: 0.9976 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 0/68
+Epoch    2/1000 | Train Loss: 0.1309 | Val Loss: 0.1636 | Val Macro AUC: 0.9989 | EMA5: 0.9982 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    3/1000 | Train Loss: 0.0694 | Val Loss: 0.1552 | Val Macro AUC: 0.9992 | EMA5: 0.9986 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    4/1000 | Train Loss: 0.0269 | Val Loss: 0.1827 | Val Macro AUC: 0.9994 | EMA5: 0.9988 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    5/1000 | Train Loss: 0.0358 | Val Loss: 0.1935 | Val Macro AUC: 0.9992 | EMA5: 0.9989 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 1/68
+Epoch    6/1000 | Train Loss: 0.0227 | Val Loss: 0.2045 | Val Macro AUC: 0.9975 | EMA5: 0.9988 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 2/68
+Epoch    7/1000 | Train Loss: 0.0197 | Val Loss: 0.2761 | Val Macro AUC: 0.9994 | EMA5: 0.9989 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 0/68
+Epoch    8/1000 | Train Loss: 0.0393 | Val Loss: 0.0641 | Val Macro AUC: 0.9992 | EMA5: 0.9989 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 1/68
+Epoch    9/1000 | Train Loss: 0.0289 | Val Loss: 0.1681 | Val Macro AUC: 0.9992 | EMA5: 0.9989 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 2/68
+Epoch   10/1000 | Train Loss: 0.0263 | Val Loss: 0.2045 | Val Macro AUC: 0.9995 | EMA5: 0.9989 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 3/68
+Epoch   11/1000 | Train Loss: 0.0135 | Val Loss: 0.1972 | Val Macro AUC: 0.9997 | EMA5: 0.9994 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 0/68
+Epoch   12/1000 | Train Loss: 0.0072 | Val Loss: 0.0880 | Val Macro AUC: 0.9997 | EMA5: 0.9995 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 1/68
+Epoch   13/1000 | Train Loss: 0.0095 | Val Loss: 0.0649 | Val Macro AUC: 0.9997 | EMA5: 0.9996 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch   14/1000 | Train Loss: 0.0116 | Val Loss: 0.0990 | Val Macro AUC: 0.9996 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 1/68
+Epoch   15/1000 | Train Loss: 0.0249 | Val Loss: 0.1836 | Val Macro AUC: 0.9994 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 2/68
+Epoch   16/1000 | Train Loss: 0.0039 | Val Loss: 0.0943 | Val Macro AUC: 0.9996 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 3/68
+Epoch   17/1000 | Train Loss: 0.0081 | Val Loss: 0.3383 | Val Macro AUC: 0.9995 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 4/68
+Epoch   18/1000 | Train Loss: 0.0051 | Val Loss: 0.0821 | Val Macro AUC: 0.9997 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 5/68
+Epoch   19/1000 | Train Loss: 0.0183 | Val Loss: 0.1963 | Val Macro AUC: 0.9995 | EMA5: 0.9995 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 6/68
+Epoch   20/1000 | Train Loss: 0.0143 | Val Loss: 0.4639 | Val Macro AUC: 0.9989 | EMA5: 0.9994 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 7/68
+Epoch   21/1000 | Train Loss: 0.0122 | Val Loss: 0.1603 | Val Macro AUC: 0.9997 | EMA5: 0.9995 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 8/68
+Epoch   22/1000 | Train Loss: 0.0015 | Val Loss: 0.2415 | Val Macro AUC: 0.9997 | EMA5: 0.9995 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 9/68
+Epoch   23/1000 | Train Loss: 0.0020 | Val Loss: 0.1875 | Val Macro AUC: 0.9995 | EMA5: 0.9995 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 10/68
+Epoch   24/1000 | Train Loss: 0.0005 | Val Loss: 0.2086 | Val Macro AUC: 0.9996 | EMA5: 0.9995 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 11/68
+Epoch   25/1000 | Train Loss: 0.0006 | Val Loss: 0.1817 | Val Macro AUC: 0.9996 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 12/68
+Epoch   26/1000 | Train Loss: 0.0007 | Val Loss: 0.1541 | Val Macro AUC: 0.9996 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 13/68
+Epoch   27/1000 | Train Loss: 0.0027 | Val Loss: 0.1373 | Val Macro AUC: 0.9995 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 14/68
+Epoch   28/1000 | Train Loss: 0.0017 | Val Loss: 0.2034 | Val Macro AUC: 0.9994 | EMA5: 0.9995 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 15/68
+Epoch   29/1000 | Train Loss: 0.0009 | Val Loss: 0.3152 | Val Macro AUC: 0.9995 | EMA5: 0.9995 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 16/68
+Epoch   30/1000 | Train Loss: 0.0020 | Val Loss: 0.4774 | Val Macro AUC: 0.9996 | EMA5: 0.9995 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 17/68
+Epoch   31/1000 | Train Loss: 0.0146 | Val Loss: 0.0726 | Val Macro AUC: 0.9997 | EMA5: 0.9995 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 18/68
+Epoch   32/1000 | Train Loss: 0.0055 | Val Loss: 0.0895 | Val Macro AUC: 0.9989 | EMA5: 0.9994 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 19/68
+Epoch   33/1000 | Train Loss: 0.0010 | Val Loss: 0.2302 | Val Macro AUC: 0.9996 | EMA5: 0.9995 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 20/68
+Epoch   34/1000 | Train Loss: 0.0006 | Val Loss: 0.1466 | Val Macro AUC: 0.9996 | EMA5: 0.9995 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 21/68
+Epoch   35/1000 | Train Loss: 0.0003 | Val Loss: 0.1819 | Val Macro AUC: 0.9996 | EMA5: 0.9995 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 22/68
+Epoch   36/1000 | Train Loss: 0.0012 | Val Loss: 0.2327 | Val Macro AUC: 0.9997 | EMA5: 0.9995 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 23/68
+Epoch   37/1000 | Train Loss: 0.0002 | Val Loss: 0.0896 | Val Macro AUC: 0.9996 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 24/68
+Epoch   38/1000 | Train Loss: 0.0004 | Val Loss: 0.2103 | Val Macro AUC: 0.9996 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 25/68
+Epoch   39/1000 | Train Loss: 0.0002 | Val Loss: 0.2406 | Val Macro AUC: 0.9996 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 26/68
+Epoch   40/1000 | Train Loss: 0.0004 | Val Loss: 0.1480 | Val Macro AUC: 0.9996 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 27/68
+Epoch   41/1000 | Train Loss: 0.0029 | Val Loss: 0.1895 | Val Macro AUC: 0.9997 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 28/68
+Epoch   42/1000 | Train Loss: 0.0002 | Val Loss: 0.1262 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 29/68
+Epoch   43/1000 | Train Loss: 0.0002 | Val Loss: 0.0507 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 0/68
+Epoch   44/1000 | Train Loss: 0.0003 | Val Loss: 0.1566 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 1/68
+Epoch   45/1000 | Train Loss: 0.0001 | Val Loss: 0.1171 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 2/68
+Epoch   46/1000 | Train Loss: 0.0000 | Val Loss: 0.1261 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 3/68
+Epoch   47/1000 | Train Loss: 0.0000 | Val Loss: 0.1305 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 4/68
+Epoch   48/1000 | Train Loss: 0.0000 | Val Loss: 0.1367 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 5/68
+Epoch   49/1000 | Train Loss: 0.0001 | Val Loss: 0.1425 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 6/68
+Epoch   50/1000 | Train Loss: 0.0000 | Val Loss: 0.1447 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 7/68
+Epoch   51/1000 | Train Loss: 0.0001 | Val Loss: 0.1814 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 8/68
+Epoch   52/1000 | Train Loss: 0.0000 | Val Loss: 0.1552 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 9/68
+Epoch   53/1000 | Train Loss: 0.0000 | Val Loss: 0.2026 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 10/68
+Epoch   54/1000 | Train Loss: 0.0000 | Val Loss: 0.1995 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 11/68
+Epoch   55/1000 | Train Loss: 0.0000 | Val Loss: 0.1993 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 12/68
+Epoch   56/1000 | Train Loss: 0.0000 | Val Loss: 0.1811 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 13/68
+Epoch   57/1000 | Train Loss: 0.0000 | Val Loss: 0.1756 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 14/68
+Epoch   58/1000 | Train Loss: 0.0002 | Val Loss: 0.0954 | Val Macro AUC: 0.9993 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 15/68
+Epoch   59/1000 | Train Loss: 0.0002 | Val Loss: 0.1607 | Val Macro AUC: 0.9993 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 16/68
+Epoch   60/1000 | Train Loss: 0.0001 | Val Loss: 0.0555 | Val Macro AUC: 0.9993 | EMA5: 0.9995 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 17/68
+Epoch   61/1000 | Train Loss: 0.0010 | Val Loss: 0.4794 | Val Macro AUC: 0.9996 | EMA5: 0.9994 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 18/68
+Epoch   62/1000 | Train Loss: 0.0023 | Val Loss: 0.1916 | Val Macro AUC: 0.9997 | EMA5: 0.9994 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 19/68
+Epoch   63/1000 | Train Loss: 0.0001 | Val Loss: 0.2329 | Val Macro AUC: 0.9997 | EMA5: 0.9995 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 20/68
+Epoch   64/1000 | Train Loss: 0.0075 | Val Loss: 0.0531 | Val Macro AUC: 0.9993 | EMA5: 0.9995 | Val Acc: 0.9970 | LR: 1.25e-04 | ES: 21/68
+Epoch   65/1000 | Train Loss: 0.0003 | Val Loss: 0.2281 | Val Macro AUC: 0.9997 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 22/68
+Epoch   66/1000 | Train Loss: 0.0000 | Val Loss: 0.2355 | Val Macro AUC: 0.9997 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 23/68
+Epoch   67/1000 | Train Loss: 0.0000 | Val Loss: 0.2295 | Val Macro AUC: 0.9997 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 24/68
+Epoch   68/1000 | Train Loss: 0.0000 | Val Loss: 0.2293 | Val Macro AUC: 0.9997 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 25/68
+Epoch   69/1000 | Train Loss: 0.0000 | Val Loss: 0.2306 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 26/68
+Epoch   70/1000 | Train Loss: 0.0000 | Val Loss: 0.2375 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 27/68
+Epoch   71/1000 | Train Loss: 0.0000 | Val Loss: 0.2321 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 28/68
+Epoch   72/1000 | Train Loss: 0.0000 | Val Loss: 0.2283 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 29/68
+Epoch   73/1000 | Train Loss: 0.0000 | Val Loss: 0.2255 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 30/68
+Epoch   74/1000 | Train Loss: 0.0000 | Val Loss: 0.2262 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 31/68
+Epoch   75/1000 | Train Loss: 0.0000 | Val Loss: 0.2208 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 32/68
+Epoch   76/1000 | Train Loss: 0.0000 | Val Loss: 0.2213 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 33/68
+Epoch   77/1000 | Train Loss: 0.0000 | Val Loss: 0.2228 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 34/68
+Epoch   78/1000 | Train Loss: 0.0000 | Val Loss: 0.2244 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.25e-04 | ES: 35/68
+Epoch   79/1000 | Train Loss: 0.0000 | Val Loss: 0.2269 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 36/68
+Epoch   80/1000 | Train Loss: 0.0000 | Val Loss: 0.2269 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 37/68
+Epoch   81/1000 | Train Loss: 0.0000 | Val Loss: 0.2269 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 38/68
+Epoch   82/1000 | Train Loss: 0.0000 | Val Loss: 0.2245 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 39/68
+Epoch   83/1000 | Train Loss: 0.0000 | Val Loss: 0.2241 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 40/68
+Epoch   84/1000 | Train Loss: 0.0000 | Val Loss: 0.2236 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 41/68
+Epoch   85/1000 | Train Loss: 0.0000 | Val Loss: 0.2230 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 42/68
+Epoch   86/1000 | Train Loss: 0.0000 | Val Loss: 0.2221 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 43/68
+Epoch   87/1000 | Train Loss: 0.0000 | Val Loss: 0.2223 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 44/68
+Epoch   88/1000 | Train Loss: 0.0000 | Val Loss: 0.2220 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 45/68
+Epoch   89/1000 | Train Loss: 0.0000 | Val Loss: 0.2218 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 46/68
+Epoch   90/1000 | Train Loss: 0.0000 | Val Loss: 0.2219 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 47/68
+Epoch   91/1000 | Train Loss: 0.0000 | Val Loss: 0.2215 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 48/68
+Epoch   92/1000 | Train Loss: 0.0006 | Val Loss: 0.2297 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 49/68
+Epoch   93/1000 | Train Loss: 0.0001 | Val Loss: 0.3193 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 50/68
+Epoch   94/1000 | Train Loss: 0.0000 | Val Loss: 0.3096 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 51/68
+Epoch   95/1000 | Train Loss: 0.0000 | Val Loss: 0.3082 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 52/68
+Epoch   96/1000 | Train Loss: 0.0000 | Val Loss: 0.3020 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 4.17e-05 | ES: 53/68
+Epoch   97/1000 | Train Loss: 0.0000 | Val Loss: 0.3000 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 54/68
+Epoch   98/1000 | Train Loss: 0.0000 | Val Loss: 0.2972 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 55/68
+Epoch   99/1000 | Train Loss: 0.0000 | Val Loss: 0.2955 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 56/68
+Epoch  100/1000 | Train Loss: 0.0000 | Val Loss: 0.2941 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 57/68
+Epoch  101/1000 | Train Loss: 0.0000 | Val Loss: 0.2937 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 58/68
+Epoch  102/1000 | Train Loss: 0.0000 | Val Loss: 0.2922 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 59/68
+Epoch  103/1000 | Train Loss: 0.0000 | Val Loss: 0.2906 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 60/68
+Epoch  104/1000 | Train Loss: 0.0000 | Val Loss: 0.2863 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 61/68
+Epoch  105/1000 | Train Loss: 0.0000 | Val Loss: 0.2858 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 62/68
+Epoch  106/1000 | Train Loss: 0.0000 | Val Loss: 0.2850 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 63/68
+Epoch  107/1000 | Train Loss: 0.0000 | Val Loss: 0.2839 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 64/68
+Epoch  108/1000 | Train Loss: 0.0000 | Val Loss: 0.2812 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 65/68
+Epoch  109/1000 | Train Loss: 0.0000 | Val Loss: 0.2814 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 66/68
+Epoch  110/1000 | Train Loss: 0.0000 | Val Loss: 0.2815 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 67/68
+Epoch  111/1000 | Train Loss: 0.0000 | Val Loss: 0.2790 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 1.04e-05 | ES: 68/68
+Early stopping at epoch 111
+Misclassified samples: 2/337
+Error analysis JSON saved to: d:\glycanPUG\MASK\94\link\train\classification_results\seed_3\misclassified_samples.json
+  Seed 3 results:
+    Macro F1: 0.9794
+    Macro AUC: 0.9999
+    Accuracy: 0.9941
+    Best epoch: 11
+
+============================================================
+Training with seed: 4
+============================================================
+Epoch    1/1000 | Train Loss: 0.4439 | Val Loss: 0.2020 | Val Macro AUC: 0.9916 | EMA5: 0.9916 | Val Acc: 0.9733 | LR: 5.00e-04 | ES: 0/68
+Epoch    2/1000 | Train Loss: 0.1237 | Val Loss: 0.0958 | Val Macro AUC: 0.9992 | EMA5: 0.9954 | Val Acc: 0.9822 | LR: 5.00e-04 | ES: 0/68
+Epoch    3/1000 | Train Loss: 0.0776 | Val Loss: 0.0833 | Val Macro AUC: 0.9993 | EMA5: 0.9967 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 0/68
+Epoch    4/1000 | Train Loss: 0.0900 | Val Loss: 0.0658 | Val Macro AUC: 0.9996 | EMA5: 0.9974 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 0/68
+Epoch    5/1000 | Train Loss: 0.0256 | Val Loss: 0.0813 | Val Macro AUC: 0.9995 | EMA5: 0.9978 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    6/1000 | Train Loss: 0.0410 | Val Loss: 0.0340 | Val Macro AUC: 1.0000 | EMA5: 0.9995 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    7/1000 | Train Loss: 0.0449 | Val Loss: 0.0327 | Val Macro AUC: 0.9998 | EMA5: 0.9996 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    8/1000 | Train Loss: 0.0629 | Val Loss: 0.0780 | Val Macro AUC: 0.9995 | EMA5: 0.9997 | Val Acc: 0.9792 | LR: 5.00e-04 | ES: 1/68
+Epoch    9/1000 | Train Loss: 0.0301 | Val Loss: 0.0498 | Val Macro AUC: 0.9995 | EMA5: 0.9996 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 2/68
+Epoch   10/1000 | Train Loss: 0.0315 | Val Loss: 0.0413 | Val Macro AUC: 1.0000 | EMA5: 0.9997 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch   11/1000 | Train Loss: 0.0104 | Val Loss: 0.0215 | Val Macro AUC: 0.9998 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 1/68
+Epoch   12/1000 | Train Loss: 0.0396 | Val Loss: 0.0170 | Val Macro AUC: 1.0000 | EMA5: 0.9998 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 2/68
+Epoch   13/1000 | Train Loss: 0.0060 | Val Loss: 0.0197 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 0/68
+Epoch   14/1000 | Train Loss: 0.0108 | Val Loss: 0.0167 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 0/68
+Epoch   15/1000 | Train Loss: 0.0059 | Val Loss: 0.0116 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 1/68
+Epoch   16/1000 | Train Loss: 0.0101 | Val Loss: 0.0172 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 2/68
+Epoch   17/1000 | Train Loss: 0.0077 | Val Loss: 0.0132 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 3/68
+Epoch   18/1000 | Train Loss: 0.0077 | Val Loss: 0.0036 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 4/68
+Epoch   19/1000 | Train Loss: 0.0045 | Val Loss: 0.0043 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 5/68
+Epoch   20/1000 | Train Loss: 0.0099 | Val Loss: 0.0012 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 6/68
+Epoch   21/1000 | Train Loss: 0.0010 | Val Loss: 0.0002 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 5.00e-04 | ES: 7/68
+Epoch   22/1000 | Train Loss: 0.0057 | Val Loss: 0.0036 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 8/68
+Epoch   23/1000 | Train Loss: 0.0082 | Val Loss: 0.0012 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 5.00e-04 | ES: 9/68
+Epoch   24/1000 | Train Loss: 0.0101 | Val Loss: 0.0010 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 5.00e-04 | ES: 10/68
+Epoch   25/1000 | Train Loss: 0.0053 | Val Loss: 0.0030 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 5.00e-04 | ES: 11/68
+Epoch   26/1000 | Train Loss: 0.0226 | Val Loss: 0.0445 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 12/68
+Epoch   27/1000 | Train Loss: 0.0029 | Val Loss: 0.0002 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 5.00e-04 | ES: 13/68
+Epoch   28/1000 | Train Loss: 0.0006 | Val Loss: 0.0103 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 14/68
+Epoch   29/1000 | Train Loss: 0.0039 | Val Loss: 0.0030 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 5.00e-04 | ES: 15/68
+Epoch   30/1000 | Train Loss: 0.0014 | Val Loss: 0.0010 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 5.00e-04 | ES: 16/68
+Epoch   31/1000 | Train Loss: 0.0012 | Val Loss: 0.0020 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 5.00e-04 | ES: 17/68
+Epoch   32/1000 | Train Loss: 0.0005 | Val Loss: 0.0043 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 18/68
+Epoch   33/1000 | Train Loss: 0.0001 | Val Loss: 0.0044 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 19/68
+Epoch   34/1000 | Train Loss: 0.0001 | Val Loss: 0.0095 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 20/68
+Epoch   35/1000 | Train Loss: 0.0001 | Val Loss: 0.0093 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 21/68
+Epoch   36/1000 | Train Loss: 0.0004 | Val Loss: 0.0089 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 22/68
+Epoch   37/1000 | Train Loss: 0.0034 | Val Loss: 0.0125 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 23/68
+Epoch   38/1000 | Train Loss: 0.0005 | Val Loss: 0.0019 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 24/68
+Epoch   39/1000 | Train Loss: 0.0006 | Val Loss: 0.0061 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 25/68
+Epoch   40/1000 | Train Loss: 0.0002 | Val Loss: 0.0031 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 26/68
+Epoch   41/1000 | Train Loss: 0.0001 | Val Loss: 0.0020 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 27/68
+Epoch   42/1000 | Train Loss: 0.0000 | Val Loss: 0.0018 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 28/68
+Epoch   43/1000 | Train Loss: 0.0004 | Val Loss: 0.0002 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 29/68
+Epoch   44/1000 | Train Loss: 0.0009 | Val Loss: 0.0024 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 30/68
+Epoch   45/1000 | Train Loss: 0.0000 | Val Loss: 0.0019 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 31/68
+Epoch   46/1000 | Train Loss: 0.0000 | Val Loss: 0.0019 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 32/68
+Epoch   47/1000 | Train Loss: 0.0000 | Val Loss: 0.0021 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 33/68
+Epoch   48/1000 | Train Loss: 0.0001 | Val Loss: 0.0034 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 34/68
+Epoch   49/1000 | Train Loss: 0.0000 | Val Loss: 0.0043 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 35/68
+Epoch   50/1000 | Train Loss: 0.0002 | Val Loss: 0.0009 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 36/68
+Epoch   51/1000 | Train Loss: 0.0000 | Val Loss: 0.0007 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 37/68
+Epoch   52/1000 | Train Loss: 0.0000 | Val Loss: 0.0007 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 38/68
+Epoch   53/1000 | Train Loss: 0.0000 | Val Loss: 0.0007 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 39/68
+Epoch   54/1000 | Train Loss: 0.0000 | Val Loss: 0.0007 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 40/68
+Epoch   55/1000 | Train Loss: 0.0000 | Val Loss: 0.0008 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 41/68
+Epoch   56/1000 | Train Loss: 0.0000 | Val Loss: 0.0008 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 42/68
+Epoch   57/1000 | Train Loss: 0.0000 | Val Loss: 0.0007 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 43/68
+Epoch   58/1000 | Train Loss: 0.0000 | Val Loss: 0.0008 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 44/68
+Epoch   59/1000 | Train Loss: 0.0001 | Val Loss: 0.0009 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 45/68
+Epoch   60/1000 | Train Loss: 0.0000 | Val Loss: 0.0010 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 46/68
+Epoch   61/1000 | Train Loss: 0.0001 | Val Loss: 0.0008 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 47/68
+Epoch   62/1000 | Train Loss: 0.0000 | Val Loss: 0.0009 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 48/68
+Epoch   63/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 49/68
+Epoch   64/1000 | Train Loss: 0.0000 | Val Loss: 0.0010 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 50/68
+Epoch   65/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 51/68
+Epoch   66/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 52/68
+Epoch   67/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 53/68
+Epoch   68/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 54/68
+Epoch   69/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 55/68
+Epoch   70/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 56/68
+Epoch   71/1000 | Train Loss: 0.0000 | Val Loss: 0.0012 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 57/68
+Epoch   72/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 58/68
+Epoch   73/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 59/68
+Epoch   74/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 60/68
+Epoch   75/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 61/68
+Epoch   76/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 62/68
+Epoch   77/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 63/68
+Epoch   78/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 64/68
+Epoch   79/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 65/68
+Epoch   80/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 66/68
+Epoch   81/1000 | Train Loss: 0.0001 | Val Loss: 0.0010 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 67/68
+Epoch   82/1000 | Train Loss: 0.0000 | Val Loss: 0.0010 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 68/68
+Early stopping at epoch 82
+Misclassified samples: 2/337
+Error analysis JSON saved to: d:\glycanPUG\MASK\94\link\train\classification_results\seed_4\misclassified_samples.json
+  Seed 4 results:
+    Macro F1: 0.9651
+    Macro AUC: 0.9999
+    Accuracy: 0.9941
+    Best epoch: 6
+
+============================================================
+Training with seed: 5
+============================================================
+Epoch    1/1000 | Train Loss: 0.4558 | Val Loss: 0.0717 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 0/68
+Epoch    2/1000 | Train Loss: 0.1218 | Val Loss: 0.0181 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 1/68
+Epoch    3/1000 | Train Loss: 0.0547 | Val Loss: 0.0158 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 2/68
+Epoch    4/1000 | Train Loss: 0.0724 | Val Loss: 0.0206 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 3/68
+Epoch    5/1000 | Train Loss: 0.0330 | Val Loss: 0.0108 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 0/68
+Epoch    6/1000 | Train Loss: 0.0813 | Val Loss: 0.0026 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 1/68
+Epoch    7/1000 | Train Loss: 0.0176 | Val Loss: 0.0080 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 2/68
+Epoch    8/1000 | Train Loss: 0.0266 | Val Loss: 0.0021 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 3/68
+Epoch    9/1000 | Train Loss: 0.0176 | Val Loss: 0.0088 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 4/68
+Epoch   10/1000 | Train Loss: 0.0103 | Val Loss: 0.0055 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 5/68
+Epoch   11/1000 | Train Loss: 0.0328 | Val Loss: 0.0018 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 5.00e-04 | ES: 6/68
+Epoch   12/1000 | Train Loss: 0.0311 | Val Loss: 0.0046 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 7/68
+Epoch   13/1000 | Train Loss: 0.0265 | Val Loss: 0.0048 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 8/68
+Epoch   14/1000 | Train Loss: 0.0120 | Val Loss: 0.0089 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 9/68
+Epoch   15/1000 | Train Loss: 0.0103 | Val Loss: 0.0105 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 10/68
+Epoch   16/1000 | Train Loss: 0.0082 | Val Loss: 0.0052 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 11/68
+Epoch   17/1000 | Train Loss: 0.0166 | Val Loss: 0.0060 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 12/68
+Epoch   18/1000 | Train Loss: 0.0040 | Val Loss: 0.0039 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 13/68
+Epoch   19/1000 | Train Loss: 0.0178 | Val Loss: 0.0003 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 5.00e-04 | ES: 14/68
+Epoch   20/1000 | Train Loss: 0.0048 | Val Loss: 0.0085 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 15/68
+Epoch   21/1000 | Train Loss: 0.0116 | Val Loss: 0.0024 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 16/68
+Epoch   22/1000 | Train Loss: 0.0057 | Val Loss: 0.0045 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 17/68
+Epoch   23/1000 | Train Loss: 0.0024 | Val Loss: 0.0007 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 18/68
+Epoch   24/1000 | Train Loss: 0.0005 | Val Loss: 0.0001 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 19/68
+Epoch   25/1000 | Train Loss: 0.0009 | Val Loss: 0.0001 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 20/68
+Epoch   26/1000 | Train Loss: 0.0004 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 21/68
+Epoch   27/1000 | Train Loss: 0.0004 | Val Loss: 0.0001 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 22/68
+Epoch   28/1000 | Train Loss: 0.0002 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 23/68
+Epoch   29/1000 | Train Loss: 0.0002 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 24/68
+Epoch   30/1000 | Train Loss: 0.0002 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 25/68
+Epoch   31/1000 | Train Loss: 0.0002 | Val Loss: 0.0001 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 26/68
+Epoch   32/1000 | Train Loss: 0.0002 | Val Loss: 0.0001 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 27/68
+Epoch   33/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 28/68
+Epoch   34/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 29/68
+Epoch   35/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 30/68
+Epoch   36/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 31/68
+Epoch   37/1000 | Train Loss: 0.0002 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 32/68
+Epoch   38/1000 | Train Loss: 0.0001 | Val Loss: 0.0001 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 33/68
+Epoch   39/1000 | Train Loss: 0.0008 | Val Loss: 0.0001 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 34/68
+Epoch   40/1000 | Train Loss: 0.0003 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 35/68
+Epoch   41/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 36/68
+Epoch   42/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 37/68
+Epoch   43/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 38/68
+Epoch   44/1000 | Train Loss: 0.0002 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 39/68
+Epoch   45/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 40/68
+Epoch   46/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 41/68
+Epoch   47/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 42/68
+Epoch   48/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 43/68
+Epoch   49/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 44/68
+Epoch   50/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 45/68
+Epoch   51/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 46/68
+Epoch   52/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 47/68
+Epoch   53/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 48/68
+Epoch   54/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 49/68
+Epoch   55/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 50/68
+Epoch   56/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 51/68
+Epoch   57/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 52/68
+Epoch   58/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 53/68
+Epoch   59/1000 | Train Loss: 0.0002 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 54/68
+Epoch   60/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 55/68
+Epoch   61/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 56/68
+Epoch   62/1000 | Train Loss: 0.0002 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 57/68
+Epoch   63/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 58/68
+Epoch   64/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 59/68
+Epoch   65/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 60/68
+Epoch   66/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 61/68
+Epoch   67/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 62/68
+Epoch   68/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 63/68
+Epoch   69/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 64/68
+Epoch   70/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 65/68
+Epoch   71/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 66/68
+Epoch   72/1000 | Train Loss: 0.0000 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 67/68
+Epoch   73/1000 | Train Loss: 0.0001 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.08e-05 | ES: 68/68
+Early stopping at epoch 73
+Misclassified samples: 3/337
+Error analysis JSON saved to: d:\glycanPUG\MASK\94\link\train\classification_results\seed_5\misclassified_samples.json
+  Seed 5 results:
+    Macro F1: 0.9436
+    Macro AUC: 0.9992
+    Accuracy: 0.9911
+    Best epoch: 3
+
+============================================================
+Training with seed: 6
+============================================================
+Epoch    1/1000 | Train Loss: 0.4401 | Val Loss: 0.2285 | Val Macro AUC: 0.9907 | EMA5: 0.9907 | Val Acc: 0.9674 | LR: 5.00e-04 | ES: 0/68
+Epoch    2/1000 | Train Loss: 0.1519 | Val Loss: 0.2245 | Val Macro AUC: 0.9985 | EMA5: 0.9946 | Val Acc: 0.9792 | LR: 5.00e-04 | ES: 0/68
+Epoch    3/1000 | Train Loss: 0.1039 | Val Loss: 0.2032 | Val Macro AUC: 0.9987 | EMA5: 0.9959 | Val Acc: 0.9792 | LR: 5.00e-04 | ES: 0/68
+Epoch    4/1000 | Train Loss: 0.0540 | Val Loss: 0.0441 | Val Macro AUC: 0.9997 | EMA5: 0.9969 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 0/68
+Epoch    5/1000 | Train Loss: 0.0350 | Val Loss: 0.0568 | Val Macro AUC: 0.9996 | EMA5: 0.9974 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 0/68
+Epoch    6/1000 | Train Loss: 0.0564 | Val Loss: 0.0291 | Val Macro AUC: 0.9998 | EMA5: 0.9993 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 0/68
+Epoch    7/1000 | Train Loss: 0.0363 | Val Loss: 0.0914 | Val Macro AUC: 0.9994 | EMA5: 0.9994 | Val Acc: 0.9822 | LR: 5.00e-04 | ES: 0/68
+Epoch    8/1000 | Train Loss: 0.0449 | Val Loss: 0.0275 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 0/68
+Epoch    9/1000 | Train Loss: 0.0305 | Val Loss: 0.0372 | Val Macro AUC: 0.9999 | EMA5: 0.9997 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 1/68
+Epoch   10/1000 | Train Loss: 0.0176 | Val Loss: 0.0267 | Val Macro AUC: 0.9998 | EMA5: 0.9997 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 2/68
+Epoch   11/1000 | Train Loss: 0.0185 | Val Loss: 0.0336 | Val Macro AUC: 0.9998 | EMA5: 0.9997 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 3/68
+Epoch   12/1000 | Train Loss: 0.0226 | Val Loss: 0.0246 | Val Macro AUC: 0.9999 | EMA5: 0.9998 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 0/68
+Epoch   13/1000 | Train Loss: 0.0190 | Val Loss: 0.0297 | Val Macro AUC: 0.9997 | EMA5: 0.9998 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 1/68
+Epoch   14/1000 | Train Loss: 0.0333 | Val Loss: 0.0219 | Val Macro AUC: 0.9998 | EMA5: 0.9998 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 2/68
+Epoch   15/1000 | Train Loss: 0.0477 | Val Loss: 0.0253 | Val Macro AUC: 0.9998 | EMA5: 0.9998 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 3/68
+Epoch   16/1000 | Train Loss: 0.0078 | Val Loss: 0.0213 | Val Macro AUC: 0.9998 | EMA5: 0.9998 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 4/68
+Epoch   17/1000 | Train Loss: 0.0091 | Val Loss: 0.0238 | Val Macro AUC: 0.9998 | EMA5: 0.9998 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 5/68
+Epoch   18/1000 | Train Loss: 0.0066 | Val Loss: 0.0183 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 6/68
+Epoch   19/1000 | Train Loss: 0.0014 | Val Loss: 0.0096 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 7/68
+Epoch   20/1000 | Train Loss: 0.0075 | Val Loss: 0.1244 | Val Macro AUC: 0.9996 | EMA5: 0.9998 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 8/68
+Epoch   21/1000 | Train Loss: 0.0185 | Val Loss: 0.0140 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 9/68
+Epoch   22/1000 | Train Loss: 0.0087 | Val Loss: 0.0372 | Val Macro AUC: 0.9998 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 10/68
+Epoch   23/1000 | Train Loss: 0.0166 | Val Loss: 0.0166 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 11/68
+Epoch   24/1000 | Train Loss: 0.0011 | Val Loss: 0.0048 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 12/68
+Epoch   25/1000 | Train Loss: 0.0035 | Val Loss: 0.0075 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 0/68
+Epoch   26/1000 | Train Loss: 0.0006 | Val Loss: 0.0026 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 1/68
+Epoch   27/1000 | Train Loss: 0.0004 | Val Loss: 0.0044 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 2/68
+Epoch   28/1000 | Train Loss: 0.0001 | Val Loss: 0.0060 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 3/68
+Epoch   29/1000 | Train Loss: 0.0001 | Val Loss: 0.0057 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 4/68
+Epoch   30/1000 | Train Loss: 0.0002 | Val Loss: 0.0076 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 5/68
+Epoch   31/1000 | Train Loss: 0.0000 | Val Loss: 0.0072 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 6/68
+Epoch   32/1000 | Train Loss: 0.0000 | Val Loss: 0.0083 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 7/68
+Epoch   33/1000 | Train Loss: 0.0001 | Val Loss: 0.0083 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 8/68
+Epoch   34/1000 | Train Loss: 0.0000 | Val Loss: 0.0083 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 9/68
+Epoch   35/1000 | Train Loss: 0.0000 | Val Loss: 0.0082 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 10/68
+Epoch   36/1000 | Train Loss: 0.0000 | Val Loss: 0.0089 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 11/68
+Epoch   37/1000 | Train Loss: 0.0000 | Val Loss: 0.0090 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 12/68
+Epoch   38/1000 | Train Loss: 0.0000 | Val Loss: 0.0097 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 13/68
+Epoch   39/1000 | Train Loss: 0.0002 | Val Loss: 0.0112 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 14/68
+Epoch   40/1000 | Train Loss: 0.0007 | Val Loss: 0.1406 | Val Macro AUC: 0.9998 | EMA5: 0.9999 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 15/68
+Epoch   41/1000 | Train Loss: 0.0495 | Val Loss: 0.0217 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 16/68
+Epoch   42/1000 | Train Loss: 0.0174 | Val Loss: 0.0145 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 17/68
+Epoch   43/1000 | Train Loss: 0.0789 | Val Loss: 0.0774 | Val Macro AUC: 0.9996 | EMA5: 0.9999 | Val Acc: 0.9852 | LR: 2.50e-04 | ES: 18/68
+Epoch   44/1000 | Train Loss: 0.0461 | Val Loss: 0.0332 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9881 | LR: 2.50e-04 | ES: 19/68
+Epoch   45/1000 | Train Loss: 0.0029 | Val Loss: 0.0340 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 20/68
+Epoch   46/1000 | Train Loss: 0.0003 | Val Loss: 0.0295 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 21/68
+Epoch   47/1000 | Train Loss: 0.0003 | Val Loss: 0.0290 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 22/68
+Epoch   48/1000 | Train Loss: 0.0003 | Val Loss: 0.0265 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 23/68
+Epoch   49/1000 | Train Loss: 0.0001 | Val Loss: 0.0254 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 24/68
+Epoch   50/1000 | Train Loss: 0.0005 | Val Loss: 0.0251 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 25/68
+Epoch   51/1000 | Train Loss: 0.0048 | Val Loss: 0.0346 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9881 | LR: 2.50e-04 | ES: 26/68
+Epoch   52/1000 | Train Loss: 0.0007 | Val Loss: 0.0192 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 27/68
+Epoch   53/1000 | Train Loss: 0.0000 | Val Loss: 0.0190 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 28/68
+Epoch   54/1000 | Train Loss: 0.0003 | Val Loss: 0.0222 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 29/68
+Epoch   55/1000 | Train Loss: 0.0002 | Val Loss: 0.0217 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 30/68
+Epoch   56/1000 | Train Loss: 0.0000 | Val Loss: 0.0208 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 31/68
+Epoch   57/1000 | Train Loss: 0.0001 | Val Loss: 0.0180 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 32/68
+Epoch   58/1000 | Train Loss: 0.0000 | Val Loss: 0.0179 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 33/68
+Epoch   59/1000 | Train Loss: 0.0001 | Val Loss: 0.0178 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 34/68
+Epoch   60/1000 | Train Loss: 0.0000 | Val Loss: 0.0178 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 35/68
+Epoch   61/1000 | Train Loss: 0.0000 | Val Loss: 0.0177 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 36/68
+Epoch   62/1000 | Train Loss: 0.0000 | Val Loss: 0.0176 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 37/68
+Epoch   63/1000 | Train Loss: 0.0001 | Val Loss: 0.0186 | Val Macro AUC: 0.9999 | EMA5: 1.0000 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 38/68
+Epoch   64/1000 | Train Loss: 0.0001 | Val Loss: 0.0190 | Val Macro AUC: 0.9999 | EMA5: 1.0000 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 39/68
+Epoch   65/1000 | Train Loss: 0.0000 | Val Loss: 0.0192 | Val Macro AUC: 0.9999 | EMA5: 1.0000 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 40/68
+Epoch   66/1000 | Train Loss: 0.0001 | Val Loss: 0.0186 | Val Macro AUC: 0.9999 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 41/68
+Epoch   67/1000 | Train Loss: 0.0000 | Val Loss: 0.0185 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 42/68
+Epoch   68/1000 | Train Loss: 0.0000 | Val Loss: 0.0185 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 43/68
+Epoch   69/1000 | Train Loss: 0.0000 | Val Loss: 0.0186 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 44/68
+Epoch   70/1000 | Train Loss: 0.0060 | Val Loss: 0.0187 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 45/68
+Epoch   71/1000 | Train Loss: 0.0000 | Val Loss: 0.0185 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 46/68
+Epoch   72/1000 | Train Loss: 0.0000 | Val Loss: 0.0184 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 47/68
+Epoch   73/1000 | Train Loss: 0.0000 | Val Loss: 0.0185 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 48/68
+Epoch   74/1000 | Train Loss: 0.0000 | Val Loss: 0.0186 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 49/68
+Epoch   75/1000 | Train Loss: 0.0000 | Val Loss: 0.0186 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 50/68
+Epoch   76/1000 | Train Loss: 0.0001 | Val Loss: 0.0187 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 51/68
+Epoch   77/1000 | Train Loss: 0.0000 | Val Loss: 0.0190 | Val Macro AUC: 0.9999 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 52/68
+Epoch   78/1000 | Train Loss: 0.0000 | Val Loss: 0.0189 | Val Macro AUC: 0.9999 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 53/68
+Epoch   79/1000 | Train Loss: 0.0000 | Val Loss: 0.0190 | Val Macro AUC: 0.9999 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 54/68
+Epoch   80/1000 | Train Loss: 0.0000 | Val Loss: 0.0190 | Val Macro AUC: 0.9999 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 55/68
+Epoch   81/1000 | Train Loss: 0.0000 | Val Loss: 0.0190 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 56/68
+Epoch   82/1000 | Train Loss: 0.0000 | Val Loss: 0.0190 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 57/68
+Epoch   83/1000 | Train Loss: 0.0000 | Val Loss: 0.0190 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 58/68
+Epoch   84/1000 | Train Loss: 0.0000 | Val Loss: 0.0190 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 59/68
+Epoch   85/1000 | Train Loss: 0.0000 | Val Loss: 0.0190 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 60/68
+Epoch   86/1000 | Train Loss: 0.0000 | Val Loss: 0.0191 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 61/68
+Epoch   87/1000 | Train Loss: 0.0001 | Val Loss: 0.0191 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 62/68
+Epoch   88/1000 | Train Loss: 0.0000 | Val Loss: 0.0191 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 63/68
+Epoch   89/1000 | Train Loss: 0.0000 | Val Loss: 0.0191 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 64/68
+Epoch   90/1000 | Train Loss: 0.0000 | Val Loss: 0.0190 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 65/68
+Epoch   91/1000 | Train Loss: 0.0000 | Val Loss: 0.0190 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 66/68
+Epoch   92/1000 | Train Loss: 0.0000 | Val Loss: 0.0190 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 67/68
+Epoch   93/1000 | Train Loss: 0.0000 | Val Loss: 0.0190 | Val Macro AUC: 0.9999 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 68/68
+Early stopping at epoch 93
+Misclassified samples: 2/337
+Error analysis JSON saved to: d:\glycanPUG\MASK\94\link\train\classification_results\seed_6\misclassified_samples.json
+  Seed 6 results:
+    Macro F1: 0.9787
+    Macro AUC: 0.9996
+    Accuracy: 0.9941
+    Best epoch: 21
+
+============================================================
+Training with seed: 7
+============================================================
+Epoch    1/1000 | Train Loss: 0.5149 | Val Loss: 0.1298 | Val Macro AUC: 0.9992 | EMA5: 0.9992 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 0/68
+Epoch    2/1000 | Train Loss: 0.1091 | Val Loss: 0.0411 | Val Macro AUC: 0.9996 | EMA5: 0.9994 | Val Acc: 0.9822 | LR: 5.00e-04 | ES: 0/68
+Epoch    3/1000 | Train Loss: 0.0353 | Val Loss: 0.0247 | Val Macro AUC: 0.9997 | EMA5: 0.9995 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    4/1000 | Train Loss: 0.0239 | Val Loss: 0.0495 | Val Macro AUC: 0.9997 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 1/68
+Epoch    5/1000 | Train Loss: 0.0229 | Val Loss: 0.0187 | Val Macro AUC: 0.9998 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 0/68
+Epoch    6/1000 | Train Loss: 0.0126 | Val Loss: 0.0160 | Val Macro AUC: 0.9996 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 1/68
+Epoch    7/1000 | Train Loss: 0.0201 | Val Loss: 0.0277 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    8/1000 | Train Loss: 0.0076 | Val Loss: 0.0197 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 1/68
+Epoch    9/1000 | Train Loss: 0.0118 | Val Loss: 0.0143 | Val Macro AUC: 0.9993 | EMA5: 0.9996 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 2/68
+Epoch   10/1000 | Train Loss: 0.0127 | Val Loss: 0.0274 | Val Macro AUC: 0.9984 | EMA5: 0.9994 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 3/68
+Epoch   11/1000 | Train Loss: 0.0368 | Val Loss: 0.0288 | Val Macro AUC: 0.9988 | EMA5: 0.9992 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 4/68
+Epoch   12/1000 | Train Loss: 0.0437 | Val Loss: 0.0213 | Val Macro AUC: 0.9992 | EMA5: 0.9991 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 5/68
+Epoch   13/1000 | Train Loss: 0.0013 | Val Loss: 0.0184 | Val Macro AUC: 0.9992 | EMA5: 0.9990 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 6/68
+Epoch   14/1000 | Train Loss: 0.0017 | Val Loss: 0.0211 | Val Macro AUC: 0.9994 | EMA5: 0.9990 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 7/68
+Epoch   15/1000 | Train Loss: 0.0054 | Val Loss: 0.0190 | Val Macro AUC: 0.9989 | EMA5: 0.9991 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 8/68
+Epoch   16/1000 | Train Loss: 0.0018 | Val Loss: 0.0214 | Val Macro AUC: 0.9991 | EMA5: 0.9992 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 9/68
+Epoch   17/1000 | Train Loss: 0.0005 | Val Loss: 0.0223 | Val Macro AUC: 0.9994 | EMA5: 0.9992 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 10/68
+Epoch   18/1000 | Train Loss: 0.0003 | Val Loss: 0.0231 | Val Macro AUC: 0.9987 | EMA5: 0.9991 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 11/68
+Epoch   19/1000 | Train Loss: 0.0064 | Val Loss: 0.0261 | Val Macro AUC: 0.9985 | EMA5: 0.9989 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 12/68
+Epoch   20/1000 | Train Loss: 0.0026 | Val Loss: 0.0227 | Val Macro AUC: 0.9984 | EMA5: 0.9988 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 13/68
+Epoch   21/1000 | Train Loss: 0.0386 | Val Loss: 0.0254 | Val Macro AUC: 0.9985 | EMA5: 0.9987 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 14/68
+Epoch   22/1000 | Train Loss: 0.0123 | Val Loss: 0.0277 | Val Macro AUC: 0.9988 | EMA5: 0.9986 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 15/68
+Epoch   23/1000 | Train Loss: 0.0019 | Val Loss: 0.0260 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 16/68
+Epoch   24/1000 | Train Loss: 0.0023 | Val Loss: 0.0232 | Val Macro AUC: 0.9979 | EMA5: 0.9984 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 17/68
+Epoch   25/1000 | Train Loss: 0.0013 | Val Loss: 0.0259 | Val Macro AUC: 0.9983 | EMA5: 0.9984 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 18/68
+Epoch   26/1000 | Train Loss: 0.0026 | Val Loss: 0.0273 | Val Macro AUC: 0.9986 | EMA5: 0.9984 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 19/68
+Epoch   27/1000 | Train Loss: 0.0001 | Val Loss: 0.0280 | Val Macro AUC: 0.9986 | EMA5: 0.9984 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 20/68
+Epoch   28/1000 | Train Loss: 0.0002 | Val Loss: 0.0265 | Val Macro AUC: 0.9985 | EMA5: 0.9984 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 21/68
+Epoch   29/1000 | Train Loss: 0.0002 | Val Loss: 0.0273 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 22/68
+Epoch   30/1000 | Train Loss: 0.0002 | Val Loss: 0.0279 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 23/68
+Epoch   31/1000 | Train Loss: 0.0001 | Val Loss: 0.0281 | Val Macro AUC: 0.9984 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 24/68
+Epoch   32/1000 | Train Loss: 0.0001 | Val Loss: 0.0281 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 25/68
+Epoch   33/1000 | Train Loss: 0.0002 | Val Loss: 0.0266 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 26/68
+Epoch   34/1000 | Train Loss: 0.0000 | Val Loss: 0.0269 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 27/68
+Epoch   35/1000 | Train Loss: 0.0002 | Val Loss: 0.0294 | Val Macro AUC: 0.9986 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 28/68
+Epoch   36/1000 | Train Loss: 0.0002 | Val Loss: 0.0271 | Val Macro AUC: 0.9984 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 29/68
+Epoch   37/1000 | Train Loss: 0.0000 | Val Loss: 0.0269 | Val Macro AUC: 0.9984 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 30/68
+Epoch   38/1000 | Train Loss: 0.0001 | Val Loss: 0.0276 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 31/68
+Epoch   39/1000 | Train Loss: 0.0001 | Val Loss: 0.0281 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 32/68
+Epoch   40/1000 | Train Loss: 0.0000 | Val Loss: 0.0280 | Val Macro AUC: 0.9985 | EMA5: 0.9984 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 33/68
+Epoch   41/1000 | Train Loss: 0.0000 | Val Loss: 0.0285 | Val Macro AUC: 0.9986 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 34/68
+Epoch   42/1000 | Train Loss: 0.0000 | Val Loss: 0.0289 | Val Macro AUC: 0.9986 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 35/68
+Epoch   43/1000 | Train Loss: 0.0000 | Val Loss: 0.0294 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 36/68
+Epoch   44/1000 | Train Loss: 0.0000 | Val Loss: 0.0294 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 37/68
+Epoch   45/1000 | Train Loss: 0.0000 | Val Loss: 0.0294 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 38/68
+Epoch   46/1000 | Train Loss: 0.0001 | Val Loss: 0.0292 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 39/68
+Epoch   47/1000 | Train Loss: 0.0000 | Val Loss: 0.0289 | Val Macro AUC: 0.9985 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 40/68
+Epoch   48/1000 | Train Loss: 0.0000 | Val Loss: 0.0289 | Val Macro AUC: 0.9985 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 41/68
+Epoch   49/1000 | Train Loss: 0.0000 | Val Loss: 0.0289 | Val Macro AUC: 0.9985 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 42/68
+Epoch   50/1000 | Train Loss: 0.0001 | Val Loss: 0.0291 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 43/68
+Epoch   51/1000 | Train Loss: 0.0000 | Val Loss: 0.0293 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 44/68
+Epoch   52/1000 | Train Loss: 0.0001 | Val Loss: 0.0292 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 45/68
+Epoch   53/1000 | Train Loss: 0.0000 | Val Loss: 0.0292 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 46/68
+Epoch   54/1000 | Train Loss: 0.0000 | Val Loss: 0.0292 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 47/68
+Epoch   55/1000 | Train Loss: 0.0000 | Val Loss: 0.0292 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 48/68
+Epoch   56/1000 | Train Loss: 0.0000 | Val Loss: 0.0293 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 49/68
+Epoch   57/1000 | Train Loss: 0.0000 | Val Loss: 0.0293 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 50/68
+Epoch   58/1000 | Train Loss: 0.0001 | Val Loss: 0.0291 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 51/68
+Epoch   59/1000 | Train Loss: 0.0001 | Val Loss: 0.0288 | Val Macro AUC: 0.9986 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 52/68
+Epoch   60/1000 | Train Loss: 0.0000 | Val Loss: 0.0287 | Val Macro AUC: 0.9986 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 53/68
+Epoch   61/1000 | Train Loss: 0.0000 | Val Loss: 0.0288 | Val Macro AUC: 0.9986 | EMA5: 0.9985 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 54/68
+Epoch   62/1000 | Train Loss: 0.0022 | Val Loss: 0.0292 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 55/68
+Epoch   63/1000 | Train Loss: 0.0000 | Val Loss: 0.0292 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 56/68
+Epoch   64/1000 | Train Loss: 0.0001 | Val Loss: 0.0294 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 57/68
+Epoch   65/1000 | Train Loss: 0.0000 | Val Loss: 0.0294 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 58/68
+Epoch   66/1000 | Train Loss: 0.0000 | Val Loss: 0.0293 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 59/68
+Epoch   67/1000 | Train Loss: 0.0000 | Val Loss: 0.0293 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 60/68
+Epoch   68/1000 | Train Loss: 0.0000 | Val Loss: 0.0293 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 61/68
+Epoch   69/1000 | Train Loss: 0.0001 | Val Loss: 0.0292 | Val Macro AUC: 0.9985 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 62/68
+Epoch   70/1000 | Train Loss: 0.0000 | Val Loss: 0.0292 | Val Macro AUC: 0.9985 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 63/68
+Epoch   71/1000 | Train Loss: 0.0002 | Val Loss: 0.0294 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 64/68
+Epoch   72/1000 | Train Loss: 0.0000 | Val Loss: 0.0294 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 65/68
+Epoch   73/1000 | Train Loss: 0.0000 | Val Loss: 0.0295 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 66/68
+Epoch   74/1000 | Train Loss: 0.0000 | Val Loss: 0.0295 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 67/68
+Epoch   75/1000 | Train Loss: 0.0000 | Val Loss: 0.0295 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 68/68
+Early stopping at epoch 75
+Misclassified samples: 6/337
+Error analysis JSON saved to: d:\glycanPUG\MASK\94\link\train\classification_results\seed_7\misclassified_samples.json
+  Seed 7 results:
+    Macro F1: 0.8629
+    Macro AUC: 0.9962
+    Accuracy: 0.9822
+    Best epoch: 5
+
+============================================================
+Training with seed: 8
+============================================================
+Epoch    1/1000 | Train Loss: 0.4933 | Val Loss: 0.4109 | Val Macro AUC: 0.9978 | EMA5: 0.9978 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 0/68
+Epoch    2/1000 | Train Loss: 0.1210 | Val Loss: 0.1084 | Val Macro AUC: 0.9990 | EMA5: 0.9984 | Val Acc: 0.9792 | LR: 5.00e-04 | ES: 0/68
+Epoch    3/1000 | Train Loss: 0.0706 | Val Loss: 0.1230 | Val Macro AUC: 0.9987 | EMA5: 0.9985 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 1/68
+Epoch    4/1000 | Train Loss: 0.0314 | Val Loss: 0.1279 | Val Macro AUC: 0.9993 | EMA5: 0.9987 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 0/68
+Epoch    5/1000 | Train Loss: 0.0493 | Val Loss: 0.0865 | Val Macro AUC: 0.9994 | EMA5: 0.9989 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    6/1000 | Train Loss: 0.0197 | Val Loss: 0.0884 | Val Macro AUC: 0.9988 | EMA5: 0.9990 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 0/68
+Epoch    7/1000 | Train Loss: 0.0293 | Val Loss: 0.1960 | Val Macro AUC: 0.9992 | EMA5: 0.9991 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 1/68
+Epoch    8/1000 | Train Loss: 0.0247 | Val Loss: 0.7302 | Val Macro AUC: 0.9994 | EMA5: 0.9992 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    9/1000 | Train Loss: 0.0100 | Val Loss: 0.2852 | Val Macro AUC: 0.9990 | EMA5: 0.9992 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 1/68
+Epoch   10/1000 | Train Loss: 0.0168 | Val Loss: 0.6852 | Val Macro AUC: 0.9996 | EMA5: 0.9992 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 2/68
+Epoch   11/1000 | Train Loss: 0.0250 | Val Loss: 0.0453 | Val Macro AUC: 0.9985 | EMA5: 0.9991 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 3/68
+Epoch   12/1000 | Train Loss: 0.0131 | Val Loss: 1.0122 | Val Macro AUC: 0.9991 | EMA5: 0.9991 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 4/68
+Epoch   13/1000 | Train Loss: 0.0199 | Val Loss: 0.0666 | Val Macro AUC: 0.9994 | EMA5: 0.9991 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 5/68
+Epoch   14/1000 | Train Loss: 0.0106 | Val Loss: 0.9298 | Val Macro AUC: 0.9987 | EMA5: 0.9991 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 6/68
+Epoch   15/1000 | Train Loss: 0.0081 | Val Loss: 0.4339 | Val Macro AUC: 0.9986 | EMA5: 0.9989 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 7/68
+Epoch   16/1000 | Train Loss: 0.0102 | Val Loss: 0.6177 | Val Macro AUC: 0.9992 | EMA5: 0.9990 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 8/68
+Epoch   17/1000 | Train Loss: 0.0082 | Val Loss: 0.2164 | Val Macro AUC: 0.9987 | EMA5: 0.9989 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 9/68
+Epoch   18/1000 | Train Loss: 0.0083 | Val Loss: 0.6757 | Val Macro AUC: 0.9988 | EMA5: 0.9988 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 10/68
+Epoch   19/1000 | Train Loss: 0.0055 | Val Loss: 0.5765 | Val Macro AUC: 0.9991 | EMA5: 0.9989 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 11/68
+Epoch   20/1000 | Train Loss: 0.0004 | Val Loss: 0.4729 | Val Macro AUC: 0.9993 | EMA5: 0.9990 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 12/68
+Epoch   21/1000 | Train Loss: 0.0089 | Val Loss: 0.8217 | Val Macro AUC: 0.9986 | EMA5: 0.9989 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 13/68
+Epoch   22/1000 | Train Loss: 0.0015 | Val Loss: 0.6833 | Val Macro AUC: 0.9986 | EMA5: 0.9989 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 14/68
+Epoch   23/1000 | Train Loss: 0.0018 | Val Loss: 0.8202 | Val Macro AUC: 0.9985 | EMA5: 0.9988 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 15/68
+Epoch   24/1000 | Train Loss: 0.0011 | Val Loss: 0.9112 | Val Macro AUC: 0.9984 | EMA5: 0.9987 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 16/68
+Epoch   25/1000 | Train Loss: 0.0075 | Val Loss: 0.2796 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 17/68
+Epoch   26/1000 | Train Loss: 0.0002 | Val Loss: 0.5965 | Val Macro AUC: 0.9986 | EMA5: 0.9985 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 18/68
+Epoch   27/1000 | Train Loss: 0.0001 | Val Loss: 0.6086 | Val Macro AUC: 0.9987 | EMA5: 0.9985 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 19/68
+Epoch   28/1000 | Train Loss: 0.0001 | Val Loss: 0.6368 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 20/68
+Epoch   29/1000 | Train Loss: 0.0001 | Val Loss: 0.6152 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 21/68
+Epoch   30/1000 | Train Loss: 0.0007 | Val Loss: 0.3572 | Val Macro AUC: 0.9985 | EMA5: 0.9986 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 22/68
+Epoch   31/1000 | Train Loss: 0.0011 | Val Loss: 0.1405 | Val Macro AUC: 0.9983 | EMA5: 0.9986 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 23/68
+Epoch   32/1000 | Train Loss: 0.0003 | Val Loss: 0.4783 | Val Macro AUC: 0.9984 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 24/68
+Epoch   33/1000 | Train Loss: 0.0001 | Val Loss: 0.6210 | Val Macro AUC: 0.9986 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 25/68
+Epoch   34/1000 | Train Loss: 0.0001 | Val Loss: 0.5817 | Val Macro AUC: 0.9986 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 26/68
+Epoch   35/1000 | Train Loss: 0.0000 | Val Loss: 0.5552 | Val Macro AUC: 0.9986 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 27/68
+Epoch   36/1000 | Train Loss: 0.0001 | Val Loss: 0.5133 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 28/68
+Epoch   37/1000 | Train Loss: 0.0001 | Val Loss: 0.5183 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 29/68
+Epoch   38/1000 | Train Loss: 0.0001 | Val Loss: 0.5616 | Val Macro AUC: 0.9987 | EMA5: 0.9986 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 30/68
+Epoch   39/1000 | Train Loss: 0.0000 | Val Loss: 0.5461 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 31/68
+Epoch   40/1000 | Train Loss: 0.0003 | Val Loss: 0.8067 | Val Macro AUC: 0.9985 | EMA5: 0.9986 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 32/68
+Epoch   41/1000 | Train Loss: 0.0003 | Val Loss: 0.4664 | Val Macro AUC: 0.9984 | EMA5: 0.9986 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 33/68
+Epoch   42/1000 | Train Loss: 0.0003 | Val Loss: 0.6101 | Val Macro AUC: 0.9983 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 34/68
+Epoch   43/1000 | Train Loss: 0.0001 | Val Loss: 0.6657 | Val Macro AUC: 0.9984 | EMA5: 0.9984 | Val Acc: 0.9911 | LR: 2.50e-04 | ES: 35/68
+Epoch   44/1000 | Train Loss: 0.0000 | Val Loss: 0.6114 | Val Macro AUC: 0.9985 | EMA5: 0.9984 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 36/68
+Epoch   45/1000 | Train Loss: 0.0001 | Val Loss: 0.6246 | Val Macro AUC: 0.9985 | EMA5: 0.9984 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 37/68
+Epoch   46/1000 | Train Loss: 0.0000 | Val Loss: 0.5806 | Val Macro AUC: 0.9985 | EMA5: 0.9984 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 38/68
+Epoch   47/1000 | Train Loss: 0.0000 | Val Loss: 0.6216 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 39/68
+Epoch   48/1000 | Train Loss: 0.0000 | Val Loss: 0.6222 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 40/68
+Epoch   49/1000 | Train Loss: 0.0000 | Val Loss: 0.6109 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 41/68
+Epoch   50/1000 | Train Loss: 0.0000 | Val Loss: 0.6018 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 42/68
+Epoch   51/1000 | Train Loss: 0.0001 | Val Loss: 0.6703 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 43/68
+Epoch   52/1000 | Train Loss: 0.0000 | Val Loss: 0.6641 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 44/68
+Epoch   53/1000 | Train Loss: 0.0000 | Val Loss: 0.6749 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 45/68
+Epoch   54/1000 | Train Loss: 0.0000 | Val Loss: 0.6904 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 46/68
+Epoch   55/1000 | Train Loss: 0.0000 | Val Loss: 0.6756 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 47/68
+Epoch   56/1000 | Train Loss: 0.0001 | Val Loss: 0.6709 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 48/68
+Epoch   57/1000 | Train Loss: 0.0000 | Val Loss: 0.6733 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 49/68
+Epoch   58/1000 | Train Loss: 0.0001 | Val Loss: 0.6395 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 50/68
+Epoch   59/1000 | Train Loss: 0.0001 | Val Loss: 0.6076 | Val Macro AUC: 0.9986 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 51/68
+Epoch   60/1000 | Train Loss: 0.0000 | Val Loss: 0.6266 | Val Macro AUC: 0.9986 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 52/68
+Epoch   61/1000 | Train Loss: 0.0000 | Val Loss: 0.6288 | Val Macro AUC: 0.9986 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 8.33e-05 | ES: 53/68
+Epoch   62/1000 | Train Loss: 0.0000 | Val Loss: 0.6232 | Val Macro AUC: 0.9986 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 54/68
+Epoch   63/1000 | Train Loss: 0.0000 | Val Loss: 0.6151 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 55/68
+Epoch   64/1000 | Train Loss: 0.0000 | Val Loss: 0.6160 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 56/68
+Epoch   65/1000 | Train Loss: 0.0000 | Val Loss: 0.6256 | Val Macro AUC: 0.9986 | EMA5: 0.9986 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 57/68
+Epoch   66/1000 | Train Loss: 0.0000 | Val Loss: 0.6328 | Val Macro AUC: 0.9985 | EMA5: 0.9986 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 58/68
+Epoch   67/1000 | Train Loss: 0.0000 | Val Loss: 0.6365 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 59/68
+Epoch   68/1000 | Train Loss: 0.0000 | Val Loss: 0.6418 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 60/68
+Epoch   69/1000 | Train Loss: 0.0000 | Val Loss: 0.6399 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 61/68
+Epoch   70/1000 | Train Loss: 0.0000 | Val Loss: 0.6360 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 62/68
+Epoch   71/1000 | Train Loss: 0.0000 | Val Loss: 0.6332 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 63/68
+Epoch   72/1000 | Train Loss: 0.0000 | Val Loss: 0.6356 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 64/68
+Epoch   73/1000 | Train Loss: 0.0000 | Val Loss: 0.6324 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 65/68
+Epoch   74/1000 | Train Loss: 0.0000 | Val Loss: 0.6366 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 66/68
+Epoch   75/1000 | Train Loss: 0.0000 | Val Loss: 0.6442 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 67/68
+Epoch   76/1000 | Train Loss: 0.0000 | Val Loss: 0.6488 | Val Macro AUC: 0.9985 | EMA5: 0.9985 | Val Acc: 0.9911 | LR: 2.08e-05 | ES: 68/68
+Early stopping at epoch 76
+Misclassified samples: 5/337
+Error analysis JSON saved to: d:\glycanPUG\MASK\94\link\train\classification_results\seed_8\misclassified_samples.json
+  Seed 8 results:
+    Macro F1: 0.8980
+    Macro AUC: 0.9993
+    Accuracy: 0.9852
+    Best epoch: 10
+
+============================================================
+Training with seed: 9
+============================================================
+Epoch    1/1000 | Train Loss: 0.4730 | Val Loss: 0.0940 | Val Macro AUC: 0.9995 | EMA5: 0.9995 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 0/68
+Epoch    2/1000 | Train Loss: 0.1443 | Val Loss: 0.0252 | Val Macro AUC: 1.0000 | EMA5: 0.9998 | Val Acc: 0.9852 | LR: 5.00e-04 | ES: 0/68
+Epoch    3/1000 | Train Loss: 0.1215 | Val Loss: 0.0087 | Val Macro AUC: 1.0000 | EMA5: 0.9998 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 1/68
+Epoch    4/1000 | Train Loss: 0.0796 | Val Loss: 0.0050 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 0/68
+Epoch    5/1000 | Train Loss: 0.0437 | Val Loss: 0.0058 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 1/68
+Epoch    6/1000 | Train Loss: 0.0265 | Val Loss: 0.0025 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 5.00e-04 | ES: 0/68
+Epoch    7/1000 | Train Loss: 0.0579 | Val Loss: 0.0034 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 1/68
+Epoch    8/1000 | Train Loss: 0.0167 | Val Loss: 0.0039 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 2/68
+Epoch    9/1000 | Train Loss: 0.0189 | Val Loss: 0.0035 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 3/68
+Epoch   10/1000 | Train Loss: 0.0362 | Val Loss: 0.0072 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 4/68
+Epoch   11/1000 | Train Loss: 0.0386 | Val Loss: 0.0089 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 5/68
+Epoch   12/1000 | Train Loss: 0.0269 | Val Loss: 0.0008 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 5.00e-04 | ES: 6/68
+Epoch   13/1000 | Train Loss: 0.0061 | Val Loss: 0.0031 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 7/68
+Epoch   14/1000 | Train Loss: 0.0089 | Val Loss: 0.0141 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 8/68
+Epoch   15/1000 | Train Loss: 0.0088 | Val Loss: 0.0257 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 9/68
+Epoch   16/1000 | Train Loss: 0.0142 | Val Loss: 0.0085 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 10/68
+Epoch   17/1000 | Train Loss: 0.0025 | Val Loss: 0.0018 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 11/68
+Epoch   18/1000 | Train Loss: 0.0006 | Val Loss: 0.0046 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 12/68
+Epoch   19/1000 | Train Loss: 0.0166 | Val Loss: 0.0033 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 13/68
+Epoch   20/1000 | Train Loss: 0.0147 | Val Loss: 0.0059 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 14/68
+Epoch   21/1000 | Train Loss: 0.0117 | Val Loss: 0.0023 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 15/68
+Epoch   22/1000 | Train Loss: 0.0050 | Val Loss: 0.0059 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 16/68
+Epoch   23/1000 | Train Loss: 0.0041 | Val Loss: 0.0059 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 5.00e-04 | ES: 17/68
+Epoch   24/1000 | Train Loss: 0.0019 | Val Loss: 0.0000 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 18/68
+Epoch   25/1000 | Train Loss: 0.0080 | Val Loss: 0.0016 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 19/68
+Epoch   26/1000 | Train Loss: 0.0005 | Val Loss: 0.0015 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 20/68
+Epoch   27/1000 | Train Loss: 0.0001 | Val Loss: 0.0014 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 21/68
+Epoch   28/1000 | Train Loss: 0.0001 | Val Loss: 0.0019 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 22/68
+Epoch   29/1000 | Train Loss: 0.0001 | Val Loss: 0.0015 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 23/68
+Epoch   30/1000 | Train Loss: 0.0001 | Val Loss: 0.0017 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 24/68
+Epoch   31/1000 | Train Loss: 0.0003 | Val Loss: 0.0013 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 25/68
+Epoch   32/1000 | Train Loss: 0.0001 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 2.50e-04 | ES: 26/68
+Epoch   33/1000 | Train Loss: 0.0000 | Val Loss: 0.0012 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 27/68
+Epoch   34/1000 | Train Loss: 0.0000 | Val Loss: 0.0017 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 28/68
+Epoch   35/1000 | Train Loss: 0.0001 | Val Loss: 0.0021 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 29/68
+Epoch   36/1000 | Train Loss: 0.0002 | Val Loss: 0.0015 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 30/68
+Epoch   37/1000 | Train Loss: 0.0001 | Val Loss: 0.0022 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 31/68
+Epoch   38/1000 | Train Loss: 0.0000 | Val Loss: 0.0024 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 32/68
+Epoch   39/1000 | Train Loss: 0.0001 | Val Loss: 0.0025 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 33/68
+Epoch   40/1000 | Train Loss: 0.0001 | Val Loss: 0.0032 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 34/68
+Epoch   41/1000 | Train Loss: 0.0001 | Val Loss: 0.0041 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.50e-04 | ES: 35/68
+Epoch   42/1000 | Train Loss: 0.0001 | Val Loss: 0.0035 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 36/68
+Epoch   43/1000 | Train Loss: 0.0000 | Val Loss: 0.0035 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 37/68
+Epoch   44/1000 | Train Loss: 0.0000 | Val Loss: 0.0035 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 38/68
+Epoch   45/1000 | Train Loss: 0.0000 | Val Loss: 0.0034 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 39/68
+Epoch   46/1000 | Train Loss: 0.0000 | Val Loss: 0.0035 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 40/68
+Epoch   47/1000 | Train Loss: 0.0001 | Val Loss: 0.0039 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 41/68
+Epoch   48/1000 | Train Loss: 0.0000 | Val Loss: 0.0039 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 42/68
+Epoch   49/1000 | Train Loss: 0.0000 | Val Loss: 0.0038 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 43/68
+Epoch   50/1000 | Train Loss: 0.0000 | Val Loss: 0.0039 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 44/68
+Epoch   51/1000 | Train Loss: 0.0001 | Val Loss: 0.0039 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 45/68
+Epoch   52/1000 | Train Loss: 0.0004 | Val Loss: 0.0016 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 46/68
+Epoch   53/1000 | Train Loss: 0.0001 | Val Loss: 0.0008 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 47/68
+Epoch   54/1000 | Train Loss: 0.0002 | Val Loss: 0.0010 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 48/68
+Epoch   55/1000 | Train Loss: 0.0000 | Val Loss: 0.0011 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 1.0000 | LR: 8.33e-05 | ES: 49/68
+Epoch   56/1000 | Train Loss: 0.0000 | Val Loss: 0.0014 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 50/68
+Epoch   57/1000 | Train Loss: 0.0001 | Val Loss: 0.0013 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 51/68
+Epoch   58/1000 | Train Loss: 0.0000 | Val Loss: 0.0014 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 52/68
+Epoch   59/1000 | Train Loss: 0.0000 | Val Loss: 0.0016 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 8.33e-05 | ES: 53/68
+Epoch   60/1000 | Train Loss: 0.0000 | Val Loss: 0.0017 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 54/68
+Epoch   61/1000 | Train Loss: 0.0000 | Val Loss: 0.0017 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 55/68
+Epoch   62/1000 | Train Loss: 0.0000 | Val Loss: 0.0017 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 56/68
+Epoch   63/1000 | Train Loss: 0.0000 | Val Loss: 0.0018 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 57/68
+Epoch   64/1000 | Train Loss: 0.0002 | Val Loss: 0.0021 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 58/68
+Epoch   65/1000 | Train Loss: 0.0001 | Val Loss: 0.0026 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 59/68
+Epoch   66/1000 | Train Loss: 0.0003 | Val Loss: 0.0028 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 60/68
+Epoch   67/1000 | Train Loss: 0.0000 | Val Loss: 0.0030 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 61/68
+Epoch   68/1000 | Train Loss: 0.0000 | Val Loss: 0.0030 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 62/68
+Epoch   69/1000 | Train Loss: 0.0001 | Val Loss: 0.0031 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 63/68
+Epoch   70/1000 | Train Loss: 0.0000 | Val Loss: 0.0031 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 64/68
+Epoch   71/1000 | Train Loss: 0.0000 | Val Loss: 0.0031 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 65/68
+Epoch   72/1000 | Train Loss: 0.0000 | Val Loss: 0.0031 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 66/68
+Epoch   73/1000 | Train Loss: 0.0000 | Val Loss: 0.0032 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 67/68
+Epoch   74/1000 | Train Loss: 0.0000 | Val Loss: 0.0032 | Val Macro AUC: 1.0000 | EMA5: 1.0000 | Val Acc: 0.9970 | LR: 2.08e-05 | ES: 68/68
+Early stopping at epoch 74
+Misclassified samples: 4/337
+Error analysis JSON saved to: d:\glycanPUG\MASK\94\link\train\classification_results\seed_9\misclassified_samples.json
+  Seed 9 results:
+    Macro F1: 0.9348
+    Macro AUC: 0.9996
+    Accuracy: 0.9881
+    Best epoch: 2
+
+============================================================
+Training with seed: 10
+============================================================
+Epoch    1/1000 | Train Loss: 0.4351 | Val Loss: 0.1345 | Val Macro AUC: 0.9982 | EMA5: 0.9982 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 0/68
+Epoch    2/1000 | Train Loss: 0.1288 | Val Loss: 0.1094 | Val Macro AUC: 0.9995 | EMA5: 0.9989 | Val Acc: 0.9881 | LR: 5.00e-04 | ES: 0/68
+Epoch    3/1000 | Train Loss: 0.0795 | Val Loss: 0.0955 | Val Macro AUC: 0.9995 | EMA5: 0.9991 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    4/1000 | Train Loss: 0.0325 | Val Loss: 0.1318 | Val Macro AUC: 0.9998 | EMA5: 0.9993 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 0/68
+Epoch    5/1000 | Train Loss: 0.0918 | Val Loss: 0.0549 | Val Macro AUC: 0.9996 | EMA5: 0.9993 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 1/68
+Epoch    6/1000 | Train Loss: 0.0337 | Val Loss: 0.0912 | Val Macro AUC: 0.9999 | EMA5: 0.9997 | Val Acc: 0.9911 | LR: 5.00e-04 | ES: 0/68
+Epoch    7/1000 | Train Loss: 0.0418 | Val Loss: 0.1293 | Val Macro AUC: 0.9999 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 1/68
+Epoch    8/1000 | Train Loss: 0.0285 | Val Loss: 0.0418 | Val Macro AUC: 0.9999 | EMA5: 0.9998 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 0/68
+Epoch    9/1000 | Train Loss: 0.0475 | Val Loss: 0.0322 | Val Macro AUC: 0.9996 | EMA5: 0.9998 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 1/68
+Epoch   10/1000 | Train Loss: 0.0339 | Val Loss: 0.1035 | Val Macro AUC: 1.0000 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 2/68
+Epoch   11/1000 | Train Loss: 0.0079 | Val Loss: 0.1304 | Val Macro AUC: 0.9998 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 3/68
+Epoch   12/1000 | Train Loss: 0.0112 | Val Loss: 0.5476 | Val Macro AUC: 0.9999 | EMA5: 0.9998 | Val Acc: 0.9822 | LR: 5.00e-04 | ES: 4/68
+Epoch   13/1000 | Train Loss: 0.0161 | Val Loss: 0.1046 | Val Macro AUC: 0.9999 | EMA5: 0.9998 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 5/68
+Epoch   14/1000 | Train Loss: 0.0273 | Val Loss: 0.0820 | Val Macro AUC: 0.9997 | EMA5: 0.9999 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 6/68
+Epoch   15/1000 | Train Loss: 0.0349 | Val Loss: 0.1461 | Val Macro AUC: 0.9993 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 7/68
+Epoch   16/1000 | Train Loss: 0.0020 | Val Loss: 0.1039 | Val Macro AUC: 0.9998 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 8/68
+Epoch   17/1000 | Train Loss: 0.0167 | Val Loss: 0.2094 | Val Macro AUC: 0.9999 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 9/68
+Epoch   18/1000 | Train Loss: 0.0092 | Val Loss: 0.2333 | Val Macro AUC: 0.9994 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 10/68
+Epoch   19/1000 | Train Loss: 0.0027 | Val Loss: 0.2334 | Val Macro AUC: 0.9997 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 11/68
+Epoch   20/1000 | Train Loss: 0.0070 | Val Loss: 0.1986 | Val Macro AUC: 0.9999 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 12/68
+Epoch   21/1000 | Train Loss: 0.0035 | Val Loss: 0.0591 | Val Macro AUC: 0.9998 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 13/68
+Epoch   22/1000 | Train Loss: 0.0031 | Val Loss: 0.0891 | Val Macro AUC: 0.9994 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 14/68
+Epoch   23/1000 | Train Loss: 0.0010 | Val Loss: 0.0479 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 15/68
+Epoch   24/1000 | Train Loss: 0.0015 | Val Loss: 0.1298 | Val Macro AUC: 0.9995 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 16/68
+Epoch   25/1000 | Train Loss: 0.0006 | Val Loss: 0.1424 | Val Macro AUC: 0.9997 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 5.00e-04 | ES: 17/68
+Epoch   26/1000 | Train Loss: 0.0002 | Val Loss: 0.1399 | Val Macro AUC: 0.9997 | EMA5: 0.9996 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 18/68
+Epoch   27/1000 | Train Loss: 0.0001 | Val Loss: 0.1327 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 19/68
+Epoch   28/1000 | Train Loss: 0.0002 | Val Loss: 0.1031 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 20/68
+Epoch   29/1000 | Train Loss: 0.0005 | Val Loss: 0.2235 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 21/68
+Epoch   30/1000 | Train Loss: 0.0003 | Val Loss: 0.1968 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 22/68
+Epoch   31/1000 | Train Loss: 0.0000 | Val Loss: 0.1258 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 23/68
+Epoch   32/1000 | Train Loss: 0.0001 | Val Loss: 0.1552 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 24/68
+Epoch   33/1000 | Train Loss: 0.0004 | Val Loss: 0.1299 | Val Macro AUC: 0.9996 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 25/68
+Epoch   34/1000 | Train Loss: 0.0010 | Val Loss: 0.1270 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 26/68
+Epoch   35/1000 | Train Loss: 0.0002 | Val Loss: 0.1213 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 27/68
+Epoch   36/1000 | Train Loss: 0.0001 | Val Loss: 0.2084 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 28/68
+Epoch   37/1000 | Train Loss: 0.0001 | Val Loss: 0.2107 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 29/68
+Epoch   38/1000 | Train Loss: 0.0001 | Val Loss: 0.1914 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 30/68
+Epoch   39/1000 | Train Loss: 0.0000 | Val Loss: 0.1932 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 31/68
+Epoch   40/1000 | Train Loss: 0.0006 | Val Loss: 0.2045 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 32/68
+Epoch   41/1000 | Train Loss: 0.0000 | Val Loss: 0.1990 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 33/68
+Epoch   42/1000 | Train Loss: 0.0000 | Val Loss: 0.2038 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 34/68
+Epoch   43/1000 | Train Loss: 0.0000 | Val Loss: 0.2042 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.50e-04 | ES: 35/68
+Epoch   44/1000 | Train Loss: 0.0000 | Val Loss: 0.2039 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 36/68
+Epoch   45/1000 | Train Loss: 0.0000 | Val Loss: 0.2037 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 37/68
+Epoch   46/1000 | Train Loss: 0.0000 | Val Loss: 0.2041 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 38/68
+Epoch   47/1000 | Train Loss: 0.0001 | Val Loss: 0.2028 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 39/68
+Epoch   48/1000 | Train Loss: 0.0000 | Val Loss: 0.2017 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 40/68
+Epoch   49/1000 | Train Loss: 0.0000 | Val Loss: 0.2023 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 41/68
+Epoch   50/1000 | Train Loss: 0.0000 | Val Loss: 0.2044 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 42/68
+Epoch   51/1000 | Train Loss: 0.0000 | Val Loss: 0.2008 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 43/68
+Epoch   52/1000 | Train Loss: 0.0000 | Val Loss: 0.2012 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 44/68
+Epoch   53/1000 | Train Loss: 0.0000 | Val Loss: 0.1996 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 45/68
+Epoch   54/1000 | Train Loss: 0.0000 | Val Loss: 0.1998 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 46/68
+Epoch   55/1000 | Train Loss: 0.0000 | Val Loss: 0.1989 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 47/68
+Epoch   56/1000 | Train Loss: 0.0000 | Val Loss: 0.1977 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 48/68
+Epoch   57/1000 | Train Loss: 0.0000 | Val Loss: 0.1965 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 49/68
+Epoch   58/1000 | Train Loss: 0.0000 | Val Loss: 0.1948 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 50/68
+Epoch   59/1000 | Train Loss: 0.0000 | Val Loss: 0.1918 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 51/68
+Epoch   60/1000 | Train Loss: 0.0000 | Val Loss: 0.1933 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 52/68
+Epoch   61/1000 | Train Loss: 0.0000 | Val Loss: 0.1945 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 8.33e-05 | ES: 53/68
+Epoch   62/1000 | Train Loss: 0.0001 | Val Loss: 0.2024 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 54/68
+Epoch   63/1000 | Train Loss: 0.0000 | Val Loss: 0.2017 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 55/68
+Epoch   64/1000 | Train Loss: 0.0000 | Val Loss: 0.2014 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 56/68
+Epoch   65/1000 | Train Loss: 0.0000 | Val Loss: 0.2006 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 57/68
+Epoch   66/1000 | Train Loss: 0.0000 | Val Loss: 0.1995 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 58/68
+Epoch   67/1000 | Train Loss: 0.0000 | Val Loss: 0.1998 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 59/68
+Epoch   68/1000 | Train Loss: 0.0000 | Val Loss: 0.1992 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 60/68
+Epoch   69/1000 | Train Loss: 0.0000 | Val Loss: 0.1978 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 61/68
+Epoch   70/1000 | Train Loss: 0.0000 | Val Loss: 0.1965 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 62/68
+Epoch   71/1000 | Train Loss: 0.0000 | Val Loss: 0.1950 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 63/68
+Epoch   72/1000 | Train Loss: 0.0001 | Val Loss: 0.1939 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 64/68
+Epoch   73/1000 | Train Loss: 0.0000 | Val Loss: 0.1933 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 65/68
+Epoch   74/1000 | Train Loss: 0.0000 | Val Loss: 0.1928 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 66/68
+Epoch   75/1000 | Train Loss: 0.0000 | Val Loss: 0.1932 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 67/68
+Epoch   76/1000 | Train Loss: 0.0000 | Val Loss: 0.1927 | Val Macro AUC: 0.9997 | EMA5: 0.9997 | Val Acc: 0.9941 | LR: 2.08e-05 | ES: 68/68
+Early stopping at epoch 76
+Misclassified samples: 1/337
+Error analysis JSON saved to: d:\glycanPUG\MASK\94\link\train\classification_results\seed_10\misclassified_samples.json
+  Seed 10 results:
+    Macro F1: 0.9817
+    Macro AUC: 0.9997
+    Accuracy: 0.9970
+    Best epoch: 10
+
+============================================================
+Summary of all seeds:
+============================================================
+Metric          | Seed 42  | Seed 58  | Seed 518 | Seed 5188 | Seed 51888 | Mean     | Std     
+--------------------------------------------------------------------------------------------------------------
+Macro F1        | 0.9817   | 0.9516   | 0.9794   | 0.9651    | 0.9436     | 0.9477   | 0.0380  
+Macro AUC       | 1.0000   | 0.9993   | 0.9999   | 0.9999    | 0.9992     | 0.9993   | 0.0011  
+Accuracy        | 0.9970   | 0.9881   | 0.9941   | 0.9941    | 0.9911     | 0.9911   | 0.0048  
+
+Average Confusion Matrix (across 10 seeds):
+Labels: ['Free', 'N-Linked', 'O-Linked']
+[[7.800e+00 4.000e-01 8.000e-01]
+ [8.000e-01 2.162e+02 5.000e-01]
+ [4.000e-01 1.000e-01 1.100e+02]]
+
+Normalized Average Confusion Matrix (row-wise):
+[[8.66666667e-01 4.44444444e-02 8.88888889e-02]
+ [3.67816092e-03 9.94022989e-01 2.29885057e-03]
+ [3.61990950e-03 9.04977376e-04 9.95475113e-01]]
+
+Confusion matrix images saved to: d:\glycanPUG\MASK\94\link\train\classification_results
+
+Summary saved to: d:\glycanPUG\MASK\94\link\train\classification_results\summary.json
+
+All results saved to: d:\glycanPUG\MASK\94\link\train\classification_results

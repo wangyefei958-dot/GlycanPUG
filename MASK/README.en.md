@@ -2,10 +2,6 @@
 
 > 🌐 中文版：[README.md](./README.md)
 
-> **Naming note**: The model was originally called **W0** and later renamed **PUG**, but the code still uses the W0 naming (e.g., `glycanW0_classifier.py`, `get_embeddings_W0.py`).
-
-> **Code vs. paper naming**: The code retains the original naming, which differs slightly from the paper — `big_nodes` are called "glycosyl residue nodes" in the paper, `small_nodes` → "substituent nodes", `big_edges` → "inter-residue glycosidic edges", `small_edges` → "substituent attachment edges", and the `stereo_type` feature → "carbon descriptor". Other names are essentially unchanged.
-
 This project implements an end-to-end pipeline of "WURCS glycan structure → graph neural network masked pre-training → embedding extraction → taxonomic-level classification". The core idea is to parse the WURCS format string of glycans into a heterogeneous graph (big/small nodes + big/small edges), pre-train a heterogeneous GAT with MLM (Masked Language Modeling), then use the pre-trained model to extract 1027-dim graph-level embeddings, and finally train classification heads on 8 taxonomic levels (domain → species).
 
 ## Directory Structure
@@ -15,6 +11,7 @@ MASK/
 ├── wurcs_parser_reverse_edge.py   # WURCS parser (runnable on its own; produces json/txt/vocab)
 ├── masktrain_windows_313.py       # MLM pre-training (HeteroGAT)
 ├── deldownstata.py                # Data-leakage cleanup utility
+├── 总结.py                         # Aggregate F1/AUC metrics across seeds
 ├── dic.csv                         # Main data dictionary (all glycans downloaded from GlyTouCan)
 ├── output_all.json / output_all.txt # Parsed full graph data (produced by the parser)
 ├── embedding_vocab.json           # Feature vocabulary (produced by the parser)
@@ -24,14 +21,12 @@ MASK/
 │   └── best_model_mlm.pt
 ├── downstreamstata/                # Downstream statistics / leakage-check CSVs
 ├── error_analysis/                 # Training logs and error analysis
-└── 95/                             # Downstream tasks based on the "best checkpoint at 95 epochs" (see "About the 95 folder" below)
-    ├── 95轮tax/                    # Taxonomy downstream task
-    ├── 95轮link/                   # Glycan-linking downstream task
-    ├── 95轮imm/                    # Immunoglobulin/immune downstream task
+└── 94/                             # Downstream tasks based on the "best checkpoint at epoch 94" (see "About the 94 folder" below)
+    ├── tax(ML)/                    # Taxonomy downstream task (8 levels, domain → species)
+    ├── link/                       # Glycan-linking downstream task
+    ├── imm(ML)/                    # Immunogenicity downstream task
     └── taxall/                     # Taxonomy "all-taxa" configuration
 ```
-
-> **Note**: The `dic.csv` in this folder has already been processed by `deldownstata.py` (leakage rows removed); the original version downloaded from GlyTouCan is in the `downstream/` folder.
 
 ## Script Descriptions
 
@@ -49,6 +44,8 @@ The main MLM pre-training script. Reads `output_all.json` and `embedding_vocab.j
 ### 3. `deldownstata.py`
 A data-leakage cleanup tool. Scans all CSVs under `downstreamstata/` to collect WURCS that appear there, then removes those rows from `dic.csv` to prevent downstream-evaluation samples from leaking into the pre-training/training set.
 
+### 4. `总结.py`
+The `总结.py` at the root is a legacy aggregation script (it hardcodes `SEEDS=[42,58,518,5188,51888]` and looks for `split_files_processed_wurcs<seed>` directories). The current downstream seeds are **1–10**, so use `94/tax(ML)/总结.py` or `94/taxall/总结.py` instead — both auto-detect numeric seed folders under `finaltrain/`, aggregate macro F1 and macro AUC, and write `GlycanW0_metrics.csv`.
 
 ## Output Inventory & Sizes
 
@@ -63,7 +60,7 @@ A data-leakage cleanup tool. Scans all CSVs under `downstreamstata/` to collect 
 | `wurcs_parser_reverse_edge.py` | `parse_errors.csv` (failed-parse records) | small |
 | `masktrain_windows_313.py` | `checkpoints/best_model_mlm.pt` (pre-trained weights) | ~34 MB |
 | `masktrain_windows_313.py` | `error_analysis/training_log.txt` (training log) | small |
-| `总结.py` | `GlycanW0_metrics.csv` (metrics summary) | small |
+| `94/tax(ML)/总结.py`, `94/taxall/总结.py` | `GlycanW0_metrics.csv` (metrics summary) | small |
 | `deldownstata.py` | Rewrites `dic.csv` in place (removes leakage rows) | `dic.csv` ~50 MB |
 
 ## Execution Order (main folder)
@@ -83,20 +80,20 @@ py -3.13 wurcs_parser_reverse_edge.py
 py -3.13 masktrain_windows_313.py
 ```
 
-After pre-training, downstream tasks (embedding extraction, classification training, metrics aggregation, etc.) run inside the `95/` folder — see "About the 95 folder" below.
+After pre-training, downstream tasks (embedding extraction, classification training, metrics aggregation, etc.) run inside the `94/` folder — see "About the 94 folder" below.
 
-## About the 95 folder
+## About the 94 folder
 
-During pre-training, the checkpoint at **epoch 95 was the best model**, so all downstream tasks are built on this 95-epoch weight, and the related folders are uniformly named `95` / `95轮`. Under `95/`, subdirectories are organized by downstream task type, **each with its own README**:
+During pre-training, the checkpoint at **epoch 94 was the best model**, so all downstream tasks are built on this weight, and the related folder is named `94`. Under `94/`, subdirectories are organized by downstream task type, **each with its own README**:
 
 | Subdirectory | Task | README |
 |--------------|------|--------|
-| `95/95轮tax/` | Taxonomy (8 levels) | [README](./95/95轮tax/README.md) |
-| `95/95轮link/` | Glycan-linking | [README](./95/95轮link/README.md) |
-| `95/95轮imm/` | Immunogenicity | [README](./95/95轮imm/README.md) |
-| `95/taxall/` | Taxonomy "all-taxa" (incl. superkingdom, 9 levels) | [README](./95/taxall/README.md) |
+| `94/tax(ML)/` | Taxonomy (8 levels) | [README](./94/tax(ML)/README.md) |
+| `94/link/` | Glycan-linking | [README](./94/link/README.md) |
+| `94/imm(ML)/` | Immunogenicity | [README](./94/imm(ML)/README.md) |
+| `94/taxall/` | Taxonomy "all-taxa" (incl. superkingdom, 8 levels) | [README](./94/taxall/README.md) |
 
-> **Note**: In each subdirectory, `embedding_vocab.json` and `checkpoints/best_model_mlm.pt` are **moved in from the main folder** (the 95-epoch pre-training products), and `split_files/*.csv` or `train/*.csv` are external task data. These files are large or are generated products — not uploaded to GitHub; they must be placed manually before running. See each subdirectory's README for details.
+> **Note**: In each subdirectory, `embedding_vocab.json` and `checkpoints/best_model_mlm.pt` are **moved in from the main folder** (the epoch-94 pre-training products), and `split_files/*.csv` or `train/*.csv` are external task data. These files are large or are generated products — not uploaded to GitHub; they must be placed manually before running. See each subdirectory's README. Random seeds in the seed folders are currently **1–10**.
 
 ## Dependencies
 - Python 3.13

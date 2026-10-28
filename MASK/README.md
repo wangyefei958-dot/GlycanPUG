@@ -2,10 +2,6 @@
 
 > 🌐 English version: [README.en.md](./README.en.md)
 
-> **命名说明**：本项目最初将模型称为 **W0**，后改名为 **PUG**，但代码中仍沿用了 W0 的称呼（如 `glycanW0_classifier.py`、`get_embeddings_W0.py` 等）。
-
-> **代码与论文命名对照**：代码沿用了编写时的命名，与论文略有不同——`big_nodes` 论文称 glycosyl residue nodes，`small_nodes` 称 substituent nodes，`big_edges` 称 inter-residue glycosidic edges，`small_edges` 称 substituent attachment edges，`stereo_type` 特征称 carbon descriptor。其余基本一致。
-
 本项目实现了一条完整的「WURCS 糖类结构 → 图神经网络掩码预训练 → 嵌入提取 → 物种分类层级」流水线。核心思路是把糖类的 WURCS 格式串解析为异构图（big/small 节点 + big/small 边），用 MLM（Masked Language Modeling）方式预训练一个异构 GAT，再用预训练模型提取 1027 维图级嵌入，最后在 8 个分类学层级（domain → species）上训练分类头。
 
 ## 目录结构
@@ -15,6 +11,7 @@ MASK/
 ├── wurcs_parser_reverse_edge.py   # WURCS 解析器（可独立运行，产出 json/txt/vocab 等）
 ├── masktrain_windows_313.py       # MLM 预训练（HeteroGAT）
 ├── deldownstata.py                # 数据泄漏清理工具
+├── 总结.py                         # 汇总多 seed 的 F1/AUC 指标
 ├── dic.csv                         # 主数据字典（GlyTouCan 下载的全部糖）
 ├── output_all.json / output_all.txt # 解析后的全量图数据（由解析器生成）
 ├── embedding_vocab.json           # 特征词表（由解析器生成）
@@ -24,14 +21,12 @@ MASK/
 │   └── best_model_mlm.pt
 ├── downstreamstata/                # 下游统计/泄漏检查用 CSV
 ├── error_analysis/                 # 训练日志与误分析
-└── 95/                             # 基于「95 轮最优 checkpoint」的下游任务（见下文「关于 95 文件夹」）
-    ├── 95轮tax/                    # 物种分类下游任务
-    ├── 95轮link/                   # 糖连接下游任务
-    ├── 95轮imm/                    # 免疫球蛋白下游任务
+└── 94/                             # 基于「第 94 轮最优 checkpoint」的下游任务（见下文「关于 94 文件夹」）
+    ├── tax(ML)/                    # 物种分类下游任务（8 层级，domain → species）
+    ├── link/                       # 糖连接下游任务
+    ├── imm(ML)/                    # 免疫原性下游任务
     └── taxall/                     # 物种分类「全物种」配置
 ```
-
-> **注**：本文件夹内的 `dic.csv` 已运行过 `deldownstata.py`（已删除泄漏行）；从 GlyTouCan 下载的原始版本在 `downstream/` 文件夹内。
 
 ## 各脚本说明
 
@@ -49,6 +44,8 @@ MLM 预训练主脚本。读取上一步生成的 `output_all.json` 与 `embeddi
 ### 3. `deldownstata.py`
 数据泄漏清理工具。扫描 `downstreamstata/` 下所有 CSV 收集出现的 WURCS，再从 `dic.csv` 中删除这些行，避免下游评估样本泄漏进预训练/训练集。
 
+### 4. `总结.py`
+根目录的 `总结.py` 是旧版汇总脚本（写死 `SEEDS=[42,58,518,5188,51888]`，并查找 `split_files_processed_wurcs<seed>` 目录）。当前各下游任务的种子为 **1–10**，请改用任务目录下的 `94/tax(ML)/总结.py` 或 `94/taxall/总结.py`（两者都会自动识别 `finaltrain/` 下以数字命名的种子目录），汇总 macro F1 与 macro AUC，输出 `GlycanW0_metrics.csv`。
 
 ## 产物清单与大小
 
@@ -63,7 +60,7 @@ MLM 预训练主脚本。读取上一步生成的 `output_all.json` 与 `embeddi
 | `wurcs_parser_reverse_edge.py` | `parse_errors.csv`（解析失败记录） | 小 |
 | `masktrain_windows_313.py` | `checkpoints/best_model_mlm.pt`（预训练权重） | ~34 MB |
 | `masktrain_windows_313.py` | `error_analysis/training_log.txt`（训练日志） | 小 |
-| `总结.py` | `GlycanW0_metrics.csv`（指标汇总） | 小 |
+| `94/tax(ML)/总结.py`、`94/taxall/总结.py` | `GlycanW0_metrics.csv`（指标汇总） | 小 |
 | `deldownstata.py` | 原地改写 `dic.csv`（删除泄漏行） | `dic.csv` ~50 MB |
 
 ## 运行顺序（主文件夹）
@@ -83,20 +80,20 @@ py -3.13 wurcs_parser_reverse_edge.py
 py -3.13 masktrain_windows_313.py
 ```
 
-预训练完成后，下游任务（嵌入提取、分类训练、指标汇总等）在 `95/` 文件夹内各自展开，详见下文「关于 95 文件夹」。
+预训练完成后，下游任务（嵌入提取、分类训练、指标汇总等）在 `94/` 文件夹内各自展开，详见下文「关于 94 文件夹」。
 
-## 关于 95 文件夹
+## 关于 94 文件夹
 
-预训练时第 **95 轮（epoch）的 checkpoint 是最优模型**，因此所有下游任务都基于这个 95 轮权重展开，相关文件夹统一以 `95` / `95轮` 命名。`95/` 下按下游任务类型分子目录，**每个子目录各有自己的 README**：
+预训练时第 **94 轮（epoch 94）的 checkpoint 是最优模型**，因此所有下游任务都基于这个权重展开，相关文件夹统一以 `94` 命名。`94/` 下按下游任务类型分子目录，**每个子目录各有自己的 README**：
 
 | 子目录 | 任务 | README |
 |--------|------|--------|
-| `95/95轮tax/` | 物种分类（taxonomy，8 层级） | [README](./95/95轮tax/README.md) |
-| `95/95轮link/` | 糖连接类型（glycan-linking） | [README](./95/95轮link/README.md) |
-| `95/95轮imm/` | 免疫原性（immunogenicity） | [README](./95/95轮imm/README.md) |
-| `95/taxall/` | 物种分类「全物种」配置（含 superkingdom，9 层级） | [README](./95/taxall/README.md) |
+| `94/tax(ML)/` | 物种分类（taxonomy，8 层级） | [README](./94/tax(ML)/README.md) |
+| `94/link/` | 糖连接类型（glycan-linking） | [README](./94/link/README.md) |
+| `94/imm(ML)/` | 免疫原性（immunogenicity） | [README](./94/imm(ML)/README.md) |
+| `94/taxall/` | 物种分类「全物种」配置（含 superkingdom，8 层级） | [README](./94/taxall/README.md) |
 
-> **注意**：各子目录中的 `embedding_vocab.json` 和 `checkpoints/best_model_mlm.pt` 是**从主文件夹移入**的外部文件（95 轮预训练产物），`split_files/*.csv` 或 `train/*.csv` 为外部任务数据。这些文件体积大或为生成产物，上传 GitHub 时不传，运行前需手动放入。详见各子目录 README。
+> **注意**：各子目录中的 `embedding_vocab.json` 和 `checkpoints/best_model_mlm.pt` 是**从主文件夹移入**的外部文件（94 轮预训练产物），`split_files/*.csv` 或 `train/*.csv` 为外部任务数据。这些文件体积大或为生成产物，上传 GitHub 时不传，运行前需手动放入。详见各子目录 README。当前各种子目录的随机种子为 **1–10**。
 
 ## 依赖
 - Python 3.13

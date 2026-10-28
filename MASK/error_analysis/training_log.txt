@@ -1,0 +1,2056 @@
+============================================================
+Loading vocabulary...
+Vocabulary categories: ['ring_bond_type', 'substituent', 'big_edge_type', 'carbon_count_type', 'anomeric_position_type', 'anomeric_config_type', 'stereo_type', 'carbon_position_type', 'double_bonds']
+  ring_bond_type: 12 tokens
+  substituent: 36 tokens
+  big_edge_type: 37 tokens
+  carbon_count_type: 8 tokens
+  anomeric_position_type: 4 tokens
+  anomeric_config_type: 5 tokens
+  stereo_type: 16 tokens
+  carbon_position_type: 10 tokens
+  double_bonds: 3 tokens
+
+============================================================
+Loading data...
+Total samples in raw data: 167020
+
+============================================================
+Building dataset...
+Building graphs...
+  Processed 5000/167020 samples
+  Processed 10000/167020 samples
+  Processed 15000/167020 samples
+  Processed 20000/167020 samples
+  Processed 25000/167020 samples
+  Processed 30000/167020 samples
+  Processed 35000/167020 samples
+  Processed 40000/167020 samples
+  Processed 45000/167020 samples
+  Processed 50000/167020 samples
+  Processed 55000/167020 samples
+  Processed 60000/167020 samples
+  Processed 65000/167020 samples
+  Processed 70000/167020 samples
+  Processed 75000/167020 samples
+  Processed 80000/167020 samples
+  Processed 85000/167020 samples
+  Processed 90000/167020 samples
+  Processed 95000/167020 samples
+  Processed 100000/167020 samples
+  Processed 105000/167020 samples
+  Processed 110000/167020 samples
+  Processed 115000/167020 samples
+  Processed 120000/167020 samples
+  Processed 125000/167020 samples
+  Processed 130000/167020 samples
+  Processed 135000/167020 samples
+  Processed 140000/167020 samples
+  Processed 145000/167020 samples
+  Processed 150000/167020 samples
+  Processed 155000/167020 samples
+  Processed 160000/167020 samples
+  Processed 165000/167020 samples
+Done. Total: 167020 graphs (skipped 0 failures)
+Train set: 133616 samples (80.0%)
+Val set: 33404 samples (20.0%)
+
+Using full data: train=133616, val=33404
+
+  Computing class distribution for Focal Loss...
+    anomeric_config: 5 classes, total=393698
+      Class 0: 1 (0.0%), weight=0.00
+      Class 1: 165856 (42.1%), weight=1.00
+      Class 2: 227839 (57.9%), weight=1.00
+      Class 3: 1 (0.0%), weight=0.00
+      Class 4: 1 (0.0%), weight=0.00
+    substituent: 36 classes, total=626120
+      Class 0: 3862 (0.6%), weight=1.01
+      Class 1: 635 (0.1%), weight=1.46
+      Class 2: 817 (0.1%), weight=1.34
+      Class 3: 2191 (0.3%), weight=1.06
+      Class 4: 155897 (24.9%), weight=1.00
+      Class 5: 898 (0.1%), weight=1.30
+      Class 6: 14748 (2.4%), weight=1.00
+      Class 7: 570 (0.1%), weight=1.52
+      Class 8: 470 (0.1%), weight=1.63
+      Class 9: 623 (0.1%), weight=1.47
+      Class 10: 283552 (45.3%), weight=1.00
+      Class 11: 13392 (2.1%), weight=1.00
+      Class 12: 4264 (0.7%), weight=1.01
+      Class 13: 1 (0.0%), weight=0.00
+      Class 14: 20724 (3.3%), weight=1.00
+      Class 15: 23850 (3.8%), weight=1.00
+      Class 16: 681 (0.1%), weight=1.42
+      Class 17: 13747 (2.2%), weight=1.00
+      Class 18: 775 (0.1%), weight=1.36
+      Class 19: 526 (0.1%), weight=1.56
+      Class 20: 737 (0.1%), weight=1.38
+      Class 21: 39758 (6.3%), weight=1.00
+      Class 22: 1262 (0.2%), weight=1.18
+      Class 23: 1466 (0.2%), weight=1.14
+      Class 24: 1652 (0.3%), weight=1.11
+      Class 25: 491 (0.1%), weight=1.61
+      Class 26: 5878 (0.9%), weight=1.00
+      Class 27: 2165 (0.3%), weight=1.06
+      Class 28: 676 (0.1%), weight=1.43
+      Class 29: 1096 (0.2%), weight=1.23
+      Class 30: 883 (0.1%), weight=1.31
+      Class 31: 24128 (3.9%), weight=1.00
+      Class 32: 1704 (0.3%), weight=1.11
+      Class 33: 740 (0.1%), weight=1.38
+      Class 34: 1260 (0.2%), weight=1.18
+      Class 35: 1 (0.0%), weight=0.00
+    big_edge: 37 classes, total=806859
+      Class 0: 1556 (0.2%), weight=1.13
+      Class 1: 54400 (6.7%), weight=1.00
+      Class 2: 87834 (10.9%), weight=1.00
+      Class 3: 158393 (19.6%), weight=1.00
+      Class 4: 3283 (0.4%), weight=1.02
+      Class 5: 63737 (7.9%), weight=1.00
+      Class 6: 260 (0.0%), weight=2.09
+      Class 7: 1457 (0.2%), weight=1.14
+      Class 8: 218 (0.0%), weight=2.26
+      Class 9: 1 (0.0%), weight=0.00
+      Class 10: 1 (0.0%), weight=0.00
+      Class 11: 54400 (6.7%), weight=1.00
+      Class 12: 174 (0.0%), weight=2.50
+      Class 13: 20157 (2.5%), weight=1.00
+      Class 14: 1030 (0.1%), weight=1.25
+      Class 15: 8744 (1.1%), weight=1.00
+      Class 16: 2698 (0.3%), weight=1.04
+      Class 17: 1 (0.0%), weight=0.00
+      Class 18: 87834 (10.9%), weight=1.00
+      Class 19: 20157 (2.5%), weight=1.00
+      Class 20: 349 (0.0%), weight=1.84
+      Class 21: 158393 (19.6%), weight=1.00
+      Class 22: 1030 (0.1%), weight=1.25
+      Class 23: 3283 (0.4%), weight=1.02
+      Class 24: 349 (0.0%), weight=1.84
+      Class 25: 63737 (7.9%), weight=1.00
+      Class 26: 260 (0.0%), weight=2.09
+      Class 27: 8744 (1.1%), weight=1.00
+      Class 28: 1457 (0.2%), weight=1.14
+      Class 29: 218 (0.0%), weight=2.26
+      Class 30: 2698 (0.3%), weight=1.04
+      Class 31: 1 (0.0%), weight=0.00
+      Class 32: 1 (0.0%), weight=0.00
+      Class 33: 1 (0.0%), weight=0.00
+      Class 34: 1 (0.0%), weight=0.00
+      Class 35: 1 (0.0%), weight=0.00
+      Class 36: 1 (0.0%), weight=0.00
+    small_edge_stereo: 16 classes, total=5145932
+      Class 0: 1325951 (25.8%), weight=1.00
+      Class 1: 1949222 (37.9%), weight=1.00
+      Class 2: 5672 (0.1%), weight=1.00
+      Class 3: 7993 (0.2%), weight=1.00
+      Class 4: 85410 (1.7%), weight=1.00
+      Class 5: 1900 (0.0%), weight=1.08
+      Class 6: 1316 (0.0%), weight=1.17
+      Class 7: 3692 (0.1%), weight=1.01
+      Class 8: 796500 (15.5%), weight=1.00
+      Class 9: 73141 (1.4%), weight=1.00
+      Class 10: 646 (0.0%), weight=1.45
+      Class 11: 764880 (14.9%), weight=1.00
+      Class 12: 82761 (1.6%), weight=1.00
+      Class 13: 46846 (0.9%), weight=1.00
+      Class 14: 1 (0.0%), weight=0.00
+      Class 15: 1 (0.0%), weight=0.00
+    ring_bond: 12 classes, total=769094
+      Class 0: 1 (0.0%), weight=0.00
+      Class 1: 10045 (1.3%), weight=1.00
+      Class 2: 697288 (90.7%), weight=1.00
+      Class 3: 103 (0.0%), weight=3.20
+      Class 4: 1 (0.0%), weight=0.00
+      Class 5: 96 (0.0%), weight=3.30
+      Class 6: 2908 (0.4%), weight=1.03
+      Class 7: 57846 (7.5%), weight=1.00
+      Class 8: 1 (0.0%), weight=0.00
+      Class 9: 606 (0.1%), weight=1.48
+      Class 10: 198 (0.0%), weight=2.36
+      Class 11: 1 (0.0%), weight=0.00
+
+Dynamic batching: target ~588888 (nodes+edges)/batch
+  Train batches: 32 (avg 4176 graphs/batch)
+  Val batches:   7
+
+============================================================
+Building model...
+Total parameters: 8,849,553
+Trainable parameters: 8,849,553
+
+============================================================
+Training config (MLM Pre-training):
+  Target (nodes+edges)/batch: 588888
+  num_workers: 0
+  pin_memory: False
+  Max epochs: 200
+  Loss: MLM Cross Entropy Loss
+  Early stop patience: 20 (monitor: ema_val_loss)
+  Optimizer: AdamW, lr=1e-3, weight_decay=1e-4
+  Scheduler: ReduceLROnPlateau, patience=5, factor=0.5, min_lr=1e-6
+  Gradient clip: 1.0
+  MLM probability: 0.30
+============================================================
+
+============================================================
+Starting Epoch 1/200
+============================================================
+  Epoch 1 | Batch 1/32 | GPU Mem: 0.1GB
+  Epoch 1 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 1 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 1 | Batch 31/32 | GPU Mem: 0.3GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   1/200 | Train MLM Loss: 5.9036 | Val MLM Loss: 4.3427 | Val Loss EMA5: 4.3427 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.3987 | anomeric_cfg=0.2014 | substituent=1.5423 | ring_bond=0.0308 | is_cyclic=0.4926 | big_edge=1.9653 | stereo=0.6358 | big_edge_exist=0.6368
+  Val Tasks:   carbon_cnt=0.1571 | anomeric_cfg=0.0842 | substituent=1.2302 | ring_bond=0.1808 | is_cyclic=0.2377 | big_edge=1.6400 | stereo=0.2142 | big_edge_exist=0.5984
+
+============================================================
+Starting Epoch 2/200
+============================================================
+  Epoch 2 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 2 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 2 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 2 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   2/200 | Train MLM Loss: 3.6368 | Val MLM Loss: 3.4649 | Val Loss EMA5: 3.9038 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.1138 | anomeric_cfg=0.0815 | substituent=1.0282 | ring_bond=0.0079 | is_cyclic=0.2251 | big_edge=1.3893 | stereo=0.1893 | big_edge_exist=0.6017
+  Val Tasks:   carbon_cnt=0.0992 | anomeric_cfg=0.0818 | substituent=1.1465 | ring_bond=0.1580 | is_cyclic=0.1934 | big_edge=1.0731 | stereo=0.1181 | big_edge_exist=0.5948
+
+============================================================
+Starting Epoch 3/200
+============================================================
+  Epoch 3 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 3 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 3 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 3 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   3/200 | Train MLM Loss: 3.0924 | Val MLM Loss: 3.1199 | Val Loss EMA5: 3.6425 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0870 | anomeric_cfg=0.0801 | substituent=0.9887 | ring_bond=0.0053 | is_cyclic=0.1963 | big_edge=1.0174 | stereo=0.1255 | big_edge_exist=0.5920
+  Val Tasks:   carbon_cnt=0.0948 | anomeric_cfg=0.0842 | substituent=1.1744 | ring_bond=0.1275 | is_cyclic=0.1619 | big_edge=0.8054 | stereo=0.0907 | big_edge_exist=0.5809
+
+============================================================
+Starting Epoch 4/200
+============================================================
+  Epoch 4 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 4 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 4 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 4 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   4/200 | Train MLM Loss: 2.8872 | Val MLM Loss: 3.0850 | Val Loss EMA5: 3.5031 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0840 | anomeric_cfg=0.0799 | substituent=0.9869 | ring_bond=0.0044 | is_cyclic=0.1802 | big_edge=0.8655 | stereo=0.1000 | big_edge_exist=0.5863
+  Val Tasks:   carbon_cnt=0.1000 | anomeric_cfg=0.0821 | substituent=1.2221 | ring_bond=0.1127 | is_cyclic=0.1665 | big_edge=0.7414 | stereo=0.0825 | big_edge_exist=0.5777
+
+============================================================
+Starting Epoch 5/200
+============================================================
+  Epoch 5 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 5 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 5 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 5 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   5/200 | Train MLM Loss: 2.8258 | Val MLM Loss: 2.9571 | Val Loss EMA5: 3.3939 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0839 | anomeric_cfg=0.0797 | substituent=1.0416 | ring_bond=0.0040 | is_cyclic=0.1719 | big_edge=0.7781 | stereo=0.0869 | big_edge_exist=0.5797
+  Val Tasks:   carbon_cnt=0.0922 | anomeric_cfg=0.0840 | substituent=1.2061 | ring_bond=0.1050 | is_cyclic=0.1323 | big_edge=0.6967 | stereo=0.0708 | big_edge_exist=0.5700
+
+============================================================
+Starting Epoch 6/200
+============================================================
+  Epoch 6 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 6 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 6 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 6 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   6/200 | Train MLM Loss: 2.7382 | Val MLM Loss: 2.8613 | Val Loss EMA5: 3.0976 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0819 | anomeric_cfg=0.0797 | substituent=1.0212 | ring_bond=0.0037 | is_cyclic=0.1696 | big_edge=0.7269 | stereo=0.0798 | big_edge_exist=0.5754
+  Val Tasks:   carbon_cnt=0.0854 | anomeric_cfg=0.0808 | substituent=1.1800 | ring_bond=0.1056 | is_cyclic=0.1423 | big_edge=0.6409 | stereo=0.0623 | big_edge_exist=0.5640
+
+============================================================
+Starting Epoch 7/200
+============================================================
+  Epoch 7 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 7 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 7 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 7 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   7/200 | Train MLM Loss: 2.6794 | Val MLM Loss: 2.8392 | Val Loss EMA5: 2.9725 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0835 | anomeric_cfg=0.0796 | substituent=1.0199 | ring_bond=0.0034 | is_cyclic=0.1611 | big_edge=0.6866 | stereo=0.0731 | big_edge_exist=0.5723
+  Val Tasks:   carbon_cnt=0.0941 | anomeric_cfg=0.0808 | substituent=1.1887 | ring_bond=0.1031 | is_cyclic=0.1436 | big_edge=0.6007 | stereo=0.0625 | big_edge_exist=0.5657
+
+============================================================
+Starting Epoch 8/200
+============================================================
+  Epoch 8 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 8 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 8 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 8 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch   8/200 | Train MLM Loss: 2.6345 | Val MLM Loss: 2.8677 | Val Loss EMA5: 2.9220 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0822 | anomeric_cfg=0.0794 | substituent=1.0208 | ring_bond=0.0032 | is_cyclic=0.1503 | big_edge=0.6589 | stereo=0.0691 | big_edge_exist=0.5707
+  Val Tasks:   carbon_cnt=0.0905 | anomeric_cfg=0.0797 | substituent=1.2308 | ring_bond=0.1037 | is_cyclic=0.1582 | big_edge=0.5920 | stereo=0.0549 | big_edge_exist=0.5578
+
+============================================================
+Starting Epoch 9/200
+============================================================
+  Epoch 9 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 9 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 9 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 9 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   9/200 | Train MLM Loss: 2.6196 | Val MLM Loss: 2.7051 | Val Loss EMA5: 2.8461 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0814 | anomeric_cfg=0.0800 | substituent=1.0487 | ring_bond=0.0032 | is_cyclic=0.1414 | big_edge=0.6294 | stereo=0.0655 | big_edge_exist=0.5700
+  Val Tasks:   carbon_cnt=0.0854 | anomeric_cfg=0.0792 | substituent=1.1655 | ring_bond=0.0989 | is_cyclic=0.1311 | big_edge=0.5368 | stereo=0.0509 | big_edge_exist=0.5573
+
+============================================================
+Starting Epoch 10/200
+============================================================
+  Epoch 10 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 10 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 10 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 10 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  10/200 | Train MLM Loss: 2.5575 | Val MLM Loss: 2.7482 | Val Loss EMA5: 2.8043 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0815 | anomeric_cfg=0.0812 | substituent=1.0046 | ring_bond=0.0030 | is_cyclic=0.1426 | big_edge=0.6156 | stereo=0.0608 | big_edge_exist=0.5683
+  Val Tasks:   carbon_cnt=0.0908 | anomeric_cfg=0.0817 | substituent=1.2049 | ring_bond=0.0953 | is_cyclic=0.1186 | big_edge=0.5500 | stereo=0.0498 | big_edge_exist=0.5571
+
+============================================================
+Starting Epoch 11/200
+============================================================
+  Epoch 11 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 11 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 11 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 11 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  11/200 | Train MLM Loss: 2.5239 | Val MLM Loss: 2.7405 | Val Loss EMA5: 2.7801 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0788 | anomeric_cfg=0.0798 | substituent=0.9975 | ring_bond=0.0031 | is_cyclic=0.1311 | big_edge=0.6055 | stereo=0.0615 | big_edge_exist=0.5665
+  Val Tasks:   carbon_cnt=0.0881 | anomeric_cfg=0.0814 | substituent=1.2052 | ring_bond=0.0974 | is_cyclic=0.1265 | big_edge=0.5360 | stereo=0.0509 | big_edge_exist=0.5551
+
+============================================================
+Starting Epoch 12/200
+============================================================
+  Epoch 12 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 12 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 12 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 12 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  12/200 | Train MLM Loss: 2.5215 | Val MLM Loss: 2.7161 | Val Loss EMA5: 2.7555 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0786 | anomeric_cfg=0.0798 | substituent=1.0228 | ring_bond=0.0028 | is_cyclic=0.1360 | big_edge=0.5798 | stereo=0.0576 | big_edge_exist=0.5640
+  Val Tasks:   carbon_cnt=0.0959 | anomeric_cfg=0.0813 | substituent=1.2118 | ring_bond=0.0916 | is_cyclic=0.1219 | big_edge=0.5128 | stereo=0.0466 | big_edge_exist=0.5543
+
+============================================================
+Starting Epoch 13/200
+============================================================
+  Epoch 13 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 13 | Batch 11/32 | GPU Mem: 0.3GB
+============================================================
+Loading vocabulary...
+Vocabulary categories: ['ring_bond_type', 'substituent', 'big_edge_type', 'carbon_count_type', 'anomeric_position_type', 'anomeric_config_type', 'stereo_type', 'carbon_position_type', 'double_bonds']
+  ring_bond_type: 12 tokens
+  substituent: 36 tokens
+  big_edge_type: 37 tokens
+  carbon_count_type: 8 tokens
+  anomeric_position_type: 4 tokens
+  anomeric_config_type: 5 tokens
+  stereo_type: 16 tokens
+  carbon_position_type: 10 tokens
+  double_bonds: 3 tokens
+
+============================================================
+Loading data...
+Total samples in raw data: 167020
+
+============================================================
+Building dataset...
+Building graphs...
+  Processed 5000/167020 samples
+  Processed 10000/167020 samples
+  Processed 15000/167020 samples
+  Processed 20000/167020 samples
+  Processed 25000/167020 samples
+  Processed 30000/167020 samples
+  Processed 35000/167020 samples
+  Processed 40000/167020 samples
+  Processed 45000/167020 samples
+  Processed 50000/167020 samples
+  Processed 55000/167020 samples
+  Processed 60000/167020 samples
+  Processed 65000/167020 samples
+  Processed 70000/167020 samples
+  Processed 75000/167020 samples
+  Processed 80000/167020 samples
+  Processed 85000/167020 samples
+  Processed 90000/167020 samples
+  Processed 95000/167020 samples
+  Processed 100000/167020 samples
+  Processed 105000/167020 samples
+  Processed 110000/167020 samples
+  Processed 115000/167020 samples
+  Processed 120000/167020 samples
+  Processed 125000/167020 samples
+  Processed 130000/167020 samples
+  Processed 135000/167020 samples
+  Processed 140000/167020 samples
+  Processed 145000/167020 samples
+  Processed 150000/167020 samples
+  Processed 155000/167020 samples
+  Processed 160000/167020 samples
+  Processed 165000/167020 samples
+Done. Total: 167020 graphs (skipped 0 failures)
+Train set: 133616 samples (80.0%)
+Val set: 33404 samples (20.0%)
+
+Using full data: train=133616, val=33404
+
+  Computing class distribution for Focal Loss...
+    anomeric_config: 5 classes, total=393698
+      Class 0: 1 (0.0%), weight=0.00
+      Class 1: 165856 (42.1%), weight=1.00
+      Class 2: 227839 (57.9%), weight=1.00
+      Class 3: 1 (0.0%), weight=0.00
+      Class 4: 1 (0.0%), weight=0.00
+    substituent: 36 classes, total=626120
+      Class 0: 3862 (0.6%), weight=1.01
+      Class 1: 635 (0.1%), weight=1.46
+      Class 2: 817 (0.1%), weight=1.34
+      Class 3: 2191 (0.3%), weight=1.06
+      Class 4: 155897 (24.9%), weight=1.00
+      Class 5: 898 (0.1%), weight=1.30
+      Class 6: 14748 (2.4%), weight=1.00
+      Class 7: 570 (0.1%), weight=1.52
+      Class 8: 470 (0.1%), weight=1.63
+      Class 9: 623 (0.1%), weight=1.47
+      Class 10: 283552 (45.3%), weight=1.00
+      Class 11: 13392 (2.1%), weight=1.00
+      Class 12: 4264 (0.7%), weight=1.01
+      Class 13: 1 (0.0%), weight=0.00
+      Class 14: 20724 (3.3%), weight=1.00
+      Class 15: 23850 (3.8%), weight=1.00
+      Class 16: 681 (0.1%), weight=1.42
+      Class 17: 13747 (2.2%), weight=1.00
+      Class 18: 775 (0.1%), weight=1.36
+      Class 19: 526 (0.1%), weight=1.56
+      Class 20: 737 (0.1%), weight=1.38
+      Class 21: 39758 (6.3%), weight=1.00
+      Class 22: 1262 (0.2%), weight=1.18
+      Class 23: 1466 (0.2%), weight=1.14
+      Class 24: 1652 (0.3%), weight=1.11
+      Class 25: 491 (0.1%), weight=1.61
+      Class 26: 5878 (0.9%), weight=1.00
+      Class 27: 2165 (0.3%), weight=1.06
+      Class 28: 676 (0.1%), weight=1.43
+      Class 29: 1096 (0.2%), weight=1.23
+      Class 30: 883 (0.1%), weight=1.31
+      Class 31: 24128 (3.9%), weight=1.00
+      Class 32: 1704 (0.3%), weight=1.11
+      Class 33: 740 (0.1%), weight=1.38
+      Class 34: 1260 (0.2%), weight=1.18
+      Class 35: 1 (0.0%), weight=0.00
+    big_edge: 37 classes, total=806859
+      Class 0: 1556 (0.2%), weight=1.13
+      Class 1: 54400 (6.7%), weight=1.00
+      Class 2: 87834 (10.9%), weight=1.00
+      Class 3: 158393 (19.6%), weight=1.00
+      Class 4: 3283 (0.4%), weight=1.02
+      Class 5: 63737 (7.9%), weight=1.00
+      Class 6: 260 (0.0%), weight=2.09
+      Class 7: 1457 (0.2%), weight=1.14
+      Class 8: 218 (0.0%), weight=2.26
+      Class 9: 1 (0.0%), weight=0.00
+      Class 10: 1 (0.0%), weight=0.00
+      Class 11: 54400 (6.7%), weight=1.00
+      Class 12: 174 (0.0%), weight=2.50
+      Class 13: 20157 (2.5%), weight=1.00
+      Class 14: 1030 (0.1%), weight=1.25
+      Class 15: 8744 (1.1%), weight=1.00
+      Class 16: 2698 (0.3%), weight=1.04
+      Class 17: 1 (0.0%), weight=0.00
+      Class 18: 87834 (10.9%), weight=1.00
+      Class 19: 20157 (2.5%), weight=1.00
+      Class 20: 349 (0.0%), weight=1.84
+      Class 21: 158393 (19.6%), weight=1.00
+      Class 22: 1030 (0.1%), weight=1.25
+      Class 23: 3283 (0.4%), weight=1.02
+      Class 24: 349 (0.0%), weight=1.84
+      Class 25: 63737 (7.9%), weight=1.00
+      Class 26: 260 (0.0%), weight=2.09
+      Class 27: 8744 (1.1%), weight=1.00
+      Class 28: 1457 (0.2%), weight=1.14
+      Class 29: 218 (0.0%), weight=2.26
+      Class 30: 2698 (0.3%), weight=1.04
+      Class 31: 1 (0.0%), weight=0.00
+      Class 32: 1 (0.0%), weight=0.00
+      Class 33: 1 (0.0%), weight=0.00
+      Class 34: 1 (0.0%), weight=0.00
+      Class 35: 1 (0.0%), weight=0.00
+      Class 36: 1 (0.0%), weight=0.00
+    small_edge_stereo: 16 classes, total=5145932
+      Class 0: 1325951 (25.8%), weight=1.00
+      Class 1: 1949222 (37.9%), weight=1.00
+      Class 2: 5672 (0.1%), weight=1.00
+      Class 3: 7993 (0.2%), weight=1.00
+      Class 4: 85410 (1.7%), weight=1.00
+      Class 5: 1900 (0.0%), weight=1.08
+      Class 6: 1316 (0.0%), weight=1.17
+      Class 7: 3692 (0.1%), weight=1.01
+      Class 8: 796500 (15.5%), weight=1.00
+      Class 9: 73141 (1.4%), weight=1.00
+      Class 10: 646 (0.0%), weight=1.45
+      Class 11: 764880 (14.9%), weight=1.00
+      Class 12: 82761 (1.6%), weight=1.00
+      Class 13: 46846 (0.9%), weight=1.00
+      Class 14: 1 (0.0%), weight=0.00
+      Class 15: 1 (0.0%), weight=0.00
+    ring_bond: 12 classes, total=769094
+      Class 0: 1 (0.0%), weight=0.00
+      Class 1: 10045 (1.3%), weight=1.00
+      Class 2: 697288 (90.7%), weight=1.00
+      Class 3: 103 (0.0%), weight=3.20
+      Class 4: 1 (0.0%), weight=0.00
+      Class 5: 96 (0.0%), weight=3.30
+      Class 6: 2908 (0.4%), weight=1.03
+      Class 7: 57846 (7.5%), weight=1.00
+      Class 8: 1 (0.0%), weight=0.00
+      Class 9: 606 (0.1%), weight=1.48
+      Class 10: 198 (0.0%), weight=2.36
+      Class 11: 1 (0.0%), weight=0.00
+
+Dynamic batching: target ~588888 (nodes+edges)/batch
+  Train batches: 32 (avg 4176 graphs/batch)
+  Val batches:   7
+
+============================================================
+Building model...
+Total parameters: 8,849,553
+Trainable parameters: 8,849,553
+
+============================================================
+Training config (MLM Pre-training):
+  Target (nodes+edges)/batch: 588888
+  num_workers: 0
+  pin_memory: False
+  Max epochs: 200
+  Loss: MLM Cross Entropy Loss
+  Early stop patience: 20 (monitor: ema_val_loss)
+  Optimizer: AdamW, lr=1e-3, weight_decay=1e-4
+  Scheduler: ReduceLROnPlateau, patience=5, factor=0.5, min_lr=1e-6
+  Gradient clip: 1.0
+  MLM probability: 0.30
+============================================================
+
+============================================================
+Starting Epoch 1/200
+============================================================
+  Epoch 1 | Batch 1/32 | GPU Mem: 0.1GB
+============================================================
+Loading vocabulary...
+Vocabulary categories: ['ring_bond_type', 'substituent', 'big_edge_type', 'carbon_count_type', 'anomeric_position_type', 'anomeric_config_type', 'stereo_type', 'carbon_position_type', 'double_bonds']
+  ring_bond_type: 12 tokens
+  substituent: 36 tokens
+  big_edge_type: 37 tokens
+  carbon_count_type: 8 tokens
+  anomeric_position_type: 4 tokens
+  anomeric_config_type: 5 tokens
+  stereo_type: 16 tokens
+  carbon_position_type: 10 tokens
+  double_bonds: 3 tokens
+
+============================================================
+Loading data...
+Total samples in raw data: 167020
+
+============================================================
+Building dataset...
+Building graphs...
+  Processed 5000/167020 samples
+  Processed 10000/167020 samples
+  Processed 15000/167020 samples
+  Processed 20000/167020 samples
+  Processed 25000/167020 samples
+  Processed 30000/167020 samples
+  Processed 35000/167020 samples
+  Processed 40000/167020 samples
+  Processed 45000/167020 samples
+  Processed 50000/167020 samples
+  Processed 55000/167020 samples
+  Processed 60000/167020 samples
+  Processed 65000/167020 samples
+  Processed 70000/167020 samples
+  Processed 75000/167020 samples
+  Processed 80000/167020 samples
+  Processed 85000/167020 samples
+  Processed 90000/167020 samples
+  Processed 95000/167020 samples
+  Processed 100000/167020 samples
+  Processed 105000/167020 samples
+  Processed 110000/167020 samples
+  Processed 115000/167020 samples
+  Processed 120000/167020 samples
+  Processed 125000/167020 samples
+  Processed 130000/167020 samples
+  Processed 135000/167020 samples
+  Processed 140000/167020 samples
+  Processed 145000/167020 samples
+  Processed 150000/167020 samples
+  Processed 155000/167020 samples
+  Processed 160000/167020 samples
+  Processed 165000/167020 samples
+Done. Total: 167020 graphs (skipped 0 failures)
+Train set: 133616 samples (80.0%)
+Val set: 33404 samples (20.0%)
+
+Using full data: train=133616, val=33404
+
+  Computing class distribution for Focal Loss...
+    anomeric_config: 5 classes, total=393698
+      Class 0: 1 (0.0%), weight=0.00
+      Class 1: 165856 (42.1%), weight=1.00
+      Class 2: 227839 (57.9%), weight=1.00
+      Class 3: 1 (0.0%), weight=0.00
+      Class 4: 1 (0.0%), weight=0.00
+    substituent: 36 classes, total=626120
+      Class 0: 3862 (0.6%), weight=1.01
+      Class 1: 635 (0.1%), weight=1.46
+      Class 2: 817 (0.1%), weight=1.34
+      Class 3: 2191 (0.3%), weight=1.06
+      Class 4: 155897 (24.9%), weight=1.00
+      Class 5: 898 (0.1%), weight=1.30
+      Class 6: 14748 (2.4%), weight=1.00
+      Class 7: 570 (0.1%), weight=1.52
+      Class 8: 470 (0.1%), weight=1.63
+      Class 9: 623 (0.1%), weight=1.47
+      Class 10: 283552 (45.3%), weight=1.00
+      Class 11: 13392 (2.1%), weight=1.00
+      Class 12: 4264 (0.7%), weight=1.01
+      Class 13: 1 (0.0%), weight=0.00
+      Class 14: 20724 (3.3%), weight=1.00
+      Class 15: 23850 (3.8%), weight=1.00
+      Class 16: 681 (0.1%), weight=1.42
+      Class 17: 13747 (2.2%), weight=1.00
+      Class 18: 775 (0.1%), weight=1.36
+      Class 19: 526 (0.1%), weight=1.56
+      Class 20: 737 (0.1%), weight=1.38
+      Class 21: 39758 (6.3%), weight=1.00
+      Class 22: 1262 (0.2%), weight=1.18
+      Class 23: 1466 (0.2%), weight=1.14
+      Class 24: 1652 (0.3%), weight=1.11
+      Class 25: 491 (0.1%), weight=1.61
+      Class 26: 5878 (0.9%), weight=1.00
+      Class 27: 2165 (0.3%), weight=1.06
+      Class 28: 676 (0.1%), weight=1.43
+      Class 29: 1096 (0.2%), weight=1.23
+      Class 30: 883 (0.1%), weight=1.31
+      Class 31: 24128 (3.9%), weight=1.00
+      Class 32: 1704 (0.3%), weight=1.11
+      Class 33: 740 (0.1%), weight=1.38
+      Class 34: 1260 (0.2%), weight=1.18
+      Class 35: 1 (0.0%), weight=0.00
+    big_edge: 37 classes, total=806859
+      Class 0: 1556 (0.2%), weight=1.13
+      Class 1: 54400 (6.7%), weight=1.00
+      Class 2: 87834 (10.9%), weight=1.00
+      Class 3: 158393 (19.6%), weight=1.00
+      Class 4: 3283 (0.4%), weight=1.02
+      Class 5: 63737 (7.9%), weight=1.00
+      Class 6: 260 (0.0%), weight=2.09
+      Class 7: 1457 (0.2%), weight=1.14
+      Class 8: 218 (0.0%), weight=2.26
+      Class 9: 1 (0.0%), weight=0.00
+      Class 10: 1 (0.0%), weight=0.00
+      Class 11: 54400 (6.7%), weight=1.00
+      Class 12: 174 (0.0%), weight=2.50
+      Class 13: 20157 (2.5%), weight=1.00
+      Class 14: 1030 (0.1%), weight=1.25
+      Class 15: 8744 (1.1%), weight=1.00
+      Class 16: 2698 (0.3%), weight=1.04
+      Class 17: 1 (0.0%), weight=0.00
+      Class 18: 87834 (10.9%), weight=1.00
+      Class 19: 20157 (2.5%), weight=1.00
+      Class 20: 349 (0.0%), weight=1.84
+      Class 21: 158393 (19.6%), weight=1.00
+      Class 22: 1030 (0.1%), weight=1.25
+      Class 23: 3283 (0.4%), weight=1.02
+      Class 24: 349 (0.0%), weight=1.84
+      Class 25: 63737 (7.9%), weight=1.00
+      Class 26: 260 (0.0%), weight=2.09
+      Class 27: 8744 (1.1%), weight=1.00
+      Class 28: 1457 (0.2%), weight=1.14
+      Class 29: 218 (0.0%), weight=2.26
+      Class 30: 2698 (0.3%), weight=1.04
+      Class 31: 1 (0.0%), weight=0.00
+      Class 32: 1 (0.0%), weight=0.00
+      Class 33: 1 (0.0%), weight=0.00
+      Class 34: 1 (0.0%), weight=0.00
+      Class 35: 1 (0.0%), weight=0.00
+      Class 36: 1 (0.0%), weight=0.00
+    small_edge_stereo: 16 classes, total=5145932
+      Class 0: 1325951 (25.8%), weight=1.00
+      Class 1: 1949222 (37.9%), weight=1.00
+      Class 2: 5672 (0.1%), weight=1.00
+      Class 3: 7993 (0.2%), weight=1.00
+      Class 4: 85410 (1.7%), weight=1.00
+      Class 5: 1900 (0.0%), weight=1.08
+      Class 6: 1316 (0.0%), weight=1.17
+      Class 7: 3692 (0.1%), weight=1.01
+      Class 8: 796500 (15.5%), weight=1.00
+      Class 9: 73141 (1.4%), weight=1.00
+      Class 10: 646 (0.0%), weight=1.45
+      Class 11: 764880 (14.9%), weight=1.00
+      Class 12: 82761 (1.6%), weight=1.00
+      Class 13: 46846 (0.9%), weight=1.00
+      Class 14: 1 (0.0%), weight=0.00
+      Class 15: 1 (0.0%), weight=0.00
+    ring_bond: 12 classes, total=769094
+      Class 0: 1 (0.0%), weight=0.00
+      Class 1: 10045 (1.3%), weight=1.00
+      Class 2: 697288 (90.7%), weight=1.00
+      Class 3: 103 (0.0%), weight=3.20
+      Class 4: 1 (0.0%), weight=0.00
+      Class 5: 96 (0.0%), weight=3.30
+      Class 6: 2908 (0.4%), weight=1.03
+      Class 7: 57846 (7.5%), weight=1.00
+      Class 8: 1 (0.0%), weight=0.00
+      Class 9: 606 (0.1%), weight=1.48
+      Class 10: 198 (0.0%), weight=2.36
+      Class 11: 1 (0.0%), weight=0.00
+
+Dynamic batching: target ~588888 (nodes+edges)/batch
+  Train batches: 32 (avg 4176 graphs/batch)
+  Val batches:   7
+
+============================================================
+Building model...
+Total parameters: 8,849,553
+Trainable parameters: 8,849,553
+
+============================================================
+Training config (MLM Pre-training):
+  Target (nodes+edges)/batch: 588888
+  num_workers: 0
+  pin_memory: False
+  Max epochs: 200
+  Loss: MLM Cross Entropy Loss
+  Early stop patience: 20 (monitor: ema_val_loss)
+  Optimizer: AdamW, lr=1e-3, weight_decay=1e-4
+  Scheduler: ReduceLROnPlateau, patience=5, factor=0.5, min_lr=1e-6
+  Gradient clip: 1.0
+  MLM probability: 0.30
+============================================================
+
+============================================================
+Starting Epoch 1/200
+============================================================
+  Epoch 1 | Batch 1/32 | GPU Mem: 0.1GB
+  Epoch 1 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 1 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 1 | Batch 31/32 | GPU Mem: 0.3GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   1/200 | Train MLM Loss: 5.8504 | Val MLM Loss: 4.3253 | Val Loss EMA5: 4.3253 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.3990 | anomeric_cfg=0.2012 | substituent=1.5416 | ring_bond=0.0308 | is_cyclic=0.4844 | big_edge=1.9757 | stereo=0.6342 | big_edge_exist=0.6438
+  Val Tasks:   carbon_cnt=0.1525 | anomeric_cfg=0.0838 | substituent=1.2318 | ring_bond=0.1759 | is_cyclic=0.2412 | big_edge=1.6249 | stereo=0.2067 | big_edge_exist=0.6085
+
+============================================================
+Starting Epoch 2/200
+============================================================
+  Epoch 2 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 2 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 2 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 2 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   2/200 | Train MLM Loss: 3.6057 | Val MLM Loss: 3.4466 | Val Loss EMA5: 3.8860 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.1143 | anomeric_cfg=0.0814 | substituent=1.0187 | ring_bond=0.0077 | is_cyclic=0.2496 | big_edge=1.3967 | stereo=0.1862 | big_edge_exist=0.6081
+  Val Tasks:   carbon_cnt=0.1013 | anomeric_cfg=0.0811 | substituent=1.1417 | ring_bond=0.1526 | is_cyclic=0.1800 | big_edge=1.0615 | stereo=0.1181 | big_edge_exist=0.6104
+
+============================================================
+Starting Epoch 3/200
+============================================================
+  Epoch 3 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 3 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 3 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 3 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   3/200 | Train MLM Loss: 3.0766 | Val MLM Loss: 3.1562 | Val Loss EMA5: 3.6427 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0902 | anomeric_cfg=0.0802 | substituent=0.9928 | ring_bond=0.0055 | is_cyclic=0.2045 | big_edge=1.0289 | stereo=0.1303 | big_edge_exist=0.6004
+  Val Tasks:   carbon_cnt=0.0952 | anomeric_cfg=0.0840 | substituent=1.1777 | ring_bond=0.1322 | is_cyclic=0.1742 | big_edge=0.8083 | stereo=0.0911 | big_edge_exist=0.5935
+
+============================================================
+Starting Epoch 4/200
+============================================================
+  Epoch 4 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 4 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 4 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 4 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   4/200 | Train MLM Loss: 2.8472 | Val MLM Loss: 3.0951 | Val Loss EMA5: 3.5058 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0827 | anomeric_cfg=0.0795 | substituent=0.9920 | ring_bond=0.0046 | is_cyclic=0.1837 | big_edge=0.8658 | stereo=0.1012 | big_edge_exist=0.5934
+  Val Tasks:   carbon_cnt=0.1017 | anomeric_cfg=0.0800 | substituent=1.2407 | ring_bond=0.1144 | is_cyclic=0.1693 | big_edge=0.7348 | stereo=0.0834 | big_edge_exist=0.5708
+
+============================================================
+Starting Epoch 5/200
+============================================================
+  Epoch 5 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 5 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 5 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 5 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   5/200 | Train MLM Loss: 2.7895 | Val MLM Loss: 2.9282 | Val Loss EMA5: 3.3903 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0826 | anomeric_cfg=0.0796 | substituent=1.0496 | ring_bond=0.0041 | is_cyclic=0.1751 | big_edge=0.7808 | stereo=0.0875 | big_edge_exist=0.5850
+  Val Tasks:   carbon_cnt=0.0911 | anomeric_cfg=0.0833 | substituent=1.1996 | ring_bond=0.1074 | is_cyclic=0.1440 | big_edge=0.6614 | stereo=0.0696 | big_edge_exist=0.5718
+
+============================================================
+Starting Epoch 6/200
+============================================================
+  Epoch 6 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 6 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 6 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 6 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   6/200 | Train MLM Loss: 2.6569 | Val MLM Loss: 2.8541 | Val Loss EMA5: 3.0961 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0808 | anomeric_cfg=0.0795 | substituent=1.0137 | ring_bond=0.0037 | is_cyclic=0.1584 | big_edge=0.7163 | stereo=0.0784 | big_edge_exist=0.5805
+  Val Tasks:   carbon_cnt=0.0872 | anomeric_cfg=0.0799 | substituent=1.1790 | ring_bond=0.1099 | is_cyclic=0.1446 | big_edge=0.6117 | stereo=0.0663 | big_edge_exist=0.5755
+
+============================================================
+Starting Epoch 7/200
+============================================================
+  Epoch 7 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 7 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 7 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 7 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch   7/200 | Train MLM Loss: 2.6244 | Val MLM Loss: 2.8819 | Val Loss EMA5: 2.9831 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0817 | anomeric_cfg=0.0795 | substituent=1.0251 | ring_bond=0.0034 | is_cyclic=0.1621 | big_edge=0.6775 | stereo=0.0732 | big_edge_exist=0.5759
+  Val Tasks:   carbon_cnt=0.0948 | anomeric_cfg=0.0828 | substituent=1.1735 | ring_bond=0.1034 | is_cyclic=0.2023 | big_edge=0.5937 | stereo=0.0632 | big_edge_exist=0.5682
+
+============================================================
+Starting Epoch 8/200
+============================================================
+  Epoch 8 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 8 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 8 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 8 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   8/200 | Train MLM Loss: 2.5885 | Val MLM Loss: 2.8522 | Val Loss EMA5: 2.9223 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0820 | anomeric_cfg=0.0795 | substituent=1.0202 | ring_bond=0.0033 | is_cyclic=0.1565 | big_edge=0.6563 | stereo=0.0687 | big_edge_exist=0.5761
+  Val Tasks:   carbon_cnt=0.0917 | anomeric_cfg=0.0804 | substituent=1.2289 | ring_bond=0.1078 | is_cyclic=0.1357 | big_edge=0.5868 | stereo=0.0564 | big_edge_exist=0.5646
+
+============================================================
+Starting Epoch 9/200
+============================================================
+  Epoch 9 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 9 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 9 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 9 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch   9/200 | Train MLM Loss: 2.5692 | Val MLM Loss: 2.7486 | Val Loss EMA5: 2.8530 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0828 | anomeric_cfg=0.0805 | substituent=1.0432 | ring_bond=0.0032 | is_cyclic=0.1458 | big_edge=0.6312 | stereo=0.0643 | big_edge_exist=0.5719
+  Val Tasks:   carbon_cnt=0.0865 | anomeric_cfg=0.0798 | substituent=1.1616 | ring_bond=0.1031 | is_cyclic=0.1636 | big_edge=0.5358 | stereo=0.0512 | big_edge_exist=0.5669
+
+============================================================
+Starting Epoch 10/200
+============================================================
+  Epoch 10 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 10 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 10 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 10 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  10/200 | Train MLM Loss: 2.5066 | Val MLM Loss: 2.7618 | Val Loss EMA5: 2.8197 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0827 | anomeric_cfg=0.0808 | substituent=1.0049 | ring_bond=0.0030 | is_cyclic=0.1472 | big_edge=0.6100 | stereo=0.0603 | big_edge_exist=0.5713
+  Val Tasks:   carbon_cnt=0.0922 | anomeric_cfg=0.0837 | substituent=1.1917 | ring_bond=0.0958 | is_cyclic=0.1312 | big_edge=0.5322 | stereo=0.0508 | big_edge_exist=0.5842
+
+============================================================
+Starting Epoch 11/200
+============================================================
+  Epoch 11 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 11 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 11 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 11 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  11/200 | Train MLM Loss: 2.4942 | Val MLM Loss: 2.7269 | Val Loss EMA5: 2.7943 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0776 | anomeric_cfg=0.0805 | substituent=0.9955 | ring_bond=0.0030 | is_cyclic=0.1504 | big_edge=0.6089 | stereo=0.0603 | big_edge_exist=0.5716
+  Val Tasks:   carbon_cnt=0.0841 | anomeric_cfg=0.0838 | substituent=1.1963 | ring_bond=0.1003 | is_cyclic=0.1415 | big_edge=0.5149 | stereo=0.0519 | big_edge_exist=0.5541
+
+============================================================
+Starting Epoch 12/200
+============================================================
+  Epoch 12 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 12 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 12 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 12 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  12/200 | Train MLM Loss: 2.4759 | Val MLM Loss: 2.7564 | Val Loss EMA5: 2.7692 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0791 | anomeric_cfg=0.0795 | substituent=1.0164 | ring_bond=0.0028 | is_cyclic=0.1426 | big_edge=0.5813 | stereo=0.0571 | big_edge_exist=0.5705
+  Val Tasks:   carbon_cnt=0.0889 | anomeric_cfg=0.0803 | substituent=1.2019 | ring_bond=0.0961 | is_cyclic=0.1517 | big_edge=0.5184 | stereo=0.0464 | big_edge_exist=0.5729
+
+============================================================
+Starting Epoch 13/200
+============================================================
+  Epoch 13 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 13 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 13 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 13 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  13/200 | Train MLM Loss: 2.4978 | Val MLM Loss: 2.7125 | Val Loss EMA5: 2.7412 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0809 | anomeric_cfg=0.0788 | substituent=1.0413 | ring_bond=0.0029 | is_cyclic=0.1424 | big_edge=0.5788 | stereo=0.0569 | big_edge_exist=0.5692
+  Val Tasks:   carbon_cnt=0.0880 | anomeric_cfg=0.0792 | substituent=1.1878 | ring_bond=0.1015 | is_cyclic=0.1439 | big_edge=0.5010 | stereo=0.0483 | big_edge_exist=0.5630
+
+============================================================
+Starting Epoch 14/200
+============================================================
+  Epoch 14 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 14 | Batch 11/32 | GPU Mem: 0.5GB
+  Epoch 14 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 14 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  14/200 | Train MLM Loss: 2.4399 | Val MLM Loss: 2.7857 | Val Loss EMA5: 2.7487 | LR: 1.00e-03 | ES: 1/20
+  Train Tasks: carbon_cnt=0.0784 | anomeric_cfg=0.0792 | substituent=0.9913 | ring_bond=0.0028 | is_cyclic=0.1491 | big_edge=0.5670 | stereo=0.0552 | big_edge_exist=0.5703
+  Val Tasks:   carbon_cnt=0.0894 | anomeric_cfg=0.0795 | substituent=1.1753 | ring_bond=0.1045 | is_cyclic=0.2172 | big_edge=0.5061 | stereo=0.0463 | big_edge_exist=0.5675
+
+============================================================
+Starting Epoch 15/200
+============================================================
+  Epoch 15 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 15 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 15 | Batch 21/32 | GPU Mem: 0.5GB
+  Epoch 15 | Batch 31/32 | GPU Mem: 0.5GB
+Epoch  15/200 | Train MLM Loss: 2.4461 | Val MLM Loss: 2.7469 | Val Loss EMA5: 2.7457 | LR: 1.00e-03 | ES: 2/20
+  Train Tasks: carbon_cnt=0.0784 | anomeric_cfg=0.0789 | substituent=1.0037 | ring_bond=0.0027 | is_cyclic=0.1537 | big_edge=0.5598 | stereo=0.0545 | big_edge_exist=0.5677
+  Val Tasks:   carbon_cnt=0.0873 | anomeric_cfg=0.0837 | substituent=1.1871 | ring_bond=0.0989 | is_cyclic=0.1886 | big_edge=0.4903 | stereo=0.0455 | big_edge_exist=0.5655
+
+============================================================
+Starting Epoch 16/200
+============================================================
+  Epoch 16 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 16 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 16 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 16 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  16/200 | Train MLM Loss: 2.4227 | Val MLM Loss: 2.7322 | Val Loss EMA5: 2.7467 | LR: 1.00e-03 | ES: 3/20
+  Train Tasks: carbon_cnt=0.0799 | anomeric_cfg=0.0799 | substituent=1.0050 | ring_bond=0.0026 | is_cyclic=0.1407 | big_edge=0.5480 | stereo=0.0522 | big_edge_exist=0.5675
+  Val Tasks:   carbon_cnt=0.0969 | anomeric_cfg=0.0802 | substituent=1.2169 | ring_bond=0.0961 | is_cyclic=0.1262 | big_edge=0.5065 | stereo=0.0446 | big_edge_exist=0.5648
+
+============================================================
+Starting Epoch 17/200
+============================================================
+  Epoch 17 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 17 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 17 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 17 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  17/200 | Train MLM Loss: 2.4173 | Val MLM Loss: 2.7016 | Val Loss EMA5: 2.7358 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0800 | anomeric_cfg=0.0790 | substituent=1.0093 | ring_bond=0.0026 | is_cyclic=0.1431 | big_edge=0.5397 | stereo=0.0516 | big_edge_exist=0.5650
+  Val Tasks:   carbon_cnt=0.0895 | anomeric_cfg=0.0793 | substituent=1.2033 | ring_bond=0.0954 | is_cyclic=0.1744 | big_edge=0.4674 | stereo=0.0450 | big_edge_exist=0.5472
+
+============================================================
+Starting Epoch 18/200
+============================================================
+  Epoch 18 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 18 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 18 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 18 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  18/200 | Train MLM Loss: 2.4508 | Val MLM Loss: 2.6632 | Val Loss EMA5: 2.7259 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0798 | anomeric_cfg=0.0793 | substituent=1.0397 | ring_bond=0.0027 | is_cyclic=0.1490 | big_edge=0.5360 | stereo=0.0524 | big_edge_exist=0.5648
+  Val Tasks:   carbon_cnt=0.0846 | anomeric_cfg=0.0793 | substituent=1.2029 | ring_bond=0.0986 | is_cyclic=0.1218 | big_edge=0.4696 | stereo=0.0458 | big_edge_exist=0.5606
+
+============================================================
+Starting Epoch 19/200
+============================================================
+  Epoch 19 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 19 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 19 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 19 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  19/200 | Train MLM Loss: 2.3886 | Val MLM Loss: 2.6325 | Val Loss EMA5: 2.6953 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0806 | anomeric_cfg=0.0792 | substituent=1.0067 | ring_bond=0.0026 | is_cyclic=0.1279 | big_edge=0.5299 | stereo=0.0508 | big_edge_exist=0.5639
+  Val Tasks:   carbon_cnt=0.0924 | anomeric_cfg=0.0788 | substituent=1.1815 | ring_bond=0.0916 | is_cyclic=0.1224 | big_edge=0.4610 | stereo=0.0434 | big_edge_exist=0.5615
+
+============================================================
+Starting Epoch 20/200
+============================================================
+  Epoch 20 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 20 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 20 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 20 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  20/200 | Train MLM Loss: 2.3572 | Val MLM Loss: 2.6559 | Val Loss EMA5: 2.6771 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0785 | anomeric_cfg=0.0792 | substituent=0.9922 | ring_bond=0.0025 | is_cyclic=0.1213 | big_edge=0.5238 | stereo=0.0484 | big_edge_exist=0.5643
+  Val Tasks:   carbon_cnt=0.0865 | anomeric_cfg=0.0812 | substituent=1.2027 | ring_bond=0.0937 | is_cyclic=0.1200 | big_edge=0.4665 | stereo=0.0440 | big_edge_exist=0.5613
+
+============================================================
+Starting Epoch 21/200
+============================================================
+  Epoch 21 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 21 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 21 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 21 | Batch 31/32 | GPU Mem: 0.3GB
+Epoch  21/200 | Train MLM Loss: 2.3731 | Val MLM Loss: 2.7009 | Val Loss EMA5: 2.6708 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0783 | anomeric_cfg=0.0790 | substituent=1.0041 | ring_bond=0.0025 | is_cyclic=0.1361 | big_edge=0.5155 | stereo=0.0486 | big_edge_exist=0.5615
+  Val Tasks:   carbon_cnt=0.0896 | anomeric_cfg=0.0791 | substituent=1.2473 | ring_bond=0.0944 | is_cyclic=0.1325 | big_edge=0.4627 | stereo=0.0427 | big_edge_exist=0.5526
+
+============================================================
+Starting Epoch 22/200
+============================================================
+  Epoch 22 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 22 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 22 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 22 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  22/200 | Train MLM Loss: 2.3740 | Val MLM Loss: 2.6112 | Val Loss EMA5: 2.6527 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0762 | anomeric_cfg=0.0787 | substituent=1.0155 | ring_bond=0.0025 | is_cyclic=0.1326 | big_edge=0.5103 | stereo=0.0486 | big_edge_exist=0.5624
+  Val Tasks:   carbon_cnt=0.0850 | anomeric_cfg=0.0813 | substituent=1.1598 | ring_bond=0.0943 | is_cyclic=0.1152 | big_edge=0.4691 | stereo=0.0430 | big_edge_exist=0.5635
+
+============================================================
+Starting Epoch 23/200
+============================================================
+  Epoch 23 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 23 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 23 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 23 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  23/200 | Train MLM Loss: 2.3728 | Val MLM Loss: 2.5624 | Val Loss EMA5: 2.6326 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0781 | anomeric_cfg=0.0805 | substituent=1.0045 | ring_bond=0.0025 | is_cyclic=0.1359 | big_edge=0.5129 | stereo=0.0482 | big_edge_exist=0.5630
+  Val Tasks:   carbon_cnt=0.0914 | anomeric_cfg=0.0796 | substituent=1.1647 | ring_bond=0.1012 | is_cyclic=0.0971 | big_edge=0.4542 | stereo=0.0392 | big_edge_exist=0.5349
+
+============================================================
+Starting Epoch 24/200
+============================================================
+  Epoch 24 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 24 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 24 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 24 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  24/200 | Train MLM Loss: 2.3603 | Val MLM Loss: 2.6455 | Val Loss EMA5: 2.6352 | LR: 1.00e-03 | ES: 1/20
+  Train Tasks: carbon_cnt=0.0812 | anomeric_cfg=0.0791 | substituent=0.9983 | ring_bond=0.0024 | is_cyclic=0.1349 | big_edge=0.5074 | stereo=0.0477 | big_edge_exist=0.5620
+  Val Tasks:   carbon_cnt=0.0851 | anomeric_cfg=0.0797 | substituent=1.2015 | ring_bond=0.0911 | is_cyclic=0.1224 | big_edge=0.4617 | stereo=0.0423 | big_edge_exist=0.5616
+
+============================================================
+Starting Epoch 25/200
+============================================================
+  Epoch 25 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 25 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 25 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 25 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  25/200 | Train MLM Loss: 2.3418 | Val MLM Loss: 2.6480 | Val Loss EMA5: 2.6336 | LR: 1.00e-03 | ES: 2/20
+  Train Tasks: carbon_cnt=0.0784 | anomeric_cfg=0.0790 | substituent=0.9986 | ring_bond=0.0024 | is_cyclic=0.1241 | big_edge=0.5033 | stereo=0.0464 | big_edge_exist=0.5622
+  Val Tasks:   carbon_cnt=0.0901 | anomeric_cfg=0.0800 | substituent=1.2372 | ring_bond=0.0939 | is_cyclic=0.1157 | big_edge=0.4328 | stereo=0.0416 | big_edge_exist=0.5567
+
+============================================================
+Starting Epoch 26/200
+============================================================
+  Epoch 26 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 26 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 26 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 26 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  26/200 | Train MLM Loss: 2.3661 | Val MLM Loss: 2.5977 | Val Loss EMA5: 2.6130 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0812 | anomeric_cfg=0.0786 | substituent=1.0169 | ring_bond=0.0024 | is_cyclic=0.1366 | big_edge=0.4967 | stereo=0.0460 | big_edge_exist=0.5602
+  Val Tasks:   carbon_cnt=0.0884 | anomeric_cfg=0.0790 | substituent=1.2058 | ring_bond=0.0952 | is_cyclic=0.1042 | big_edge=0.4455 | stereo=0.0399 | big_edge_exist=0.5396
+
+============================================================
+Starting Epoch 27/200
+============================================================
+  Epoch 27 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 27 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 27 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 27 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  27/200 | Train MLM Loss: 2.3725 | Val MLM Loss: 2.6337 | Val Loss EMA5: 2.6175 | LR: 1.00e-03 | ES: 1/20
+  Train Tasks: carbon_cnt=0.0796 | anomeric_cfg=0.0796 | substituent=1.0165 | ring_bond=0.0024 | is_cyclic=0.1296 | big_edge=0.5104 | stereo=0.0461 | big_edge_exist=0.5609
+  Val Tasks:   carbon_cnt=0.0926 | anomeric_cfg=0.0803 | substituent=1.2069 | ring_bond=0.0965 | is_cyclic=0.1083 | big_edge=0.4564 | stereo=0.0431 | big_edge_exist=0.5495
+
+============================================================
+Starting Epoch 28/200
+============================================================
+  Epoch 28 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 28 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 28 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 28 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  28/200 | Train MLM Loss: 2.3801 | Val MLM Loss: 2.6362 | Val Loss EMA5: 2.6322 | LR: 1.00e-03 | ES: 2/20
+  Train Tasks: carbon_cnt=0.0780 | anomeric_cfg=0.0797 | substituent=1.0302 | ring_bond=0.0024 | is_cyclic=0.1361 | big_edge=0.4998 | stereo=0.0461 | big_edge_exist=0.5603
+  Val Tasks:   carbon_cnt=0.0858 | anomeric_cfg=0.0792 | substituent=1.1699 | ring_bond=0.0934 | is_cyclic=0.1983 | big_edge=0.4227 | stereo=0.0370 | big_edge_exist=0.5499
+
+============================================================
+Starting Epoch 29/200
+============================================================
+  Epoch 29 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 29 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 29 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 29 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  29/200 | Train MLM Loss: 2.3232 | Val MLM Loss: 2.5852 | Val Loss EMA5: 2.6202 | LR: 1.00e-03 | ES: 3/20
+  Train Tasks: carbon_cnt=0.0772 | anomeric_cfg=0.0799 | substituent=1.0014 | ring_bond=0.0023 | is_cyclic=0.1277 | big_edge=0.4833 | stereo=0.0446 | big_edge_exist=0.5592
+  Val Tasks:   carbon_cnt=0.0831 | anomeric_cfg=0.0798 | substituent=1.1871 | ring_bond=0.0971 | is_cyclic=0.1110 | big_edge=0.4386 | stereo=0.0380 | big_edge_exist=0.5505
+
+============================================================
+Starting Epoch 30/200
+============================================================
+  Epoch 30 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 30 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 30 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 30 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  30/200 | Train MLM Loss: 2.3294 | Val MLM Loss: 2.5859 | Val Loss EMA5: 2.6077 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0758 | anomeric_cfg=0.0794 | substituent=1.0023 | ring_bond=0.0023 | is_cyclic=0.1275 | big_edge=0.4908 | stereo=0.0439 | big_edge_exist=0.5599
+  Val Tasks:   carbon_cnt=0.0934 | anomeric_cfg=0.0798 | substituent=1.1905 | ring_bond=0.0922 | is_cyclic=0.1080 | big_edge=0.4299 | stereo=0.0365 | big_edge_exist=0.5555
+
+============================================================
+Starting Epoch 31/200
+============================================================
+  Epoch 31 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 31 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 31 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 31 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  31/200 | Train MLM Loss: 2.3181 | Val MLM Loss: 2.5517 | Val Loss EMA5: 2.5985 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0781 | anomeric_cfg=0.0788 | substituent=1.0042 | ring_bond=0.0023 | is_cyclic=0.1194 | big_edge=0.4853 | stereo=0.0434 | big_edge_exist=0.5591
+  Val Tasks:   carbon_cnt=0.0843 | anomeric_cfg=0.0795 | substituent=1.1754 | ring_bond=0.0936 | is_cyclic=0.1061 | big_edge=0.4287 | stereo=0.0363 | big_edge_exist=0.5478
+
+============================================================
+Starting Epoch 32/200
+============================================================
+  Epoch 32 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 32 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 32 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 32 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  32/200 | Train MLM Loss: 2.3358 | Val MLM Loss: 2.6099 | Val Loss EMA5: 2.5938 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0771 | anomeric_cfg=0.0790 | substituent=1.0100 | ring_bond=0.0023 | is_cyclic=0.1290 | big_edge=0.4876 | stereo=0.0443 | big_edge_exist=0.5590
+  Val Tasks:   carbon_cnt=0.0883 | anomeric_cfg=0.0813 | substituent=1.2050 | ring_bond=0.0960 | is_cyclic=0.1190 | big_edge=0.4300 | stereo=0.0376 | big_edge_exist=0.5528
+
+============================================================
+Starting Epoch 33/200
+============================================================
+  Epoch 33 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 33 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 33 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 33 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  33/200 | Train MLM Loss: 2.2995 | Val MLM Loss: 2.5483 | Val Loss EMA5: 2.5762 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0753 | anomeric_cfg=0.0795 | substituent=0.9956 | ring_bond=0.0023 | is_cyclic=0.1212 | big_edge=0.4772 | stereo=0.0428 | big_edge_exist=0.5581
+  Val Tasks:   carbon_cnt=0.0875 | anomeric_cfg=0.0799 | substituent=1.1789 | ring_bond=0.0905 | is_cyclic=0.1010 | big_edge=0.4303 | stereo=0.0377 | big_edge_exist=0.5425
+
+============================================================
+Starting Epoch 34/200
+============================================================
+  Epoch 34 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 34 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 34 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 34 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  34/200 | Train MLM Loss: 2.3325 | Val MLM Loss: 2.5647 | Val Loss EMA5: 2.5721 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0775 | anomeric_cfg=0.0788 | substituent=1.0171 | ring_bond=0.0023 | is_cyclic=0.1355 | big_edge=0.4728 | stereo=0.0433 | big_edge_exist=0.5576
+  Val Tasks:   carbon_cnt=0.0853 | anomeric_cfg=0.0794 | substituent=1.1855 | ring_bond=0.0922 | is_cyclic=0.1024 | big_edge=0.4259 | stereo=0.0362 | big_edge_exist=0.5577
+
+============================================================
+Starting Epoch 35/200
+============================================================
+  Epoch 35 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 35 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 35 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 35 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  35/200 | Train MLM Loss: 2.3105 | Val MLM Loss: 2.5643 | Val Loss EMA5: 2.5678 | LR: 1.00e-03 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0783 | anomeric_cfg=0.0797 | substituent=0.9920 | ring_bond=0.0023 | is_cyclic=0.1299 | big_edge=0.4786 | stereo=0.0438 | big_edge_exist=0.5583
+  Val Tasks:   carbon_cnt=0.0911 | anomeric_cfg=0.0796 | substituent=1.1763 | ring_bond=0.0919 | is_cyclic=0.1077 | big_edge=0.4196 | stereo=0.0353 | big_edge_exist=0.5630
+
+============================================================
+Starting Epoch 36/200
+============================================================
+  Epoch 36 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 36 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 36 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 36 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  36/200 | Train MLM Loss: 2.3136 | Val MLM Loss: 2.5810 | Val Loss EMA5: 2.5736 | LR: 1.00e-03 | ES: 1/20
+  Train Tasks: carbon_cnt=0.0794 | anomeric_cfg=0.0791 | substituent=1.0109 | ring_bond=0.0023 | is_cyclic=0.1203 | big_edge=0.4742 | stereo=0.0425 | big_edge_exist=0.5571
+  Val Tasks:   carbon_cnt=0.0891 | anomeric_cfg=0.0809 | substituent=1.1874 | ring_bond=0.0918 | is_cyclic=0.1054 | big_edge=0.4229 | stereo=0.0357 | big_edge_exist=0.5678
+
+============================================================
+Starting Epoch 37/200
+============================================================
+  Epoch 37 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 37 | Batch 11/32 | GPU Mem: 0.5GB
+  Epoch 37 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 37 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  37/200 | Train MLM Loss: 2.3259 | Val MLM Loss: 2.5906 | Val Loss EMA5: 2.5698 | LR: 1.00e-03 | ES: 2/20
+  Train Tasks: carbon_cnt=0.0801 | anomeric_cfg=0.0792 | substituent=1.0114 | ring_bond=0.0023 | is_cyclic=0.1315 | big_edge=0.4744 | stereo=0.0424 | big_edge_exist=0.5570
+  Val Tasks:   carbon_cnt=0.0917 | anomeric_cfg=0.0847 | substituent=1.2308 | ring_bond=0.0932 | is_cyclic=0.0946 | big_edge=0.4164 | stereo=0.0354 | big_edge_exist=0.5437
+
+============================================================
+Starting Epoch 38/200
+============================================================
+  Epoch 38 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 38 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 38 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 38 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  38/200 | Train MLM Loss: 2.3139 | Val MLM Loss: 2.5627 | Val Loss EMA5: 2.5727 | LR: 1.00e-03 | ES: 3/20
+  Train Tasks: carbon_cnt=0.0779 | anomeric_cfg=0.0793 | substituent=1.0102 | ring_bond=0.0023 | is_cyclic=0.1228 | big_edge=0.4736 | stereo=0.0430 | big_edge_exist=0.5571
+  Val Tasks:   carbon_cnt=0.0834 | anomeric_cfg=0.0846 | substituent=1.1707 | ring_bond=0.0938 | is_cyclic=0.1161 | big_edge=0.4241 | stereo=0.0364 | big_edge_exist=0.5538
+
+============================================================
+Starting Epoch 39/200
+============================================================
+  Epoch 39 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 39 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 39 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 39 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  39/200 | Train MLM Loss: 2.3020 | Val MLM Loss: 2.5707 | Val Loss EMA5: 2.5739 | LR: 1.00e-03 | ES: 4/20
+  Train Tasks: carbon_cnt=0.0785 | anomeric_cfg=0.0789 | substituent=1.0011 | ring_bond=0.0022 | is_cyclic=0.1271 | big_edge=0.4674 | stereo=0.0418 | big_edge_exist=0.5571
+  Val Tasks:   carbon_cnt=0.0866 | anomeric_cfg=0.0790 | substituent=1.1907 | ring_bond=0.0923 | is_cyclic=0.1156 | big_edge=0.4208 | stereo=0.0360 | big_edge_exist=0.5497
+
+============================================================
+Starting Epoch 40/200
+============================================================
+  Epoch 40 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 40 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 40 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 40 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  40/200 | Train MLM Loss: 2.2762 | Val MLM Loss: 2.5807 | Val Loss EMA5: 2.5772 | LR: 1.00e-03 | ES: 5/20
+  Train Tasks: carbon_cnt=0.0777 | anomeric_cfg=0.0787 | substituent=0.9943 | ring_bond=0.0022 | is_cyclic=0.1138 | big_edge=0.4640 | stereo=0.0411 | big_edge_exist=0.5566
+  Val Tasks:   carbon_cnt=0.0842 | anomeric_cfg=0.0795 | substituent=1.2232 | ring_bond=0.0895 | is_cyclic=0.1007 | big_edge=0.4267 | stereo=0.0353 | big_edge_exist=0.5416
+
+============================================================
+Starting Epoch 41/200
+============================================================
+  Epoch 41 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 41 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 41 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 41 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  41/200 | Train MLM Loss: 2.3090 | Val MLM Loss: 2.5454 | Val Loss EMA5: 2.5700 | LR: 5.00e-04 | ES: 6/20
+  Train Tasks: carbon_cnt=0.0755 | anomeric_cfg=0.0793 | substituent=1.0163 | ring_bond=0.0022 | is_cyclic=0.1252 | big_edge=0.4655 | stereo=0.0410 | big_edge_exist=0.5563
+  Val Tasks:   carbon_cnt=0.0837 | anomeric_cfg=0.0816 | substituent=1.1783 | ring_bond=0.0936 | is_cyclic=0.1069 | big_edge=0.4228 | stereo=0.0362 | big_edge_exist=0.5424
+
+============================================================
+Starting Epoch 42/200
+============================================================
+  Epoch 42 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 42 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 42 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 42 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  42/200 | Train MLM Loss: 2.2836 | Val MLM Loss: 2.5628 | Val Loss EMA5: 2.5645 | LR: 5.00e-04 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0777 | anomeric_cfg=0.0784 | substituent=1.0048 | ring_bond=0.0021 | is_cyclic=0.1154 | big_edge=0.4605 | stereo=0.0412 | big_edge_exist=0.5556
+  Val Tasks:   carbon_cnt=0.0831 | anomeric_cfg=0.0792 | substituent=1.2304 | ring_bond=0.0888 | is_cyclic=0.0900 | big_edge=0.4112 | stereo=0.0348 | big_edge_exist=0.5453
+
+============================================================
+Starting Epoch 43/200
+============================================================
+  Epoch 43 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 43 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 43 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 43 | Batch 31/32 | GPU Mem: 0.5GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  43/200 | Train MLM Loss: 2.2940 | Val MLM Loss: 2.5424 | Val Loss EMA5: 2.5604 | LR: 5.00e-04 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0763 | anomeric_cfg=0.0785 | substituent=1.0079 | ring_bond=0.0021 | is_cyclic=0.1314 | big_edge=0.4568 | stereo=0.0393 | big_edge_exist=0.5535
+  Val Tasks:   carbon_cnt=0.0863 | anomeric_cfg=0.0794 | substituent=1.1912 | ring_bond=0.0895 | is_cyclic=0.1118 | big_edge=0.3978 | stereo=0.0337 | big_edge_exist=0.5527
+
+============================================================
+Starting Epoch 44/200
+============================================================
+  Epoch 44 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 44 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 44 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 44 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  44/200 | Train MLM Loss: 2.2709 | Val MLM Loss: 2.5085 | Val Loss EMA5: 2.5480 | LR: 5.00e-04 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0795 | anomeric_cfg=0.0784 | substituent=1.0037 | ring_bond=0.0021 | is_cyclic=0.1129 | big_edge=0.4527 | stereo=0.0395 | big_edge_exist=0.5540
+  Val Tasks:   carbon_cnt=0.0837 | anomeric_cfg=0.0809 | substituent=1.1749 | ring_bond=0.0927 | is_cyclic=0.0963 | big_edge=0.3970 | stereo=0.0332 | big_edge_exist=0.5498
+
+============================================================
+Starting Epoch 45/200
+============================================================
+  Epoch 45 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 45 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 45 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 45 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  45/200 | Train MLM Loss: 2.2579 | Val MLM Loss: 2.5074 | Val Loss EMA5: 2.5333 | LR: 5.00e-04 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0790 | anomeric_cfg=0.0783 | substituent=0.9975 | ring_bond=0.0021 | is_cyclic=0.1109 | big_edge=0.4487 | stereo=0.0393 | big_edge_exist=0.5539
+  Val Tasks:   carbon_cnt=0.0831 | anomeric_cfg=0.0793 | substituent=1.1804 | ring_bond=0.0947 | is_cyclic=0.0979 | big_edge=0.3937 | stereo=0.0324 | big_edge_exist=0.5460
+
+============================================================
+Starting Epoch 46/200
+============================================================
+  Epoch 46 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 46 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 46 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 46 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  46/200 | Train MLM Loss: 2.2534 | Val MLM Loss: 2.5432 | Val Loss EMA5: 2.5329 | LR: 5.00e-04 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0768 | anomeric_cfg=0.0790 | substituent=0.9985 | ring_bond=0.0021 | is_cyclic=0.1061 | big_edge=0.4508 | stereo=0.0388 | big_edge_exist=0.5530
+  Val Tasks:   carbon_cnt=0.0839 | anomeric_cfg=0.0850 | substituent=1.1971 | ring_bond=0.0894 | is_cyclic=0.1030 | big_edge=0.4035 | stereo=0.0335 | big_edge_exist=0.5478
+
+============================================================
+Starting Epoch 47/200
+============================================================
+  Epoch 47 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 47 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 47 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 47 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  47/200 | Train MLM Loss: 2.2579 | Val MLM Loss: 2.5585 | Val Loss EMA5: 2.5320 | LR: 5.00e-04 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0762 | anomeric_cfg=0.0799 | substituent=0.9959 | ring_bond=0.0021 | is_cyclic=0.1175 | big_edge=0.4459 | stereo=0.0379 | big_edge_exist=0.5544
+  Val Tasks:   carbon_cnt=0.0882 | anomeric_cfg=0.0790 | substituent=1.2159 | ring_bond=0.0907 | is_cyclic=0.0953 | big_edge=0.4112 | stereo=0.0346 | big_edge_exist=0.5435
+
+============================================================
+Starting Epoch 48/200
+============================================================
+  Epoch 48 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 48 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 48 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 48 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  48/200 | Train MLM Loss: 2.2682 | Val MLM Loss: 2.5349 | Val Loss EMA5: 2.5305 | LR: 5.00e-04 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0783 | anomeric_cfg=0.0782 | substituent=1.0081 | ring_bond=0.0021 | is_cyclic=0.1155 | big_edge=0.4458 | stereo=0.0384 | big_edge_exist=0.5535
+  Val Tasks:   carbon_cnt=0.0878 | anomeric_cfg=0.0804 | substituent=1.1988 | ring_bond=0.0901 | is_cyclic=0.0874 | big_edge=0.4019 | stereo=0.0340 | big_edge_exist=0.5544
+
+============================================================
+Starting Epoch 49/200
+============================================================
+  Epoch 49 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 49 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 49 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 49 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  49/200 | Train MLM Loss: 2.2454 | Val MLM Loss: 2.5371 | Val Loss EMA5: 2.5362 | LR: 5.00e-04 | ES: 1/20
+  Train Tasks: carbon_cnt=0.0761 | anomeric_cfg=0.0785 | substituent=0.9919 | ring_bond=0.0021 | is_cyclic=0.1135 | big_edge=0.4433 | stereo=0.0378 | big_edge_exist=0.5543
+  Val Tasks:   carbon_cnt=0.0859 | anomeric_cfg=0.0800 | substituent=1.1755 | ring_bond=0.0911 | is_cyclic=0.1198 | big_edge=0.3991 | stereo=0.0326 | big_edge_exist=0.5532
+
+============================================================
+Starting Epoch 50/200
+============================================================
+  Epoch 50 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 50 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 50 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 50 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  50/200 | Train MLM Loss: 2.2648 | Val MLM Loss: 2.4966 | Val Loss EMA5: 2.5341 | LR: 5.00e-04 | ES: 2/20
+  Train Tasks: carbon_cnt=0.0774 | anomeric_cfg=0.0784 | substituent=1.0036 | ring_bond=0.0021 | is_cyclic=0.1174 | big_edge=0.4466 | stereo=0.0383 | big_edge_exist=0.5528
+  Val Tasks:   carbon_cnt=0.0865 | anomeric_cfg=0.0799 | substituent=1.1787 | ring_bond=0.0910 | is_cyclic=0.0954 | big_edge=0.3949 | stereo=0.0326 | big_edge_exist=0.5375
+
+============================================================
+Starting Epoch 51/200
+============================================================
+  Epoch 51 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 51 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 51 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 51 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  51/200 | Train MLM Loss: 2.2338 | Val MLM Loss: 2.5542 | Val Loss EMA5: 2.5363 | LR: 5.00e-04 | ES: 3/20
+  Train Tasks: carbon_cnt=0.0765 | anomeric_cfg=0.0787 | substituent=0.9825 | ring_bond=0.0021 | is_cyclic=0.1142 | big_edge=0.4405 | stereo=0.0379 | big_edge_exist=0.5534
+  Val Tasks:   carbon_cnt=0.0869 | anomeric_cfg=0.0794 | substituent=1.2193 | ring_bond=0.0884 | is_cyclic=0.0988 | big_edge=0.3960 | stereo=0.0338 | big_edge_exist=0.5515
+
+============================================================
+Starting Epoch 52/200
+============================================================
+  Epoch 52 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 52 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 52 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 52 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  52/200 | Train MLM Loss: 2.2712 | Val MLM Loss: 2.5912 | Val Loss EMA5: 2.5428 | LR: 5.00e-04 | ES: 4/20
+  Train Tasks: carbon_cnt=0.0763 | anomeric_cfg=0.0786 | substituent=1.0111 | ring_bond=0.0021 | is_cyclic=0.1219 | big_edge=0.4423 | stereo=0.0382 | big_edge_exist=0.5524
+  Val Tasks:   carbon_cnt=0.0865 | anomeric_cfg=0.0789 | substituent=1.1756 | ring_bond=0.0885 | is_cyclic=0.1973 | big_edge=0.3974 | stereo=0.0326 | big_edge_exist=0.5343
+
+============================================================
+Starting Epoch 53/200
+============================================================
+  Epoch 53 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 53 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 53 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 53 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  53/200 | Train MLM Loss: 2.2546 | Val MLM Loss: 2.5208 | Val Loss EMA5: 2.5400 | LR: 5.00e-04 | ES: 5/20
+  Train Tasks: carbon_cnt=0.0765 | anomeric_cfg=0.0786 | substituent=0.9957 | ring_bond=0.0021 | is_cyclic=0.1231 | big_edge=0.4394 | stereo=0.0377 | big_edge_exist=0.5534
+  Val Tasks:   carbon_cnt=0.0842 | anomeric_cfg=0.0797 | substituent=1.1914 | ring_bond=0.0895 | is_cyclic=0.1069 | big_edge=0.3973 | stereo=0.0329 | big_edge_exist=0.5389
+
+============================================================
+Starting Epoch 54/200
+============================================================
+  Epoch 54 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 54 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 54 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 54 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  54/200 | Train MLM Loss: 2.2399 | Val MLM Loss: 2.5541 | Val Loss EMA5: 2.5434 | LR: 2.50e-04 | ES: 6/20
+  Train Tasks: carbon_cnt=0.0772 | anomeric_cfg=0.0782 | substituent=0.9891 | ring_bond=0.0021 | is_cyclic=0.1158 | big_edge=0.4401 | stereo=0.0375 | big_edge_exist=0.5516
+  Val Tasks:   carbon_cnt=0.0877 | anomeric_cfg=0.0796 | substituent=1.2068 | ring_bond=0.0880 | is_cyclic=0.1034 | big_edge=0.4039 | stereo=0.0334 | big_edge_exist=0.5513
+
+============================================================
+Starting Epoch 55/200
+============================================================
+  Epoch 55 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 55 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 55 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 55 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  55/200 | Train MLM Loss: 2.2506 | Val MLM Loss: 2.5599 | Val Loss EMA5: 2.5561 | LR: 2.50e-04 | ES: 7/20
+  Train Tasks: carbon_cnt=0.0757 | anomeric_cfg=0.0783 | substituent=1.0054 | ring_bond=0.0021 | is_cyclic=0.1147 | big_edge=0.4371 | stereo=0.0374 | big_edge_exist=0.5517
+  Val Tasks:   carbon_cnt=0.0846 | anomeric_cfg=0.0790 | substituent=1.2118 | ring_bond=0.0876 | is_cyclic=0.1096 | big_edge=0.4040 | stereo=0.0327 | big_edge_exist=0.5506
+
+============================================================
+Starting Epoch 56/200
+============================================================
+  Epoch 56 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 56 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 56 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 56 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  56/200 | Train MLM Loss: 2.2381 | Val MLM Loss: 2.5757 | Val Loss EMA5: 2.5604 | LR: 2.50e-04 | ES: 8/20
+  Train Tasks: carbon_cnt=0.0764 | anomeric_cfg=0.0784 | substituent=0.9995 | ring_bond=0.0021 | is_cyclic=0.1060 | big_edge=0.4388 | stereo=0.0372 | big_edge_exist=0.5514
+  Val Tasks:   carbon_cnt=0.0849 | anomeric_cfg=0.0802 | substituent=1.2011 | ring_bond=0.0889 | is_cyclic=0.1266 | big_edge=0.3936 | stereo=0.0336 | big_edge_exist=0.5669
+
+============================================================
+Starting Epoch 57/200
+============================================================
+  Epoch 57 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 57 | Batch 11/32 | GPU Mem: 0.5GB
+  Epoch 57 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 57 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  57/200 | Train MLM Loss: 2.2384 | Val MLM Loss: 2.5387 | Val Loss EMA5: 2.5498 | LR: 2.50e-04 | ES: 9/20
+  Train Tasks: carbon_cnt=0.0766 | anomeric_cfg=0.0789 | substituent=0.9968 | ring_bond=0.0020 | is_cyclic=0.1113 | big_edge=0.4360 | stereo=0.0366 | big_edge_exist=0.5519
+  Val Tasks:   carbon_cnt=0.0858 | anomeric_cfg=0.0793 | substituent=1.1991 | ring_bond=0.0896 | is_cyclic=0.1097 | big_edge=0.3967 | stereo=0.0316 | big_edge_exist=0.5468
+
+============================================================
+Starting Epoch 58/200
+============================================================
+  Epoch 58 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 58 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 58 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 58 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  58/200 | Train MLM Loss: 2.2443 | Val MLM Loss: 2.5615 | Val Loss EMA5: 2.5580 | LR: 2.50e-04 | ES: 10/20
+  Train Tasks: carbon_cnt=0.0766 | anomeric_cfg=0.0788 | substituent=1.0050 | ring_bond=0.0020 | is_cyclic=0.1111 | big_edge=0.4342 | stereo=0.0367 | big_edge_exist=0.5515
+  Val Tasks:   carbon_cnt=0.0848 | anomeric_cfg=0.0799 | substituent=1.2032 | ring_bond=0.0882 | is_cyclic=0.1192 | big_edge=0.3962 | stereo=0.0312 | big_edge_exist=0.5587
+
+============================================================
+Starting Epoch 59/200
+============================================================
+  Epoch 59 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 59 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 59 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 59 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  59/200 | Train MLM Loss: 2.2385 | Val MLM Loss: 2.5456 | Val Loss EMA5: 2.5563 | LR: 2.50e-04 | ES: 11/20
+  Train Tasks: carbon_cnt=0.0776 | anomeric_cfg=0.0784 | substituent=0.9940 | ring_bond=0.0020 | is_cyclic=0.1169 | big_edge=0.4336 | stereo=0.0361 | big_edge_exist=0.5516
+  Val Tasks:   carbon_cnt=0.0876 | anomeric_cfg=0.0799 | substituent=1.1859 | ring_bond=0.0876 | is_cyclic=0.1350 | big_edge=0.3951 | stereo=0.0326 | big_edge_exist=0.5419
+
+============================================================
+Starting Epoch 60/200
+============================================================
+  Epoch 60 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 60 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 60 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 60 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  60/200 | Train MLM Loss: 2.2538 | Val MLM Loss: 2.5379 | Val Loss EMA5: 2.5519 | LR: 1.25e-04 | ES: 12/20
+  Train Tasks: carbon_cnt=0.0774 | anomeric_cfg=0.0782 | substituent=1.0063 | ring_bond=0.0020 | is_cyclic=0.1225 | big_edge=0.4308 | stereo=0.0368 | big_edge_exist=0.5515
+  Val Tasks:   carbon_cnt=0.0863 | anomeric_cfg=0.0793 | substituent=1.2014 | ring_bond=0.0911 | is_cyclic=0.1268 | big_edge=0.3757 | stereo=0.0313 | big_edge_exist=0.5460
+
+============================================================
+Starting Epoch 61/200
+============================================================
+  Epoch 61 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 61 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 61 | Batch 21/32 | GPU Mem: 0.5GB
+  Epoch 61 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  61/200 | Train MLM Loss: 2.2298 | Val MLM Loss: 2.5121 | Val Loss EMA5: 2.5392 | LR: 1.25e-04 | ES: 13/20
+  Train Tasks: carbon_cnt=0.0763 | anomeric_cfg=0.0782 | substituent=0.9920 | ring_bond=0.0020 | is_cyclic=0.1143 | big_edge=0.4314 | stereo=0.0361 | big_edge_exist=0.5512
+  Val Tasks:   carbon_cnt=0.0825 | anomeric_cfg=0.0804 | substituent=1.1914 | ring_bond=0.0892 | is_cyclic=0.0935 | big_edge=0.3982 | stereo=0.0313 | big_edge_exist=0.5454
+
+============================================================
+Starting Epoch 62/200
+============================================================
+  Epoch 62 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 62 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 62 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 62 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  62/200 | Train MLM Loss: 2.2323 | Val MLM Loss: 2.5212 | Val Loss EMA5: 2.5357 | LR: 1.25e-04 | ES: 14/20
+  Train Tasks: carbon_cnt=0.0767 | anomeric_cfg=0.0785 | substituent=0.9953 | ring_bond=0.0020 | is_cyclic=0.1144 | big_edge=0.4295 | stereo=0.0363 | big_edge_exist=0.5514
+  Val Tasks:   carbon_cnt=0.0858 | anomeric_cfg=0.0795 | substituent=1.1926 | ring_bond=0.0907 | is_cyclic=0.1129 | big_edge=0.3905 | stereo=0.0308 | big_edge_exist=0.5384
+
+============================================================
+Starting Epoch 63/200
+============================================================
+  Epoch 63 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 63 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 63 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 63 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  63/200 | Train MLM Loss: 2.2354 | Val MLM Loss: 2.5092 | Val Loss EMA5: 2.5252 | LR: 1.25e-04 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0757 | anomeric_cfg=0.0783 | substituent=0.9992 | ring_bond=0.0020 | is_cyclic=0.1193 | big_edge=0.4256 | stereo=0.0358 | big_edge_exist=0.5510
+  Val Tasks:   carbon_cnt=0.0831 | anomeric_cfg=0.0791 | substituent=1.1929 | ring_bond=0.0896 | is_cyclic=0.1034 | big_edge=0.3893 | stereo=0.0319 | big_edge_exist=0.5399
+
+============================================================
+Starting Epoch 64/200
+============================================================
+  Epoch 64 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 64 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 64 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 64 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  64/200 | Train MLM Loss: 2.2297 | Val MLM Loss: 2.5105 | Val Loss EMA5: 2.5182 | LR: 1.25e-04 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0746 | anomeric_cfg=0.0782 | substituent=0.9960 | ring_bond=0.0020 | is_cyclic=0.1136 | big_edge=0.4300 | stereo=0.0358 | big_edge_exist=0.5512
+  Val Tasks:   carbon_cnt=0.0861 | anomeric_cfg=0.0790 | substituent=1.1990 | ring_bond=0.0883 | is_cyclic=0.1028 | big_edge=0.3795 | stereo=0.0310 | big_edge_exist=0.5448
+
+============================================================
+Starting Epoch 65/200
+============================================================
+  Epoch 65 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 65 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 65 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 65 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  65/200 | Train MLM Loss: 2.2238 | Val MLM Loss: 2.5384 | Val Loss EMA5: 2.5183 | LR: 1.25e-04 | ES: 1/20
+  Train Tasks: carbon_cnt=0.0776 | anomeric_cfg=0.0780 | substituent=0.9946 | ring_bond=0.0020 | is_cyclic=0.1081 | big_edge=0.4281 | stereo=0.0357 | big_edge_exist=0.5512
+  Val Tasks:   carbon_cnt=0.0869 | anomeric_cfg=0.0789 | substituent=1.1917 | ring_bond=0.0881 | is_cyclic=0.1207 | big_edge=0.3907 | stereo=0.0316 | big_edge_exist=0.5498
+
+============================================================
+Starting Epoch 66/200
+============================================================
+  Epoch 66 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 66 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 66 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 66 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  66/200 | Train MLM Loss: 2.2235 | Val MLM Loss: 2.5406 | Val Loss EMA5: 2.5240 | LR: 1.25e-04 | ES: 2/20
+  Train Tasks: carbon_cnt=0.0756 | anomeric_cfg=0.0784 | substituent=0.9929 | ring_bond=0.0020 | is_cyclic=0.1099 | big_edge=0.4297 | stereo=0.0356 | big_edge_exist=0.5510
+  Val Tasks:   carbon_cnt=0.0888 | anomeric_cfg=0.0792 | substituent=1.2008 | ring_bond=0.0884 | is_cyclic=0.1029 | big_edge=0.3890 | stereo=0.0311 | big_edge_exist=0.5603
+
+============================================================
+Starting Epoch 67/200
+============================================================
+  Epoch 67 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 67 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 67 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 67 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  67/200 | Train MLM Loss: 2.2255 | Val MLM Loss: 2.5068 | Val Loss EMA5: 2.5211 | LR: 1.25e-04 | ES: 3/20
+  Train Tasks: carbon_cnt=0.0768 | anomeric_cfg=0.0784 | substituent=0.9959 | ring_bond=0.0020 | is_cyclic=0.1108 | big_edge=0.4273 | stereo=0.0355 | big_edge_exist=0.5503
+  Val Tasks:   carbon_cnt=0.0826 | anomeric_cfg=0.0790 | substituent=1.1863 | ring_bond=0.0892 | is_cyclic=0.1034 | big_edge=0.3854 | stereo=0.0311 | big_edge_exist=0.5499
+
+============================================================
+Starting Epoch 68/200
+============================================================
+  Epoch 68 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 68 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 68 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 68 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  68/200 | Train MLM Loss: 2.2229 | Val MLM Loss: 2.5416 | Val Loss EMA5: 2.5276 | LR: 1.25e-04 | ES: 4/20
+  Train Tasks: carbon_cnt=0.0761 | anomeric_cfg=0.0781 | substituent=0.9907 | ring_bond=0.0020 | is_cyclic=0.1176 | big_edge=0.4246 | stereo=0.0355 | big_edge_exist=0.5499
+  Val Tasks:   carbon_cnt=0.0835 | anomeric_cfg=0.0799 | substituent=1.1939 | ring_bond=0.0873 | is_cyclic=0.1293 | big_edge=0.3844 | stereo=0.0322 | big_edge_exist=0.5511
+
+============================================================
+Starting Epoch 69/200
+============================================================
+  Epoch 69 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 69 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 69 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 69 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  69/200 | Train MLM Loss: 2.2174 | Val MLM Loss: 2.5130 | Val Loss EMA5: 2.5281 | LR: 1.25e-04 | ES: 5/20
+  Train Tasks: carbon_cnt=0.0753 | anomeric_cfg=0.0782 | substituent=0.9902 | ring_bond=0.0020 | is_cyclic=0.1146 | big_edge=0.4229 | stereo=0.0356 | big_edge_exist=0.5502
+  Val Tasks:   carbon_cnt=0.0839 | anomeric_cfg=0.0794 | substituent=1.1867 | ring_bond=0.0882 | is_cyclic=0.1013 | big_edge=0.3857 | stereo=0.0313 | big_edge_exist=0.5563
+
+============================================================
+Starting Epoch 70/200
+============================================================
+  Epoch 70 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 70 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 70 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 70 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  70/200 | Train MLM Loss: 2.2140 | Val MLM Loss: 2.5526 | Val Loss EMA5: 2.5309 | LR: 6.25e-05 | ES: 6/20
+  Train Tasks: carbon_cnt=0.0771 | anomeric_cfg=0.0783 | substituent=0.9946 | ring_bond=0.0020 | is_cyclic=0.1055 | big_edge=0.4230 | stereo=0.0352 | big_edge_exist=0.5498
+  Val Tasks:   carbon_cnt=0.0863 | anomeric_cfg=0.0790 | substituent=1.2041 | ring_bond=0.0885 | is_cyclic=0.1289 | big_edge=0.3825 | stereo=0.0316 | big_edge_exist=0.5517
+
+============================================================
+Starting Epoch 71/200
+============================================================
+  Epoch 71 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 71 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 71 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 71 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  71/200 | Train MLM Loss: 2.2174 | Val MLM Loss: 2.5668 | Val Loss EMA5: 2.5362 | LR: 6.25e-05 | ES: 7/20
+  Train Tasks: carbon_cnt=0.0750 | anomeric_cfg=0.0780 | substituent=0.9965 | ring_bond=0.0020 | is_cyclic=0.1063 | big_edge=0.4256 | stereo=0.0354 | big_edge_exist=0.5501
+  Val Tasks:   carbon_cnt=0.0849 | anomeric_cfg=0.0792 | substituent=1.2037 | ring_bond=0.0887 | is_cyclic=0.1419 | big_edge=0.3900 | stereo=0.0312 | big_edge_exist=0.5474
+
+============================================================
+Starting Epoch 72/200
+============================================================
+  Epoch 72 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 72 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 72 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 72 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  72/200 | Train MLM Loss: 2.2252 | Val MLM Loss: 2.5026 | Val Loss EMA5: 2.5353 | LR: 6.25e-05 | ES: 8/20
+  Train Tasks: carbon_cnt=0.0775 | anomeric_cfg=0.0782 | substituent=0.9939 | ring_bond=0.0020 | is_cyclic=0.1156 | big_edge=0.4252 | stereo=0.0347 | big_edge_exist=0.5496
+  Val Tasks:   carbon_cnt=0.0828 | anomeric_cfg=0.0794 | substituent=1.1884 | ring_bond=0.0883 | is_cyclic=0.0973 | big_edge=0.3809 | stereo=0.0313 | big_edge_exist=0.5542
+
+============================================================
+Starting Epoch 73/200
+============================================================
+  Epoch 73 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 73 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 73 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 73 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  73/200 | Train MLM Loss: 2.2089 | Val MLM Loss: 2.4861 | Val Loss EMA5: 2.5242 | LR: 6.25e-05 | ES: 9/20
+  Train Tasks: carbon_cnt=0.0754 | anomeric_cfg=0.0781 | substituent=0.9910 | ring_bond=0.0020 | is_cyclic=0.1057 | big_edge=0.4233 | stereo=0.0352 | big_edge_exist=0.5499
+  Val Tasks:   carbon_cnt=0.0847 | anomeric_cfg=0.0792 | substituent=1.1936 | ring_bond=0.0880 | is_cyclic=0.0860 | big_edge=0.3830 | stereo=0.0310 | big_edge_exist=0.5406
+
+============================================================
+Starting Epoch 74/200
+============================================================
+  Epoch 74 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 74 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 74 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 74 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  74/200 | Train MLM Loss: 2.2234 | Val MLM Loss: 2.5156 | Val Loss EMA5: 2.5247 | LR: 6.25e-05 | ES: 10/20
+  Train Tasks: carbon_cnt=0.0751 | anomeric_cfg=0.0783 | substituent=0.9914 | ring_bond=0.0020 | is_cyclic=0.1172 | big_edge=0.4257 | stereo=0.0353 | big_edge_exist=0.5500
+  Val Tasks:   carbon_cnt=0.0856 | anomeric_cfg=0.0797 | substituent=1.1941 | ring_bond=0.0878 | is_cyclic=0.1042 | big_edge=0.3851 | stereo=0.0317 | big_edge_exist=0.5472
+
+============================================================
+Starting Epoch 75/200
+============================================================
+  Epoch 75 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 75 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 75 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 75 | Batch 31/32 | GPU Mem: 0.3GB
+Epoch  75/200 | Train MLM Loss: 2.2212 | Val MLM Loss: 2.5174 | Val Loss EMA5: 2.5177 | LR: 6.25e-05 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0759 | anomeric_cfg=0.0781 | substituent=0.9938 | ring_bond=0.0020 | is_cyclic=0.1141 | big_edge=0.4236 | stereo=0.0351 | big_edge_exist=0.5502
+  Val Tasks:   carbon_cnt=0.0865 | anomeric_cfg=0.0792 | substituent=1.2004 | ring_bond=0.0887 | is_cyclic=0.0958 | big_edge=0.3882 | stereo=0.0319 | big_edge_exist=0.5468
+
+============================================================
+Starting Epoch 76/200
+============================================================
+  Epoch 76 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 76 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 76 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 76 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  76/200 | Train MLM Loss: 2.2200 | Val MLM Loss: 2.5115 | Val Loss EMA5: 2.5066 | LR: 6.25e-05 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0764 | anomeric_cfg=0.0783 | substituent=0.9939 | ring_bond=0.0020 | is_cyclic=0.1126 | big_edge=0.4237 | stereo=0.0348 | big_edge_exist=0.5499
+  Val Tasks:   carbon_cnt=0.0805 | anomeric_cfg=0.0791 | substituent=1.1903 | ring_bond=0.0884 | is_cyclic=0.1146 | big_edge=0.3835 | stereo=0.0317 | big_edge_exist=0.5435
+
+============================================================
+Starting Epoch 77/200
+============================================================
+  Epoch 77 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 77 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 77 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 77 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  77/200 | Train MLM Loss: 2.2222 | Val MLM Loss: 2.5020 | Val Loss EMA5: 2.5065 | LR: 6.25e-05 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0758 | anomeric_cfg=0.0781 | substituent=0.9926 | ring_bond=0.0020 | is_cyclic=0.1145 | big_edge=0.4252 | stereo=0.0351 | big_edge_exist=0.5506
+  Val Tasks:   carbon_cnt=0.0855 | anomeric_cfg=0.0794 | substituent=1.1997 | ring_bond=0.0876 | is_cyclic=0.0945 | big_edge=0.3842 | stereo=0.0317 | big_edge_exist=0.5395
+
+============================================================
+Starting Epoch 78/200
+============================================================
+  Epoch 78 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 78 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 78 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 78 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  78/200 | Train MLM Loss: 2.2038 | Val MLM Loss: 2.5176 | Val Loss EMA5: 2.5128 | LR: 6.25e-05 | ES: 1/20
+  Train Tasks: carbon_cnt=0.0747 | anomeric_cfg=0.0781 | substituent=0.9953 | ring_bond=0.0020 | is_cyclic=0.0988 | big_edge=0.4213 | stereo=0.0354 | big_edge_exist=0.5498
+  Val Tasks:   carbon_cnt=0.0838 | anomeric_cfg=0.0795 | substituent=1.1921 | ring_bond=0.0877 | is_cyclic=0.1094 | big_edge=0.3891 | stereo=0.0309 | big_edge_exist=0.5449
+
+============================================================
+Starting Epoch 79/200
+============================================================
+  Epoch 79 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 79 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 79 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 79 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  79/200 | Train MLM Loss: 2.2149 | Val MLM Loss: 2.5041 | Val Loss EMA5: 2.5105 | LR: 6.25e-05 | ES: 2/20
+  Train Tasks: carbon_cnt=0.0748 | anomeric_cfg=0.0781 | substituent=0.9922 | ring_bond=0.0020 | is_cyclic=0.1153 | big_edge=0.4199 | stereo=0.0351 | big_edge_exist=0.5491
+  Val Tasks:   carbon_cnt=0.0872 | anomeric_cfg=0.0800 | substituent=1.1902 | ring_bond=0.0883 | is_cyclic=0.1001 | big_edge=0.3862 | stereo=0.0298 | big_edge_exist=0.5422
+
+============================================================
+Starting Epoch 80/200
+============================================================
+  Epoch 80 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 80 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 80 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 80 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  80/200 | Train MLM Loss: 2.2137 | Val MLM Loss: 2.5139 | Val Loss EMA5: 2.5098 | LR: 6.25e-05 | ES: 3/20
+  Train Tasks: carbon_cnt=0.0772 | anomeric_cfg=0.0782 | substituent=0.9907 | ring_bond=0.0020 | is_cyclic=0.1079 | big_edge=0.4240 | stereo=0.0349 | big_edge_exist=0.5503
+  Val Tasks:   carbon_cnt=0.0849 | anomeric_cfg=0.0791 | substituent=1.2022 | ring_bond=0.0880 | is_cyclic=0.0961 | big_edge=0.3841 | stereo=0.0311 | big_edge_exist=0.5484
+
+============================================================
+Starting Epoch 81/200
+============================================================
+  Epoch 81 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 81 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 81 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 81 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  81/200 | Train MLM Loss: 2.2138 | Val MLM Loss: 2.5078 | Val Loss EMA5: 2.5091 | LR: 6.25e-05 | ES: 4/20
+  Train Tasks: carbon_cnt=0.0743 | anomeric_cfg=0.0782 | substituent=0.9893 | ring_bond=0.0020 | is_cyclic=0.1118 | big_edge=0.4252 | stereo=0.0347 | big_edge_exist=0.5499
+  Val Tasks:   carbon_cnt=0.0830 | anomeric_cfg=0.0786 | substituent=1.1956 | ring_bond=0.0881 | is_cyclic=0.1062 | big_edge=0.3813 | stereo=0.0301 | big_edge_exist=0.5449
+
+============================================================
+Starting Epoch 82/200
+============================================================
+  Epoch 82 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 82 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 82 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 82 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  82/200 | Train MLM Loss: 2.2215 | Val MLM Loss: 2.5202 | Val Loss EMA5: 2.5127 | LR: 3.13e-05 | ES: 5/20
+  Train Tasks: carbon_cnt=0.0763 | anomeric_cfg=0.0784 | substituent=0.9966 | ring_bond=0.0020 | is_cyclic=0.1107 | big_edge=0.4242 | stereo=0.0349 | big_edge_exist=0.5498
+  Val Tasks:   carbon_cnt=0.0882 | anomeric_cfg=0.0797 | substituent=1.1936 | ring_bond=0.0878 | is_cyclic=0.1060 | big_edge=0.3809 | stereo=0.0306 | big_edge_exist=0.5533
+
+============================================================
+Starting Epoch 83/200
+============================================================
+  Epoch 83 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 83 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 83 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 83 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  83/200 | Train MLM Loss: 2.2144 | Val MLM Loss: 2.5181 | Val Loss EMA5: 2.5128 | LR: 3.13e-05 | ES: 6/20
+  Train Tasks: carbon_cnt=0.0747 | anomeric_cfg=0.0780 | substituent=0.9932 | ring_bond=0.0020 | is_cyclic=0.1099 | big_edge=0.4227 | stereo=0.0349 | big_edge_exist=0.5506
+  Val Tasks:   carbon_cnt=0.0827 | anomeric_cfg=0.0789 | substituent=1.1967 | ring_bond=0.0883 | is_cyclic=0.1144 | big_edge=0.3816 | stereo=0.0310 | big_edge_exist=0.5445
+
+============================================================
+Starting Epoch 84/200
+============================================================
+  Epoch 84 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 84 | Batch 11/32 | GPU Mem: 0.5GB
+  Epoch 84 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 84 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  84/200 | Train MLM Loss: 2.2068 | Val MLM Loss: 2.5327 | Val Loss EMA5: 2.5185 | LR: 3.13e-05 | ES: 7/20
+  Train Tasks: carbon_cnt=0.0754 | anomeric_cfg=0.0782 | substituent=0.9894 | ring_bond=0.0020 | is_cyclic=0.1060 | big_edge=0.4227 | stereo=0.0348 | big_edge_exist=0.5499
+  Val Tasks:   carbon_cnt=0.0856 | anomeric_cfg=0.0787 | substituent=1.1960 | ring_bond=0.0882 | is_cyclic=0.1402 | big_edge=0.3752 | stereo=0.0310 | big_edge_exist=0.5378
+
+============================================================
+Starting Epoch 85/200
+============================================================
+  Epoch 85 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 85 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 85 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 85 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  85/200 | Train MLM Loss: 2.2074 | Val MLM Loss: 2.4761 | Val Loss EMA5: 2.5110 | LR: 3.13e-05 | ES: 8/20
+  Train Tasks: carbon_cnt=0.0742 | anomeric_cfg=0.0781 | substituent=0.9906 | ring_bond=0.0020 | is_cyclic=0.1081 | big_edge=0.4218 | stereo=0.0348 | big_edge_exist=0.5493
+  Val Tasks:   carbon_cnt=0.0822 | anomeric_cfg=0.0789 | substituent=1.1822 | ring_bond=0.0884 | is_cyclic=0.0892 | big_edge=0.3848 | stereo=0.0298 | big_edge_exist=0.5406
+
+============================================================
+Starting Epoch 86/200
+============================================================
+  Epoch 86 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 86 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 86 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 86 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  86/200 | Train MLM Loss: 2.2206 | Val MLM Loss: 2.5098 | Val Loss EMA5: 2.5114 | LR: 3.13e-05 | ES: 9/20
+  Train Tasks: carbon_cnt=0.0748 | anomeric_cfg=0.0782 | substituent=0.9904 | ring_bond=0.0020 | is_cyclic=0.1183 | big_edge=0.4238 | stereo=0.0350 | big_edge_exist=0.5496
+  Val Tasks:   carbon_cnt=0.0856 | anomeric_cfg=0.0785 | substituent=1.1950 | ring_bond=0.0877 | is_cyclic=0.1025 | big_edge=0.3768 | stereo=0.0312 | big_edge_exist=0.5525
+
+============================================================
+Starting Epoch 87/200
+============================================================
+  Epoch 87 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 87 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 87 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 87 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  87/200 | Train MLM Loss: 2.2050 | Val MLM Loss: 2.5173 | Val Loss EMA5: 2.5108 | LR: 3.13e-05 | ES: 10/20
+  Train Tasks: carbon_cnt=0.0757 | anomeric_cfg=0.0782 | substituent=0.9891 | ring_bond=0.0020 | is_cyclic=0.1090 | big_edge=0.4183 | stereo=0.0349 | big_edge_exist=0.5493
+  Val Tasks:   carbon_cnt=0.0816 | anomeric_cfg=0.0791 | substituent=1.2048 | ring_bond=0.0876 | is_cyclic=0.0892 | big_edge=0.3878 | stereo=0.0311 | big_edge_exist=0.5561
+
+============================================================
+Starting Epoch 88/200
+============================================================
+  Epoch 88 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 88 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 88 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 88 | Batch 31/32 | GPU Mem: 0.3GB
+Epoch  88/200 | Train MLM Loss: 2.2070 | Val MLM Loss: 2.5197 | Val Loss EMA5: 2.5111 | LR: 1.56e-05 | ES: 11/20
+  Train Tasks: carbon_cnt=0.0745 | anomeric_cfg=0.0782 | substituent=0.9901 | ring_bond=0.0020 | is_cyclic=0.1075 | big_edge=0.4216 | stereo=0.0351 | big_edge_exist=0.5494
+  Val Tasks:   carbon_cnt=0.0857 | anomeric_cfg=0.0792 | substituent=1.1899 | ring_bond=0.0884 | is_cyclic=0.1180 | big_edge=0.3727 | stereo=0.0306 | big_edge_exist=0.5552
+
+============================================================
+Starting Epoch 89/200
+============================================================
+  Epoch 89 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 89 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 89 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 89 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  89/200 | Train MLM Loss: 2.2108 | Val MLM Loss: 2.4879 | Val Loss EMA5: 2.5022 | LR: 1.56e-05 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0747 | anomeric_cfg=0.0780 | substituent=0.9960 | ring_bond=0.0020 | is_cyclic=0.1073 | big_edge=0.4197 | stereo=0.0348 | big_edge_exist=0.5499
+  Val Tasks:   carbon_cnt=0.0855 | anomeric_cfg=0.0791 | substituent=1.1771 | ring_bond=0.0882 | is_cyclic=0.1033 | big_edge=0.3809 | stereo=0.0309 | big_edge_exist=0.5430
+
+============================================================
+Starting Epoch 90/200
+============================================================
+  Epoch 90 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 90 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 90 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 90 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  90/200 | Train MLM Loss: 2.2045 | Val MLM Loss: 2.4964 | Val Loss EMA5: 2.5062 | LR: 1.56e-05 | ES: 1/20
+  Train Tasks: carbon_cnt=0.0757 | anomeric_cfg=0.0782 | substituent=0.9921 | ring_bond=0.0020 | is_cyclic=0.1035 | big_edge=0.4201 | stereo=0.0351 | big_edge_exist=0.5493
+  Val Tasks:   carbon_cnt=0.0820 | anomeric_cfg=0.0794 | substituent=1.1931 | ring_bond=0.0881 | is_cyclic=0.0934 | big_edge=0.3769 | stereo=0.0300 | big_edge_exist=0.5534
+
+============================================================
+Starting Epoch 91/200
+============================================================
+  Epoch 91 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 91 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 91 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 91 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  91/200 | Train MLM Loss: 2.2126 | Val MLM Loss: 2.5543 | Val Loss EMA5: 2.5151 | LR: 1.56e-05 | ES: 2/20
+  Train Tasks: carbon_cnt=0.0755 | anomeric_cfg=0.0784 | substituent=0.9954 | ring_bond=0.0020 | is_cyclic=0.1096 | big_edge=0.4193 | stereo=0.0349 | big_edge_exist=0.5490
+  Val Tasks:   carbon_cnt=0.0875 | anomeric_cfg=0.0794 | substituent=1.2061 | ring_bond=0.0882 | is_cyclic=0.1252 | big_edge=0.3836 | stereo=0.0308 | big_edge_exist=0.5536
+
+============================================================
+Starting Epoch 92/200
+============================================================
+  Epoch 92 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 92 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 92 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 92 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  92/200 | Train MLM Loss: 2.2061 | Val MLM Loss: 2.5068 | Val Loss EMA5: 2.5130 | LR: 1.56e-05 | ES: 3/20
+  Train Tasks: carbon_cnt=0.0769 | anomeric_cfg=0.0781 | substituent=0.9941 | ring_bond=0.0020 | is_cyclic=0.1026 | big_edge=0.4198 | stereo=0.0347 | big_edge_exist=0.5494
+  Val Tasks:   carbon_cnt=0.0852 | anomeric_cfg=0.0794 | substituent=1.1889 | ring_bond=0.0884 | is_cyclic=0.1000 | big_edge=0.3865 | stereo=0.0306 | big_edge_exist=0.5477
+
+============================================================
+Starting Epoch 93/200
+============================================================
+  Epoch 93 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 93 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 93 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 93 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  93/200 | Train MLM Loss: 2.2177 | Val MLM Loss: 2.5135 | Val Loss EMA5: 2.5118 | LR: 1.56e-05 | ES: 4/20
+  Train Tasks: carbon_cnt=0.0752 | anomeric_cfg=0.0781 | substituent=0.9942 | ring_bond=0.0020 | is_cyclic=0.1126 | big_edge=0.4230 | stereo=0.0350 | big_edge_exist=0.5490
+  Val Tasks:   carbon_cnt=0.0832 | anomeric_cfg=0.0793 | substituent=1.2021 | ring_bond=0.0883 | is_cyclic=0.0948 | big_edge=0.3830 | stereo=0.0309 | big_edge_exist=0.5520
+
+============================================================
+Starting Epoch 94/200
+============================================================
+  Epoch 94 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 94 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 94 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 94 | Batch 31/32 | GPU Mem: 0.4GB
+  [Saved best model to d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt]
+Epoch  94/200 | Train MLM Loss: 2.2062 | Val MLM Loss: 2.4728 | Val Loss EMA5: 2.5088 | LR: 1.56e-05 | ES: 5/20
+  Train Tasks: carbon_cnt=0.0733 | anomeric_cfg=0.0779 | substituent=0.9884 | ring_bond=0.0020 | is_cyclic=0.1098 | big_edge=0.4225 | stereo=0.0344 | big_edge_exist=0.5495
+  Val Tasks:   carbon_cnt=0.0831 | anomeric_cfg=0.0791 | substituent=1.1826 | ring_bond=0.0885 | is_cyclic=0.0968 | big_edge=0.3739 | stereo=0.0301 | big_edge_exist=0.5387
+
+============================================================
+Starting Epoch 95/200
+============================================================
+  Epoch 95 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 95 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 95 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 95 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  95/200 | Train MLM Loss: 2.2120 | Val MLM Loss: 2.4921 | Val Loss EMA5: 2.5079 | LR: 7.81e-06 | ES: 6/20
+  Train Tasks: carbon_cnt=0.0763 | anomeric_cfg=0.0781 | substituent=0.9926 | ring_bond=0.0020 | is_cyclic=0.1084 | big_edge=0.4215 | stereo=0.0348 | big_edge_exist=0.5498
+  Val Tasks:   carbon_cnt=0.0837 | anomeric_cfg=0.0793 | substituent=1.1977 | ring_bond=0.0883 | is_cyclic=0.0868 | big_edge=0.3742 | stereo=0.0304 | big_edge_exist=0.5517
+
+============================================================
+Starting Epoch 96/200
+============================================================
+  Epoch 96 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 96 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 96 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 96 | Batch 31/32 | GPU Mem: 0.3GB
+Epoch  96/200 | Train MLM Loss: 2.2121 | Val MLM Loss: 2.4959 | Val Loss EMA5: 2.4962 | LR: 7.81e-06 | ES: 0/20
+  Train Tasks: carbon_cnt=0.0756 | anomeric_cfg=0.0781 | substituent=0.9935 | ring_bond=0.0020 | is_cyclic=0.1104 | big_edge=0.4199 | stereo=0.0349 | big_edge_exist=0.5493
+  Val Tasks:   carbon_cnt=0.0820 | anomeric_cfg=0.0792 | substituent=1.1971 | ring_bond=0.0883 | is_cyclic=0.0919 | big_edge=0.3849 | stereo=0.0307 | big_edge_exist=0.5419
+
+============================================================
+Starting Epoch 97/200
+============================================================
+  Epoch 97 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 97 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 97 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 97 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  97/200 | Train MLM Loss: 2.2127 | Val MLM Loss: 2.5160 | Val Loss EMA5: 2.4981 | LR: 7.81e-06 | ES: 1/20
+  Train Tasks: carbon_cnt=0.0767 | anomeric_cfg=0.0784 | substituent=0.9880 | ring_bond=0.0020 | is_cyclic=0.1127 | big_edge=0.4213 | stereo=0.0346 | big_edge_exist=0.5508
+  Val Tasks:   carbon_cnt=0.0851 | anomeric_cfg=0.0791 | substituent=1.1941 | ring_bond=0.0882 | is_cyclic=0.0990 | big_edge=0.3839 | stereo=0.0310 | big_edge_exist=0.5555
+
+============================================================
+Starting Epoch 98/200
+============================================================
+  Epoch 98 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 98 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 98 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 98 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  98/200 | Train MLM Loss: 2.2160 | Val MLM Loss: 2.5604 | Val Loss EMA5: 2.5075 | LR: 7.81e-06 | ES: 2/20
+  Train Tasks: carbon_cnt=0.0769 | anomeric_cfg=0.0781 | substituent=0.9910 | ring_bond=0.0020 | is_cyclic=0.1110 | big_edge=0.4244 | stereo=0.0347 | big_edge_exist=0.5495
+  Val Tasks:   carbon_cnt=0.0830 | anomeric_cfg=0.0788 | substituent=1.1998 | ring_bond=0.0883 | is_cyclic=0.1507 | big_edge=0.3778 | stereo=0.0307 | big_edge_exist=0.5513
+
+============================================================
+Starting Epoch 99/200
+============================================================
+  Epoch 99 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 99 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 99 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 99 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch  99/200 | Train MLM Loss: 2.2091 | Val MLM Loss: 2.5121 | Val Loss EMA5: 2.5153 | LR: 7.81e-06 | ES: 3/20
+  Train Tasks: carbon_cnt=0.0751 | anomeric_cfg=0.0781 | substituent=0.9903 | ring_bond=0.0020 | is_cyclic=0.1089 | big_edge=0.4224 | stereo=0.0348 | big_edge_exist=0.5490
+  Val Tasks:   carbon_cnt=0.0821 | anomeric_cfg=0.0793 | substituent=1.2079 | ring_bond=0.0881 | is_cyclic=0.1056 | big_edge=0.3747 | stereo=0.0309 | big_edge_exist=0.5435
+
+============================================================
+Starting Epoch 100/200
+============================================================
+  Epoch 100 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 100 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 100 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 100 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 100/200 | Train MLM Loss: 2.2116 | Val MLM Loss: 2.5196 | Val Loss EMA5: 2.5208 | LR: 7.81e-06 | ES: 4/20
+  Train Tasks: carbon_cnt=0.0756 | anomeric_cfg=0.0782 | substituent=0.9907 | ring_bond=0.0020 | is_cyclic=0.1106 | big_edge=0.4219 | stereo=0.0347 | big_edge_exist=0.5494
+  Val Tasks:   carbon_cnt=0.0894 | anomeric_cfg=0.0792 | substituent=1.1989 | ring_bond=0.0881 | is_cyclic=0.0927 | big_edge=0.3871 | stereo=0.0304 | big_edge_exist=0.5537
+
+============================================================
+Starting Epoch 101/200
+============================================================
+  Epoch 101 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 101 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 101 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 101 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 101/200 | Train MLM Loss: 2.2065 | Val MLM Loss: 2.5006 | Val Loss EMA5: 2.5217 | LR: 7.81e-06 | ES: 5/20
+  Train Tasks: carbon_cnt=0.0746 | anomeric_cfg=0.0782 | substituent=0.9906 | ring_bond=0.0020 | is_cyclic=0.1079 | big_edge=0.4207 | stereo=0.0348 | big_edge_exist=0.5494
+  Val Tasks:   carbon_cnt=0.0822 | anomeric_cfg=0.0795 | substituent=1.1932 | ring_bond=0.0882 | is_cyclic=0.1003 | big_edge=0.3872 | stereo=0.0306 | big_edge_exist=0.5395
+
+============================================================
+Starting Epoch 102/200
+============================================================
+  Epoch 102 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 102 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 102 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 102 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 102/200 | Train MLM Loss: 2.2138 | Val MLM Loss: 2.5177 | Val Loss EMA5: 2.5221 | LR: 3.91e-06 | ES: 6/20
+  Train Tasks: carbon_cnt=0.0767 | anomeric_cfg=0.0780 | substituent=0.9945 | ring_bond=0.0020 | is_cyclic=0.1066 | big_edge=0.4235 | stereo=0.0344 | big_edge_exist=0.5496
+  Val Tasks:   carbon_cnt=0.0845 | anomeric_cfg=0.0795 | substituent=1.2008 | ring_bond=0.0881 | is_cyclic=0.1082 | big_edge=0.3777 | stereo=0.0319 | big_edge_exist=0.5470
+
+============================================================
+Starting Epoch 103/200
+============================================================
+  Epoch 103 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 103 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 103 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 103 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 103/200 | Train MLM Loss: 2.2181 | Val MLM Loss: 2.5035 | Val Loss EMA5: 2.5107 | LR: 3.91e-06 | ES: 7/20
+  Train Tasks: carbon_cnt=0.0759 | anomeric_cfg=0.0781 | substituent=0.9913 | ring_bond=0.0020 | is_cyclic=0.1220 | big_edge=0.4165 | stereo=0.0347 | big_edge_exist=0.5491
+  Val Tasks:   carbon_cnt=0.0878 | anomeric_cfg=0.0791 | substituent=1.1881 | ring_bond=0.0882 | is_cyclic=0.1024 | big_edge=0.3794 | stereo=0.0307 | big_edge_exist=0.5477
+
+============================================================
+Starting Epoch 104/200
+============================================================
+  Epoch 104 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 104 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 104 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 104 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 104/200 | Train MLM Loss: 2.2125 | Val MLM Loss: 2.4929 | Val Loss EMA5: 2.5068 | LR: 3.91e-06 | ES: 8/20
+  Train Tasks: carbon_cnt=0.0753 | anomeric_cfg=0.0781 | substituent=0.9934 | ring_bond=0.0020 | is_cyclic=0.1111 | big_edge=0.4200 | stereo=0.0349 | big_edge_exist=0.5491
+  Val Tasks:   carbon_cnt=0.0836 | anomeric_cfg=0.0793 | substituent=1.1891 | ring_bond=0.0881 | is_cyclic=0.0974 | big_edge=0.3881 | stereo=0.0299 | big_edge_exist=0.5375
+
+============================================================
+Starting Epoch 105/200
+============================================================
+  Epoch 105 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 105 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 105 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 105 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 105/200 | Train MLM Loss: 2.2037 | Val MLM Loss: 2.4908 | Val Loss EMA5: 2.5011 | LR: 3.91e-06 | ES: 9/20
+  Train Tasks: carbon_cnt=0.0754 | anomeric_cfg=0.0782 | substituent=0.9894 | ring_bond=0.0020 | is_cyclic=0.1059 | big_edge=0.4209 | stereo=0.0344 | big_edge_exist=0.5490
+  Val Tasks:   carbon_cnt=0.0817 | anomeric_cfg=0.0792 | substituent=1.1913 | ring_bond=0.0884 | is_cyclic=0.1020 | big_edge=0.3747 | stereo=0.0309 | big_edge_exist=0.5426
+
+============================================================
+Starting Epoch 106/200
+============================================================
+  Epoch 106 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 106 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 106 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 106 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 106/200 | Train MLM Loss: 2.2048 | Val MLM Loss: 2.5140 | Val Loss EMA5: 2.5038 | LR: 3.91e-06 | ES: 10/20
+  Train Tasks: carbon_cnt=0.0745 | anomeric_cfg=0.0781 | substituent=0.9915 | ring_bond=0.0020 | is_cyclic=0.1030 | big_edge=0.4226 | stereo=0.0349 | big_edge_exist=0.5497
+  Val Tasks:   carbon_cnt=0.0850 | anomeric_cfg=0.0790 | substituent=1.1956 | ring_bond=0.0882 | is_cyclic=0.0959 | big_edge=0.3893 | stereo=0.0311 | big_edge_exist=0.5498
+
+============================================================
+Starting Epoch 107/200
+============================================================
+  Epoch 107 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 107 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 107 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 107 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 107/200 | Train MLM Loss: 2.2088 | Val MLM Loss: 2.5298 | Val Loss EMA5: 2.5062 | LR: 3.91e-06 | ES: 11/20
+  Train Tasks: carbon_cnt=0.0759 | anomeric_cfg=0.0781 | substituent=0.9908 | ring_bond=0.0020 | is_cyclic=0.1066 | big_edge=0.4222 | stereo=0.0349 | big_edge_exist=0.5498
+  Val Tasks:   carbon_cnt=0.0817 | anomeric_cfg=0.0791 | substituent=1.1881 | ring_bond=0.0882 | is_cyclic=0.1279 | big_edge=0.3911 | stereo=0.0309 | big_edge_exist=0.5427
+
+============================================================
+Starting Epoch 108/200
+============================================================
+  Epoch 108 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 108 | Batch 11/32 | GPU Mem: 0.4GB
+  Epoch 108 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 108 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 108/200 | Train MLM Loss: 2.2063 | Val MLM Loss: 2.5286 | Val Loss EMA5: 2.5112 | LR: 1.95e-06 | ES: 12/20
+  Train Tasks: carbon_cnt=0.0746 | anomeric_cfg=0.0783 | substituent=0.9896 | ring_bond=0.0020 | is_cyclic=0.1052 | big_edge=0.4239 | stereo=0.0348 | big_edge_exist=0.5495
+  Val Tasks:   carbon_cnt=0.0844 | anomeric_cfg=0.0791 | substituent=1.1962 | ring_bond=0.0883 | is_cyclic=0.1276 | big_edge=0.3778 | stereo=0.0307 | big_edge_exist=0.5444
+
+============================================================
+Starting Epoch 109/200
+============================================================
+  Epoch 109 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 109 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 109 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 109 | Batch 31/32 | GPU Mem: 0.3GB
+Epoch 109/200 | Train MLM Loss: 2.2097 | Val MLM Loss: 2.5190 | Val Loss EMA5: 2.5164 | LR: 1.95e-06 | ES: 13/20
+  Train Tasks: carbon_cnt=0.0745 | anomeric_cfg=0.0782 | substituent=0.9934 | ring_bond=0.0020 | is_cyclic=0.1084 | big_edge=0.4208 | stereo=0.0345 | big_edge_exist=0.5495
+  Val Tasks:   carbon_cnt=0.0860 | anomeric_cfg=0.0793 | substituent=1.1988 | ring_bond=0.0883 | is_cyclic=0.1088 | big_edge=0.3878 | stereo=0.0305 | big_edge_exist=0.5396
+
+============================================================
+Starting Epoch 110/200
+============================================================
+  Epoch 110 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 110 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 110 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 110 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 110/200 | Train MLM Loss: 2.2154 | Val MLM Loss: 2.5041 | Val Loss EMA5: 2.5191 | LR: 1.95e-06 | ES: 14/20
+  Train Tasks: carbon_cnt=0.0755 | anomeric_cfg=0.0782 | substituent=0.9908 | ring_bond=0.0020 | is_cyclic=0.1123 | big_edge=0.4242 | stereo=0.0344 | big_edge_exist=0.5497
+  Val Tasks:   carbon_cnt=0.0839 | anomeric_cfg=0.0790 | substituent=1.1979 | ring_bond=0.0882 | is_cyclic=0.1000 | big_edge=0.3795 | stereo=0.0304 | big_edge_exist=0.5453
+
+============================================================
+Starting Epoch 111/200
+============================================================
+  Epoch 111 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 111 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 111 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 111 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 111/200 | Train MLM Loss: 2.2158 | Val MLM Loss: 2.5460 | Val Loss EMA5: 2.5255 | LR: 1.95e-06 | ES: 15/20
+  Train Tasks: carbon_cnt=0.0759 | anomeric_cfg=0.0781 | substituent=0.9898 | ring_bond=0.0020 | is_cyclic=0.1152 | big_edge=0.4227 | stereo=0.0347 | big_edge_exist=0.5488
+  Val Tasks:   carbon_cnt=0.0844 | anomeric_cfg=0.0788 | substituent=1.1998 | ring_bond=0.0884 | is_cyclic=0.1277 | big_edge=0.3871 | stereo=0.0322 | big_edge_exist=0.5477
+
+============================================================
+Starting Epoch 112/200
+============================================================
+  Epoch 112 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 112 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 112 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 112 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 112/200 | Train MLM Loss: 2.2107 | Val MLM Loss: 2.5317 | Val Loss EMA5: 2.5259 | LR: 1.95e-06 | ES: 16/20
+  Train Tasks: carbon_cnt=0.0761 | anomeric_cfg=0.0781 | substituent=0.9912 | ring_bond=0.0020 | is_cyclic=0.1093 | big_edge=0.4214 | stereo=0.0347 | big_edge_exist=0.5494
+  Val Tasks:   carbon_cnt=0.0830 | anomeric_cfg=0.0794 | substituent=1.1988 | ring_bond=0.0884 | is_cyclic=0.1254 | big_edge=0.3767 | stereo=0.0311 | big_edge_exist=0.5489
+
+============================================================
+Starting Epoch 113/200
+============================================================
+  Epoch 113 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 113 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 113 | Batch 21/32 | GPU Mem: 0.4GB
+  Epoch 113 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 113/200 | Train MLM Loss: 2.2088 | Val MLM Loss: 2.5155 | Val Loss EMA5: 2.5233 | LR: 1.95e-06 | ES: 17/20
+  Train Tasks: carbon_cnt=0.0749 | anomeric_cfg=0.0782 | substituent=0.9934 | ring_bond=0.0020 | is_cyclic=0.1073 | big_edge=0.4209 | stereo=0.0344 | big_edge_exist=0.5493
+  Val Tasks:   carbon_cnt=0.0834 | anomeric_cfg=0.0791 | substituent=1.1985 | ring_bond=0.0883 | is_cyclic=0.0952 | big_edge=0.3891 | stereo=0.0305 | big_edge_exist=0.5514
+
+============================================================
+Starting Epoch 114/200
+============================================================
+  Epoch 114 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 114 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 114 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 114 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 114/200 | Train MLM Loss: 2.2116 | Val MLM Loss: 2.4914 | Val Loss EMA5: 2.5177 | LR: 1.00e-06 | ES: 18/20
+  Train Tasks: carbon_cnt=0.0752 | anomeric_cfg=0.0782 | substituent=0.9935 | ring_bond=0.0020 | is_cyclic=0.1111 | big_edge=0.4193 | stereo=0.0347 | big_edge_exist=0.5491
+  Val Tasks:   carbon_cnt=0.0836 | anomeric_cfg=0.0789 | substituent=1.1949 | ring_bond=0.0882 | is_cyclic=0.0867 | big_edge=0.3864 | stereo=0.0300 | big_edge_exist=0.5426
+
+============================================================
+Starting Epoch 115/200
+============================================================
+  Epoch 115 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 115 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 115 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 115 | Batch 31/32 | GPU Mem: 0.5GB
+Epoch 115/200 | Train MLM Loss: 2.2070 | Val MLM Loss: 2.5116 | Val Loss EMA5: 2.5192 | LR: 1.00e-06 | ES: 19/20
+  Train Tasks: carbon_cnt=0.0750 | anomeric_cfg=0.0782 | substituent=0.9919 | ring_bond=0.0020 | is_cyclic=0.1080 | big_edge=0.4196 | stereo=0.0345 | big_edge_exist=0.5493
+  Val Tasks:   carbon_cnt=0.0833 | anomeric_cfg=0.0789 | substituent=1.1934 | ring_bond=0.0882 | is_cyclic=0.1063 | big_edge=0.3798 | stereo=0.0307 | big_edge_exist=0.5509
+
+============================================================
+Starting Epoch 116/200
+============================================================
+  Epoch 116 | Batch 1/32 | GPU Mem: 0.2GB
+  Epoch 116 | Batch 11/32 | GPU Mem: 0.3GB
+  Epoch 116 | Batch 21/32 | GPU Mem: 0.3GB
+  Epoch 116 | Batch 31/32 | GPU Mem: 0.4GB
+Epoch 116/200 | Train MLM Loss: 2.2129 | Val MLM Loss: 2.4976 | Val Loss EMA5: 2.5096 | LR: 1.00e-06 | ES: 20/20
+  Train Tasks: carbon_cnt=0.0771 | anomeric_cfg=0.0783 | substituent=0.9919 | ring_bond=0.0020 | is_cyclic=0.1132 | big_edge=0.4178 | stereo=0.0349 | big_edge_exist=0.5493
+  Val Tasks:   carbon_cnt=0.0858 | anomeric_cfg=0.0795 | substituent=1.2015 | ring_bond=0.0883 | is_cyclic=0.0844 | big_edge=0.3829 | stereo=0.0322 | big_edge_exist=0.5432
+
+Early stopping triggered at epoch 116
+
+Training metrics saved to: d:\glycanPUG\MASK\training_metrics_log.txt
+
+============================================================
+Loading best model from epoch 94 (val_mlm_loss=2.4728)
+Best model already saved to: d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt
+
+============================================================
+Verifying feature extraction output dimension...
+Feature output shape: torch.Size([17691, 1027])
+Feature dimension: 1027
+✓ Feature extraction output dimension verified: 1027
+
+============================================================
+MLM Pre-training complete!
+  Best epoch: 94
+  Best validation MLM loss: 2.4728
+  Model saved to: d:\glycanPUG\MASK\checkpoints\best_model_mlm.pt
+  Feature output dimension: 1027
+============================================================

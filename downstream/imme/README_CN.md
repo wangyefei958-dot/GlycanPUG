@@ -64,8 +64,10 @@
   | OAc      | `?F` → WURCS 中再替换为 `_?*OCC/3=O` | 乙酰基 |
   | NeuNAc   | Neu5Ac | 神经氨酸重命名 |
 
-- **验证流程**: 占位符替换 → API 转 WURCS → WURCS 去除占位符 → 反转回 IUPAC → 字符频次比对验证
-- **输出**: `glycan_immunogenicity_errors_processed.csv`（包含 SUCCESS / MISMATCH / ERROR 三种状态）
+- **验证流程**: 占位符替换 → API 转 WURCS → WURCS 去除占位符 → 反转回 IUPAC → **树结构认证**
+- **树认证（最后一步）**: 由本地 `iupac_tree.py` 完成，已取代原先的字符频次比对。它把 `modified_iupac`（期望结构）和 `verified_iupac`（API 回转结构）分别解析成残基树，用规范化签名做同构比较，逐项核对残基类型、连接端点（供体异头碳 + 受体碳位）、分支位置、立体化学（α/β）以及修饰数量与位置。字符计数相同但结构不同的情况（连接位点改变、异头构型改变、直链变分支）会被正确判为 MISMATCH。
+- **送 API 前拦截**: 括号不配对等非法输入标记为 `INVALID_INPUT`；糖醛酸 A 与 OAc 共存（共用 `?F` 占位符）标记为 `COLLISION`。两者均不调用 API。
+- **输出**: `glycan_immunogenicity_errors_processed.csv`，含 `status`、`modified_iupac`、`verified_iupac` 列；状态取值为 SUCCESS / MISMATCH / COLLISION / INVALID_INPUT / PARSE_FAIL / ERROR
 
 #### Step 3 — 合并修复：`2merge_fixed.py`
 
@@ -93,7 +95,8 @@
 | `glycan_immunogenicity_errors_processed.csv` | 中间产物 | 错误修复结果 |
 | `glycan_immunogenicity_final.csv` | 中间产物 | 合并修复后的数据 |
 | `imm_stata.csv` | **最终产物** | 过滤干净、含 WURCS 的可用数据集 |
-| `test_single_glycan.py` | 工具 | 占位符替换 + 双向转换 + 验证的核心函数库（Step 2 使用） |
+| `test_single_glycan.py` | 工具 | 占位符替换 + 双向转换的核心函数库（Step 2 使用） |
+| `iupac_tree.py` | 工具 | IUPAC 解析成残基树 + 树同构认证，含输入合法性检查（Step 2 使用） |
 
 ---
 
@@ -110,3 +113,4 @@ Python 标准库：`csv`, `os`, `re`, `json`, `threading`, `concurrent.futures`,
 - **API 调用**: Glycosmos 公共 API 无认证要求，但需控制并发（本项目 MAX_WORKERS=6 / 28，REQUEST_INTERVAL=0.1~0.5s）以避免被限流
 - **断点续传**: Step 1 使用 `wurcs_immunogenicity_progress.json` 保存进度，中途中断可恢复
 - **占位符策略**: Step 2 的替换逻辑基于经验整理，并非所有修饰都能被 Glycosmos API 正确识别，失败的会保留 ERROR 标记
+- **树认证**: Step 2 的最终判定基于结构同构而非字符计数——相同的字符频次不能证明结构相同；MISMATCH 行的 `status` 会附带具体差异项（如 `残基@Galf: Galf!=Gal`）

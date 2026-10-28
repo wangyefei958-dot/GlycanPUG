@@ -1,0 +1,82 @@
+{
+  "seed": 8,
+  "description": {
+    "scope": "test set only (10% split)",
+    "row_index": "过滤低频标签(<min_samples)后数据中的行号，与 embedding 行号一致",
+    "probabilities": "各类别的 softmax 概率，键顺序与 class_order 一致"
+  },
+  "num_test_samples": 337,
+  "num_misclassified": 5,
+  "class_order": [
+    "Free",
+    "N-Linked",
+    "O-Linked"
+  ],
+  "misclassified_samples": [
+    {
+      "row_index": 342,
+      "glytoucan_id": "G23094JF",
+      "wurcs": "WURCS=2.0/3,3,2/[a2122h-1a_1-5_2*NCC/3=O][a2112h-1b_1-5][Aad21122h-2a_2-6_5*NCC/3=O]/1-2-3/a4-b1_b3-c2",
+      "glycan": "NeuAc(a2-3)Gal(b1-4)GlcNAc(a1-P)",
+      "true_label": "Free",
+      "predicted_label": "O-Linked",
+      "probabilities": {
+        "Free": 0.125544,
+        "N-Linked": 0.022246,
+        "O-Linked": 0.85221
+      }
+    },
+    {
+      "row_index": 2460,
+      "glytoucan_id": "G81533KY",
+      "wurcs": "WURCS=2.0/1,1,0/[Aad21122h-2x_2-6_5*NCC/3=O]/1/",
+      "glycan": "NeuAc",
+      "true_label": "Free",
+      "predicted_label": "O-Linked",
+      "probabilities": {
+        "Free": 0.16441,
+        "N-Linked": 0.003815,
+        "O-Linked": 0.831775
+      }
+    },
+    {
+      "row_index": 1787,
+      "glytoucan_id": "G24464VD",
+      "wurcs": "WURCS=2.0/2,2,1/[a2122h-1x_1-5_2*NCC/3=O][a1122h-1b_1-5]/1-2/a4-b1",
+      "glycan": "Man(b1-4)GlcNAc",
+      "true_label": "Free",
+      "predicted_label": "N-Linked",
+      "probabilities": {
+        "Free": 0.00473,
+        "N-Linked": 0.995085,
+        "O-Linked": 0.000185
+      }
+    },
+    {
+      "row_index": 422,
+      "glytoucan_id": "G31119YY",
+      "wurcs": "WURCS=2.0/3,5,4/[a2122h-1b_1-5_2*NCC/3=O][a2112h-1b_1-5][Aad21122h-2a_2-6_5*NCC/3=O]/1-2-1-2-3/a4-b1_b3-c1_c4-d1_d3-e2",
+      "glycan": "NeuAc(a2-3)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc",
+      "true_label": "N-Linked",
+      "predicted_label": "O-Linked",
+      "probabilities": {
+        "Free": 0.094288,
+        "N-Linked": 0.269491,
+        "O-Linked": 0.636222
+      }
+    },
+    {
+      "row_index": 2496,
+      "glytoucan_id": "G46208LD",
+      "wurcs": "WURCS=2.0/2,2,1/[a2122h-1x_1-5_2*NCC/3=O][a1221m-1a_1-5]/1-2/a6-b1",
+      "glycan": "Fuc(a1-6)GlcNAc",
+      "true_label": "Free",
+      "predicted_label": "N-Linked",
+      "probabilities": {
+        "Free": 0.000262,
+        "N-Linked": 0.998952,
+        "O-Linked": 0.000785
+      }
+    }
+  ]
+}

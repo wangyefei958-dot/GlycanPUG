@@ -1,0 +1,43 @@
+{
+  "seed": 4,
+  "description": {
+    "scope": "test set only (10% split)",
+    "row_index": "过滤低频标签(<min_samples)后数据中的行号，与 embedding 行号一致",
+    "probabilities": "各类别的 softmax 概率，键顺序与 class_order 一致"
+  },
+  "num_test_samples": 337,
+  "num_misclassified": 2,
+  "class_order": [
+    "Free",
+    "N-Linked",
+    "O-Linked"
+  ],
+  "misclassified_samples": [
+    {
+      "row_index": 2288,
+      "glytoucan_id": "G60430KO",
+      "wurcs": "WURCS=2.0/3,5,4/[a2122h-1b_1-5_2*NCC/3=O][a2112h-1b_1-5][Aad21122h-2a_2-6_5*NCC/3=O]/1-2-1-2-3/a4-b1_b3-c1_c4-d1_d6-e2",
+      "glycan": "NeuAc(a2-6)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc",
+      "true_label": "N-Linked",
+      "predicted_label": "Free",
+      "probabilities": {
+        "Free": 0.662152,
+        "N-Linked": 0.012637,
+        "O-Linked": 0.325211
+      }
+    },
+    {
+      "row_index": 536,
+      "glytoucan_id": "G53957WR",
+      "wurcs": "WURCS=2.0/3,4,3/[a2122h-1b_1-5_2*NCC/3=O][a2112h-1b_1-5][Aad21122h-2a_2-6_5*NCC/3=O]/1-2-3-3/a4-b1_b3-c2_c8-d2",
+      "glycan": "NeuAc(a2-8)NeuAc(a2-3)Gal(b1-4)GlcNAc",
+      "true_label": "N-Linked",
+      "predicted_label": "Free",
+      "probabilities": {
+        "Free": 0.910635,
+        "N-Linked": 0.01724,
+        "O-Linked": 0.072125
+      }
+    }
+  ]
+}

@@ -438,6 +438,7 @@ class WURCSParser:
                 continue
             _collect_occupied_positions(linkage, char_to_sugar_idx, occupied_positions)
         # 收集环占用的位置
+        # 环键位置同样算占用：不确定位置的取代基不能落在环键位置上去抢环上的O
         for sugar_idx in range(sugar_count):
             template_idx = indices[sugar_idx] - 1
             template = parsed_templates[template_idx]
@@ -459,6 +460,8 @@ class WURCSParser:
         small_nodes = []
         small_edges = []
         small_node_id = 0
+        # 记录所有由"不确定位置取代基"产生的边的下标，供最后统一调整O边概率
+        doubt_edge_indices = []
 
         # 记录每个sugar的碳位置对应的小节点ID，用于doubt边
         sugar_carbon_small_node_ids = {}
@@ -477,10 +480,11 @@ class WURCSParser:
             num_doubt = len(doubt_substituents)
             carbon_total = template["carbon_count"]
 
-            # 计算O小节点数量 = carbon_total - 确定非O取代基数（包括none） - doubt取代基数
+            # 计算O小节点数量 = carbon_total - 确定非O取代基数（包括none）
+            # 不确定位置的取代基不扣除O节点：O先全部建立，再由doubt取代基按概率"掠夺"
             # 'none' 现在是一个有效的取代基，需要创建小节点
             num_firm_non_O = len([p for p in range(1, carbon_total + 1) if p in template["substituents"] and template["substituents"][p] != 'O'])
-            num_O_nodes = carbon_total - num_firm_non_O - num_doubt
+            num_O_nodes = carbon_total - num_firm_non_O
 
             # 创建确定位置的非O取代基小节点（包括none）
             firm_small_node_ids = {}
@@ -553,6 +557,7 @@ class WURCSParser:
                     prob = 1.0 / len(available_positions)
                     for doubt_node_id in doubt_small_node_ids:
                         for pos in available_positions:
+                            doubt_edge_indices.append(len(small_edges))
                             small_edges.append({
                                 "big_node_id": sugar_idx,
                                 "small_node_id": doubt_node_id,
@@ -920,6 +925,7 @@ class WURCSParser:
                         stereo_type = "?"
                 else:
                     stereo_type = "?"
+                doubt_edge_indices.append(len(small_edges))
                 small_edges.append({
                     "big_node_id": big_node_id,
                     "small_node_id": new_small_node_id,
@@ -931,22 +937,26 @@ class WURCSParser:
         result["big_edges"] = big_edges
 
     # ========== 调整 O 小边的概率，使其与 doubt 边互斥 ==========
+        # O边保留 1 - 该位置所有doubt边的概率之和；doubt占满则该位置的O边删除
         small_node_subst = {node["id"]: node["substituent"] for node in small_nodes}
         o_edge_index_by_pos = {}
         for idx, edge in enumerate(small_edges):
+            if small_node_subst.get(edge["small_node_id"]) != "O":
+                continue
+            carbon_pos = edge["carbon_position_type"]
+            if not str(carbon_pos).isdigit():
+                continue
             if edge.get("probability", 1) == 1:
-                small_id = edge["small_node_id"]
-                if small_node_subst.get(small_id) == "O":
-                    carbon_pos = int(edge["carbon_position_type"])
-                    key = (edge["big_node_id"], carbon_pos)
-                    o_edge_index_by_pos[key] = idx
+                key = (edge["big_node_id"], int(carbon_pos))
+                o_edge_index_by_pos[key] = idx
         doubt_prob_sum = {}
-        for edge in small_edges:
-            prob = edge.get("probability", 1)
-            small_id = edge["small_node_id"]
-            if small_node_subst.get(small_id) != "O" and prob < 1:
-                key = (edge["big_node_id"], int(edge["carbon_position_type"]))
-                doubt_prob_sum[key] = doubt_prob_sum.get(key, 0.0) + prob
+        for idx in doubt_edge_indices:
+            edge = small_edges[idx]
+            carbon_pos = edge["carbon_position_type"]
+            if not str(carbon_pos).isdigit():
+                continue
+            key = (edge["big_node_id"], int(carbon_pos))
+            doubt_prob_sum[key] = doubt_prob_sum.get(key, 0.0) + edge.get("probability", 1)
         for key, o_idx in o_edge_index_by_pos.items():
             total_doubt = doubt_prob_sum.get(key, 0.0)
             if total_doubt >= 1.0:
@@ -954,6 +964,20 @@ class WURCSParser:
             elif total_doubt > 0:
                 small_edges[o_idx]["probability"] = 1.0 - total_doubt
         small_edges = [e for e in small_edges if e is not None]
+
+        # ========== 删除被掠夺干净后没有任何边的O小节点，并重排小节点ID ==========
+        used_small_ids = {e["small_node_id"] for e in small_edges}
+        if len(used_small_ids) != len(small_nodes):
+            kept_nodes = []
+            id_map = {}
+            for node in small_nodes:
+                if node["id"] in used_small_ids or node["substituent"] != "O":
+                    id_map[node["id"]] = len(kept_nodes)
+                    kept_nodes.append({"id": len(kept_nodes), "substituent": node["substituent"]})
+            for edge in small_edges:
+                edge["small_node_id"] = id_map[edge["small_node_id"]]
+            small_nodes = kept_nodes
+        result["small_nodes"] = small_nodes
         result["small_edges"] = small_edges
 
         return result
@@ -1019,7 +1043,6 @@ if __name__ == "__main__":
     import os
     import csv
     from collections import OrderedDict
-    import glob
 
     parser = WURCSParser()
 
@@ -1027,17 +1050,11 @@ if __name__ == "__main__":
     SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
     # ========== 第一遍：解析所有WURCS，收集vocab ==========
-    # 自动搜索脚本目录中的CSV文件
-    csv_files = glob.glob(os.path.join(SCRIPT_DIR, '*.csv'))
-    if not csv_files:
-        print("Error: No CSV file found in the script directory!")
+    # 固定使用脚本目录下的 dic.csv
+    input_file = os.path.join(SCRIPT_DIR, 'dic.csv')
+    if not os.path.isfile(input_file):
+        print("Error: dic.csv not found in the script directory!")
         sys.exit(1)
-    if len(csv_files) > 1:
-        print("Error: Multiple CSV files found in the script directory!")
-        print("Found files:", csv_files)
-        sys.exit(1)
-    
-    input_file = csv_files[0]
     print("Reading from: %s" % input_file)
 
     with open(input_file, 'r', encoding='utf-8-sig') as csvfile:

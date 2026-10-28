@@ -1,0 +1,230 @@
+{
+  "label_col": "immunogenicity",
+  "num_classes": 2,
+  "classes": [
+    "non-immunogenic",
+    "immunogenic"
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "results": [
+    {
+      "seed": 1,
+      "f1_macro": 0.8412698412698413,
+      "macro_auc": 0.9794354838709678,
+      "macro_auprc": 0.8543467491699757,
+      "accuracy": 0.9305555555555556,
+      "confusion_matrix": [
+        [
+          121,
+          3
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "best_epoch": 33
+    },
+    {
+      "seed": 2,
+      "f1_macro": 0.8332561371005095,
+      "macro_auc": 0.9806451612903226,
+      "macro_auprc": 0.8602644478283864,
+      "accuracy": 0.9305555555555556,
+      "confusion_matrix": [
+        [
+          122,
+          2
+        ],
+        [
+          8,
+          12
+        ]
+      ],
+      "best_epoch": 42
+    },
+    {
+      "seed": 3,
+      "f1_macro": 0.848421052631579,
+      "macro_auc": 0.9798387096774194,
+      "macro_auprc": 0.8429213105734844,
+      "accuracy": 0.9305555555555556,
+      "confusion_matrix": [
+        [
+          120,
+          4
+        ],
+        [
+          6,
+          14
+        ]
+      ],
+      "best_epoch": 55
+    },
+    {
+      "seed": 4,
+      "f1_macro": 0.8412698412698413,
+      "macro_auc": 0.980241935483871,
+      "macro_auprc": 0.8529181054452795,
+      "accuracy": 0.9305555555555556,
+      "confusion_matrix": [
+        [
+          121,
+          3
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "best_epoch": 39
+    },
+    {
+      "seed": 5,
+      "f1_macro": 0.8412698412698413,
+      "macro_auc": 0.9806451612903226,
+      "macro_auprc": 0.8624213105734845,
+      "accuracy": 0.9305555555555556,
+      "confusion_matrix": [
+        [
+          121,
+          3
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "best_epoch": 54
+    },
+    {
+      "seed": 6,
+      "f1_macro": 0.8412698412698413,
+      "macro_auc": 0.9774193548387098,
+      "macro_auprc": 0.8207661630893897,
+      "accuracy": 0.9305555555555556,
+      "confusion_matrix": [
+        [
+          121,
+          3
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "best_epoch": 37
+    },
+    {
+      "seed": 7,
+      "f1_macro": 0.8536420101637493,
+      "macro_auc": 0.9806451612903226,
+      "macro_auprc": 0.8612546439068178,
+      "accuracy": 0.9375,
+      "confusion_matrix": [
+        [
+          122,
+          2
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "best_epoch": 40
+    },
+    {
+      "seed": 8,
+      "f1_macro": 0.848421052631579,
+      "macro_auc": 0.9802419354838711,
+      "macro_auprc": 0.8596242091242091,
+      "accuracy": 0.9305555555555556,
+      "confusion_matrix": [
+        [
+          120,
+          4
+        ],
+        [
+          6,
+          14
+        ]
+      ],
+      "best_epoch": 34
+    },
+    {
+      "seed": 9,
+      "f1_macro": 0.8412698412698413,
+      "macro_auc": 0.9790322580645162,
+      "macro_auprc": 0.852521280048454,
+      "accuracy": 0.9305555555555556,
+      "confusion_matrix": [
+        [
+          121,
+          3
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "best_epoch": 33
+    },
+    {
+      "seed": 10,
+      "f1_macro": 0.8368860055607044,
+      "macro_auc": 0.9802419354838711,
+      "macro_auprc": 0.8652735227735228,
+      "accuracy": 0.9236111111111112,
+      "confusion_matrix": [
+        [
+          119,
+          5
+        ],
+        [
+          6,
+          14
+        ]
+      ],
+      "best_epoch": 30
+    }
+  ],
+  "mean_f1_macro": 0.8426975464437326,
+  "std_f1_macro": 0.005642732143408743,
+  "mean_macro_auc": 0.9798387096774194,
+  "std_macro_auc": 0.0009542064166289564,
+  "mean_macro_auprc": 0.8532311742533004,
+  "std_macro_auprc": 0.012435060792027617,
+  "mean_accuracy": 0.9305555555555556,
+  "std_accuracy": 0.003105649968749697,
+  "average_confusion_matrix": [
+    [
+      120.8,
+      3.2
+    ],
+    [
+      6.8,
+      13.2
+    ]
+  ],
+  "average_confusion_matrix_normalized": [
+    [
+      0.9741935483870967,
+      0.025806451612903226
+    ],
+    [
+      0.33999999999999997,
+      0.6599999999999999
+    ]
+  ]
+}

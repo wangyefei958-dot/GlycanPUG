@@ -64,8 +64,10 @@ Scripts are prefixed with numbers indicating execution order. **Run them sequent
   | OAc          | `?F` → replaced in WURCS as `_?*OCC/3=O` | Acetyl |
   | NeuNAc       | Neu5Ac      | Naming normalization |
 
-- **Validation flow**: Substitution → API call → WURCS cleanup → reverse WURCS→IUPAC → composition (character-frequency) comparison
-- **Output**: `glycan_immunogenicity_errors_processed.csv` (contains SUCCESS / MISMATCH / ERROR status)
+- **Validation flow**: Substitution → API call → WURCS cleanup → reverse WURCS→IUPAC → **tree-structure validation**
+- **Tree validation (final step)**: Handled locally by `iupac_tree.py`, replacing the previous character-frequency comparison. Both `modified_iupac` (expected structure) and `verified_iupac` (API round-trip result) are parsed into residue trees, then compared by canonical signature (isomorphism) — checking residue types, linkage endpoints (donor anomeric carbon + acceptor position), branch placement, stereochemistry (α/β) and modification count/position. Structures with identical character counts but different topology (changed linkage position, anomer, or linear-vs-branched) are correctly flagged as MISMATCH.
+- **Pre-API interception**: Illegal input (unbalanced brackets etc.) is marked `INVALID_INPUT`; co-occurring uronic acid A and OAc (both using the `?F` placeholder) is marked `COLLISION`. Neither calls the API.
+- **Output**: `glycan_immunogenicity_errors_processed.csv` with `status`, `modified_iupac`, `verified_iupac` columns; status is one of SUCCESS / MISMATCH / COLLISION / INVALID_INPUT / PARSE_FAIL / ERROR
 
 #### Step 3 — Merge Fixed Results: `2merge_fixed.py`
 
@@ -93,7 +95,8 @@ Scripts are prefixed with numbers indicating execution order. **Run them sequent
 | `glycan_immunogenicity_errors_processed.csv` | Intermediate | Error recovery results |
 | `glycan_immunogenicity_final.csv` | Intermediate | Data after merging repaired records |
 | `imm_stata.csv` | **Final** | Clean dataset with WURCS annotations |
-| `test_single_glycan.py` | Utility | Core library for placeholder substitution, bidirectional conversion, and validation (used by Step 2) |
+| `test_single_glycan.py` | Utility | Core library for placeholder substitution and bidirectional conversion (used by Step 2) |
+| `iupac_tree.py` | Utility | Parses IUPAC into residue trees and performs isomorphism-based tree validation, including input legality checks (used by Step 2) |
 
 ---
 
@@ -110,3 +113,4 @@ Python standard library: `csv`, `os`, `re`, `json`, `threading`, `concurrent.fut
 - **API Rate Limiting**: The Glycosmos public API requires no authentication, but concurrency must be controlled (this project uses `MAX_WORKERS=6/28` and `REQUEST_INTERVAL=0.1~0.5s`) to avoid throttling
 - **Checkpoint Resume**: Step 1 saves progress to `wurcs_immunogenicity_progress.json` and can resume after interruption
 - **Placeholder Limitations**: The substitution logic in Step 2 is empirically derived — not all modifications are recognized by the Glycosmos API, and some records will remain ERROR after recovery
+- **Tree Validation**: Step 2's final decision is based on structural isomorphism rather than character counting — identical character frequency does not prove identical structure. MISMATCH rows carry the specific differences in `status` (e.g. `残基@Galf: Galf!=Gal`)
