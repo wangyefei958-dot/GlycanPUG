@@ -26,7 +26,7 @@ pip install .
 
 ### 2. Extract embeddings
 
-Place `get_embeddings.py` and `split_files/` (WURCS CSVs split by taxonomic level, from PUG's `95轮tax/`; note: **do not use `taxall/`** — it contains uncertain structures that GlycanGT cannot process) together into the **GlycanGT repository root**, then run:
+Place `get_embeddings.py` and `split_files/` (WURCS CSVs split by taxonomic level, from PUG's `MASK/94/tax(ML)/split_files/`; note: **do not use `taxall/`** — it contains uncertain structures that GlycanGT cannot process) together into the **GlycanGT repository root**, then run:
 
 ```bash
 # Reads ./split_files by default, outputs to ./split_files_processed

@@ -26,7 +26,7 @@ pip install .
 
 ### 2. 提取嵌入
 
-将本文件夹的 `get_embeddings.py` 和 `split_files/`（按层级拆分的 WURCS CSV，来自 PUG 的 `95轮tax/`；注意**不要用 `taxall/`**，其含不确定结构，GlycanGT 无法处理）一起放入 **GlycanGT 仓库根目录**，然后运行：
+将本文件夹的 `get_embeddings.py` 和 `split_files/`（按层级拆分的 WURCS CSV，来自 PUG 的 `MASK/94/tax(ML)/split_files/`；注意**不要用 `taxall/`**，其含不确定结构，GlycanGT 无法处理）一起放入 **GlycanGT 仓库根目录**，然后运行：
 
 ```bash
 # 默认读取 ./split_files，输出到 ./split_files_processed

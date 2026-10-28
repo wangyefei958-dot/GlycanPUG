@@ -11,8 +11,8 @@ MASK/
 ├── wurcs_parser_reverse_edge.py   # WURCS 解析器（可独立运行，产出 json/txt/vocab 等）
 ├── masktrain_windows_313.py       # MLM 预训练（HeteroGAT）
 ├── deldownstata.py                # 数据泄漏清理工具
-├── 总结.py                         # 汇总多 seed 的 F1/AUC 指标
-├── dic.csv                         # 主数据字典（GlyTouCan 下载的全部糖）
+├── training_metrics_log.txt        # 预训练每轮指标日志（由预训练脚本生成）
+├── dic.csv                         # 数据字典（**已由 deldownstata.py 删除下游任务样本**；原始未清理版见 `downstream/dic.csv`）
 ├── output_all.json / output_all.txt # 解析后的全量图数据（由解析器生成）
 ├── embedding_vocab.json           # 特征词表（由解析器生成）
 ├── vocab_freq_stats.txt           # 词表频次统计
@@ -31,7 +31,7 @@ MASK/
 ## 各脚本说明
 
 ### 1. `wurcs_parser_reverse_edge.py`
-WURCS 格式解析器。既可被其他脚本作为模块导入，也**可直接运行**：自动读取脚本目录里唯一的 `dic.csv`，把每条 `WURCS=...` 串解析为 GNN 输入的异构图结构（`big_nodes` 糖单体 / `small_nodes` 取代基 / `big_edges` 单体间糖苷键 / `small_edges` 单体-取代基连接），并做两遍扫描（先收集词表、再过滤低频/不确定项）。直接运行后产出：
+WURCS 格式解析器。既可被其他脚本作为模块导入，也**可直接运行**：自动读取脚本目录里唯一的 `dic.csv`，把每条 `WURCS=...` 串解析为 GNN 输入的异构图结构（节点/边的代码命名见下文「代码—论文命名对照」），并做两遍扫描（先收集词表、再过滤低频/不确定项）。直接运行后产出：
 - `output_all.json`（解析后的全量图数据，供预训练读取）
 - `output_all.txt`（人类可读的图结构文本版）
 - `embedding_vocab.json`（特征词表，预训练/嵌入提取都要用）
@@ -42,10 +42,18 @@ WURCS 格式解析器。既可被其他脚本作为模块导入，也**可直接
 MLM 预训练主脚本。读取上一步生成的 `output_all.json` 与 `embedding_vocab.json`，构建 `GlycanDataset`，对节点/边特征做随机掩码，训练一个异构 GAT（`HeteroConv + GATConv`）预测被掩码的 `anomeric_config`、`substituent`、`big_edge`、`small_edge_stereo`、`ring_bond` 等特征。使用 CB Focal Loss、AdamW、ReduceLROnPlateau、混合精度训练。产物：`checkpoints/best_model_mlm.pt`（预训练模型权重）与 `error_analysis/training_log.txt`。
 
 ### 3. `deldownstata.py`
-数据泄漏清理工具。扫描 `downstreamstata/` 下所有 CSV 收集出现的 WURCS，再从 `dic.csv` 中删除这些行，避免下游评估样本泄漏进预训练/训练集。
+数据泄漏清理工具。扫描 `downstreamstata/` 下所有 CSV 收集出现的 WURCS，再从 `dic.csv` 中删除这些行，避免下游评估样本泄漏进预训练/训练集。仓库内的 `MASK/dic.csv` 已是清理后的版本，原始未清理字典在 `downstream/dic.csv`。
 
-### 4. `总结.py`
-根目录的 `总结.py` 是旧版汇总脚本（写死 `SEEDS=[42,58,518,5188,51888]`，并查找 `split_files_processed_wurcs<seed>` 目录）。当前各下游任务的种子为 **1–10**，请改用任务目录下的 `94/tax(ML)/总结.py` 或 `94/taxall/总结.py`（两者都会自动识别 `finaltrain/` 下以数字命名的种子目录），汇总 macro F1 与 macro AUC，输出 `GlycanW0_metrics.csv`。
+## 代码—论文命名对照
+
+图组成（节点/边）在代码与论文中的叫法：
+
+| 代码中的名称 | 论文中的名称 | 含义 |
+|--------------|--------------|------|
+| `big_nodes` | residue | 糖残基节点 |
+| `small_nodes` | substituents | 取代基节点 |
+| `big_edges` | inter-residue glycosidic bonds | 残基间糖苷键 |
+| `small_edges` | substituent attachment bonds | 取代基连接键 |
 
 ## 产物清单与大小
 
@@ -60,15 +68,17 @@ MLM 预训练主脚本。读取上一步生成的 `output_all.json` 与 `embeddi
 | `wurcs_parser_reverse_edge.py` | `parse_errors.csv`（解析失败记录） | 小 |
 | `masktrain_windows_313.py` | `checkpoints/best_model_mlm.pt`（预训练权重） | ~34 MB |
 | `masktrain_windows_313.py` | `error_analysis/training_log.txt`（训练日志） | 小 |
+| `masktrain_windows_313.py` | `training_metrics_log.txt`（每轮指标日志） | 小 |
 | `94/tax(ML)/总结.py`、`94/taxall/总结.py` | `GlycanW0_metrics.csv`（指标汇总） | 小 |
-| `deldownstata.py` | 原地改写 `dic.csv`（删除泄漏行） | `dic.csv` ~50 MB |
+| `deldownstata.py` | 原地改写 `dic.csv`（删除泄漏行；原始未清理版为 `downstream/dic.csv`） | `dic.csv` ~50 MB |
 
 ## 运行顺序（主文件夹）
 
 > 以下命令假设工作目录为 `MASK/`，Python 版本 3.13（脚本名中的 `_313` 即指 3.13）。Windows 下用 `py -3.13`，其他平台用 `python`。
 
 ```bash
-# Step 0. 放入 dic.csv（从 GlyTouCan 数据库下载的全部糖结构）
+# Step 0. 仓库内 dic.csv 已是删除下游任务样本后的版本，可直接从 Step 2 开始；
+#         若要从原始字典重跑：cp ../downstream/dic.csv ./dic.csv
 
 # Step 1. 清理数据泄漏：从 dic.csv 删除出现在 downstreamstata/ 中的 WURCS（原地改写 dic.csv）
 py -3.13 deldownstata.py
@@ -93,7 +103,7 @@ py -3.13 masktrain_windows_313.py
 | `94/imm(ML)/` | 免疫原性（immunogenicity） | [README](./94/imm(ML)/README.md) |
 | `94/taxall/` | 物种分类「全物种」配置（含 superkingdom，8 层级） | [README](./94/taxall/README.md) |
 
-> **注意**：各子目录中的 `embedding_vocab.json` 和 `checkpoints/best_model_mlm.pt` 是**从主文件夹移入**的外部文件（94 轮预训练产物），`split_files/*.csv` 或 `train/*.csv` 为外部任务数据。这些文件体积大或为生成产物，上传 GitHub 时不传，运行前需手动放入。详见各子目录 README。当前各种子目录的随机种子为 **1–10**。
+> **注意**：各子目录中的 `embedding_vocab.json` 和 `checkpoints/best_model_mlm.pt` 是**从主文件夹移入**的外部文件（94 轮预训练产物），`split_files/*.csv` 或 `train/*.csv` 为外部任务数据。这些文件体积大或为生成产物，上传 GitHub 时不传，运行前需手动放入。详见各子目录 README。当前各种子目录的随机种子为 **1–10**；多 seed 指标汇总用各任务目录下的 `总结.py`（`94/tax(ML)/` 与 `94/taxall/` 各一份，会自动识别 `finaltrain/` 下以数字命名的种子目录），汇总 macro F1 与 macro AUC，输出 `GlycanW0_metrics.csv`。
 
 ## 依赖
 - Python 3.13

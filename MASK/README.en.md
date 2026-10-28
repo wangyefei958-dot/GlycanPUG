@@ -11,8 +11,8 @@ MASK/
 ├── wurcs_parser_reverse_edge.py   # WURCS parser (runnable on its own; produces json/txt/vocab)
 ├── masktrain_windows_313.py       # MLM pre-training (HeteroGAT)
 ├── deldownstata.py                # Data-leakage cleanup utility
-├── 总结.py                         # Aggregate F1/AUC metrics across seeds
-├── dic.csv                         # Main data dictionary (all glycans downloaded from GlyTouCan)
+├── training_metrics_log.txt       # Per-epoch pre-training metric log (written by the pre-training script)
+├── dic.csv                         # Data dictionary (**downstream-task samples already removed by deldownstata.py**; the raw uncleaned version is `downstream/dic.csv`)
 ├── output_all.json / output_all.txt # Parsed full graph data (produced by the parser)
 ├── embedding_vocab.json           # Feature vocabulary (produced by the parser)
 ├── vocab_freq_stats.txt           # Vocabulary frequency statistics
@@ -31,7 +31,7 @@ MASK/
 ## Script Descriptions
 
 ### 1. `wurcs_parser_reverse_edge.py`
-A WURCS format parser. It can be imported as a module by other scripts, but is also **runnable on its own**: it auto-reads the single `dic.csv` in its directory, parses each `WURCS=...` string into a heterogeneous graph structure for GNN input (`big_nodes` monosaccharides / `small_nodes` substituents / `big_edges` inter-monosaccharide glycosidic bonds / `small_edges` monosaccharide-substituent connections), and performs two passes (first collecting the vocabulary, then filtering low-frequency/uncertain items). Running it directly produces:
+A WURCS format parser. It can be imported as a module by other scripts, but is also **runnable on its own**: it auto-reads the single `dic.csv` in its directory, parses each `WURCS=...` string into a heterogeneous graph structure for GNN input (code names for nodes/edges are listed in "Code vs. Paper Naming" below), and performs two passes (first collecting the vocabulary, then filtering low-frequency/uncertain items). Running it directly produces:
 - `output_all.json` (parsed full graph data, read by pre-training)
 - `output_all.txt` (human-readable text version of the graph structure)
 - `embedding_vocab.json` (feature vocabulary, used by both pre-training and embedding extraction)
@@ -42,10 +42,18 @@ A WURCS format parser. It can be imported as a module by other scripts, but is a
 The main MLM pre-training script. Reads `output_all.json` and `embedding_vocab.json` produced in the previous step, builds a `GlycanDataset`, randomly masks node/edge features, and trains a heterogeneous GAT (`HeteroConv + GATConv`) to predict the masked `anomeric_config`, `substituent`, `big_edge`, `small_edge_stereo`, `ring_bond` features. Uses CB Focal Loss, AdamW, ReduceLROnPlateau, and mixed-precision training. Products: `checkpoints/best_model_mlm.pt` (pre-trained model weights) and `error_analysis/training_log.txt`.
 
 ### 3. `deldownstata.py`
-A data-leakage cleanup tool. Scans all CSVs under `downstreamstata/` to collect WURCS that appear there, then removes those rows from `dic.csv` to prevent downstream-evaluation samples from leaking into the pre-training/training set.
+A data-leakage cleanup tool. Scans all CSVs under `downstreamstata/` to collect WURCS that appear there, then removes those rows from `dic.csv` to prevent downstream-evaluation samples from leaking into the pre-training/training set. The `MASK/dic.csv` in this repo is already cleaned; the raw uncleaned dictionary is `downstream/dic.csv`.
 
-### 4. `总结.py`
-The `总结.py` at the root is a legacy aggregation script (it hardcodes `SEEDS=[42,58,518,5188,51888]` and looks for `split_files_processed_wurcs<seed>` directories). The current downstream seeds are **1–10**, so use `94/tax(ML)/总结.py` or `94/taxall/总结.py` instead — both auto-detect numeric seed folders under `finaltrain/`, aggregate macro F1 and macro AUC, and write `GlycanW0_metrics.csv`.
+## Code vs. Paper Naming
+
+Names of the graph components (nodes/edges) in the code and in the paper:
+
+| Code name | Paper name | Meaning |
+|-----------|------------|---------|
+| `big_nodes` | residue | Glycan residue node |
+| `small_nodes` | substituents | Substituent node |
+| `big_edges` | inter-residue glycosidic bonds | Glycosidic bond between residues |
+| `small_edges` | substituent attachment bonds | Bond attaching a substituent |
 
 ## Output Inventory & Sizes
 
@@ -60,15 +68,17 @@ The `总结.py` at the root is a legacy aggregation script (it hardcodes `SEEDS=
 | `wurcs_parser_reverse_edge.py` | `parse_errors.csv` (failed-parse records) | small |
 | `masktrain_windows_313.py` | `checkpoints/best_model_mlm.pt` (pre-trained weights) | ~34 MB |
 | `masktrain_windows_313.py` | `error_analysis/training_log.txt` (training log) | small |
+| `masktrain_windows_313.py` | `training_metrics_log.txt` (per-epoch metrics) | small |
 | `94/tax(ML)/总结.py`, `94/taxall/总结.py` | `GlycanW0_metrics.csv` (metrics summary) | small |
-| `deldownstata.py` | Rewrites `dic.csv` in place (removes leakage rows) | `dic.csv` ~50 MB |
+| `deldownstata.py` | Rewrites `dic.csv` in place (removes leakage rows; raw uncleaned version is `downstream/dic.csv`) | `dic.csv` ~50 MB |
 
 ## Execution Order (main folder)
 
 > The commands below assume the working directory is `MASK/` and Python 3.13 (the `_313` in the script name refers to 3.13). On Windows use `py -3.13`; on other platforms use `python`.
 
 ```bash
-# Step 0. Place dic.csv (all glycan structures downloaded from the GlyTouCan database)
+# Step 0. The repository's dic.csv already has downstream-task samples removed, so you may start from Step 2;
+#         to rerun from the raw dictionary: cp ../downstream/dic.csv ./dic.csv
 
 # Step 1. Clean data leakage: remove WURCS appearing in downstreamstata/ from dic.csv (rewrites dic.csv in place)
 py -3.13 deldownstata.py
@@ -93,7 +103,7 @@ During pre-training, the checkpoint at **epoch 94 was the best model**, so all d
 | `94/imm(ML)/` | Immunogenicity | [README](./94/imm(ML)/README.md) |
 | `94/taxall/` | Taxonomy "all-taxa" (incl. superkingdom, 8 levels) | [README](./94/taxall/README.md) |
 
-> **Note**: In each subdirectory, `embedding_vocab.json` and `checkpoints/best_model_mlm.pt` are **moved in from the main folder** (the epoch-94 pre-training products), and `split_files/*.csv` or `train/*.csv` are external task data. These files are large or are generated products — not uploaded to GitHub; they must be placed manually before running. See each subdirectory's README. Random seeds in the seed folders are currently **1–10**.
+> **Note**: In each subdirectory, `embedding_vocab.json` and `checkpoints/best_model_mlm.pt` are **moved in from the main folder** (the epoch-94 pre-training products), and `split_files/*.csv` or `train/*.csv` are external task data. These files are large or are generated products — not uploaded to GitHub; they must be placed manually before running. See each subdirectory's README. Random seeds in the seed folders are currently **1–10**; use the `总结.py` in each task directory (`94/tax(ML)/` and `94/taxall/`) to aggregate multi-seed macro F1 and macro AUC into `GlycanW0_metrics.csv` — both auto-detect numeric seed folders under `finaltrain/`.
 
 ## Dependencies
 - Python 3.13
