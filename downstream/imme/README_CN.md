@@ -7,6 +7,8 @@
 - **原始文件**: `glycan_immunogenicity.csv`（1320 条糖链记录）
 - **输出文件**: `imm_stata.csv`（过滤后 1106 条可用记录）
 
+原始文件来自 **GlycanML** 基准的免疫原性预测任务（Xu et al., *GlycanML: A Multi-Task and Multi-Structure Benchmark for Glycan Machine Learning*, ICLR 2025），即 SugarBase 中经文献标注了免疫原性的那批糖链（共 1320 条）；列中包含 GlycanML 划好的 train/valid/test 标记，**下游训练直接沿用该划分**。
+
 ### 原始数据列说明
 
 | 列名 | 含义 |

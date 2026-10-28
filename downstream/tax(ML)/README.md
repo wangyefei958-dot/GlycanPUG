@@ -2,6 +2,10 @@
 
 本目录负责将原始糖基化分类表转换为每个分类级独立的训练数据，供下游 GNN 训练使用。
 
+## 数据来源
+
+初始输入 `allstata/glycan_classification.csv`（列：`target` 为 IUPAC Condensed 糖链串，另含 species / genus / family / order / class / phylum / kingdom / domain 八个分类阶元）来自 **GlycanML** 基准数据集（Xu et al., *GlycanML: A Multi-Task and Multi-Structure Benchmark for Glycan Machine Learning*, ICLR 2025，数据源自 SugarBase）。本目录只补 WURCS 并按层级拆分，**只保留原有生物分类标签**；**未使用 GlycanML 提供的 train/val/test 划分**，下游 `glycanW0_classifier.py` 会自行按多标签分层重新划分（80% / 10% / 10%）。
+
 ## 目录结构总览
 
 ```

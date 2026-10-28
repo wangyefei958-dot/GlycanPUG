@@ -7,6 +7,8 @@ This project converts glycan strings in **IUPAC Condensed** format to **WURCS** 
 - **Input**: `glycan_immunogenicity.csv` (1320 glycan records)
 - **Output**: `imm_stata.csv` (1106 clean records after filtering)
 
+The input file comes from the immunogenicity task of the **GlycanML** benchmark (Xu et al., *GlycanML: A Multi-Task and Multi-Structure Benchmark for Glycan Machine Learning*, ICLR 2025) — the 1,320 SugarBase glycans with literature-annotated immunogenicity; its columns include GlycanML's train/valid/test splits, **which downstream training uses as-is**.
+
 ### Input Columns
 
 | Column | Description |

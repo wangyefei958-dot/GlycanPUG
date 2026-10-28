@@ -24,6 +24,8 @@ This repository parses glycan WURCS strings into heterogeneous graphs (big/small
 | `downstream_task_stats.py` / `.csv` / `.png` | Data-scale statistics (samples, labels) of downstream tasks and their plots | — |
 | `report_second_round.py` / `second_round_report.md` | Analysis of second-round WURCS conversion failures (immunogenicity, taxonomy tasks) | — |
 
+> The **initial CSVs of `tax(ML)/` and `imme/` both come from the GlycanML benchmark** (Xu et al., [*GlycanML: A Multi-Task and Multi-Structure Benchmark for Glycan Machine Learning*](https://arxiv.org/abs/2405.16206), ICLR 2025); `taxall/` data is crawled from Glycosmos by `preprocessall.py`.
+
 ## Naming note
 
 The model was originally called **W0** and later renamed **PUG**; the code still uses the W0 naming (e.g., `glycanW0_classifier.py`, `get_embeddings_W0.py`). For the code-vs-paper naming of graph components (nodes/edges), see [MASK/README.en.md](./MASK/README.en.md).

@@ -2,6 +2,10 @@
 
 This directory converts the raw glycosylation classification table into per-rank training data for downstream GNN training.
 
+## Data Source
+
+The initial input `allstata/glycan_classification.csv` (`target` holds the IUPAC Condensed glycan string, plus the eight ranks species / genus / family / order / class / phylum / kingdom / domain) comes from the **GlycanML** benchmark (Xu et al., *GlycanML: A Multi-Task and Multi-Structure Benchmark for Glycan Machine Learning*, ICLR 2025; data sourced from SugarBase). This directory only backfills WURCS and splits by rank, **keeping the original biological taxonomy labels**; it **does not use GlycanML's train/val/test split** — the downstream `glycanW0_classifier.py` performs its own multi-label stratified split (80% / 10% / 10%).
+
 ## Directory Layout
 
 ```

@@ -24,6 +24,8 @@
 | `downstream_task_stats.py` / `downstream_task_stats.csv` / `downstream_task_stats.png` | 下游各任务的数据规模统计（样本数、标签数）及其绘图 | — |
 | `report_second_round.py` / `second_round_report.md` | 第二轮 WURCS 转换失败原因分析（免疫原性、分类任务） | — |
 
+> `tax(ML)/` 与 `imme/` 的**初始 CSV 均来自 GlycanML 基准**（Xu et al., [*GlycanML: A Multi-Task and Multi-Structure Benchmark for Glycan Machine Learning*](https://arxiv.org/abs/2405.16206), ICLR 2025）；`taxall/` 的数据则由 `preprocessall.py` 从 Glycosmos 抓取构建。
+
 ## 命名说明
 
 本项目模型最初称为 **W0**，后改名 **PUG**，代码中仍沿用 W0 称呼（如 `glycanW0_classifier.py`、`get_embeddings_W0.py`）。图组成（节点/边）的代码—论文命名对照见 [MASK/README.md](./MASK/README.md)。
