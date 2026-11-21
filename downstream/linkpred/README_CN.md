@@ -55,6 +55,8 @@ python 2remove_tilde.py
 
 每一步都会**覆盖**上一步的 `glyconnect_structures.csv`，最终步骤输出 `creature_0wave.csv`。如需保留中间结果，请手动备份。
 
+> **爬虫具有时效性**：[GlyConnect](https://glyconnect.expasy.org/) 网站可能随时更新（页面 URL 结构、HTML 元素等都可能变化），若重新爬取时 `0glyconnect_crawler.py` 报错或抓到空数据，需要根据当前网站结构调整其中的 URL 与解析逻辑。
+
 ## 输出数据格式
 
 `glyconnect_structures.csv` 包含以下 4 列：

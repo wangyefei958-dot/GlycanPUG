@@ -55,6 +55,8 @@ python 2remove_tilde.py
 
 Each step **overwrites** `glyconnect_structures.csv`. The final step writes to `creature_0wave.csv`. Back up manually if you need to preserve intermediate outputs.
 
+> **The crawler is time-sensitive**: [GlyConnect](https://glyconnect.expasy.org/) may change at any time (page URL patterns, HTML elements, etc.). If `0glyconnect_crawler.py` errors out or returns empty data when re-crawling, adjust its URLs and parsing logic to match the current site structure.
+
 ## Output Format
 
 `glyconnect_structures.csv` has 4 columns:
