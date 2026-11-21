@@ -22,7 +22,7 @@ link/
 │   └── 数量统计.py                              # counts rows and labels
 ```
 
-> Files marked ⬅ are **moved in from outside**: `masktrain_windows_313.py`, `wurcs_parser_reverse_edge.py`, `embedding_vocab.json` and `checkpoints/best_model_mlm.pt` come from the main folder `MASK/`, and `train/glyconnect_structures.csv` is the external GlyConnect dataset. These files are large or are generated products, so they are **not uploaded to GitHub** and must be placed manually before running.
+> Files marked ⬅ are **moved in from outside**: `masktrain_windows_313.py`, `wurcs_parser_reverse_edge.py`, `embedding_vocab.json` and `checkpoints/best_model_mlm.pt` come from the main folder `MASK/`, and `train/glyconnect_structures.csv` is the GlyConnect dataset from `downstream/linkpred/`. All of these files are **included in the repository** (the largest is the ~34 MB pre-trained weights, below GitHub's 100 MB per-file limit) — clone and run directly, no manual placement needed.
 
 ## Data
 

@@ -21,18 +21,18 @@ tax(ML)/
 │   ├── domain.csv / kingdom.csv / phylum.csv / class.csv
 │   ├── order.csv / family.csv / genus.csv / species.csv
 │   └── 数量统计.py                  # 统计各 CSV 行数与标签数
-├── split_files_processed_wurcs/     # 由 get_embeddings_W0.py 生成（嵌入 CSV）
+├── split_files_processed_wurcs/     # 由 get_embeddings_W0.py 生成（含嵌入权重 CSV，体积大，未上传）
 ├── finaltrain/                      # 多种子最终训练（种子 1–10）
 │   ├── 新建 文本文档.py             # 批量运行各种子目录下的 glycanW0_classifier.py
 │   ├── 1/                           # 种子 1
 │   │   ├── glycanW0_classifier.py   # 与顶层相同，仅 SEED 不同
-│   │   └── split_files_processed_wurcs/  # ⬅ 手动移入（从顶层复制）
-│   │       └── training_results_<level>/  # 各层级训练产物
+│   │   └── split_files_processed_wurcs/  # ⬅ 手动移入（从顶层复制，内容未上传）
+│   │       └── training_results_<level>/  # 各层级训练产物（未上传）
 │   ├── 2/ … 10/                     # 种子 2–10（结构同上）
 │   └── __pycache__/
 ```
 
-> ⬅ 标记的文件为**从外部移入**：`masktrain_windows_313.py`、`wurcs_parser_reverse_edge.py`、`embedding_vocab.json` 与 `checkpoints/best_model_mlm.pt` 来自主文件夹 `MASK/`，`split_files/*.csv` 为按物种层级拆分的外部数据。`finaltrain/<seed>/split_files_processed_wurcs/` 由顶层手动复制移入。这些文件体积大或为生成产物，**上传 GitHub 时不传**，运行前需手动放入。
+> ⬅ 标记的文件为**从外部移入**：`masktrain_windows_313.py`、`wurcs_parser_reverse_edge.py`、`embedding_vocab.json` 与 `checkpoints/best_model_mlm.pt` 来自主文件夹 `MASK/`，`split_files/*.csv` 为由 `downstream/tax(ML)/` 按物种层级拆分得到的任务数据。`finaltrain/<seed>/split_files_processed_wurcs/` 由顶层手动复制移入。这些文件均已**随仓库上传**（最大为约 34 MB 的预训练权重，低于 GitHub 100 MB 单文件限制），克隆后可直接运行，无需手动放入。**例外**：所有 `split_files_processed_wurcs/`（含嵌入权重的 CSV）均由 `get_embeddings_W0.py` 生成，因体积过大**未随仓库上传**，生成后需按第 2 步手动复制到 `finaltrain/` 下各种子文件夹；其中的 `training_results_*/` 训练结果同样未上传，由第 3 步分类训练生成。
 
 ## 数据说明
 

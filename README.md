@@ -7,10 +7,9 @@
 | 文件夹 | 说明 | README |
 |--------|------|--------|
 | `MASK/` | **主项目**：PUG 糖结构图神经网络预训练与下游任务，基于第 **94 轮**最优 checkpoint | [README](./MASK/README.md) |
+| `MASK_i/` | **消融实验**：移除 GAT 前的「边 → 节点」融合模块，基于第 **94 轮**最优 checkpoint（与主实验同轮最优纯属巧合），只跑了 taxall 任务 | [README](./MASK_i/README.md) |
 | `GT/` | **对比实验**：用 GlycanGT 提取嵌入，与 PUG 公平比较 | [README](./GT/README.md) |
 | `downstream/` | **下游任务原始数据与构建脚本**（各任务的 CSV 数据来源，详见下表） | — |
-
-> `MASK_i/`（消融实验版本，结构与 MASK 一致）仍在运行中，完成后补充上传。
 
 ## downstream/ 内部结构
 

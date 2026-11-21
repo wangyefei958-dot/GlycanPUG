@@ -22,7 +22,7 @@ imm(ML)/
 │   └── 数量统计.py                  # 统计 CSV 行数与标签数
 ```
 
-> ⬅ 标记的文件为**从外部移入**：`masktrain_windows_313.py`、`wurcs_parser_reverse_edge.py`、`embedding_vocab.json` 与 `checkpoints/best_model_mlm.pt` 来自主文件夹 `MASK/`，`train/imm_stata.csv` 为外部免疫原性数据集。这些文件体积大或为生成产物，**上传 GitHub 时不传**，运行前需手动放入。
+> ⬅ 标记的文件为**从外部移入**：`masktrain_windows_313.py`、`wurcs_parser_reverse_edge.py`、`embedding_vocab.json` 与 `checkpoints/best_model_mlm.pt` 来自主文件夹 `MASK/`，`train/imm_stata.csv` 为来自 `downstream/imme/` 的免疫原性数据集。这些文件均已**随仓库上传**（最大为约 34 MB 的预训练权重，低于 GitHub 100 MB 单文件限制），克隆后可直接运行，无需手动放入。
 
 ## 数据说明
 
